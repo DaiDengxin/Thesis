@@ -1,0 +1,214 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{Boiman:07}
+O.~Boiman and M.~Irani.
+\newblock Detecting irregularities in images and in video.
+\newblock {\em IJCV}, 74(1):17--31, 2007.
+
+\bibitem{graphcut}
+Y.~Boykov, O.~Veksler, and R.~Zabih.
+\newblock Fast approximate energy minimization via graph cuts.
+\newblock {\em PAMI}, 23(11):1222--1239, 2001.
+
+\bibitem{randomforest}
+L.~Breiman.
+\newblock Random forest.
+\newblock {\em MACH LEARN}, 45(1):5--32, 2001.
+
+\bibitem{Cohen:2003:wang}
+M.~F. Cohen, J.~Shade, S.~Hiller, and O.~Deussen.
+\newblock Wang tiles for image and texture generation.
+\newblock In {\em SIGGRAPH}, 2003.
+
+\bibitem{dai:facade:iccv13}
+D.~Dai, H.~Riemenschneider, G.~Schmitt, and L.~{Van Gool}.
+\newblock Example-based facade texture synthesis.
+\newblock In {\em ICCV}, 2013.
+
+\bibitem{Debonet:97}
+J.~S. De~Bonet.
+\newblock Multiresolution sampling procedure for analysis and synthesis of
+  texture images.
+\newblock In {\em SIGGRAPH}, 1997.
+
+\bibitem{Efros:sig2001}
+A.~A. Efros and W.~T. Freeman.
+\newblock Image quilting for texture synthesis and transfer.
+\newblock In {\em SIGGRAPH}, 2001.
+
+\bibitem{Efros:1999}
+A.~A. Efros and T.~K. Leung.
+\newblock Texture synthesis by non-parametric sampling.
+\newblock In {\em ICCV}, 1999.
+
+\bibitem{random:phase}
+B.~Galerne, Y.~Gousseau, and J.~M. Morel.
+\newblock Random phase textures: Theory and synthesis.
+\newblock {\em {IEEE} Trans. Image Process}, 20(1):257--267, 2011.
+
+\bibitem{vangool83}
+L.~V. Gool, P.~Dewaele, and A.~Oosterlinck.
+\newblock Texture analysis anno 1983.
+\newblock {\em COMPUT VISION GRAPH}, 29(3):336 -- 357, 1985.
+
+\bibitem{image:interestingness}
+M.~Gygli, H.~Grabner, H.~Riemenschneider, F.~Nater, and L.~Van~Gool.
+\newblock The interestingness of images.
+\newblock {\em ICCV}, 2013.
+
+\bibitem{He:completion:eccv12}
+K.~He and J.~Sun.
+\newblock Statistics of patch offsets for image completion.
+\newblock In {\em ECCV}, 2012.
+
+\bibitem{Heeger:95}
+D.~J. Heeger and J.~R. Bergen.
+\newblock Pyramid-based texture analysis/synthesis.
+\newblock In {\em SIGGRAPH}, 1995.
+
+\bibitem{image:memorability}
+P.~Isola, J.~Xiao, A.~Torralba, and A.~Oliva.
+\newblock What makes an image memorable?
+\newblock In {\em CVPR}, 2011.
+
+\bibitem{Kwatra:tog:2005}
+V.~Kwatra, I.~Essa, A.~Bobick, and N.~Kwatra.
+\newblock Texture optimization for example-based synthesis.
+\newblock {\em ACM Trans. Graph.}, 24(3), 2005.
+
+\bibitem{Kwatra:2003}
+V.~Kwatra, A.~Sch\"{o}dl, I.~Essa, G.~Turk, and A.~Bobick.
+\newblock Graphcut textures: image and video synthesis using graph cuts.
+\newblock In {\em SIGGRAPH}, 2003.
+
+\bibitem{UIUC:Texture}
+S.~Lazebnik, C.~Schmid, and J.~Ponce.
+\newblock A sparse texture representation using local affine regions.
+\newblock {\em PAMI}, 27(8):1265--1278, 2005.
+
+\bibitem{lazebnik:cvpr06}
+S.~Lazebnik, C.~Schmid, and J.~Ponce.
+\newblock Beyond bags of features: Spatial pyramid matching for recognizing
+  natural scene categories.
+\newblock In {\em CVPR}, 2006.
+
+\bibitem{Lefebvre:2005:sig}
+S.~Lefebvre and H.~Hoppe.
+\newblock Parallel controllable texture synthesis.
+\newblock In {\em SIGGRAPH}, 2005.
+
+\bibitem{texton:2001}
+T.~Leung and J.~Malik.
+\newblock Representing and recognizing the visual appearance of materials using
+  three-dimensional textons.
+\newblock {\em IJCV}, 43(1):29--44, 2001.
+
+\bibitem{liu:texture:96}
+F.~Liu and R.~Picard.
+\newblock Periodicity, directionality, and randomness: Wold features for image
+  modeling and retrieval.
+\newblock {\em PAMI}, 18(7):722--733, 1996.
+
+\bibitem{sorted:texture}
+L.~Liu, P.~Fieguth, G.~Kuang, and H.~Zha.
+\newblock Sorted random projections for robust texture classification.
+\newblock In {\em ICCV}, 2011.
+
+\bibitem{Liu:2004:NTA}
+Y.~Liu, W.-C. Lin, and J.~Hays.
+\newblock Near-regular texture analysis and manipulation.
+\newblock In {\em SIGGRAPH}, 2004.
+
+\bibitem{liu:ijcv:05}
+Y.~Liu, Y.~Tsin, and W.-C. Lin.
+\newblock The promise and perils of near-regular texture.
+\newblock {\em IJCV}, 62(1-2):145--159, 2005.
+
+\bibitem{lockerman2013arxiv}
+Y.~D. Lockerman, S.~Xue, J.~Dorsey, and H.~Rushmeier.
+\newblock Creating texture exemplars from unconstrained images.
+\newblock {\em Tech. Report}, (TR1483), October 2013.
+
+\bibitem{image:quality}
+Y.~Luo and X.~Tang.
+\newblock Photo and video quality evaluation: Focusing on the subject.
+\newblock In {\em ECCV}. 2008.
+
+\bibitem{Ma:2011}
+C.~Ma, L.-Y. Wei, and X.~Tong.
+\newblock Discrete element textures.
+\newblock In {\em SIGGRAPH}, 2011.
+
+\bibitem{Manjunath96}
+B.~S. Manjunath and W.~Ma.
+\newblock Texture features for browsing and retrieval of image data.
+\newblock {\em PAMI}, 18(8):837--42, 1996.
+
+\bibitem{semantic:texture}
+T.~Matthews, M.~S. Nixon, and M.~Niranjan.
+\newblock Enriching texture analysis with semantic data.
+\newblock In {\em CVPR}, 2013.
+
+\bibitem{lbp:2002}
+T.~Ojala, M.~Pietikainen, and T.~Maenpaa.
+\newblock Multiresolution gray-scale and rotation invariant texture
+  classification with local binary patterns.
+\newblock {\em PAMI}, 24(7):971--987, 2002.
+
+\bibitem{gist}
+A.~Oliva and A.~Torralba.
+\newblock Modeling the shape of the scene: A holistic representation of the
+  spatial envelope.
+\newblock {\em IJCV}, 42(3):145--175, 2001.
+
+\bibitem{paget:tip98}
+R.~Paget and I.~Longstaff.
+\newblock Texture synthesis via a noncausal nonparametric multiscale markov
+  random field.
+\newblock {\em IEEE Trans. Image Processing}, 7(6):925--931, 1998.
+
+\bibitem{Portilla:2000:IJCV}
+J.~Portilla and E.~P. Simoncelli.
+\newblock A parametric texture model based on joint statistics of complex
+  wavelet coefficients.
+\newblock {\em IJCV}, 40(1):49--70, 2000.
+
+\bibitem{Schmid01}
+C.~Schmid.
+\newblock Constructing models for content-based image retrieval.
+\newblock In {\em CVPR}, 2001.
+
+\bibitem{texture:analysis}
+M.~Tuceryan and A.~K. Jain.
+\newblock Texture analysis.
+\newblock In {\em Handbook of Pattern Recognition and Computer Vision (2nd
+  Ed.)}, pages 235--276, 1993.
+
+\bibitem{material:pami:09}
+M.~Varma and A.~Zisserman.
+\newblock A statistical approach to material classification using image patch
+  exemplars.
+\newblock {\em PAMI}, 31(11):2032--2047, 2009.
+
+\bibitem{WLKT09}
+L.-Y. Wei, S.~Lefebvre, V.~Kwatra, and G.~Turk.
+\newblock State of the art in example-based texture synthesis.
+\newblock In {\em EG-STAR}, 2009.
+
+\bibitem{xia:texture}
+G.-S. Xia, J.~Delon, and Y.~Gousseau.
+\newblock Shape-based invariant texture indexing.
+\newblock {\em IJCV}, 88(3):382--403, 2010.
+
+\bibitem{Zalesny05}
+A.~Zalesny, V.~Ferrari, G.~Caenen, and L.~Van~Gool.
+\newblock Composite texture synthesis.
+\newblock {\em IJCV}, 62(1-2), 2005.
+
+\bibitem{zhu:frame}
+S.~C. Zhu, Y.~Wu, and D.~Mumford.
+\newblock Filters, random fields and maximum entropy (frame): Towards a unified
+  theory for texture modeling.
+\newblock {\em IJCV}, 27(2):107--126, 1998.
+
+\end{thebibliography}

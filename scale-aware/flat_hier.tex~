@@ -1,0 +1,273 @@
+\section{Flattening Hierarchy and Scale Calibration}
+
+As we discussed in Sec.\ref{sec:intro}, while the segmentation
+hierarchy contains a rich multiscale decomposition of the image, it is
+not trivial to distill such knowledge because the hierarchies generated
+by current methods are not fully scale-aware. Simply taking a layer
+yields a segmentation of which some parts are under-segmented while
+others are over-segmented. In this section, we presents our method
+which calibrates the scales of segmentation hierarchies, making image
+hierarchies easier to use in practice. We start with scale labeling, and then present the calibration. 
+
+
+\subsection{Hierarchy Flattening via Scale Labeling}
+\label{sec:scale:labeling}
+
+We restrict to the the segmentation hierarchy which can be represented
+as a rooted tree, due to its popularity and simplicity. Let's denote
+by $\mathcal{T}$ the segmentation tree of image $I$, with node $v_i$
+indicating its $i$th node. The nodes correspond to regions (segments)
+of $I$.  Given $\mathcal{T}$, our task is to find a tree slice
+$\mathcal{L}$ to segment all nodes $v_i$'s (segments) into three
+groups: $\mathcal{L}^-$,$\mathcal{L}$, and $\mathcal{L}^+$ indicating
+under-, properly- and over-segmented, respectively.  Example of the
+tree slicing is given in Fig.~\ref{fig:tree}.
+
+The problem is formulated as a three-class labeling problem. For each
+node $v_i$, we use $x(v_i) \in\{-1,0,1\}$ as its class label, with $-1$,
+$0$, and $1$ indicating the membership of $v_i$ to $\mathcal{L}^-$,
+$\mathcal{L}$, and $\mathcal{L}^+$ respectively.  Assume now that a
+function $f(v_i): v_i \rightarrow [-1, 1] $ is provided to measure the
+granularity of image segments, where negative values for
+under-segmented, $0$ for properly-segmented, and positive ones for
+over-segmented. The magnitude signals the deviation from being
+properly-segmented. The learning of $f(v_i)$ is presented
+in Sec.~\ref{sec:scale}.  
+
+The labeling of all $v_i$'s can be done by
+simply taking the best-scoring class for each node.
+% Thus, the following properties are desired for a good slice: nodes
+% above the slice should have $RS$ larger than 0, $RS$ of nodes in the
+% slice are close to zero, and below the slice smaller than 0.
+However, not any labeling represents a valid slice of the tree.
+Following the definition
+in~\cite{pont2012supervised,xu2013flattening}, a tree slice is a set
+of nodes such that every path $\mathcal{P}_n, n\in \{1,2, ..., N\}$
+from the leaf node $\bar{v}_n$ to the root node $v_0$ contains one and
+only one node $v$ in the slice. Also, from the nature of segmentation
+hierarchy, labels of parent nodes $v^-_i$ should be equal or smaller
+than their child nodes $v_i$.  That means if the child nodes are
+under-segmented, the parent nodes are under-segmented for sure.
+Putting the two constraints together, the labeling problem can be
+formulated as:
+
+% For a valid slice, all nodes in the slice need to be able to form a
+% complete segmentation of the tree. We modeled the constraint similar
+% to~\cite{pont2012supervised,xu2013flattening}. Given the hierarchy,
+% we can specify all the leaf-to-root paths, we donate them as $P =
+% \{p_1,\cdots,p_s\}$. For each path, it can be represented as a
+% sequence of nodes it has passed through, starts from leaf node and
+% ends with the root node $p_i = (v_{i1},v_{i2},\cdots)$. For each
+% path in a valid slice, there can be only one node in
+% $\mathcal{L}_2$. And a node's label should be smaller or equal than
+% the node before it to guarantee the physical meaning of the label.
+
+% \begin{gather}
+%  \hat{\mathbf{X}} = \min_{\mathbf{X}} E(\mathbf{X})\\
+%  E = \sum_{v_i\in \mathcal{L}_1}{|r_i|\textbf{H}({-s_i}')} + \sum_{v_i\in \mathcal{L}_2}{|r_i|\cdot|{s_i}'|} + \sum_{v_i\in \mathcal{L}_3}{|r_i|\textbf{H}({s_i}')} \\
+%  \text{s.t } \forall p_i, \sum_{k}\mathbbm{1}(v_{ik}=2) = 1, \\
+%  \forall p_i, x_{i1}\geq x_{i2}\geq x_{i3}\geq \cdots, \\
+%  \forall x_i, x_i\in \{1,2,3\}
+% \end{gather}
+
+
+\begin{equation}
+  \label{eq:energy}
+  \begin{split}
+    &\hat{\mathbf{X}} = \min_{\mathbf{X}} E(\mathbf{X})\\
+ E(\mathbf{X}) =  \sum_{v_i \in \mathcal{L}} &\#(v_i) \cdot \|f(v_i)\|^2 + \lambda  \sum_{v_i \notin \mathcal{L}}  l(v_i) \\
+ \text{s.t   }  \quad \forall n: & \quad \sum_{v \in \mathcal{P}_n} \mathbbm{1}_\mathcal{L} (x(v)) = 1\\
+              \quad \forall v:  & \quad x(v) >= x(v^-)\\
+   \end{split}
+\end{equation}
+where $\#(v)$ is the size of segment (node) $v$, $\lambda$ is a
+weighting value for the two energy terms, and $l(v_i)$ is the loss
+function defined for $v_i \in \{ \mathcal{L}^-, \mathcal{L}^+ \}$:
+\begin{equation}
+  \label{eq:loss:fun}
+  l(v_i) = \#(v_i) \cdot \max(0, 1- f(v_i)\cdot x(v_i)).
+\end{equation}
+The loss function basically penalizes two contradictory cases: (i)
+segments in the group of under-segmented recieve positive scores; and
+(i) segments in the group of over-segmented recieve negative
+scores. The problem is solved via dynamic programming.
+% \begin{gather}
+%  \hat{\mathbf{X}} = \min_{\mathbf{X}} E(\mathbf{X})\\
+%  E(\mathbf{X}) = \sum_{v_i \in \mathcal{L}} S(v_i)\|f(v_i)\|^2 + \lambda  \sum_{v_i \notin \mathcal{L}}  l(f(v_i)) \\
+%  \text{s.t  }  \forall n: \sum_{v \in \mathcal{P}_n} \mathbbm{1}_\mathcal{L} (x(v)) = 1\\
+%               \forall p_i, x_{i1}\geq x_{i2}\geq x_{i3}\geq \cdots, \\
+%  \forall x_i, x_i\in \{1,2,3\}
+%  % E = \sum_{v_i\in \mathcal{L}_1}{|r_i|\textbf{H}({-s_i}')} + \sum_{v_i\in \mathcal{L}_2}{|r_i|\cdot|{s_i}'|} + \sum_{v_i\in \mathcal{L}_3}{|r_i|\textbf{H}({s_i}')} \\
+%  % \text{s.t } \forall p_i, \sum_{k}\mathbbm{1}(v_{ik}=2) = 1, \\
+%  % \forall p_i, x_{i1}\geq x_{i2}\geq x_{i3}\geq \cdots, \\
+%  % \forall x_i, x_i\in \{1,2,3\}
+% \end{gather}
+
+% In the equation above, $\textbf{H}$ is Heaviside step function and
+% $\mathbbm{1}$ is the indicator function. The first two constraints
+% ensure the resulted slice is a valid slice. The problem can be viewed
+% as a linear integral optimization problem, which is N-P hard in
+% general.\yh{really NP-hard?}
+
+
+\subsubsection{Inference by Dynamic Programming}
+\label{sec:dp}
+The optimization problem in Eq.\ref{eq:energy} is highly structured
+and can be solved recursively by Dynamic Programming. For the subtree
+rooted at node $v$, its optimal slice $\mathcal{L}(v)$ is either the
+node $v$ itself or the union of the optimal slices of all its child
+nodes $v^+$'s, depending on whose energy is lower. Thus, this
+naturally fits to the framework of dynamic problem for the optimal solution. 
+
+% More formally, we can decompose our energy function into two terms:
+% \begin{multline}
+%  min[E(\mathcal{T}_{root})] = \min\{\sum_{\mathcal{T}_{child}\in\mathcal{C}(\mathcal{T}_{root})}E(\mathcal{T}_{child})+E_1(v_{root}), \\
+% 	  E_2(v_{root})+\sum_{v_i \in V\setminus v_{root}} E_3(v_i)\}
+% \end{multline}
+
+
+% There are two
+% cases for the root node $v_0$. Either it is in the optimal slice
+% $v_{root} \in \mathcal{L}_2$, or it is above the optimal slice
+% $v_{root} \in \mathcal{L}_1$. For the first case, except for the root
+% node $x_{root}=2$, all other nodes have a label $3$, which indicates
+% that they are below the optimal slice. Therefore the energy of the
+% tree can be calculated. For the later case, the minimum energy of the
+% whole tree is the sum of energy of root node and all minimum energy of
+% all its sub-trees.
+
+% The problem can be divided into a set of sub-problems, thus the
+% objective can be regarded as a dynamic programming problem. 
+
+% To accommodate our problem of optimizing hierarchy. We propose a greedy
+% algorithm similar to~\cite{uijlings2013selective,bonev2014fast}.
+We optimize the problem in the spirit of forward dynamic
+programming. It proceeds from the top to the bottom of the tree. For
+each subtree rooted at the current node $v$, the energy of $v \in
+\mathcal{L}(v)$ is computed and the energy of the optimal slices of
+all its child nodes is requested for comparison. The algorithm
+traverses back when all leaf nodes are reached for the comparisons.
+All comparison will be completed when the algorithm reaches the root
+node again, and the final optimal solution is also obtained. The
+method is very efficient and its complexity is at $\mathcal{O}(N)$ if
+the tree is very unbalenced and $\mathcal{O}(log(N))$ if the tree is
+balanced, where $N$ is the number of leaf nodes (segments at the
+finest level).  The full algorithm is given in Algo.\ref{ag:hier}.
+% Starting from the leaf regions,
+% we compare the score of parent segment ($f(v^-)$) to sum of scores of child segments
+% and choose the layer with larger score.
+% We repeat the step in each iteration until there is only a single segmentation left. The
+% algorithm is summarized in Algorithm\ref{ag:hier}.
+
+\begin{algorithm}
+\caption{Combining Hierarchical Segmentations \dx{obsolete}}
+\label{ag:hier}
+\begin{algorithmic}
+\STATE \textbf{Input:} Hierarchical segmentation tree $\mathcal{T}$ and corresponding score $\mathcal{G}$ for each region.
+\STATE $\mathcal{S}:=$ all leaf regions $\in \mathcal{T}$
+\STATE $\mathcal{R}:= \mathcal{T}$ 
+\WHILE{$\mathcal{S} \neq \mathcal{R}$ } 
+\STATE Pick any element $c$ $\in \mathcal{S}$
+\STATE $C$ $:=$ all siblings of $c$ in $\mathcal{R}$
+\STATE $p$ $:=$ parent of $C$ in $\mathcal{R}$
+\IF{$\sum{g_{c_i}}*|area(c_i)|>g_p*|area(p)|$}
+\STATE{$\mathcal{R} \leftarrow \mathcal{R} \backslash p$}
+\STATE{parent of $C$ in $\mathcal{R} \leftarrow $ parent of $p$ in $\mathcal{R}$}
+\ELSE
+\STATE{$\mathcal{R} \leftarrow \mathcal{R} \backslash C$}
+\STATE{$\mathcal{S} \leftarrow (\mathcal{S} \backslash C) \cup p$}
+\ENDIF
+\ENDWHILE
+\end{algorithmic}
+\end{algorithm}
+
+
+\begin{figure}
+\begin{minipage}{.23\textwidth}
+\centering
+\includegraphics[width=1\linewidth]{fig/syn_hier_1.pdf}
+\end{minipage}
+\begin{minipage}{.23\textwidth}
+\centering
+\includegraphics[width=1\linewidth]{fig/syn_hier_2.pdf}
+\end{minipage}
+\caption{The proposed algorithm to flatten hierarchical segmentation.}
+\label{fig:hierseg}
+\end{figure}
+
+
+\subsubsection{Predicting the scales of segments}
+\label{sec:scale}
+In order to predicting the scales (under-, properly-, or
+over-segmented) of the segments, we follow the route of modern vision
+systems to learn a predictor from human-annotated training data.  To
+this end, define a measure to compare the scale of an image segment
+$\mathbf{r}$ to that of the corresponding human-annotated segment
+$\mathbf{g}$. The correspondence is built-up by computing the overlap
+between computer-generated segments and human-annotated ones -- the
+most-overlapping human-annotated segment is taken as the groud-truth
+for the computer-generated ones.  The overlap is computed with the
+intersection-over-union.
+% For each region $\textbf{r}$ in the segmentation tree, we can
+% correspond it to the ground truth region $\textbf{g}$ with highest
+% overlap, overlap is defined as $O(\textbf{r},\textbf{g}) =
+% \frac{|\textbf{r} \cap \textbf{g}|}{|\textbf{r} \cup \textbf{g}|}$. We
+% use relative scale($RS$) of a region to its corresponding ground truth
+% to indicate the size of region.~\yh{is there any name for this?} 
+
+After having the ground-truth segment $\mathbf{g}$, the scale of the
+segment $\mathbf{r}$ is then defined as:
+\begin{equation}
+\label{eq:scale}
+S(\mathbf{r}) = \frac{\#(\mathbf{g}) - \#(\mathbf{r})}{\max( \#(\mathbf{r}), \#(\mathbf{g})))}.
+\end{equation}
+The value of $S(\mathbf{r})$ is in $[-1, 1]$, with negative values for
+\emph{under-}, $0$ for \emph{properly-} and positive values for
+\emph{over-segmented}, which casts to what $f(v)$ desires (\cf Sec.\ref{sec:scale:labeling}). 
+
+With the Eq.\ref{eq:scale}, the \emph{scales} of the segments by
+segmentation methods can be computed and used as the training data to
+train our scale predictor.  As to the learning method, we employ the
+regression forest as the predictor $f(v)$. As to the features, we use
+a set of low-, and middle-level features, mainly following the work
+done for object proposals~\cite{carreira2010constrained} \dx{cite more
+  proposel paper for this}. The features are designed to capture a
+variety of region properties such as Gestalt properties and Graph
+properties. The detailed list of the features will be provided in the
+supplementary material.
+
+The main difference between our our prediction and the
+previous work~\cite{carreira2010constrained, classification paper,
+  flatten paper} is that they predict the quality of segments, while
+we predict the scale of the segments. Although numerous measures have
+been proposed, it is still very hard to quantify the quality of
+segments. The granularity of segments, however, is easier to quantify,
+and it also provides more specific information such as under-segmented or
+over-segmented rather than only showing good or bad. 
+
+
+% The features we used are general features that have been used by many previous works. Our features can be summarized in the following list:
+
+% \begin{description}
+%  \item[Graph partition properties]   cut, ratio cut, normalized cut, unbalanced normalized cut. 
+%  \item[Region properties]   area, square root of area, ratio of area to image, perimeter, position of the region centroid, bounding box location and size, major and minor axis lengths of the equivalent ellipse, eccentricity, orientation, convex area, Euler number, perimeter and absolute distance to the center of the image.
+%  \item[Gestalt properties]    inter-region texton similarity, intra-region texton similarity, inter-region brightness similarity, intra-region brightness similarity, inter-region contour energy, intra-region contour energy, curvilinear continuity, convexity.
+% \end{description}
+
+% We adapt the implementation from~\cite{carreira2010constrained} without much tuning and modification. Note the choice of features set is not specific. Other choice of features, including CNN features, is possible and can be integrated in our system seamlessly.
+
+\subsubsection{Critical Levels for Traning Data}
+
+
+\subsection{Hierarchy Calibration with Labeled Scales} 
+\dx{write how we convert segmentation to ucm and rescale the ucm to produce new segmentation}
+After setting the optimal slice, we stretch the tree
+correspondingly. In our experiments, we use the threshold value of
+each optimal node as a control point, and linearly interpolate the
+original hierarchy. The algorithm is summarized in
+
+
+
+
+
+

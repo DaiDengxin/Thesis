@@ -1,0 +1,80 @@
+\backcite {metric:nips03, metric:clustering:12}{{1}{1}{section.1}}
+\backcite {tagprop:iccv09}{{1}{1}{section.1}}
+\backcite {local_distance:iccv:07, ml:fast:search:09}{{1}{1}{section.1}}
+\backcite {eigenface:pami97, local_distance:iccv:07, max:margin:knn}{{1}{1}{section.1}}
+\backcite {pairwise:metric:IJCAI09, large:scale:metric:cvpr12, tagprop:iccv09, max:margin:knn, qin:bmvc14}{{1}{1}{section.1}}
+\backcite {eigenface:pami97, local_distance:iccv:07, max:margin:knn, mlrank:10}{{1}{1}{section.1}}
+\backcite {pairwise:metric:IJCAI09, ml:fast:search:09, large:scale:metric:cvpr12, fetlearn:convex:pami14}{{1}{1}{section.1}}
+\backcite {metric:survey:12}{{1}{1}{section.1}}
+\backcite {tl:survey}{{1}{1}{section.1}}
+\backcite {hamming:embedding:08}{{2}{1}{section.1}}
+\backcite {ukbench:cvpr06}{{2}{1}{section.1}}
+\backcite {lazebnik:cvpr06}{{2}{1}{section.1}}
+\backcite {CUReT-61}{{2}{1}{section.1}}
+\backcite {FeiFei2004}{{2}{1}{section.1}}
+\backcite {event8}{{2}{1}{section.1}}
+\backcite {objectbank:nips10}{{2}{1}{section.1}}
+\backcite {siftllc:cvpr10}{{2}{1}{section.1}}
+\backcite {deep:bmvc14}{{2}{1}{section.1}}
+\backcite {gist}{{2}{1}{section.1}}
+\backcite {lbp}{{2}{1}{section.1}}
+\backcite {phog}{{2}{1}{section.1}}
+\backcite {metric:survey:12}{{2}{2.1}{subsection.2.1}}
+\backcite {NCA:2004}{{2}{2.1}{subsection.2.1}}
+\backcite {class:clapse:nips05}{{2}{2.1}{subsection.2.1}}
+\backcite {max:margin:knn}{{2}{2.1}{subsection.2.1}}
+\backcite {max:margin:knn}{{2}{2.1}{subsection.2.1}}
+\backcite {metric:nips03}{{2}{2.1}{subsection.2.1}}
+\backcite {ml:information:07}{{2}{2.1}{subsection.2.1}}
+\backcite {ml:face:09}{{2}{2.1}{subsection.2.1}}
+\backcite {ml:information:07, ml:face:09}{{2}{2.1}{subsection.2.1}}
+\backcite {large:scale:metric:cvpr12}{{2}{2.1}{subsection.2.1}}
+\backcite {MDScaling:08}{{2}{2.2}{subsection.2.2}}
+\backcite {isomap:00}{{2}{2.2}{subsection.2.2}}
+\backcite {lle:science00, NPEmbedding:iccv05}{{2}{2.2}{subsection.2.2}}
+\backcite {eigenmaps:nips01}{{2}{2.2}{subsection.2.2}}
+\backcite {hlle}{{2}{2.2}{subsection.2.2}}
+\backcite {embedding:overview:09}{{2}{2.2}{subsection.2.2}}
+\backcite {tl:kernel:11, DA:iccv11, DASA:iccv13}{{3}{2.3}{subsection.2.3}}
+\backcite {tl:attribute:09}{{3}{2.3}{subsection.2.3}}
+\backcite {lle:science00}{{3}{1}{Item.1}}
+\backcite {eigenmaps:nips01}{{3}{1}{Item.1}}
+\backcite {hlle}{{3}{1}{Item.1}}
+\backcite {isomap:00}{{3}{1}{Item.1}}
+\backcite {lle:science00, eigenmaps:nips01, hlle}{{3}{1}{Item.1}}
+\backcite {lle:science00, NPEmbedding:iccv05}{{3}{1b}{Item.3}}
+\backcite {eigenmaps:nips01}{{3}{1b}{Item.3}}
+\backcite {hlle}{{3}{1b}{Item.3}}
+\backcite {lle:science00}{{3}{1b}{Item.3}}
+\backcite {eigenmaps:nips01}{{4}{1b}{equation.3.1}}
+\backcite {NPEmbedding:iccv05}{{4}{2}{equation.3.3}}
+\backcite {lazebnik:cvpr06}{{5}{4.1}{subsection.4.1}}
+\backcite {CUReT-61}{{5}{4.1}{subsection.4.1}}
+\backcite {FeiFei2004}{{5}{4.1}{subsection.4.1}}
+\backcite {event8}{{5}{4.1}{subsection.4.1}}
+\backcite {siftllc:cvpr10}{{5}{4.1}{subsection.4.1}}
+\backcite {objectbank:nips10}{{5}{4.1}{subsection.4.1}}
+\backcite {deep:bmvc14}{{5}{4.1}{subsection.4.1}}
+\backcite {gist}{{5}{4.1}{subsection.4.1}}
+\backcite {lbp}{{5}{4.1}{subsection.4.1}}
+\backcite {phog}{{5}{4.1}{subsection.4.1}}
+\backcite {deep:bmvc14}{{5}{4.1}{subsection.4.1}}
+\backcite {deepnet:nips12}{{5}{4.1}{subsection.4.1}}
+\backcite {MatConvNet}{{5}{4.1}{subsection.4.1}}
+\backcite {comp:ijcv09, dai:cvpr10, dai:ensemble:eccv12}{{5}{4.1}{subsection.4.1}}
+\backcite {dai:ensemble:eccv12}{{5}{4.1}{subsection.4.1}}
+\backcite {max:margin:knn}{{6}{4.1}{table.7}}
+\backcite {large:scale:metric:cvpr12}{{6}{4.1}{table.7}}
+\backcite {mlrank:10}{{6}{4.1}{table.7}}
+\backcite {IQ:cvpr11}{{6}{4.1}{table.7}}
+\backcite {hamming:embedding:08}{{7}{4.3}{subsection.4.3}}
+\backcite {ukbench:cvpr06}{{7}{4.3}{subsection.4.3}}
+\backcite {qin:bmvc14}{{7}{4.3}{subsection.4.3}}
+\backcite {qin:bmvc14}{{7}{4.3}{subsection.4.3}}
+\backcite {Chang-CVPR-2004, Timofte-ICCV-2013, Dong-ECCV-2014, JOR:EG15}{{7}{4.4}{subsection.4.4}}
+\backcite {Freeman-CGA-2002, Chang-CVPR-2004, JOR:EG15}{{7}{4.4}{subsection.4.4}}
+\backcite {JOR:EG15}{{7}{4.4}{subsection.4.4}}
+\backcite {Fergus09}{{8}{4.4}{subsection.4.4}}
+\backcite {JOR:EG15}{{8}{4.4}{subsection.4.4}}
+\backcite {Dong-ECCV-2014}{{8}{4.4}{subsection.4.4}}
+\backcite {JOR:EG15}{{8}{4.4}{subsection.4.4}}

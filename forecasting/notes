@@ -1,0 +1,212 @@
+questions: 
+
+1. attributes ?
+
+
+e is a \emph{global
+repeating process} and spread across a wide area,
+while outliers (structures) are distributed in a
+different, more isolated way. In addition to
+employ common outlier detection methods, we
+propose a novel method, called ensemble detection
+(ED), to detect the texture outliers
+discriminatively. This is detailed in
+Section~\ref{sec:outlier}.  
+
+The second problem is to adapt texture synthesis
+algorithms to exploit this information. We build
+our work on the neighborhood-matching
+algorithm~\cite{Efros:sig2001}
+due to its simplicity and great adaptability.
+However, any example-based methods can be used.
+The novelty is to adapt the candidate generation
+step of the algorithm to take into account the
+outlierness of pixels in the input texture
+example. To put it another way, adapt the
+method to gather evidence only from areas with low
+outlierness for new texture synthesis. 
+The method is detailed in
+Section~\ref{sec:synthesis}. 
+
+The paper is structured as follows.
+Section~\ref{sec:related} reports on related
+work. Section~\ref{sec:synthesis} is devoted to
+the synthesis method, which is followed by the
+outlier detection method presented
+in Section~\ref{sec:outlier}. 
+In Section~\ref{sec:experiments}, we present
+extensive experiments with discussions. We
+conclude in Section~\ref{sec:conclusion}
+
+
+Although a source texture image 
+
+This is an increased interest in efficient creation of texture images. Although 
+
+example-based texture synthesis
+
+Example-based texture synthesis has received extensive attention, which
+follows the fact that it is easy to use and provides high output
+quality~\cite{WLKT09}.
+%Example-based texture synthesis analyzes a given exemplar to create new, perceptually similar images.
+Although a number of systems have been developed and are able to
+generate new textures
+efficiently~\cite{Efros:sig2001,Kwatra:2003,Lefebvre:2005:sig},
+
+A number of texture synthesis methods are described in the
+literature. One approach is based on searching for specific features
+in textures. In these methods, the input image is decomposed into a
+set of features. Statistics about these features are collected, and
+used to synthesize a new image. While the results can be impresive, it
+is difficult to devise a generic feature set that can be used to
+describe all textures.
+
+
+ While there is a substantial amount of
+previous work on texture synthesis, to the best of our knowledge, we
+are not aware of any methods that can predict the quality before
+synthesis. Being able to predict quality would allove the system to
+determine if the input image can be properly restored or edited. As a
+result, the systems synthesize what is needed.
+
+Using training data, we learn a function that maps low-level features
+of the closest known image regions to the perceived quality of the
+completed results. The low-level features include color, edge density,
+edge orientation, contour length, and region size. Our prediction
+function is learnt and validated from data that we collected in a
+Mechanical Turk user study, where subjects were asked to categorize
+random patches from the completed regions as `good' or `bad'. 
+
+Recall that each missing pixels $i$ is constrained to come from a
+cerntain restriction region, composed as the union of several
+homogeneous segments. Our prediction function learns the correlation
+between the perceived quality of a completed pixel and some low-level
+features of the segments comprising the restriction region.
+
+
+
+The set of all possible images is vast, and yet only a small fraction
+of these are likely to be encountered in a natural setting. 
+
+
+
+two layer problem: first get rid of all images of objects and scenes and icons ... 
+
+second: synthesizable vs unsynthesizable 
+
+
+FIgure one showing the results: iamge -> synthesizable, acceptable, bad. A > B
+C > D. ...
+
+1. suggests it is possible to devise automatic systems to estimate
+these properties directly from images.
+
+2. As opposed to other image properties, there are no previous studies
+that try to quantify individual images in terms of hhow memorable they
+are. This is contrary to many other photographic properties that have
+been addressed in the literature such as photo quality, saliency,
+attractiveness, composition, color harmony, and object importance. 
+
+3. Also there are no databases of photographs calibrated in terms of
+the degree of memorability for each image. 
+
+4. Studying what makes images memorable, and how to predict
+memorability from image information alone, may have many applications,
+including .... selecting an image to decorate a ... 
+
+5. as the predictability of related concepts has been approached successfully in the past, there is good hope that we can computationally predict ... based on the above cues. This assumption is supported by our experiments. 
+
+
+
+
+
+
+
+Colorfulness of this paper and Patch PCA singularity in quality paper 
+Region Composition
+
+
+In spite of the ambiguous deﬁnition of aesthetics, we show in this paper
+that there exist certain visual properties which make photographs, in general,
+more aesthetically beautiful. We tackle the problem computationally and experimentally through a statistical learning approach. This allows us to reduce the
+inﬂuence of exceptions and to identify certain features which are statistically
+signiﬁcant in good quality photographs
+
+
+Here, we take the ﬁrst step in using a computational approach
+to understand what aspects of a photograph appeal to people, from a population
+and statistical standpoint. For this purpose, we aim to build (1) a classiﬁer that
+can qualitatively distinguish between pictures of high and low aesthetic value,
+or (2) a regression model that can quantitatively predict the aesthetics score,
+both approaches relying on low-level visual features only. We deﬁne high or low
+in terms of predeﬁned ranges of aesthetics scores
+
+This may render absolute scores less meaningful.
+
+The possible beneﬁts of
+building a computational aesthetics model can be summarized as follows: If the
+low-level image features alone can tell what range aesthetics ratings the image
+deserves, this can potentially be used by photographers to get a rough estimate
+of their shot composition quality, leading to adjustment in camera parameters or
+shot positioning for improved aesthetics.
+
+For this purpose the
+image is transformed into the LUV space, since in this space locally Euclidean
+distances model the perceived color change well.
+
+We extracted 56 visual features for each image. The feature set was carefully chosen but limited because our goal was mainly to study the trends or
+patterns, if any, that lead to higher or lower aesthetics ratings. If the goal was
+to only build a strong classiﬁer or regression model, it would have made sense
+to generate exhaustive features and apply typical machine-learning techniques
+such as boosting. Without meaningful features it is diﬃcult to make meaningful
+conclusions from the results.
+
+
+
+\textbf{applications} 1: large-scale texture synthesis 2: given an
+image, choose the best synthesizable part to be as a texture example.
+3: as attribute for image recognition.
+
+
+
+
+\textbf{Outline Shape} 
+The outline shape of a surface and its material category are
+often related. For example, fabric and glass surfaces tend
+to have long, curved edges, while metallic surfaces tend to
+have straight edges and sharp corners. The outline shape of
+a surface can be estimated from an edge map. We used the
+Canny edge detector (Canny 1986) to obtain edge maps by
+running the detector on the base images (i.e., the output of
+bilateral filtering) and trimming out the short edges. We used
+MATLAB’s Canny edge detector with the larger threshold set
+to a function of 90 % of luminance gradients and the smaller
+threshold set to 40 % of the larger one. Examples of edge
+maps are shown in Fig. 7c. To characterize the variations
+in the edge maps across material categories, we measured
+the curvature of edges in the edge map as a feature. The
+curvature feature was computed at every third edge point in
+the edge map and at three different scales (2, 8, and 16) as
+shown in Fig. 9a.
+
+
+The Obtain the PixelList property of each line using regionprops
+Compute the difference in location between pixels (gives you an idea
+of how much the line wiggles) Maybe take the mean of this difference
+And weight it with the number of pixels in this segment
+
+
+\textbf{Micro-texture}. 
+cf.~\cite{material:ijcv13}. Two surfaces that have the same BRDF can
+look very dif- ferent if their surface micro-structures are not
+similar (e.g., if one is smooth and the other is rough). Tiny hairs on
+fab- ric surfaces, rounded edges of glass objects, and crinkles in
+leather surfaces add to the distinctive appearances of those
+surfaces. In order to extract information about surface micro-
+structure, we followed the idea of (Bae et al. 2006) of smooth- ing an
+image by bilateral filtering (σs = 5, σr estimated automatically from
+image gradients) (Durand and Dorsey 2002) and then using the residual
+image for further analysis
+
+
+

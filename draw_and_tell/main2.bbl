@@ -1,0 +1,325 @@
+\begin{thebibliography}{10}
+
+\bibitem{deepnet:nips12}
+Krizhevsky, A., Sutskever, I., Hinton, G.E.:
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In: NIPS.
+\newblock (2012)
+
+\bibitem{Decaf:icml2014}
+Donahue, J., Jia, Y., Vinyals, O., Hoffman, J., Zhang, N., Tzeng, E., Darrell,
+  T.:
+\newblock Decaf: A deep convolutional activation feature for generic visual
+  recognition.
+\newblock In: ICML. (2014)
+
+\bibitem{vgg16}
+Simonyan, K., Zisserman, A.:
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock In: ICLR. (2015)
+
+\bibitem{rcnn}
+Girshick, R., Donahue, J., Darrell, T., Malik, J.:
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock In: CVPR. (2014)
+
+\bibitem{Long_2015_CVPR}
+Long, J., Shelhamer, E., Darrell, T.:
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock In: CVPR. (2015)
+
+\bibitem{rcnn_crf}
+Chen, L.C., Papandreou, G., Kokkinos, I., Murphy, K., Yuille, A.L.:
+\newblock Semantic image segmentation with deep convolutional nets and fully
+  connected crfs.
+\newblock In: ICLR. (2015)
+
+\bibitem{open:surface}
+Bell, S., Upchurch, P., Snavely, N., Bala, K.:
+\newblock Opensurfaces: A richly annotated catalog of surface appearance.
+\newblock In: SIGGRAPH. (2013)
+
+\bibitem{whatpoint}
+Bearman, A., Russakovsky, O., Ferrari, V., Fei-Fei, L.:
+\newblock {What's the point: Semantic segmentation with point supervision}.
+\newblock arXiv:1506.02106 (2015)
+
+\bibitem{coco:eccv}
+Lin, T.Y., Maire, M., Belongie, S., Hays, J., Perona, P., Ramanan, D., Dollár,
+  P., Zitnick, C.:
+\newblock Microsoft coco: Common objects in context.
+\newblock In: ECCV. (2014)
+
+\bibitem{scalable:annotation}
+Deng, J., Russakovsky, O., Krause, J., Bernstein, M.S., Berg, A., Fei-Fei, L.:
+\newblock Scalable multi-label annotation.
+\newblock (2014)
+
+\bibitem{crfasrnn}
+Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,
+  Huang, C., Torr, P.:
+\newblock Conditional random fields as recurrent neural networks.
+\newblock In: ICCV. (2015)
+
+\bibitem{weak:seg:xu}
+Xu, J., Schwing, A.G., Urtasun, R.:
+\newblock Learning to segment under various forms of weak supervision.
+\newblock In: CVPR. (2015)
+
+\bibitem{BoxSup}
+Dai, J., He, K., Sun, J.:
+\newblock Boxsup: Exploiting bounding boxes to supervise convolutional networks
+  for semantic segmentation.
+\newblock In: ICCV. (2015)
+
+\bibitem{ConsCNN}
+Pathak, D., Kr\"{a}henb\"{u}hl, P., Darrell, T.:
+\newblock Constrained convolutional neural networks for weakly supervised
+  segmentation.
+\newblock In: ICCV. (2015)
+
+\bibitem{markov:topic}
+Verbeek, J., Triggs, B.:
+\newblock Region classification with markov field aspect models.
+\newblock In: CVPR. (2007)
+
+\bibitem{cnn:em}
+Papandreou, G., Chen, L.C., Murphy, K., Yuille, A.L.:
+\newblock Weakly- and semi-supervised learning of a deep convolutional network
+  for semantic image segmentation.
+\newblock In: ICCV. (2015)
+
+\bibitem{texton:boost}
+Shotton, J., Winn, J., Rother, C., Criminisi, A.:
+\newblock Textonboost for image understanding: Multi-class object recognition
+  and segmentation by jointly modeling texture, layout, and context.
+\newblock IJCV (2009)
+
+\bibitem{fully-crf}
+Kr\"{a}henb\"{u}hl, P., Koltun, V.:
+\newblock Efficient inference in fully connected crfs with gaussian edge
+  potentials.
+\newblock In: NIPS.
+\newblock (2011)
+
+\bibitem{cnn:mil}
+Pathak, D., Shelhamer, E., Long, J., Darrell, T.:
+\newblock Fully convolutional multi-class multiple instance learning.
+\newblock In: ICLR. (2015)
+
+\bibitem{camvid:data}
+Brostow, G.J., Fauqueur, J., Cipolla, R.:
+\newblock Semantic object classes in video: A high-definition ground truth
+  database.
+\newblock Pattern Recognition Letters \textbf{30}(2) (2009)  88--97
+
+\bibitem{NYU}
+Silberman, N., Hoiem, D., Kohli, P., Fergus, R.:
+\newblock Indoor segmentation and support inference from rgbd images.
+\newblock In: ECCV. (2012)
+
+\bibitem{pascal:2011}
+Everingham, M., Van~Gool, L., Williams, C., Winn, J., Zisserman, A.:
+\newblock The pascal visual object classes (voc) challenge.
+\newblock IJCV \textbf{88}(2) (2010)  303--338
+
+\bibitem{pascal:context}
+Mottaghi, R., Chen, X., Liu, X., Cho, N.G., Lee, S.W., Fidler, S., Urtasun, R.,
+  Yuille, A.:
+\newblock The role of context for object detection and semantic segmentation in
+  the wild.
+\newblock In: CVPR. (2014)
+
+\bibitem{label:me}
+Russell, B.C., Torralba, A., Murphy, K.P., Freeman, W.T.:
+\newblock Labelme: A database and web-based tool for image annotation.
+\newblock IJCV \textbf{77}(1-3) (2008)  157--173
+
+\bibitem{AFrameSel}
+Vijayanarasimhan, S., Grauman, K.:
+\newblock Active frame selection for label propagation in videos.
+\newblock In: ECCV.
+\newblock (2012)
+
+\bibitem{expected:loss}
+Vezhnevets, A., Buhmann, J., Ferrari, V.:
+\newblock Active learning for semantic segmentation with expected change.
+\newblock In: CVPR. (2012)
+
+\bibitem{detect:eyetr}
+Papadopoulos, D., Clarke, A., Keller, F., Ferrari, V.:
+\newblock Training object class detectors from eye tracking data.
+\newblock In: ECCV. (2014)
+
+\bibitem{show:tell:caption}
+Vinyals, O., Toshev, A., Bengio, S., Erhan, D.:
+\newblock Show and tell: A neural image caption generator.
+\newblock In: CVPR. (2015)
+
+\bibitem{youtube2text}
+Guadarrama, S., Krishnamoorthy, N., Malkarnenkar, G., Venugopalan, S., Mooney,
+  R., Darrell, T., Saenko, K.:
+\newblock Youtube2text: Recognizing and describing arbitrary activities using
+  semantic hierarchies and zero-shot recognition.
+\newblock In: ICCV. (2013)
+
+\bibitem{fgm:coling14}
+Thomason, J., Venugopalan, S., Guadarrama, S., Saenko, K., Mooney, R.:
+\newblock Integrating language and vision to generate natural language
+  descriptions of videos in the wild.
+\newblock In: COLING. (2015)
+
+\bibitem{deep:alignment:vl}
+Karpathy, A., Fei-Fei, L.:
+\newblock Deep visual-semantic alignments for generating image descriptions.
+\newblock In: CVPR. (2015)
+
+\bibitem{babytalk}
+Kulkarni, G., Premraj, V., Ordonez, V., Dhar, S., Li, S., Choi, Y., Berg, A.C.,
+  Berg, T.L.:
+\newblock Babytalk: Understanding and generating simple image descriptions.
+\newblock PAMI \textbf{35}(12) (2013)  2891--2903
+
+\bibitem{pixel:tone}
+Laput, G.P., Dontcheva, M., Wilensky, G., Chang, W., Agarwala, A., Linder, J.,
+  Adar, E.:
+\newblock Pixeltone: a multimodal interface for image editing.
+\newblock In: CHI. (2013)
+
+\bibitem{image:spirit}
+Cheng, M.M., Zheng, S., Lin, W.Y., Vineet, V., Sturgess, P., Crook, N., Mitra,
+  N.J., Torr, P.:
+\newblock Imagespirit: Verbal guided image parsing.
+\newblock ACM Trans. Graph. \textbf{34}(1) (2014)  3:1--3:11
+
+\bibitem{show:tell}
+Srihari, R., Zhang, Z.:
+\newblock Show\&tell: a semi-automated image annotation system.
+\newblock MultiMedia, IEEE \textbf{7}(3) (2000)  61--71
+
+\bibitem{speech:anno:img}
+Kalashnikov, D., Mehrotra, S., Xu, J., Venkatasubramanian, N.:
+\newblock A semantics-based approach for speech annotation of images.
+\newblock IEEE Trans. Knowl. Data Eng. \textbf{23}(9) (2011)  1373--1387
+
+\bibitem{speech:retri:img}
+Hazen, T.J., Sherry, B., Adler, M.:
+\newblock Speech-based annotation and retrieval of digital photographs.
+\newblock In: INTERSPEECH. (2007)
+
+\bibitem{video:anno:knowledgebase}
+Hoogs, A., Rittscher, J., Stein, G., Schmiederer, J.:
+\newblock Video content annotation using visual analysis and a large semantic
+  knowledgebase.
+\newblock In: CVPR. (2003)
+
+\bibitem{smile}
+:
+\newblock Smile - smart photo annotation.
+\newblock
+  \url{https://play.google.com/store/apps/details?id=com.neuromorphic.retinet.smile}
+  (2015)
+
+\bibitem{geodesic:star}
+Gulshan, V., Rother, C., Criminisi, A., Blake, A., Zisserman, A.:
+\newblock Geodesic star convexity for interactive image segmentation.
+\newblock In: CVPR. (2010)
+
+\bibitem{end-to-end:speech}
+Graves, A., Jaitly, N.:
+\newblock Towards end-to-end speech recognition with recurrent neural networks.
+\newblock In: ICML. (2014)
+
+\bibitem{SR:review}
+Saini, P., Kaur, P.:
+\newblock Automatic speech recognition: A review.
+\newblock IJETT (2013)
+
+\bibitem{lexfree2015}
+Maas, A.L., Xie, Z., Jurafsky, D., Ng, A.Y.:
+\newblock Lexicon-free conversational speech recognition with neural networks.
+\newblock In: Proceedings the North American Chapter of the Association for
+  Computational Linguistics (NAACL). (2015)
+
+\bibitem{edge:box}
+Zitnick, C.L., Doll, P.:
+\newblock {Edge Boxes : Locating Object Proposals from Edges}.
+\newblock In: ECCV. (2014)
+
+\bibitem{webly:cnn}
+Chen, X., Gupta, A.:
+\newblock Webly supervised learning of convolutional networks.
+\newblock In: ICCV. (2015)
+
+\bibitem{imagenet}
+Deng, J., Dong, W., Socher, R., Li, L.J., Li, K., Fei-Fei, L.:
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In: CVPR. (2009)
+
+\bibitem{sphinx}
+:
+\newblock Cmu sphinx.
+\newblock \url{http://cmusphinx.sourceforge.net/}
+
+\bibitem{sphinx:webtrain}
+:
+\newblock Cmu sphinx.
+\newblock \url{http://www.speech.cs.cmu.edu/tools/lmtool-new.html}
+
+\bibitem{semantic:contour}
+Hariharan, B., Arbel{\'a}ez, P., Bourdev, L., Maji, S., Malik, J.:
+\newblock Semantic contours from inverse detectors.
+\newblock In: ICCV. (2011)
+
+\bibitem{best:two:world}
+Russakovsky, O., Li, L.J., Fei-Fei, L.:
+\newblock Best of both worlds: human-machine collaboration for object
+  annotation.
+\newblock In: CVPR. (2015)
+
+\bibitem{annotation:strength}
+Dutt~Jain, S., Grauman, K.:
+\newblock Predicting sufficient annotation strength for interactive foreground
+  segmentation.
+\newblock In: ICCV. (2013)
+
+\bibitem{edge:srf}
+Doll{\'a}r, P., Zitnick, C.L.:
+\newblock Structured forests for fast edge detection.
+\newblock In: ICCV. (2013)
+
+\bibitem{imageNet:challenge}
+Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z.,
+  Karpathy, A., Khosla, A., Bernstein, M., Berg, A., Fei-Fei, L.:
+\newblock Imagenet large scale visual recognition challenge.
+\newblock IJCV (2015)  1--42
+
+\bibitem{Caffe}
+Jia, Y., Shelhamer, E., Donahue, J., Karayev, S., Long, J., Girshick, R.,
+  Guadarrama, S., Darrell, T.:
+\newblock Caffe: Convolutional architecture for fast feature embedding.
+\newblock In: ACM International Conference on Multimedia. (2014)
+
+\bibitem{img:pix:cnn}
+Pinheiro, P.H.O., Collobert, R.:
+\newblock From image-level to pixel-level labeling with convolutional networks.
+\newblock In: CVPR. (2015)
+
+\bibitem{SDS}
+Hariharan, B., Arbeláez, P., Girshick, R., Malik, J.:
+\newblock Simultaneous detection and segmentation.
+\newblock In: ECCV.
+\newblock (2014)
+
+\bibitem{zoomout:fet}
+Mostajabi, M., Yadollahpour, P., Shakhnarovich, G.:
+\newblock Feedforward semantic segmentation with zoom-out features.
+\newblock In: CVPR. (2015)
+
+\bibitem{MCG}
+Arbelaez, P., Pont-Tuset, J., Barron, J., Marques, F., Malik, J.:
+\newblock Multiscale combinatorial grouping.
+\newblock In: CVPR. (2014)
+
+\end{thebibliography}

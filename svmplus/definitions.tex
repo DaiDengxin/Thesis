@@ -1,0 +1,57 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Lin Chen
+% Email: gggchelin@gmail.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{amsmath}
+\usepackage{etoolbox}
+\usepackage{bm}
+\usepackage{amsthm}%liwen
+\usepackage{mathtools}%liwen
+\usepackage{algorithm}%liwen
+\usepackage{algorithmic}%liwen
+\usepackage{subfigure}%liwen
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+\newtheorem{deftn}{Definition}
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{remark}{Remark}
+
+\newcommand{\MyMapTemplatePrefixc}[4]{\expandafter#1\csname#3#4\endcsname{#2{#4}}} % it remembles a template: \#3#4 --> #2{#4}
+\forcsvlist{\MyMapTemplatePrefixc {\def} {\mathcal}{c}} {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}  % e.g., \cA --> \mathcal{A}
+
+\newcommand{\MyMapTemplatePrefixtb}[5]{\expandafter#1\csname#4#5\endcsname{#2{#3{#5}}}} % it remembles a template: \#3#4 --> #2{#4}
+\forcsvlist{\MyMapTemplatePrefixtb {\def} {\tilde}{\mathbf}{t}} {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}  % e.g., \tA --> \tilde{A}
+\forcsvlist{\MyMapTemplatePrefixtb {\def} {\tilde}{\mathbf}{t}} {0,1,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,s,u,v,w,x,y,z}  % e.g., \ta --> \tilde{a}
+
+\newcommand{\MyMapTemplateNoPrefix}[3]{\expandafter#1\csname#3\endcsname{#2{#3}}}
+\forcsvlist{\MyMapTemplateNoPrefix {\def} {\mathbf} } {0,1,a,b,c,d,e, f, g, h, i, j, k, l, m, n, o, p, q, r, u, v, w, x, y, z} % e.g., \a --> \mathbf{a}
+\forcsvlist{\MyMapTemplateNoPrefix {\def} {\mathbf} } {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}  % e.g., \A --> \mathcal{A}
+
+\def\ba{\bm{\alpha}}
+\def\bb{\bm{\beta}}
+\def\bd{\bm{\delta}}
+\def\bz{\bm{\zeta}}
+
+\def\bP{\bm{\Phi}}
+\def\bQ{\bm{\Psi}}
+\def\bS{\bm{\Sigma}}
+
+\def\bbR{{\mathbb R}}
+
+\def\tr{\mbox{tr}}
+
+\def\etal{\emph{et al.}\@\xspace}
+\def\ie{\emph{i.e.}\@\xspace}
+\def\eg{\emph{e.g.}\@\xspace}
+\def\resp{\emph{resp.}\@\xspace}
+\def\wrt{\emph{w.r.t.}\@\xspace}
+
+\def\casmo{gSMO\@\xspace}
+\def\cvx{CVX-SVM+\@\xspace}
+\def\matlab{MAT-SVM+\@\xspace}
+\def\ourlinear{Ours\@\xspace}

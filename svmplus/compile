@@ -1,0 +1,4 @@
+pdflatex FastSVMplus
+bibtex FastSVMplus
+pdflatex FastSVMplus
+pdflatex FastSVMplus

@@ -1,0 +1,100 @@
+\chapter{Related Work} 
+\label{ch:relatedwork} 
+
+The community has made great efforts in reducing the annotation cost and computational cost of vision algorithms by using a diverse set of techniques. There is also a large body of literature working towards self-aware vision algorithms.  This section summarizes the  related topics in a broad context.  Related work to each of our specific work is discussed in the corresponding chapter.  
+
+\section{Reducing Annotation Cost}
+
+Datasets play a critical role in computer
+vision. They qualitatively `define' the learning tasks and guide
+research directions, which has been proved multiple times in the history of computer vision~\citep{flow:dataset, pascal:2011, imagenet}.
+ We limit ourselves to annotations for object recognition. 
+ Training annotations for object recognition often come as bounding boxes or full segmentation masks
+(c.f. Fig.\ref{ch2:fig:1}). The most popular ones fall into this
+category: CamVid~\citep{camvid:data} and Cityscapes~\citep{cityscapes} for urban scenes,
+NYU~\citep{NYU} for indoor scenes, PASCAL~\citep{pascal:2011} and
+COCO~\citep{coco:eccv} for general objects, and
+PASCAL-Context~\citep{pascal:context} for objects in context.  Creating
+datasets for object recognition is very expensive even with excellent annotation
+tools~\citep{open:surface, label:me}. As a result, methods were
+proposed to reduce the cost.  For instance, \citep{scalable:annotation,
+  coco:eccv} exploit the hierarchical structures of object classes to
+reduce annotation space. Other popular techniques can be roughly grouped into the following categories (with overlaps).  
+
+
+\textbf{Weakly Supervised Learning}  \\
+As stated, visual annotation is time-consuming.  Many works have developed algorithms to learn from weakly annotated training data. The following are the outstanding examples. \citep{cvpr12:weak:video} learns object detectors from weakly labeled videos. \citep{cnn:mil, cnn:em} trains convolutional neural networks for semantic image segmentation with image-level annotations.   \citep{khoreva16cvpr} trains boundary detector with bounding-box annotations.  \citep{weak:deep:detection} trains object detectors with the training data of image classification. 
+This stream of work proves that with careful design of algorithms, weak supervision is able to yield quite competitive performance as the full supervision.  Weak supervision consumes far less effort, which makes the training more affordable. Recent datasets such as Cityscapes~\citep{cityscapes}  start providing annotations of different quality. In the  same vein, our work in Chapter~\ref{ch:draw-and-tell} tries to learn from weak supervision for semantic image segmentation. 
+ 
+\textbf{Transfer Learning}  \\
+Transfer learning is to transfer knowledge learned from one task to another task, or from one domain to another domain, when training data is scarce for the latter scenario. 
+ Successful applications in vision include knowledge transfer from videos to images~\citep{tl:kernel:11, DA:iccv11,
+  DASA:iccv13}, knowledge transfer from known classes to unseen
+classes~\citep{tl:attribute:09},  supervision transfer \citep{SuTransfer}  from annotated RGB images to other data modalities such
+ as depth and flow, and supervision transfer \citep{lsda}  from classification task to detection task. 
+Transfer learning has gained great success recently in object recognition and has become the standard procedure in training (fine-tuning) deep neural networks~\citep{rcnn, Long_2015_CVPR}. It successfully lifts the requirement of large training set for the task at hand, and considerably reduces the training time.  
+Our work in Chapter~\ref{ch:mi} can be considered as a special case of transfer learning by transferring learned manifold from one domain to another. 
+  
+\textbf{Semi-supervised Learning}  \\
+Semi-supervised learning (SSL) aims at enhancing the
+performance of recognition systems  by exploiting an additional set of
+unlabeled data. SSL is especially helpful when the labeled training data is limited. 
+Due to its great practical value, SSL has a rich
+literature~\citep{book06:ssl, Zhu:ISL:2009}.  The research in this vein can be classified into 
+four groups based on their underlying techniques:  
+(1) Self-training scheme \citep{co-training:98, Guillaumin:cvpr:10, Semi:eccv12}, where the system iterates between training
+recognition models with current `labeled' training data and augmenting
+the training set by adding its highly confident predictions in the set
+of unlabeled data; (2)  Label propagation~\citep{Zhu:Harmonic:03, Zhou:nips:04, Belkin:semiframe:2006, Fergus09, Ebert2013}, where a graph is defined with nodes representing data examples and edges reflecting their
+similarities, and label information propagates over the graph; (3) Classifier regularization \citep{Joachims:1999, SemiSVM, SemiForest, deep:ssl}, by enforcing the boundaries to pass through regions with a low density of data samples.
+Our work in Chapter~\ref{ch:ensemble} bases on the assumption of manifold smoothness to learn a new feature representation, and shows pleasant performance on semi-supervised image classification.  
+ 
+\textbf{Active Learning \& Human in the Loop}  \\
+Active learning or recently Human in the Loop lets human and the computer work collectively to train good vision algorithms.  Smart policy needs to be designed or learned in order to take full advantage of machine systems and to minimize the human effort  to machine's uncertainties.  The policy varies significantly from task to task: from suggesting the most informative samples to annotate~\citep{AFrameSel, SIEAL}, to how many object to display~\citep{yao2012interactive}, and to what questions to ask~\citep{best:two:world, donot:bbox}. The great success of this technique in computer vision is evidenced by the large amount of academic publications, mainly on image recognition~\citep{joshi2009multi, visual:human:loop, ALdataset}, semantic image segmentation~\citep{expected:loss},  and object detection~\citep{best:two:world, donot:bbox}. 
+
+\textbf{Supervision from Multimodal Data \& Web Data}   \\
+In addition to human annotated training data, other sources of supervision have been exploited to train vision algorithms as well, such as text from web pages or newspapers~\citep{name:face:news, gupta2008beyond}, eye-tracking data~\citep{detect:eyetr}.
+Webly-supervised learning~\citep{neil, web:cnn, everything:anything} has gained extensive attention in the recent years, where visual recognizer is trained automatically by the images returned by image search engines such as Google, Flickers, and Bing. These works show the great potentials of scaling visual recognition to billion-sized scale, without using human annotations. 
+
+
+
+\textbf{Unsupervised Feature Learning}   \\
+Another group of work in the spirit of learning with limited annotations aims to learn middle- or high-level image
+representation in an unsupervised manner. The supervision often comes from intelligent exploration of prior knowledge or common sense knowledge.  For instance \citep{stl-10, cnnfet14}  generates surrogate classes by clustering or performing transformation to local patches, \citep{feature:context} employees the spatial relationships of 
+image windows in an image, \citep{feature:video} exploits 
+the tracking results of objects in videos, and \citep{learning:by:moving}  leverages the ego-motion of cameras.    
+These systems are all able to learn good feature representations without using human annotations.  
+Our work in Chapter~\ref{ch:ensemble} learns new feature representations by exploiting the assumption of manifold smoothness from unlabeled data, which is similar to \citep{stl-10, cnnfet14}. 
+ 
+
+\section{Reducing Computational Cost} 
+In addition to reducing annotation cost, we also investigate how to reduce the computational cost of vision algorithms. There are numerous great techniques towards efficient vision algorithms, especially those targeted for mobile and robotic applications.  A complete overview of the topic is beyond the scope of this thesis, so we  only summarize a  group that is mostly related to our work Metric Imitation in Chapter~\ref{ch:mi}. 
+%\subsection{Approximated Solutions}
+
+\textbf{Model Compression, Imitation and Distillation} \\
+Often, we are faced with a dilemma where the best performing model is too slow and too large, and the efficient alternatives are not as accurate. This is exactly the place where model compression \citep{model:compression} comes into play.  Model compression is often given other names such as distillation or imitation~\citep{DistillingCNN, romero2014fitnets, policy:distilling}. The high-level idea is to learn a fast and compact model to approximate or imitate the functional behaviors  of a better-performing model which is slow to run. 
+\citep{model:compression} successfully compresses ensemble classifiers `into' a compact neural network, and ~\citep{DistillingCNN, romero2014fitnets, policy:distilling} distills the knowledge learned by a deeper or wider neural networks into a lighter neural networks. 
+\citep{deepfilters} proves that it is also possible to imitate the effects of edge-aware filters designed with domain knowledge by an efficient convolutional neural network.  The results of these works suggest that models of different complexity are needed for learning and evaluation if efficiency is concerned.  Complex models are required to extract knowledge form noisy observations; Compact models then distill the learned knowledge from the trained complex models for efficient evaluation. Our work Metric Imitation shares the spirit.   
+
+
+\section{Self-aware Vision Algorithms}
+\textbf{Predicting Model Confidence, Uncertainty or Failure}  \\
+Performance-blind vision algorithms can be disastrous, as they can fail saliently without even throwing a warning. 
+As such, this research topic is increasingly gaining more attention, though not very popular yet. Notable examples of learning model uncertainty or confidence include      
+\citep{kendall2015bayesian} for semantic image segmentation, \citep{confidence:of:08, flow:confidence}  for  optical flow,  \citep{completion:quality} for image completion,  \citep{matchability} for patch matching, \citep{stereo:confidence} for stereo, and \citep{zhang2014predicting} for multiple applications such as vanishing line estimation and memorability.  Our work texture synthesizability (Chapter~\ref{ch:forecasting}) enriches this repository by adding another example texture synthesis. 
+Performance-aware algorithms carry other benefits as well. For instance, it can speed up down-streamed algorithms by adaptively allocating computing resource based on the complexity of image samples.  Cascading~\citep{cascaded:01, felzenszwalb2010cascade} and active inference~\citep{liu2015multiclass} serve as standing examples. 
+
+%\textbf{Scale-aware Vision Algorithms}   \\
+%Our work also bear a resemblance to the scale-aware algorithms for other vision tasks. 
+%For instance, estimating the scale information has proven helpful for semantic image segmentation~\citep{chen2015attention} and 
+%pedestrain detection~\citep{li2015scale}. \citep{SR4VTs:wacv16} show that 
+%vision algorithms employing super-resolved images (higher-resolution) perform better than using low-resolution images directly.  
+%Other scale-aware applications include object tracking~\citep{Klodt2013} and image thumbnailling~\citep{Sun2013}.     
+%   
+
+\textbf{The Usefulness of Task X for Task Y}  \\
+Computer vision is a very challgening task, and research has to be conducted in many sub-fields. These sub-fields are intertwined intrinsically, and should benefit from each other in principle. However, this does not always happen in practice, because building a system of one task on top of  another task introduces extra modes of errors as well. Thus, it is necessary for the community to regularly evaluate whether sub-field X has advanced to a level that sub-field Y can generally benefit from it if integrated.   
+Excellent research has been continuously done in this direction. For instance,  \citep{hoiem2008putting} proves that surface orientation estimation is already good enough to be helpful in guiding object detection;
+\citep{eth_biwi_00883} confirms that pose estimation is able to help action recognition; \citep{15000object} analyzes how object detection helps action recognition when the state-of-the-art detectors run over 15000 object classes;   
+\citep{martinovic20153d} shows that  3D reconstruction of regular buildings is already accurate enough to perform object recognition directly on it. Our work in Chapter~\ref{ch:SR4VT} consolidates that image super-resolution by state-of-the-art approaches is helpful for general vision tasks. 
+ 

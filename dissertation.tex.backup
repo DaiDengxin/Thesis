@@ -1,0 +1,127 @@
+\documentclass[a4paper,12pt,oneside]{biwidiss}
+%\documentclass[a5paper,10pt,twoside,modern,Afive]{biwidiss}
+\input{packages}
+\input{defines}
+
+%-----------------------------------------------------------------------------------
+% Thesis info
+%-----------------------------------------------------------------------------------
+\dissNo{XXXX}
+\title{\bfseries Towards Reducing Annotation and Computational Budget of Vision Algorithms}
+\degreeETH{\hspace{4mm} Doctor of Sciences (Dr. sc. ETH Z\"urich)}
+\author{\hspace{4mm}{\bfseries Dengxin Dai}\\
+        \hspace{4mm} Dipl.-Ing. Elektrotechnik und Informationstechnik\\
+        \hspace{4mm} born November 15, 1986\\
+        \hspace{4mm} citizen of China
+        }
+\examiners{\hspace{4mm} Prof. Luc Van Gool, examiner \\
+       \hspace{4mm} Prof. aaa , co-examiner \\
+	   \hspace{4mm} Prof. bbb, co-examiner }
+
+\date{2013}
+
+\hypersetup{
+  pdftitle = {Reducing },
+  pdfsubject = {Doctoral Thesis},
+  pdfkeywords = {atherosclerosis, plaque, CT},
+  pdfauthor = {Dengxin Dai}
+}
+
+\begin{document}
+%-----------------------------------------------------------------------------------
+% Title
+%-----------------------------------------------------------------------------------
+\maketitle
+\cleardoublepage
+\pagenumbering{roman}
+
+%-----------------------------------------------------------------------------------
+% Dedication
+%-----------------------------------------------------------------------------------
+\selectlanguage{english}
+\begin{dedication}
+Dedication goes here...
+\end{dedication}
+\newpage
+
+%-----------------------------------------------------------------------------------
+% Abstracts
+%-----------------------------------------------------------------------------------
+
+\selectlanguage{english}
+\include{abstract}
+
+\selectlanguage{german}
+\include{zusammenfassung}
+
+%-----------------------------------------------------------------------------------
+% Acknowledgements
+%-----------------------------------------------------------------------------------
+\selectlanguage{english}
+\include{acknowledgements}
+
+%-----------------------------------------------------------------------------------
+% Table of contents
+%-----------------------------------------------------------------------------------
+{\sffamily
+\tableofcontents
+}
+
+%-----------------------------------------------------------------------------------
+% List of figures
+%-----------------------------------------------------------------------------------
+{\sffamily
+\listoffigures
+}
+
+%-----------------------------------------------------------------------------------
+% List of tables
+%-----------------------------------------------------------------------------------
+{\sffamily
+\listoftables
+}
+
+%-----------------------------------------------------------------------------------
+% Main text
+%-----------------------------------------------------------------------------------
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+\input{introduction}
+\input{./draw_and_tell/draw_and_tell}
+\input{./SR/SR}
+\input{./by_example/by_example}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\appendix
+%-----------------------------------------------------------------------------------
+%\chapter{appendixA}
+%\label{appendixA}
+%\chapter{appendixB}
+%\label{appendixB}
+
+%-----------------------------------------------------------------------------------
+% Bibliography
+%-----------------------------------------------------------------------------------
+\bibliographystyle{apa-good}
+%\bibliographystyle{named-nocomma-shortname}
+\bibliography{thesis}
+
+%-------------------------------------------------------------------------------
+%% List of publications
+%-------------------------------------------------------------------------------
+\normalsize
+\newpage
+\include{publications}
+
+%-----------------------------------------------------------------------------------
+%% Curriculum Vitae
+%-----------------------------------------------------------------------------------
+\normalsize
+\newpage
+\include{cv}
+
+\end{document}

@@ -1,0 +1,134 @@
+\documentclass[a4paper,12pt,oneside]{biwidiss}
+%\documentclass[a5paper,10pt,twoside,modern,Afive]{biwidiss}
+\input{packages}
+\input{defines}
+
+%-----------------------------------------------------------------------------------
+% Thesis info
+%-----------------------------------------------------------------------------------
+\dissNo{XXXX}
+\title{\bfseries  Towards Cost-Effective and Performance-Aware Vision Algorithms  }
+%\title{\bfseries Towards Reducing the Annotation and Computational Cost of Computer Vision}
+\degreeETH{\hspace{4mm} Doctor of Science  (Dr. sc. ETH Z\"urich)}
+\author{\hspace{4mm}{\bfseries Dengxin Dai}\\
+        \hspace{4mm} Master of Science \\
+        \hspace{4mm} born November 15, 1986\\
+        \hspace{4mm} citizen of China
+        }
+\examiners{\hspace{4mm} Prof. Dr. Luc Van Gool, examiner \\
+      % \hspace{4mm} Prof. aaa , co-examiner \\
+	   \hspace{4mm} Prof. Dr. Bernt Schiele, co-examiner }
+
+\date{2016}
+
+\hypersetup{
+  pdftitle = {Cost-Effective Vision},
+  pdfsubject = {Doctoral Thesis},
+  pdfkeywords = {Limited Supervision, Limited Computational Power},
+  pdfauthor = {Dengxin Dai}
+}
+
+\begin{document}
+%-----------------------------------------------------------------------------------
+% Title
+%-----------------------------------------------------------------------------------
+\maketitle
+\cleardoublepage
+\pagenumbering{roman}
+
+%-----------------------------------------------------------------------------------
+% Dedication
+%-----------------------------------------------------------------------------------
+\selectlanguage{english}
+\begin{dedication}
+Dedication goes here...
+\end{dedication}
+\newpage
+
+%-----------------------------------------------------------------------------------
+% Abstracts
+%-----------------------------------------------------------------------------------
+
+\selectlanguage{english}
+\include{abstract}
+
+\selectlanguage{german}
+\include{zusammenfassung}
+
+%-----------------------------------------------------------------------------------
+% Acknowledgements
+%-----------------------------------------------------------------------------------
+\selectlanguage{english}
+\include{acknowledgements}
+
+%-----------------------------------------------------------------------------------
+% Table of contents
+%-----------------------------------------------------------------------------------
+{\sffamily
+\tableofcontents
+}
+
+%-----------------------------------------------------------------------------------
+% List of figures
+%-----------------------------------------------------------------------------------
+% {\sffamily
+% \listoffigures
+% }
+
+%-----------------------------------------------------------------------------------
+% List of tables
+%-----------------------------------------------------------------------------------
+% {\sffamily
+% \listoftables
+% }
+
+%-----------------------------------------------------------------------------------
+% Main text
+%-----------------------------------------------------------------------------------
+
+\cleardoublepage
+\pagenumbering{arabic}
+
+\input{introduction}
+\input{relatedwork}
+\input{./draw_and_tell/draw_and_tell}
+\input{./ensemble/ensemble}
+%\input{./svmplus/svmplus}
+%\input{./MI/MI}
+%\input{./forecasting/forecasting}
+%\input{./scale-aware/scale-aware}
+%\input{./SR4VT/SR4VT}
+
+\input{conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\appendix
+%-----------------------------------------------------------------------------------
+%\chapter{appendixA}
+%\label{appendixA}
+%\chapter{appendixB}
+%\label{appendixB}
+
+%-----------------------------------------------------------------------------------
+% Bibliography
+%-----------------------------------------------------------------------------------
+\bibliographystyle{apa-good}
+%\bibliographystyle{named-nocomma-shortname}
+\bibliography{thesis}
+
+%-------------------------------------------------------------------------------
+%% List of publications
+%-------------------------------------------------------------------------------
+\normalsize
+\newpage
+\include{publications}
+
+%-----------------------------------------------------------------------------------
+%% Curriculum Vitae
+%-----------------------------------------------------------------------------------
+\normalsize
+\newpage
+\include{cv}
+
+\end{document}

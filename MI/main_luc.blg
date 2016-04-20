@@ -1,0 +1,76 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main_luc.aux
+The style file: ieee.bst
+Database file #1: egbib.bib
+Warning--string name "iccv" is undefined
+--line 1037 of file egbib.bib
+Repeated entry---line 3534 of file egbib.bib
+ : @inproceedings{Dong-ECCV-2014
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3547 of file egbib.bib
+ : @inproceedings{Timofte-ICCV-2013
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3574 of file egbib.bib
+ : @article{Freeman-CGA-2002
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 3655 of file egbib.bib
+ : @article{Chang-CVPR-2004
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 4069 of file egbib.bib
+ : @article{Freeman-CGA-2002
+ :                          ,
+I'm skipping whatever remains of this entry
+Name 2 in "Dengxin Dai and Radu Timofte, and Luc {Van Gool}" has a comma at the end for entry JOR:EG15
+while executing---line 1073 of file ieee.bst
+Warning--empty publisher in MDScaling:08
+Name 2 in "Dengxin Dai and Radu Timofte, and Luc {Van Gool}" has a comma at the end for entry JOR:EG15
+while executing---line 1116 of file ieee.bst
+Warning--empty publisher in deepnet:nips12
+Warning--empty booktitle in event8
+You've used 53 entries,
+            2120 wiz_defined-function locations,
+            745 strings with 11081 characters,
+and the built_in function-call counts, 17235 in all, are:
+= -- 1529
+> -- 978
+< -- 1
++ -- 383
+- -- 328
+* -- 1163
+:= -- 2915
+add.period$ -- 161
+call.type$ -- 53
+change.case$ -- 323
+chr.to.int$ -- 0
+cite$ -- 56
+duplicate$ -- 695
+empty$ -- 1453
+format.name$ -- 328
+if$ -- 3583
+int.to.chr$ -- 0
+int.to.str$ -- 53
+missing$ -- 53
+newline$ -- 268
+num.names$ -- 106
+pop$ -- 433
+preamble$ -- 1
+purify$ -- 270
+quote$ -- 0
+skip$ -- 395
+stack$ -- 0
+substring$ -- 663
+swap$ -- 94
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 212
+warning$ -- 3
+while$ -- 131
+width$ -- 55
+write$ -- 548
+(There were 7 error messages)

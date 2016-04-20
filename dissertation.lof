@@ -1,0 +1,37 @@
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {german}
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A comparison of our annotation (d) to other forms of annotations for semantic segmentation, ranging from (b) full segmentation masks, to (c) bounding boxes, to (e) single points, and to (f) image-level keywords. The devices to obtain these annotations are shown as well: others only use the mouse (+keyboard), while ours also uses voice input through a microphone. }}{5}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The framework of the standard fully convolutional network (FCN)~\citep {Long_2015_CVPR} and our heatmap-based FCN.}}{5}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of scribble augmentation with corresponding heatmaps: (a) annotated scribbles; (b) the heatmap of the dog with the scribbles in (a); (c) augmented scribbles for the background; (d) the heatmap of the dog with the scribbles in (c); (e) the final heatmap of the dog by averaging $T$ heatmaps (such as (d)) with different augmented scribbles.}}{11}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Probability map for sampling the next new scribble (~\emph {c.f.}~Eq.\ref {eq:sampling}).}}{13}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Examples of the segmentation results on the validation set of PASCAL VOC 2012.}}{17}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Annotation vs. segmentation performance (mIoU) of all the methods considered. Evaluated on PASCAL VOC 2012 test.}}{18}{figure.2.6}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces The pipeline of Ensemble Projection (EP). EP consists of unsupervised feature learning (left panel) and plain classification or clustering (right panel). For feature learning, EP samples an ensemble of $T$ diverse prototype sets from all known images and learns discriminative classifiers on them for the projection functions. Images are then projected using these functions to obtain their new representation. These features are fed into standard classifiers and clustering methods for image classification and clustering respectively.}}{20}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The label co-occurrence probability $p(k)$: frequency of images having the same label with their $k_{th}$ neighbors. Results on six datasets are shown. The number of classes and the number of images of the datasets are shown as well. }}{25}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Classification accuracy of ensemble learning on the the Scene-15 dataset~\citep {lazebnik:cvpr06} and the Event-8 dataset~\citep {event-8}, for varying training label noise $R$ and varying number of training trials $T$. Experiments on other datasets obtain the same trend. Ensemble learning is able to cancell out the deficiency of the training sets even it is very severe (e.g. $R=80\%$), given that the deficiency modes are different or `orthogonal' and the number of training sets are sufficiently large. The figure is best viewed in color.}}{26}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Classification results of Ensemble Projection (EP) on the eight datasets, where three classifiers are used: $k$-NN, Logistic Regression, and SVMs with RBF kernels. All methods were tested with two feature inputs: the original deep feature and the learned feature by EP on top of it (indicated by ``+ EP"). }}{32}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Classification results of Ensemble Projection (EP) on the eight datasets, where three classifiers are used: $k$-NN, Logistic Regression, and SVMs with RBF kernels. All methods were tested with two feature inputs: the original deep feature and the learned feature by EP on top of it (indicated by ``+ EP"). }}{32}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Performance of EP as a function its parameters $T$, $r$, $n$, and $m$, where LR is employed with $5$ labeled training images per class.}}{35}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Comparison of our learned feature to the CNN feature~\cite {deep:bmvc14}, with different LR models.}}{36}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Self-taught classification results on dataset STL-10, where EP is learned from the unlabeled images. The classifiers were tested with deep features, and our learned feature from it (indicated by ``+ EP").}}{37}{figure.3.8}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Examples with an upscaling factor $\times 4$. Best seen on the screen. Images are obtained from the Internet.}}{53}{figure.4.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Synthesizability of texture examples detected by our system. The values are in $[0, 1]$ and a higher value means the example is easier to synthesize. All images are of $300\times 300$ pixels.}}{65}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Three texture examples from our dataset with their annotations of synthesizability. Top: texture exemplars; bottom: synthesized textures. }}{66}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The homogeneity of texture examples detected by our method. Images are all of $300 \times 300$ pixels.}}{67}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces The repetitiveness of texture examples detected by our method. Images are all of $300 \times 300$ pixels. }}{68}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces The irregularity of texture examples captured by Ensemble Composition. Images are all of $300 \times 300$ pixels.}}{69}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Synthesizability scores of texture examples and the `best' synthesized textures by ETS methods. Top: exemplar; bottom: synthesized. }}{70}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces The synthesized results of two texture examples by our suggested method and a randomly chosen method.}}{71}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces The average precision of synthesizability prediction for different levels of recall, when all features are used. }}{72}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Failure cases: the top shows false positives and the bottom false negatives. Exemplars are of $300 \times 300$ pixels.}}{72}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Synthesizability for different scales of the same texture. }}{73}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces The most synthesizable region as detected. The synthesizability of the whole images (IS) vs. the selected region (RS) are given.}}{73}{figure.5.11}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Synthesis results for the images on the left, starting from the entire image (IS; mid column) vs. from the selected region (RS; right column).}}{73}{figure.5.12}

@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: ieee.bst
+Database file #1: egbib.bib
+Repeated entry---line 1446 of file egbib.bib
+ : @inproceedings{WLKT09
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1510 of file egbib.bib
+ : @inproceedings{Efros:sig2001
+ :                             ,
+I'm skipping whatever remains of this entry
+Warning--there's a number but no volume in lockerman2013arxiv
+Warning--empty publisher in image:quality
+You've used 40 entries,
+            2120 wiz_defined-function locations,
+            709 strings with 8771 characters,
+and the built_in function-call counts, 12856 in all, are:
+= -- 1176
+> -- 672
+< -- 1
++ -- 267
+- -- 222
+* -- 901
+:= -- 2175
+add.period$ -- 121
+call.type$ -- 40
+change.case$ -- 231
+chr.to.int$ -- 0
+cite$ -- 42
+duplicate$ -- 503
+empty$ -- 1074
+format.name$ -- 222
+if$ -- 2672
+int.to.chr$ -- 0
+int.to.str$ -- 40
+missing$ -- 40
+newline$ -- 203
+num.names$ -- 80
+pop$ -- 268
+preamble$ -- 1
+purify$ -- 191
+quote$ -- 0
+skip$ -- 306
+stack$ -- 0
+substring$ -- 608
+swap$ -- 67
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 160
+warning$ -- 2
+while$ -- 105
+width$ -- 42
+write$ -- 423
+(There were 2 error messages)

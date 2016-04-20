@@ -1,0 +1,341 @@
+\begin{thebibliography}{76}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{DOI~\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{DOI~\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Bos(????)}]{Bosch:iccv07}
+ (????)
+
+\bibitem[{Belkin et~al(2006)Belkin, Niyogi, and
+  Sindhwani}]{Belkin:semiframe:2006}
+Belkin M, Niyogi P, Sindhwani V (2006) Manifold regularization: A geometric
+  framework for learning from labeled and unlabeled examples. JMLR
+  7(36):2399--2434
+
+\bibitem[{Bennett and Demiriz(1998)}]{SemiSVM}
+Bennett KP, Demiriz A (1998) Semi-supervised support vector machines. In: NIPS
+
+\bibitem[{Blum and Mitchell(1998)}]{co-training:98}
+Blum A, Mitchell T (1998) Combining labeled and unlabeled data with
+  co-training. In: Proceedings of the Eleventh Annual Conference on
+  Computational Learning Theory, COLT' 98, pp 92--100
+
+\bibitem[{Boiman et~al(2008)Boiman, Shechtman, and Irani}]{Boiman_CVPR_2008}
+Boiman O, Shechtman E, Irani M (2008) In defense of nearest-neighbor based
+  image classification. In: CVPR
+
+\bibitem[{Chang and Lin(2011)}]{libsvm}
+Chang CC, Lin CJ (2011) {LIBSVM}: A library for support vector machines. ACM
+  Transactions on Intelligent Systems and Technology 2:1--27
+
+\bibitem[{Chapelle et~al(2006)Chapelle, Sch{\"o}lkopf, and Zien}]{book06:ssl}
+Chapelle O, Sch{\"o}lkopf B, Zien A (eds)  (2006) Semi-Supervised Learning. MIT
+  Press, Cambridge, MA
+
+\bibitem[{Chatfield et~al(2014)Chatfield, Simonyan, Vedaldi, and
+  Zisserman}]{deep:bmvc14}
+Chatfield K, Simonyan K, Vedaldi A, Zisserman A (2014) Return of the devil in
+  the details: Delving deep into convolutional nets. In: British Machine Vision
+  Conference
+
+\bibitem[{Chen et~al(2011)Chen, Song, Bai, Lin, and Chang}]{parallel:sc}
+Chen WY, Song Y, Bai H, Lin CJ, Chang E (2011) Parallel spectral clustering in
+  distributed systems. Pattern Analysis and Machine Intelligence, IEEE
+  Transactions on 33(3):568--586
+
+\bibitem[{Coates et~al(2011)Coates, Ng, and Lee}]{stl-10}
+Coates A, Ng AY, Lee H (2011) An analysis of single-layer networks in
+  unsupervised feature learning. In: International Conference on Artificial
+  Intelligence and Statistics
+
+\bibitem[{Dai and {Van Gool}(2013)}]{dai:iccv13b}
+Dai D, {Van Gool} L (2013) Ensemble projection for semi-supervised image
+  classification. In: ICCV
+
+\bibitem[{Dai et~al(2010)Dai, Wu, and Zhu}]{dai}
+Dai D, Wu T, Zhu SC (2010) Discovering scene categories by information
+  projection and cluster sampling. In: CVPR
+
+\bibitem[{Dai et~al(2012)Dai, Prasad, Leistner, and Gool}]{dai:eccv12b}
+Dai D, Prasad M, Leistner C, Gool LV (2012) Ensemble partitioning for
+  unsupervised image categorization. In: ECCV
+
+\bibitem[{Dai et~al(2015)Dai, Kroeger, Timofte, and {Van
+  Gool}}]{metric:imitation}
+Dai D, Kroeger T, Timofte R, {Van Gool} L (2015) Metric imitation by manifold
+  transfer for efficient vision applications. In: CVPR
+
+\bibitem[{Donahue et~al(2014)Donahue, Jia, Vinyals, Hoffman, Zhang, Tzeng, and
+  Darrell}]{caffe14}
+Donahue J, Jia Y, Vinyals O, Hoffman J, Zhang N, Tzeng E, Darrell T (2014)
+  Decaf: A deep convolutional activation feature for generic visual
+  recognition. In: ICML
+
+\bibitem[{Dosovitskiy et~al(2014)Dosovitskiy, {T. Springenberg}, Riedmiller,
+  and Brox}]{cnnfet14}
+Dosovitskiy A, {T Springenberg} J, Riedmiller M, Brox T (2014) Discriminative
+  unsupervised feature learning with convolutional neural networks. In: NIPS
+
+\bibitem[{Dueck and Frey(2007)}]{Frey_AffinityPropagation}
+Dueck D, Frey BJ (2007) Non-metric affinity propagation for unsupervised image
+  categorization. In: ICCV
+
+\bibitem[{Ebert et~al(2010)Ebert, Larlus, and Schiele}]{eccv10:ssl}
+Ebert S, Larlus D, Schiele B (2010) Extracting structures in image collections
+  for object recognition. In: ECCV
+
+\bibitem[{Faktor and Irani(2012)}]{fakton:eccv12}
+Faktor A, Irani M (2012) "clustering by composition" - unsupervised discovery
+  of image categories. In: ECCV
+
+\bibitem[{Fan et~al(2008)Fan, Chang, Hsieh, Wang, and Lin}]{liblinear}
+Fan RE, Chang KW, Hsieh CJ, Wang XR, Lin CJ (2008) Liblinear: A library for
+  large linear classification. J Mach Learn Res 9:1871--1874
+
+\bibitem[{Farhadi et~al(2009)Farhadi, Endres, Hoiem, and
+  Forsyth}]{ObjectAttribute:cvpr09}
+Farhadi A, Endres I, Hoiem D, Forsyth D (2009) Describing objects by their
+  attributes. In: CVPR
+
+\bibitem[{Fei-Fei et~al(2004)Fei-Fei, Fergus, and Perona}]{FeiFei2004}
+Fei-Fei L, Fergus R, Perona P (2004) Learning generative visual models from few
+  training examples: an incremental {B}ayesian approach tested on 101 object
+  categories. In: CVPR, WS
+
+\bibitem[{Fergus et~al(2003)Fergus, Perona, and Zisserman}]{Fergus03}
+Fergus R, Perona P, Zisserman A (2003) Object class recognition by unsupervised
+  scale-invariant learning. In: CVPR
+
+\bibitem[{Fergus et~al(2009)Fergus, Weiss, and Torralba}]{Fergus09}
+Fergus R, Weiss Y, Torralba A (2009) Semi-supervised learning in gigantic image
+  collections. In: NIPS
+
+\bibitem[{Frey and Dueck(2007)}]{Frey_Dueck_2007}
+Frey BJ, Dueck D (2007) Clustering by passing messages between data points.
+  Science 315(5814):972--976
+
+\bibitem[{Girshick et~al(2014)Girshick, Donahue, Darrell, and
+  Malik}]{rich:feature:cvpr14}
+Girshick R, Donahue J, Darrell T, Malik J (2014) Rich feature hierarchies for
+  accurate object detection and semantic segmentation. In: CVPR
+
+\bibitem[{Grauman and Darrell(2006)}]{Grauman06}
+Grauman K, Darrell T (2006) Unsupervised learning of categories from sets of
+  partially matching image features. In: CVPR
+
+\bibitem[{Guillaumin et~al(2010)Guillaumin, Verbeek, and
+  Schmid}]{Guillaumin:cvpr:10}
+Guillaumin M, Verbeek JJ, Schmid C (2010) Multimodal semi-supervised learning
+  for image classification. In: CVPR
+
+\bibitem[{Jain and Kapoor(2009)}]{JainK:cvpr09}
+Jain P, Kapoor A (2009) Active learning for large multi-class problems. In:
+  CVPR
+
+\bibitem[{Joachims(1999)}]{Joachims:1999}
+Joachims T (1999) Transductive inference for text classification using support
+  vector machines. In: ICML
+
+\bibitem[{Joshi et~al(2009)Joshi, Porikli, and
+  Papanikolopoulos}]{cvpr09:multi:al}
+Joshi AJ, Porikli F, Papanikolopoulos N (2009) Multi-class active learning for
+  image classification. In: Computer Vision and Pattern Recognition, IEEE
+  Conference on
+
+\bibitem[{Kingma et~al(2014)Kingma, Mohamed, Rezende, and Welling}]{nips14:ssl}
+Kingma DP, Mohamed S, Rezende DJ, Welling M (2014) Semi-supervised learning
+  with deep generative models. In: NIPS
+
+\bibitem[{Kozakaya et~al(2011)Kozakaya, Ito, and Kubota}]{ensemble:iccv11}
+Kozakaya T, Ito S, Kubota S (2011) Random ensemble metrics for object
+  recognition. In: ICCV
+
+\bibitem[{Krizhevsky et~al(2012)Krizhevsky, Sutskever, and Hinton}]{nips12:cnn}
+Krizhevsky A, Sutskever I, Hinton GE (2012) Imagenet classification with deep
+  convolutional neural networks. In: NIPS
+
+\bibitem[{Kumar~Mallapragada et~al(2009)Kumar~Mallapragada, Jin, Jain, and
+  Liu}]{SemiBoost}
+Kumar~Mallapragada P, Jin R, Jain A, Liu Y (2009) Semiboost: Boosting for
+  semi-supervised learning. TPAMI 31(11):2000--2014
+
+\bibitem[{Lazebnik et~al(2005)Lazebnik, Schmid, and Ponce}]{UIUC:Texture}
+Lazebnik S, Schmid C, Ponce J (2005) A sparse texture representation using
+  local affine regions. TPAMI 27(8):1265--1278
+
+\bibitem[{Lazebnik et~al(2006)Lazebnik, Schmid, and Ponce}]{lazebnik:cvpr06}
+Lazebnik S, Schmid C, Ponce J (2006) Beyond bags of features: Spatial pyramid
+  matching for recognizing natural scene categories. In: CVPR
+
+\bibitem[{Leistner et~al(2009)Leistner, Saffari, Santner, and
+  Bischof}]{SemiForest}
+Leistner C, Saffari A, Santner J, Bischof H (2009) Semi-supervised random
+  forests. In: ICCV
+
+\bibitem[{Li and Fei-Fei(2007)}]{event-8}
+Li LJ, Fei-Fei L (2007) What, where and who? classifying event by scene and
+  object recognition. In: ICCV
+
+\bibitem[{Li et~al(2010)Li, Su, Xing, and Li}]{li:objectbank}
+Li LJ, Su H, Xing EP, Li FF (2010) Object bank: A high-level image
+  representation for scene classification \& semantic feature sparsification.
+  In: NIPS
+
+\bibitem[{Li and Zhou(2011)}]{neverhurt:icml11}
+Li YF, Zhou ZH (2011) Towards making unlabeled data never hurt. In: ICML
+
+\bibitem[{Liu et~al(2010)Liu, He, and Chang}]{icml10:large:graph:ssl}
+Liu W, He J, Chang SF (2010) Large graph construction for scalable
+  semi-supervised learning. In: ICML
+
+\bibitem[{Ojala et~al(2002)Ojala, Pietik\"{a}inen, and
+  M\"{a}enp\"{a}\"{a}}]{Ojala02}
+Ojala T, Pietik\"{a}inen M, M\"{a}enp\"{a}\"{a} T (2002) Multiresolution
+  gray-scale and rotation invariant texture classification with local binary
+  patterns. TPAMI 24(7):971--987
+
+\bibitem[{Oliva and Torralba(2001)}]{gist}
+Oliva A, Torralba A (2001) Modeling the shape of the scene: A holistic
+  representation of the spatial envelope. IJCV 42(3):145--175
+
+\bibitem[{Pan and Yang(2010)}]{tl:survey}
+Pan SJ, Yang Q (2010) A survey on transfer learning. IEEE Trans on Knowl and
+  Data Eng 22(10):1345--1359
+
+\bibitem[{Paulin et~al(2014)Paulin, Revaud, Harchaoui, Perronnin, and
+  Schmid}]{transformation:cvpr14}
+Paulin M, Revaud J, Harchaoui Z, Perronnin F, Schmid C (2014) Transformation
+  pursuit for image classification. In: CVPR
+
+\bibitem[{Pitelis et~al(2014)Pitelis, Russell, and Agapito}]{ecml14:ssl}
+Pitelis N, Russell C, Agapito L (2014) Semi-supervised learning using an
+  unsupervised atlas. In: Machine Learning and Knowledge Discovery in
+  Databases, vol 8725, pp 565--580
+
+\bibitem[{Prest et~al(2012)Prest, Leistner, Civera, Schmid, and
+  Ferrari}]{cvpr12:weak:video}
+Prest A, Leistner C, Civera J, Schmid C, Ferrari V (2012) Learning object class
+  detectors from weakly annotated video. In: CVPR
+
+\bibitem[{Quattoni and Torralba(2009)}]{Indoor}
+Quattoni A, Torralba A (2009) Recognizing indoor scenes. In: CVPR
+
+\bibitem[{Quattoni et~al(2008)Quattoni, Collins, and
+  Darrell}]{Transfer:CVPR:08}
+Quattoni A, Collins M, Darrell T (2008) Transfer learning for image
+  classification with sparse prototype representations. In: CVPR
+
+\bibitem[{Raina et~al(2007)Raina, Battle, Lee, Packer, and
+  Ng}]{self-taught:icml07}
+Raina R, Battle A, Lee H, Packer B, Ng AY (2007) Self-taught learning: transfer
+  learning from unlabeled data. In: ICML
+
+\bibitem[{Rokach(2010)}]{EnClasReview}
+Rokach L (2010) Ensemble-based classifiers. Artificial Intelligence Review
+  33(1-2):1--39
+
+\bibitem[{Rosch(1978)}]{Rosch:1978}
+Rosch E (1978) Principles of categorization. Cognition and Categorization pp
+  27--48
+
+\bibitem[{Russell et~al(2008)Russell, Torralba, Murphy, and Freeman}]{labelme}
+Russell BC, Torralba A, Murphy KP, Freeman WT (2008) Labelme: a database and
+  web-based tool for image annotation. IJCV 77(1-3):157--173
+
+\bibitem[{Sharmanska et~al(2012)Sharmanska, Quadrianto, and
+  Lampert}]{augmented_attribute:eccv12}
+Sharmanska V, Quadrianto N, Lampert C (2012) Augmented attribute
+  representations. In: ECCV
+
+\bibitem[{Shrivastava et~al(2012)Shrivastava, Singh, and Gupta}]{Semi:eccv12}
+Shrivastava A, Singh S, Gupta A (2012) Constrained semi-supervised learning
+  using attributes and comparative attributes. In: ECCV
+
+\bibitem[{Singh et~al(2012)Singh, Gupta, and Efros}]{mid-level:patches}
+Singh S, Gupta A, Efros AA (2012) Unsupervised discovery of mid-level
+  discriminative patches. In: ECCV
+
+\bibitem[{Sivic et~al(2005)Sivic, Russell, Efros, Zisserman, and
+  Freeman}]{Sivic05b}
+Sivic J, Russell BC, Efros AA, Zisserman A, Freeman WT (2005) Discovering
+  objects and their location in images. In: ICCV
+
+\bibitem[{Sivic et~al(2008)Sivic, Russell, Zisserman, Freeman, and
+  Efros}]{Sivic08}
+Sivic J, Russell BC, Zisserman A, Freeman WT, Efros AA (2008) Unsupervised
+  discovery of visual object class hierarchies. In: CVPR
+
+\bibitem[{Tang et~al(2013)Tang, Tzu-Wei, and Chen}]{random:hashing}
+Tang TY, Tzu-Wei H, Chen HT (2013) Random exemplar hashing. In: DDS
+
+\bibitem[{Torresani et~al(2010)Torresani, Szummer, and
+  Fitzgibbon}]{eccv10:classemes}
+Torresani L, Szummer M, Fitzgibbon A (2010) Efficient object category
+  recognition using classemes. In: ECCV
+
+\bibitem[{Tuytelaars et~al(2009)Tuytelaars, Lampert, Blaschko, and
+  Buntine}]{Tuytelaars_UnsupervisedSurvey}
+Tuytelaars T, Lampert CH, Blaschko MB, Buntine W (2009) Unsupervised object
+  discovery: A comparison. IJCV
+
+\bibitem[{Vedaldi and Fulkerson(2008)}]{vlfeat}
+Vedaldi A, Fulkerson B (2008) {VLFeat}: An open and portable library of
+  computer vision algorithms. \url{http://www.vlfeat.org/}
+
+\bibitem[{Vedaldi and Lenc(2014)}]{MatConvNet}
+Vedaldi A, Lenc K (2014) Matconvnet -- convolutional neural networks for
+  matlab. CoRR
+
+\bibitem[{Von~Ahn(2006)}]{game:purpose}
+Von~Ahn L (2006) Games with a purpose. Computer 39(6):92--94
+
+\bibitem[{Wang et~al(2010)Wang, Yang, Yu, Lv, Huang, and Gong}]{siftllc:cvpr10}
+Wang J, Yang J, Yu K, Lv F, Huang T, Gong Y (2010) Locality-constrained linear
+  coding for image classification. In: CVPR
+
+\bibitem[{Xiao et~al(2010)Xiao, Hays, Ehinger, Oliva, and Torralba}]{Sun_2010}
+Xiao J, Hays J, Ehinger KA, Oliva A, Torralba A (2010) Sun database:
+  Large-scale scene recognition from abbey to zoo. In: CVPR
+
+\bibitem[{Xu et~al(2014)Xu, Tao, Zhang, Wu, and Tsoi}]{building-25}
+Xu Z, Tao D, Zhang Y, Wu J, Tsoi A (2014) Architectural style classification
+  using multinomial latent logistic regression. In: ECCV
+
+\bibitem[{Yang et~al(2014)Yang, Dai, Shen, and Gool}]{Yang_2014_CVPR}
+Yang M, Dai D, Shen L, Gool LV (2014) Latent dictionary learning for sparse
+  representation based classification. In: CVPR
+
+\bibitem[{Yang and Newsam(2010)}]{landuse21}
+Yang Y, Newsam S (2010) Bag-of-visual-words and spatial extensions for land-use
+  classification. In: ACM GIS
+
+\bibitem[{Yu et~al(2013)Yu, Cao, Feris, Smith, and
+  Chang}]{design_attribute:cvpr13}
+Yu FX, Cao L, Feris RS, Smith JR, Chang SF (2013) Designing category-level
+  attributes for discriminative visual recognition. In: CVPR
+
+\bibitem[{Zelnik-Manor and Perona(2004)}]{selftuning:04}
+Zelnik-Manor L, Perona P (2004) Self-tuning spectral clustering. In: NIPS
+
+\bibitem[{Zhan et~al(2006)Zhan, Berg, Maire, and Malik}]{SVM-KNN}
+Zhan H, Berg A, Maire M, Malik J (2006) Svm-knn: Discriminative nearest
+  neighbor classification for visual category recognition. In: CVPR
+
+\bibitem[{Zhou et~al(2004)Zhou, Bousquet, Lal, Weston, and
+  Schölkopf}]{Zhou:nips:04}
+Zhou D, Bousquet O, Lal TN, Weston J, Schölkopf B (2004) Learning with local
+  and global consistency. In: NIPS
+
+\bibitem[{Zhu and Goldberg(2009)}]{Zhu:ISL:2009}
+Zhu X, Goldberg AB (2009) Introduction to Semi-Supervised Learning
+
+\bibitem[{Zhu et~al(2003)Zhu, Ghahramani, and Lafferty}]{Zhu:Harmonic:03}
+Zhu X, Ghahramani Z, Lafferty J (2003) Semi-supervised learning using gaussian
+  fields and harmonic functions. In: ICML
+
+\end{thebibliography}

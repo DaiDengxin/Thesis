@@ -1,0 +1,25 @@
+\select@language {english}
+\select@language {english}
+\select@language {english}
+\select@language {german}
+\select@language {english}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Errors (\%) of the annotation: false positives (FP) and false negatives (FN) at object-level, and the percentages of pixels drawing to the background and to objects of other classes for the scribbles which are `correct' at object-level. }}{10}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces The annotation speed (seconds) of different methods for one image (\emph {where} + \emph {what}) and one object (\emph {where}), measured on PASCAL VOC 2012.}}{11}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces The results of different methods with varying levels of supervision on the validation set of PASCAL VOC 2012.}}{15}{table.2.3}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Comparison to other methods with different levels of supervision on PASCAL VOC 2012 test.}}{16}{table.2.4}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Precision (\%) of image classification on the eight datasets, with $5$ labeled training examples per class. ``+ EP" indicate that classifiers working with our learned feature as input rather than the original CNN. The best performance is indicated in \textbf {bold}, and the second best is \relax $\@@underline {\hbox {underlined}}\mathsurround \z@ $\relax . }}{33}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces MAP (\%) of semi-supervised classification on the eight datasets, with $5$ labeled training examples per class. ``LR + EP" indicate Logistic Regression with our learned feature as input. The other two classifiers use the original CNN feature as input. The best number is indicated in \textbf {bold}. }}{35}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Purity (\%) of image clustering on the eight datasets, where the CNN feature \citep {deep:bmvc14} and our learned feature from it (indicated by + EP) are used. The best results are indicated in \textbf {bold}, and the second best is \relax $\@@underline {\hbox {underlined}}\mathsurround \z@ $\relax .}}{38}{table.3.3}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces The dimensionality of the features.}}{50}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Purity of clustering by Metric Imitation (MI), where $50\%$ of the images are used for training and the rest for testing.}}{50}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Purity of clustering by Metric Imitation (MI) across classes, where half of the classes are used for training and others for testing.}}{50}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces The computational time (in seconds) of a full matrix of pairwise distance with different features, where MI(X) denotes that Metric Imitation for feature X. }}{51}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces MAP of category-based image retrieval by MI, with $50\%$ images used for training and the rest for testing, and recall set to $0.1$.}}{51}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces MAP of category-based image retrieval by MI with the concatenation of LBP, GIST and PHOG (LGP) used as the TFs. $50\%$ images are used for training and the rest for testing. Recall is set to $0.1$.}}{51}{table.4.6}
+\contentsline {table}{\numberline {4.7}{\ignorespaces MAP of image retrieval by MI on the Holidays and UKbench datasets, when the recall is set to 1.0.}}{51}{table.4.7}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces The average precision of synthesizability prediction with all individual features and as combinations, when recall is 1. }}{63}{table.5.1}

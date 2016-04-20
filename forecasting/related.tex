@@ -1,0 +1,39 @@
+\section{Related work}
+\textbf{Example-based texture synthesis.} Techniques of example-based
+texture synthesis can be broadly categorized into four categories:
+feature-oriented image reconstruction~\cite{Heeger:95,
+  Portilla:2000:IJCV, random:phase}, Markov Random Fields (MRFs)
+methods~\cite{noncausal:tip98, Zalesny05}, tile-based
+methods~\cite{Cohen:2003:wang, Liu:2004:NTA}, and
+neighborhood-based methods~\cite{Efros:sig2001, Kwatra:tog:2005,
+  Kwatra:2003}. The first group learn statistics of a brand of
+carefully designed features and coerce the synthetic images to have
+the same, e.g. color histograms~\cite{Heeger:95}, wavelet
+features~\cite{Portilla:2000:IJCV}, and frequency
+spectrum~\cite{random:phase}.  The main difficulty lies in designing a
+common set of features that is able to capture the essence of all
+kinds of textures.  The second group believe that textures are
+instances of MRFs. Parameters of some forms of MRFs are estimated from
+the texture examples and new textures are then sampled from the
+model. Multi-scale neighborhood-based MRFs are learned
+in~\cite{noncausal:tip98} and pairwise clique-based MRFs
+in~\cite{Zalesny05}. The third group generate textures by copying
+pixels or patches from the exemplar inputs~\cite{Efros:1999,
+  Efros:sig2001, Kwatra:2003, Kwatra:tog:2005}. While unlike the first
+two groups to provide a key for texture analysis, this group are often
+more efficient and tend to work for a larger variety of textures. The
+last group assemble new textures out of a set of (rectangular) tiles
+croped from example images. It is efficient, but alignment of tiles to
+texture elements is often difficult~\cite{Cohen:2003:wang,
+  Liu:2004:NTA, dai:facade:iccv13}.
+
+\textbf{Texture recognition.}  Our work is related also related to
+texture and material recognition. Efforts have been made mainly on
+designing effective features to distinguish textures from different
+material categories, including statistics of filter
+response~\cite{texton:2001}, the joint intensity distributions within
+a compact neighborhood ~\cite{material:pami:09, sorted:texture}, and
+the combination of multiple texture features~\cite{material:ijcv13}.
+Our system is solving a different task: learning the synthesizability
+of texture images instead of their classes. Thus, we need to design
+new features for this new task. 

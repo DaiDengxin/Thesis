@@ -1,0 +1,178 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{arbelaez2011contour}
+P.~Arbelaez, M.~Maire, C.~Fowlkes, and J.~Malik.
+\newblock Contour detection and hierarchical image segmentation.
+\newblock {\em IEEE TPAMI}, 33(5):898--916, 2011.
+
+\bibitem{arbelaez2014multiscale}
+P.~Arbelaez, J.~Pont-Tuset, J.~Barron, F.~Marques, and J.~Malik.
+\newblock Multiscale combinatorial grouping.
+\newblock In {\em CVPR}, pages 328--335. IEEE, 2014.
+
+\bibitem{carreira2010constrained}
+J.~Carreira and C.~Sminchisescu.
+\newblock Constrained parametric min-cuts for automatic object segmentation.
+\newblock In {\em CVPR}, pages 3241--3248. IEEE, 2010.
+
+\bibitem{chen2015attention}
+L.-C. Chen, Y.~Yang, J.~Wang, W.~Xu, and A.~L. Yuille.
+\newblock Attention to scale: Scale-aware semantic image segmentation.
+\newblock {\em arXiv preprint arXiv:1511.03339}, 2015.
+
+\bibitem{Comaniciu2002}
+D.~Comaniciu and P.~Meer.
+\newblock Mean shift: a robust approach toward feature space analysis.
+\newblock {\em IEEE TPAMI}, 24(5):603 --619, may 2002.
+
+\bibitem{comaniciu2002mean}
+D.~Comaniciu and P.~Meer.
+\newblock Mean shift: A robust approach toward feature space analysis.
+\newblock {\em IEEE TPAMI}, 24(5):603--619, 2002.
+
+\bibitem{cormen2009introduction}
+T.~H. Cormen.
+\newblock {\em Introduction to algorithms}.
+\newblock MIT press, 2009.
+
+\bibitem{SR4VTs:wacv16}
+D.~Dai, Y.~Wang, Y.~Chen, and L.~{Van Gool}.
+\newblock Is image super-resolution helpful for other vision tasks?
+\newblock In {\em WACV}, 2016.
+
+\bibitem{endres2014category}
+I.~Endres and D.~Hoiem.
+\newblock Category-independent object proposals with diverse ranking.
+\newblock {\em IEEE TPAMI}, 36(2):222--234, 2014.
+
+\bibitem{Endres2014}
+I.~Endres and D.~Hoiem.
+\newblock Category-independent object proposals with diverse ranking.
+\newblock {\em IEEE TPAMI}, 36(2):222--234, 2014.
+
+\bibitem{everingham2010pascal}
+M.~Everingham, L.~Van~Gool, C.~K. Williams, J.~Winn, and A.~Zisserman.
+\newblock The pascal visual object classes (voc) challenge.
+\newblock {\em IJCV}, 88(2):303--338, 2010.
+
+\bibitem{felzenszwalb2004efficient}
+P.~F. Felzenszwalb and D.~P. Huttenlocher.
+\newblock Efficient graph-based image segmentation.
+\newblock {\em IJCV}, 59(2):167--181, 2004.
+
+\bibitem{hoiem2005geometric}
+D.~Hoiem, A.~A. Efros, and M.~Hebert.
+\newblock Geometric context from a single image.
+\newblock In {\em ICCV}, volume~1, pages 654--661. IEEE, 2005.
+
+\bibitem{hoiem2011recovering}
+D.~Hoiem, A.~A. Efros, and M.~Hebert.
+\newblock Recovering occlusion boundaries from an image.
+\newblock {\em IJCV}, 91(3):328--346, 2011.
+
+\bibitem{isola2014crisp}
+P.~Isola, D.~Zoran, D.~Krishnan, and E.~H. Adelson.
+\newblock Crisp boundary detection using pointwise mutual information.
+\newblock In {\em ECCV}, pages 799--814. Springer, 2014.
+
+\bibitem{kim2013learning}
+T.~H. Kim, K.~M. Lee, and S.~U. Lee.
+\newblock Learning full pairwise affinities for spectral segmentation.
+\newblock {\em IEEE TPAMI}, 35(7):1690--1703, 2013.
+
+\bibitem{Lempitsky2011}
+V.~Lempitsky, A.~Vedaldi, and A.~Zisserman.
+\newblock A pylon model for semantic segmentation.
+\newblock In {\em NIPS}, 2011.
+
+\bibitem{li2015scale}
+J.~Li, X.~Liang, S.~Shen, T.~Xu, and S.~Yan.
+\newblock Scale-aware fast r-cnn for pedestrian detection.
+\newblock {\em arXiv preprint arXiv:1510.08160}, 2015.
+
+\bibitem{lin2014microsoft}
+T.-Y. Lin, M.~Maire, S.~Belongie, J.~Hays, P.~Perona, D.~Ramanan,
+  P.~Doll{\'a}r, and C.~L. Zitnick.
+\newblock Microsoft coco: Common objects in context.
+\newblock In {\em ECCV}, pages 740--755. Springer, 2014.
+
+\bibitem{malisiewicz2007improving}
+T.~Malisiewicz and A.~A. Efros.
+\newblock Improving spatial support for objects via multiple segmentations.
+\newblock 2007.
+
+\bibitem{Martin2001}
+D.~Martin, C.~Fowlkes, D.~Tal, and J.~Malik.
+\newblock A database of human segmented natural images and its application to
+  evaluating segmentation algorithms and measuring ecological statistics.
+\newblock In {\em ICCV}, volume~2, pages 416--423, 2001.
+
+\bibitem{palmer1999vision}
+S.~E. Palmer.
+\newblock {\em Vision science: Photons to phenomenology}, volume~1.
+\newblock MIT press Cambridge, MA, 1999.
+
+\bibitem{peng2008parameter}
+B.~Peng and O.~Veksler.
+\newblock Parameter selection for graph cut based image segmentation.
+\newblock In {\em BMVC}, volume~32, pages 42--44, 2008.
+
+\bibitem{pont2012supervised}
+J.~Pont-Tuset and F.~Marques.
+\newblock Supervised assessment of segmentation hierarchies.
+\newblock In {\em ECCV}, pages 814--827. Springer, 2012.
+
+\bibitem{ren2003learning}
+X.~Ren and J.~Malik.
+\newblock Learning a classification model for segmentation.
+\newblock In {\em ICCV}, pages 10--17. IEEE, 2003.
+
+\bibitem{Ren2013}
+Z.~Ren and G.~Shakhnarovich.
+\newblock Image segmentation by cascaded region agglomeration.
+\newblock In {\em CVPR}, 2013.
+
+\bibitem{ren2013image}
+Z.~Ren and G.~Shakhnarovich.
+\newblock Image segmentation by cascaded region agglomeration.
+\newblock In {\em CVPR}, pages 2011--2018. IEEE, 2013.
+
+\bibitem{russell2006using}
+B.~C. Russell, W.~T. Freeman, A.~A. Efros, J.~Sivic, and A.~Zisserman.
+\newblock Using multiple segmentations to discover objects and their extent in
+  image collections.
+\newblock In {\em CVPR}, volume~2, pages 1605--1614. IEEE, 2006.
+
+\bibitem{Salembier2000}
+P.~Salembier and L.~Garrido.
+\newblock Binary partition tree as an efficient representation for image
+  processing, segmentation, and information retrieval.
+\newblock {\em IEEE TIP}, 9(4):561--576, 2000.
+
+\bibitem{shi2000normalized}
+J.~Shi and J.~Malik.
+\newblock Normalized cuts and image segmentation.
+\newblock {\em IEEE TPAMI}, 22(8):888--905, 2000.
+
+\bibitem{Sun2013}
+J.~Sun and H.~Ling.
+\newblock Scale and object aware image thumbnailing.
+\newblock {\em IJCV}, 104(2):135--153, 2013.
+
+\bibitem{Varas2015}
+D.~Varas, M.~Alfaro, and F.~Marques.
+\newblock Multiresolution hierarchy co-clustering for semantic segmentation in
+  sequences with small variations.
+\newblock In {\em ICCV}, 12/2015 2015.
+
+\bibitem{xu2013flattening}
+C.~Xu, S.~Whitt, and J.~J. Corso.
+\newblock Flattening supervoxel hierarchies by the uniform entropy slice.
+\newblock In {\em ICCV}, pages 2240--2247. IEEE, 2013.
+
+\bibitem{yupiecewise}
+Y.~Yu, C.~Fang, and Z.~Liao.
+\newblock Piecewise flat embedding for image segmentation.
+\newblock 2015.
+
+\end{thebibliography}

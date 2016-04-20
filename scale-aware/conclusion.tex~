@@ -1,0 +1,30 @@
+\section{Conclusion}
+
+In this work, we have presented a novel technique to align segmentation tree. First we predict the scales of regions by mid-level features. We formulated the problem of finding anchor slice as a scale labelling problem, which can solved efficiently by dynamic programming. The final output is done by linear interpolation using the anchor slice. The results on BSDS500 dataset indicate that our algorithm significantly and consistently improves hierarchical segmentation. Our approach provides better alignment for depth and scale, both within a image and across images. Furthermore, we prove that alignment can improve object segmentation, thus high-level vision tasks can in principle benefit from our approach.
+
+\begin{figure*}
+\begin{center}
+\begin{tabular}{c}
+\includegraphics[width=17cm]{fig/vis/70090.png} \\
+\includegraphics[width=17cm]{fig/vis/388006.png} \\
+\includegraphics[width=17cm]{fig/vis/48017.png} \\
+\includegraphics[width=17cm]{fig/vis/196062.png}
+\end{tabular}
+\end{center}
+\caption{Results of MCG(first row) and MCG results improved by our approach(second row). Original images are shown in the left most. Segmentations of optimal-dataset-sclae(ODS) are given in the middle. And from left to right are different scales, from fine to coarse. Red bounding box indicates the scale with best results. It can be seen that our approach provides better alignment, both across images and within one image. }
+\label{fig:mcgnimprov}
+\end{figure*}
+
+
+\begin{figure*}
+\begin{center}
+\begin{tabular}{l c}
+\rotatebox[origin=c]{90}{MCG segmentation} &
+\includegraphics[width=17cm]{fig/vis/stack_1.png} \\
+\rotatebox[origin=c]{90}{Our results} &
+\includegraphics[width=17cm]{fig/vis/stack_2.png} \\
+\end{tabular}
+\end{center}
+\caption{Results of MCG(first row) and MCG results improved by our approach(second row). Original images are shown in the left most. Segmentations of optimal-dataset-sclae(ODS) are given in the middle. And from left to right are different scales, from fine to coarse. Red bounding box indicates the scale with best results. It can be seen that our approach provides better alignment, both across images and within one image. }
+\label{fig:mcgnimprov2}
+\end{figure*}

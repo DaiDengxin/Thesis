@@ -1,0 +1,1385 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2015.1.28)  17 JUL 2015 11:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, et
+hiopic, farsi, arabic, pinyin, croatian, bulgarian, ukrainian, russian, slovak,
+ czech, danish, dutch, usenglishmax, ukenglish, finnish, french, basque, ngerma
+n, german, swissgerman, ngerman-x-2012-05-30, german-x-2012-05-30, monogreek, g
+reek, ibycus, ancientgreek, hungarian, bengali, tamil, hindi, telugu, gujarati,
+ sanskrit, malayalam, kannada, assamese, marathi, oriya, panjabi, italian, lati
+n, latvian, lithuanian, mongolian, mongolianlmc, nynorsk, bokmal, indonesian, e
+speranto, coptic, welsh, irish, interlingua, serbian, serbianc, slovenian, friu
+lan, romansh, estonian, romanian, armenian, uppersorbian, turkish, afrikaans, i
+celandic, kurmanji, polish, portuguese, galician, catalan, spanish, swedish, th
+ai, loaded.
+
+LaTeX Warning: File `example.eps' already exists on the system.
+               Not generating it from this source.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2006/09/13 v1.1m fixes to LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)) (./svjour3.cls
+Document Class: svjour3 2007/05/08 v3.2 
+LaTeX document class for Springer journals
+(/usr/share/texlive/texmf-dist/tex/latex/base/fleqn.clo
+File: fleqn.clo 1998/08/17 v1.1c Standard LaTeX option (flush left equations)
+\mathindent=\dimen102
+)
+Class Springer-SVJour3 Info: extra/valid Springer sub-package (-> *.clo) 
+(Springer-SVJour3)           not found in option list of \documentclass
+(Springer-SVJour3)           - autoactivating "global" style.
+ (./svglov3.clo
+File: svglov3.clo 2009/12/18 v3.2 style option for standardised journals
+
+SVJour Class option: svglov3.clo for standardised journals
+)
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 151.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 152.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 154.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 155.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 156.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 157.
+\logodepth=\dimen103
+\headerboxheight=\dimen104
+\betweenumberspace=\dimen105
+\aftertext=\dimen106
+\headlineindent=\dimen107
+\c@inst=\count79
+\c@auth=\count80
+\instindent=\dimen108
+\authrun=\box26
+\authorrunning=\toks14
+\titrun=\box27
+\titlerunning=\toks15
+\combirun=\box28
+\c@lastpage=\count81
+\rubricwidth=\dimen109
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@subparagraph=\count86
+\spthmsep=\dimen110
+\c@theorem=\count87
+\c@case=\count88
+\c@conjecture=\count89
+\c@corollary=\count90
+\c@definition=\count91
+\c@example=\count92
+\c@exercise=\count93
+\c@lemma=\count94
+\c@note=\count95
+\c@problem=\count96
+\c@property=\count97
+\c@proposition=\count98
+\c@question=\count99
+\c@solution=\count100
+\c@remark=\count101
+\c@figure=\count102
+\c@table=\count103
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\figcapgap=\dimen111
+\tabcapgap=\dimen112
+\figgap=\dimen113
+\bibindent=\dimen114
+\@tempcntc=\count104
+) (/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count105
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen115
+\lightrulewidth=\dimen116
+\cmidrulewidth=\dimen117
+\belowrulesep=\dimen118
+\belowbottomsep=\dimen119
+\aboverulesep=\dimen120
+\abovetopsep=\dimen121
+\cmidrulesep=\dimen122
+\cmidrulekern=\dimen123
+\defaultaddspace=\dimen124
+\@cmidla=\count106
+\@cmidlb=\count107
+\@aboverulesep=\dimen125
+\@belowrulesep=\dimen126
+\@thisruleclass=\count108
+\@lastruleclass=\count109
+\@thisrulewidth=\dimen127
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count110
+))
+\Gin@req@height=\dimen128
+\Gin@req@width=\dimen129
+)
+\epsfxsize=\dimen130
+\epsfysize=\dimen131
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip45
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks17
+\ex@=\dimen132
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen133
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count111
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count112
+\leftroot@=\count113
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count114
+\DOTSCASE@=\count115
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen134
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+
+
+Package amsmath Warning: Unable to redefine math accent \vec.
+
+\macc@depth=\count116
+\c@MaxMatrixCols=\count117
+\dotsspace@=\muskip10
+\c@parentequation=\count118
+\dspbrk@lvl=\count119
+\tag@help=\toks18
+\row@=\count120
+\column@=\count121
+\maxfields@=\count122
+\andhelp@=\toks19
+\eqnshift@=\dimen135
+\alignsep@=\dimen136
+\tagshift@=\dimen137
+\tagwidth@=\dimen138
+\totwidth@=\dimen139
+\lineht@=\dimen140
+\@envbody=\toks20
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks21
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(./algorithm2e.sty
+Package: algorithm2e 2013/01/06 v5.00 algorithms environments
+\c@AlgoLine=\count123
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty
+Package: relsize 2011/09/21 ver 4.0
+
+Examine \normalsize starts \if@twocolumn size may be \normalsize. 
+Examine \small starts \if@twocolumn size may be \small. 
+Examine \footnotesize starts \if@twocolumn size may be \small. 
+Examine \large starts \@setfontsize size may be \@xiipt. 
+Examine \Large starts \@setfontsize size may be \@xivpt. 
+Examine \LARGE starts \@setfontsize size may be 16pt. 
+Examine \scriptsize starts \@setfontsize size may be \@viipt. 
+Examine \tiny starts \@setfontsize size may be \@vpt. 
+Examine \huge starts \@setfontsize size may be \@xxpt. 
+Examine \Huge starts \@setfontsize size may be \@xxvpt. 
+
+Package relsize Warning: Failed to get list of defined font sizes.
+(relsize)                Size scaling will attempt arbitrary sizes..
+
+)
+********************************************************
+Package `algorithm2e' Release 5.0 -- january 06 2013 --
+- algorithm2e-announce@lirmm.fr mailing list for announcement about releases
+- algorithm2e-discussion@lirmm.fr mailing list for discussion about package
+subscribe by emailing sympa@lirmm.fr with 'subscribe <list> <firstname name>'
+- Author: Christophe Fiorio (cfiorio@um2.fr)
+********************************************************
+\skiptotal=\skip48
+\skiplinenumber=\skip49
+\skiprule=\skip50
+\skiphlne=\skip51
+\skiptext=\skip52
+\skiplength=\skip53
+\algomargin=\skip54
+\skipalgocfslide=\skip55
+\algowidth=\dimen141
+\inoutsize=\dimen142
+\inoutindent=\dimen143
+\interspacetitleruled=\dimen144
+\interspacealgoruled=\dimen145
+\interspacetitleboxruled=\dimen146
+\algocf@inoutbox=\box31
+\algocf@inputbox=\box32
+\AlCapSkip=\skip56
+\AlCapHSkip=\skip57
+\algoskipindent=\skip58
+\algocf@nlbox=\box33
+\algocf@hangingbox=\box34
+\algocf@untilbox=\box35
+\algocf@skipuntil=\skip59
+\algocf@capbox=\box36
+\algoheightruledefault=\skip60
+\algoheightrule=\skip61
+\algotitleheightruledefault=\skip62
+\algotitleheightrule=\skip63
+\c@algocfline=\count124
+\c@algocfproc=\count125
+\c@algocf=\count126
+\algocf@algoframe=\box37
+\algocf@algobox=\box38
+) (./dengxin.sty (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count127
+\calc@Bcount=\count128
+\calc@Adimen=\dimen147
+\calc@Bdimen=\dimen148
+\calc@Askip=\skip64
+\calc@Bskip=\skip65
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count129
+\calc@Cskip=\skip66
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen149
+\extrarowheight=\dimen150
+\NC@list=\toks22
+\extratabsurround=\skip67
+\backup@length=\skip68
+)
+\everycr=\toks23
+\minrowclearance=\skip69
+)
+LaTeX Info: Redefining \color on input line 702.
+\rownum=\count130
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
+\@enLab=\toks24
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen151
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen152
+\Hy@linkcounter=\count131
+\Hy@pagecounter=\count132
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count133
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count134
+
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count135
+\Field@Width=\dimen153
+\Fld@charsize=\dimen154
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring OFF on input line 5793.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count136
+\c@Item=\count137
+\c@Hfootnote=\count138
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
+\Fld@listcount=\count139
+\c@bookmark@seq@number=\count140
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip70
+)
+(/usr/share/texlive/texmf-dist/tex/latex/sidecap/sidecap.sty
+Package: sidecap 2003/06/06 v1.6f SideCap Package (RN/HjG)
+\SC@BOXWD=\dimen155
+\SC@CAPWD=\dimen156
+\SC@tempdima=\dimen157
+\SC@tempdimb=\dimen158
+\c@SC@C=\count141
+\SC@BOX=\box39
+) (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 111.
+LaTeX Font Info:    ... okay on input line 111.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 111.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+Unknown journal: specify \journalname{<name of your journal>} in preambel
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count142
+\scratchdimen=\dimen159
+\scratchbox=\box40
+\nofMPsegments=\count143
+\nofMParguments=\count144
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count145
+\MPscratchDim=\dimen160
+\MPnumerator=\count146
+\makeMPintoPDFobject=\count147
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\AtBeginShipoutBox=\box41
+Package hyperref Info: Link coloring OFF on input line 111.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count148
+)
+LaTeX Info: Redefining \ref on input line 111.
+LaTeX Info: Redefining \pageref on input line 111.
+LaTeX Info: Redefining \nameref on input line 111.
+
+(./main.out) (./main.out)
+\@outlinefile=\write3
+\openout3 = `main.out'.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+(/usr/share/texlive/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 126.
+)
+\CenteringLeftskip=\skip71
+\RaggedLeftLeftskip=\skip72
+\RaggedRightLeftskip=\skip73
+\CenteringRightskip=\skip74
+\RaggedLeftRightskip=\skip75
+\RaggedRightRightskip=\skip76
+\CenteringParfillskip=\skip77
+\RaggedLeftParfillskip=\skip78
+\RaggedRightParfillskip=\skip79
+\JustifyingParfillskip=\skip80
+\CenteringParindent=\skip81
+\RaggedLeftParindent=\skip82
+\RaggedRightParindent=\skip83
+\JustifyingParindent=\skip84
+)
+SVJour3 warning: Missing \journalname
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 148.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <16> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 148.
+LaTeX Font Info:    Try loading font information for U+msa on input line 148.
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 148.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 148.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 173.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Underfull \vbox (badness 1831) has occurred while \output is active []
+
+
+Overfull \hbox (2.4435pt too wide) in paragraph at lines 205--227
+\OT1/ptm/m/n/10 cess-ful ([]Fer-gus et al.[], []2009[]; []Leist-ner et al.[], [
+]2009[]; []Ku-mar Mal-
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+<./pipeline.jpg, id=147, 2155.0914pt x 902.1705pt>
+File: ./pipeline.jpg Graphic file (type jpg)
+ <use ./pipeline.jpg>
+Package pdftex.def Info: ./pipeline.jpg used on input line 290.
+(pdftex.def)             Requested size: 485.09789pt x 203.0622pt.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 299.
+
+Overfull \hbox (8.04315pt too wide) in paragraph at lines 304--319
+\OT1/ptm/m/n/10 sim-i-lar in ap-pear-ance to a \OT1/ptm/m/it/10 jaguar\OT1/ptm/
+m/n/10 , but is smaller. This paradigm
+ []
+
+
+Overfull \hbox (6.66336pt too wide) in paragraph at lines 304--319
+\OT1/ptm/m/n/10 of learning-by-comparison or characterization-by-comparison
+ []
+
+
+Overfull \hbox (3.23344pt too wide) in paragraph at lines 320--340
+\OT1/ptm/m/n/10 used \OT1/ptm/m/it/10 local-consistency\OT1/ptm/m/n/10 , we pro
+-pose an-other one called \OT1/ptm/m/it/10 exotic-
+ []
+
+
+Overfull \hbox (8.91301pt too wide) in paragraph at lines 341--361
+\OT1/ptm/m/n/10 and dis-crim-i-na-tive learn-ing is yields pro-jec-tion func-ti
+ons tuned
+ []
+
+
+Overfull \hbox (3.0924pt too wide) in paragraph at lines 380--393
+\OT1/ptm/m/n/10 EP was eval-u-ated on eight im-age clas-si-fi-ca-tion datasets,
+ rang-
+ []
+
+[2]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (7.06305pt too wide) in paragraph at lines 469--483
+\OT1/ptm/m/n/10 tween train-ing recog-ni-tion mod-els with cur-rent `la-beled' 
+train-
+ []
+
+
+Overfull \hbox (4.03398pt too wide) in paragraph at lines 507--517
+\OT1/ptm/m/n/10 ([]Belkin et al.[], []2006[]), and Eigen-func-tions ([]Fer-gus 
+et al.[], []2009[]).
+ []
+
+[3 <./pipeline.jpg>]
+Overfull \hbox (5.18341pt too wide) in paragraph at lines 518--527
+\OT1/ptm/m/n/10 ([]Joachims[], []1999[]), Semi-supervised SVMs ([]Ben-nett and 
+Dem-
+ []
+
+
+Overfull \hbox (7.96329pt too wide) in paragraph at lines 552--574
+\OT1/ptm/m/n/10 supervised sce-nar-ios are Boost-ing ([]Ku-mar Mal-lapra-gada e
+t al.[],
+ []
+
+
+Overfull \hbox (2.77315pt too wide) in paragraph at lines 575--589
+\OT1/ptm/m/n/10 wide spec-trum of fea-tures, from pixel-level to semantic-level
+,
+ []
+
+
+Overfull \hbox (1.52382pt too wide) in paragraph at lines 610--635
+\OT1/ptm/m/n/10 ([]2010[]) pro-posed to com-bine in-for-ma-tion pro-jec-tion an
+d clus-
+ []
+
+
+Overfull \hbox (8.74323pt too wide) in paragraph at lines 610--635
+\OT1/ptm/m/n/10 de-sign of ex-plicit mod-els dif-fi-cult. An al-ter-na-tive str
+and, which
+ []
+
+
+Overfull \hbox (16.93275pt too wide) in paragraph at lines 610--635
+\OT1/ptm/m/n/10 is more ver-sa-tile in han-dling struc-tured data, builds on si
+milarity-
+ []
+
+
+Overfull \hbox (0.91354pt too wide) in paragraph at lines 649--657
+\OT1/ptm/m/n/10 can-cel out the de-fi-ciency of the in-di-vid-ual train-ing set
+s, given
+ []
+
+[4] <./consis_fig_15-crop.pdf, id=343, 495.8525pt x 328.22626pt>
+File: ./consis_fig_15-crop.pdf Graphic file (type pdf)
+
+<use ./consis_fig_15-crop.pdf>
+Package pdftex.def Info: ./consis_fig_15-crop.pdf used on input line 680.
+(pdftex.def)             Requested size: 163.3509pt x 108.12968pt.
+
+<./consis_fig_101-crop.pdf, id=344, 496.85625pt x 328.22626pt>
+File: ./consis_fig_101-crop.pdf Graphic file (type pdf)
+
+<use ./consis_fig_101-crop.pdf>
+Package pdftex.def Info: ./consis_fig_101-crop.pdf used on input line 681.
+(pdftex.def)             Requested size: 163.3509pt x 107.90932pt.
+
+<./consis_fig_event8-crop.pdf, id=345, 493.845pt x 327.2225pt>
+File: ./consis_fig_event8-crop.pdf Graphic file (type pdf)
+
+<use ./consis_fig_event8-crop.pdf>
+Package pdftex.def Info: ./consis_fig_event8-crop.pdf used on input line 682.
+(pdftex.def)             Requested size: 163.3509pt x 108.2334pt.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 683.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 683.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 683.
+
+
+<./consis_fig_21-crop.pdf, id=346, 494.84875pt x 328.22626pt>
+File: ./consis_fig_21-crop.pdf Graphic file (type pdf)
+
+<use ./consis_fig_21-crop.pdf>
+Package pdftex.def Info: ./consis_fig_21-crop.pdf used on input line 685.
+(pdftex.def)             Requested size: 163.3509pt x 108.34505pt.
+
+<./consis_fig_25-crop.pdf, id=347, 491.8375pt x 327.2225pt>
+File: ./consis_fig_25-crop.pdf Graphic file (type pdf)
+
+<use ./consis_fig_25-crop.pdf>
+Package pdftex.def Info: ./consis_fig_25-crop.pdf used on input line 686.
+(pdftex.def)             Requested size: 163.3509pt x 108.67778pt.
+
+<./consis_fig_indoor-crop.pdf, id=348, 496.85625pt x 327.2225pt>
+File: ./consis_fig_indoor-crop.pdf Graphic file (type pdf)
+
+<use ./consis_fig_indoor-crop.pdf>
+Package pdftex.def Info: ./consis_fig_indoor-crop.pdf used on input line 687.
+(pdftex.def)             Requested size: 163.3509pt x 107.57932pt.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 688.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 688.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 688.
+
+
+
+Overfull \hbox (0.8932pt too wide) in paragraph at lines 698--718
+\OT1/ptm/m/n/10 more in-stances of the same class, whereas sam-pling far-away
+ []
+
+<./ensemble_noise_fig_15-crop.pdf, id=351, 491.8375pt x 328.22626pt>
+File: ./ensemble_noise_fig_15-crop.pdf Graphic file (type pdf)
+
+<use ./ensemble_noise_fig_15-crop.pdf>
+Package pdftex.def Info: ./ensemble_noise_fig_15-crop.pdf used on input line 72
+2.
+(pdftex.def)             Requested size: 232.6496pt x 156.49005pt.
+
+<./ensemble_noise_fig_event8-crop.pdf, id=352, 491.8375pt x 327.2225pt>
+File: ./ensemble_noise_fig_event8-crop.pdf Graphic file (type pdf)
+
+<use ./ensemble_noise_fig_event8-crop.pdf>
+Package pdftex.def Info: ./ensemble_noise_fig_event8-crop.pdf used on input lin
+e 723.
+(pdftex.def)             Requested size: 232.6496pt x 156.49081pt.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 724.
+
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 724.
+
+
+
+Package amsfonts Warning: Obsolete command \bold; \mathbf should be used instea
+d on input line 816.
+
+
+Overfull \hbox (20.29791pt too wide) in paragraph at lines 815--828
+\OT1/ptm/m/n/10 The train-ing data con-sists of both la-beled data $\OMS/cmsy/m
+/n/10 D[] \OT1/cmr/m/n/10 = \OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 (\OT1/cmr/bx/n/10
+ x[]\OML/cmm/m/it/10 ; y[]\OT1/cmr/m/n/10 )\OMS/cmsy/m/n/10 g[]$
+ []
+
+[5]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./consis_fig_15-crop.pdf> <./consis_fig_101-crop.pdf> <./consis_fig_event8
+-crop.pdf> <./consis_fig_21-crop.pdf> <./consis_fig_25-crop.pdf> <./consis_fig_
+indoor-crop.pdf> <./ensemble_noise_fig_15-crop.pdf> <./ensemble_noise_fig_event
+8-crop.pdf>]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 951.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.9028> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 951.
+
+Overfull \hbox (7.72192pt too wide) in paragraph at lines 951--951
+[]\OML/cmm/m/it/8.5 n[]\OMS/cmsy/m/n/8.5 V\OT1/cmr/m/n/8.5 (\OML/cmm/m/it/8.5 i
+\OT1/cmr/m/n/8.5 )[]\OMS/cmsy/m/n/8.5 D$\OT1/ptm/m/n/8.5 ; 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (2.35236pt too wide) in paragraph at lines 1005--1010
+\OT1/ptm/m/n/10 satel-lite im-age clas-si-fi-ca-tion. Eight stan-dard datasets 
+are used
+ []
+
+[7]
+Overfull \hbox (8.01425pt too wide) in paragraph at lines 1028--1031
+[]\OT1/ptm/m/n/10 Indoor-67 ([]Quat-toni and Tor-ralba[], []2009[]): $\OT1/cmr/
+m/n/10 67$ \OT1/ptm/m/n/10 in-door classes
+ []
+
+
+Overfull \hbox (1.76358pt too wide) in paragraph at lines 1037--1040
+[]\OT1/ptm/m/n/10 Building-25 ([]Xu et al.[], []2014[]): $\OT1/cmr/m/n/10 25$ \
+OT1/ptm/m/n/10 ar-chi-tec-tural styles such
+ []
+
+
+Overfull \hbox (1.21336pt too wide) in paragraph at lines 1075--1092
+\OT1/ptm/m/n/10 age clas-si-fi-ca-tion ([]Krizhevsky et al.[], []2012[]; []Doso
+-vit-skiy et al.[],
+ []
+
+
+Overfull \hbox (7.09372pt too wide) in paragraph at lines 1075--1092
+[]\OT1/ptm/m/n/10 2014[]). For im-ple-men-ta-tion, we used the Mat-Con-vNet ([]
+Vedaldi
+ []
+
+
+Overfull \hbox (3.74323pt too wide) in paragraph at lines 1107--1123
+[]\OT1/ptm/b/n/10 Competing meth-ods: \OT1/ptm/m/n/10 For semi-supervised clas-
+si-fi-ca-tion,
+ []
+
+
+Overfull \hbox (2.05228pt too wide) in paragraph at lines 1107--1123
+\OT1/ptm/m/n/10 with RBF ker-nels, and three semi-supervised clas-si-fiers: Har
+-
+ []
+
+
+Overfull \hbox (0.95352pt too wide) in paragraph at lines 1127--1138
+\OT1/ptm/m/n/10 as the la-beled ones; (2) eval-u-ate the ro-bust-ness of our me
+thod
+ []
+
+<./15_baseline-crop.pdf, id=546, 432.61626pt x 331.2375pt>
+File: ./15_baseline-crop.pdf Graphic file (type pdf)
+
+<use ./15_baseline-crop.pdf>
+Package pdftex.def Info: ./15_baseline-crop.pdf used on input line 1189.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./21_baseline-crop.pdf, id=547, 432.61626pt x 331.2375pt>
+File: ./21_baseline-crop.pdf Graphic file (type pdf)
+
+<use ./21_baseline-crop.pdf>
+Package pdftex.def Info: ./21_baseline-crop.pdf used on input line 1190.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./25_baseline-crop.pdf, id=548, 432.61626pt x 331.2375pt>
+File: ./25_baseline-crop.pdf Graphic file (type pdf)
+
+<use ./25_baseline-crop.pdf>
+Package pdftex.def Info: ./25_baseline-crop.pdf used on input line 1191.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./building25_baseline-crop.pdf, id=549, 432.61626pt x 332.24126pt>
+File: ./building25_baseline-crop.pdf Graphic file (type pdf)
+
+<use ./building25_baseline-crop.pdf>
+Package pdftex.def Info: ./building25_baseline-crop.pdf used on input line 1192
+.
+(pdftex.def)             Requested size: 118.8015pt x 91.04977pt.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1193
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1193
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1193
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1193
+.
+
+<./101_baseline-crop.pdf, id=550, 432.61626pt x 331.2375pt>
+File: ./101_baseline-crop.pdf Graphic file (type pdf)
+
+<use ./101_baseline-crop.pdf>
+Package pdftex.def Info: ./101_baseline-crop.pdf used on input line 1196.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./event8_baseline-crop.pdf, id=551, 432.61626pt x 331.2375pt>
+File: ./event8_baseline-crop.pdf Graphic file (type pdf)
+
+<use ./event8_baseline-crop.pdf>
+Package pdftex.def Info: ./event8_baseline-crop.pdf used on input line 1197.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./indoor_baseline-crop.pdf, id=552, 432.61626pt x 331.2375pt>
+File: ./indoor_baseline-crop.pdf Graphic file (type pdf)
+
+<use ./indoor_baseline-crop.pdf>
+Package pdftex.def Info: ./indoor_baseline-crop.pdf used on input line 1198.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./stl10_baseline-crop.pdf, id=553, 432.61626pt x 331.2375pt>
+File: ./stl10_baseline-crop.pdf Graphic file (type pdf)
+
+<use ./stl10_baseline-crop.pdf>
+Package pdftex.def Info: ./stl10_baseline-crop.pdf used on input line 1199.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1200
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1200
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1200
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1200
+.
+
+<./Precision_15_transductive-crop.pdf, id=554, 432.61626pt x 331.2375pt>
+File: ./Precision_15_transductive-crop.pdf Graphic file (type pdf)
+
+<use ./Precision_15_transductive-crop.pdf>
+Package pdftex.def Info: ./Precision_15_transductive-crop.pdf used on input lin
+e 1217.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./Precision_21_transductive-crop.pdf, id=555, 432.61626pt x 331.2375pt>
+File: ./Precision_21_transductive-crop.pdf Graphic file (type pdf)
+
+<use ./Precision_21_transductive-crop.pdf>
+Package pdftex.def Info: ./Precision_21_transductive-crop.pdf used on input lin
+e 1218.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./Precision_25_transductive-crop.pdf, id=556, 432.61626pt x 331.2375pt>
+File: ./Precision_25_transductive-crop.pdf Graphic file (type pdf)
+
+<use ./Precision_25_transductive-crop.pdf>
+Package pdftex.def Info: ./Precision_25_transductive-crop.pdf used on input lin
+e 1219.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./Precision_building25_transductive-crop.pdf, id=557, 432.61626pt x 331.2375pt
+>
+File: ./Precision_building25_transductive-crop.pdf Graphic file (type pdf)
+ <use ./Precision_building25_transductive-crop.pdf>
+Package pdftex.def Info: ./Precision_building25_transductive-crop.pdf used on i
+nput line 1220.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1221
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1221
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1221
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1221
+.
+
+<./Precision_101_transductive-crop.pdf, id=558, 432.61626pt x 331.2375pt>
+File: ./Precision_101_transductive-crop.pdf Graphic file (type pdf)
+
+<use ./Precision_101_transductive-crop.pdf>
+Package pdftex.def Info: ./Precision_101_transductive-crop.pdf used on input li
+ne 1224.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./Precision_event8_transductive-crop.pdf, id=559, 432.61626pt x 331.2375pt>
+File: ./Precision_event8_transductive-crop.pdf Graphic file (type pdf)
+
+<use ./Precision_event8_transductive-crop.pdf>
+Package pdftex.def Info: ./Precision_event8_transductive-crop.pdf used on input
+ line 1225.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./Precision_indoor_transductive-crop.pdf, id=560, 432.61626pt x 331.2375pt>
+File: ./Precision_indoor_transductive-crop.pdf Graphic file (type pdf)
+
+<use ./Precision_indoor_transductive-crop.pdf>
+Package pdftex.def Info: ./Precision_indoor_transductive-crop.pdf used on input
+ line 1226.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+<./Precision_stl10_transductive-crop.pdf, id=561, 432.61626pt x 331.2375pt>
+File: ./Precision_stl10_transductive-crop.pdf Graphic file (type pdf)
+
+<use ./Precision_stl10_transductive-crop.pdf>
+Package pdftex.def Info: ./Precision_stl10_transductive-crop.pdf used on input 
+line 1227.
+(pdftex.def)             Requested size: 118.8015pt x 91.04762pt.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1228
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1228
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1228
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1228
+.
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 1423
+.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1423.
+
+
+Overfull \hbox (5.09343pt too wide) in paragraph at lines 1421--1439
+\OT1/ptm/m/n/10 of train-ing im-ages per class were tested: Scene-15 and Indoor
+-
+ []
+
+[8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 2486) has occurred while \output is active []
+
+ [9 <./15_baseline-crop.pdf> <./21_baseline-crop.pdf> <./25_baseline-crop.pdf> 
+<./building25_baseline-crop.pdf> <./101_baseline-crop.pdf> <./event8_baseline-c
+rop.pdf> <./indoor_baseline-crop.pdf> <./stl10_baseline-crop.pdf> <./Precision_
+15_transductive-crop.pdf> <./Precision_21_transductive-crop.pdf> <./Precision_2
+5_transductive-crop.pdf> <./Precision_building25_transductive-crop.pdf> <./Prec
+ision_101_transductive-crop.pdf> <./Precision_event8_transductive-crop.pdf> <./
+Precision_indoor_transductive-crop.pdf> <./Precision_stl10_transductive-crop.pd
+f>]
+Overfull \hbox (13.14554pt too wide) in paragraph at lines 1463--1471
+\OT1/ptm/m/n/10 (mAP) of $\OML/cmm/m/it/10 C$ \OT1/ptm/m/n/10 rounds of bi-nary
+ clas-si-fi-ca-tion is used for LapSVM.
+ []
+
+
+Overfull \hbox (1.5435pt too wide) in paragraph at lines 1472--1488
+\OT1/ptm/m/n/10 meth-ods when $\OT1/cmr/m/n/10 5$ \OT1/ptm/m/n/10 la-beled trai
+n-ing ex-am-ples per class are used.
+ []
+
+
+Overfull \hbox (2.42249pt too wide) in paragraph at lines 1472--1488
+\OT1/ptm/m/n/10 the com-pet-ing SSL meth-ods con-sis-tently for semi-supervised
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (3.43365pt too wide) in paragraph at lines 1509--1517
+[]\OT1/ptm/m/n/10 We fur-ther in-ves-ti-gate the com-ple-men-tar-ity of our lea
+rned
+ []
+
+<./T-curve_1-crop.pdf, id=695, 431.6125pt x 331.2375pt>
+File: ./T-curve_1-crop.pdf Graphic file (type pdf)
+
+<use ./T-curve_1-crop.pdf>
+Package pdftex.def Info: ./T-curve_1-crop.pdf used on input line 1626.
+(pdftex.def)             Requested size: 118.80246pt x 102.42984pt.
+
+<./r-curve_1-crop.pdf, id=696, 431.6125pt x 331.2375pt>
+File: ./r-curve_1-crop.pdf Graphic file (type pdf)
+
+<use ./r-curve_1-crop.pdf>
+Package pdftex.def Info: ./r-curve_1-crop.pdf used on input line 1627.
+(pdftex.def)             Requested size: 118.80246pt x 102.42984pt.
+
+<./n-curve_1-crop.pdf, id=697, 431.6125pt x 331.2375pt>
+File: ./n-curve_1-crop.pdf Graphic file (type pdf)
+
+<use ./n-curve_1-crop.pdf>
+Package pdftex.def Info: ./n-curve_1-crop.pdf used on input line 1628.
+(pdftex.def)             Requested size: 118.80246pt x 102.42984pt.
+
+<./m-curve_1-crop.pdf, id=698, 431.6125pt x 331.2375pt>
+File: ./m-curve_1-crop.pdf Graphic file (type pdf)
+
+<use ./m-curve_1-crop.pdf>
+Package pdftex.def Info: ./m-curve_1-crop.pdf used on input line 1629.
+(pdftex.def)             Requested size: 118.80246pt x 102.42984pt.
+
+<./T-curve_2-crop.pdf, id=699, 431.6125pt x 331.2375pt>
+File: ./T-curve_2-crop.pdf Graphic file (type pdf)
+
+<use ./T-curve_2-crop.pdf>
+Package pdftex.def Info: ./T-curve_2-crop.pdf used on input line 1631.
+(pdftex.def)             Requested size: 118.80246pt x 102.42984pt.
+
+<./r-curve_2-crop.pdf, id=700, 431.6125pt x 331.2375pt>
+File: ./r-curve_2-crop.pdf Graphic file (type pdf)
+
+<use ./r-curve_2-crop.pdf>
+Package pdftex.def Info: ./r-curve_2-crop.pdf used on input line 1632.
+(pdftex.def)             Requested size: 118.80246pt x 102.42984pt.
+
+<./n-curve_2-crop.pdf, id=701, 431.6125pt x 331.2375pt>
+File: ./n-curve_2-crop.pdf Graphic file (type pdf)
+
+<use ./n-curve_2-crop.pdf>
+Package pdftex.def Info: ./n-curve_2-crop.pdf used on input line 1633.
+(pdftex.def)             Requested size: 118.80246pt x 102.42984pt.
+
+<./m-curve_2-crop.pdf, id=702, 431.6125pt x 332.24126pt>
+File: ./m-curve_2-crop.pdf Graphic file (type pdf)
+
+<use ./m-curve_2-crop.pdf>
+Package pdftex.def Info: ./m-curve_2-crop.pdf used on input line 1634.
+(pdftex.def)             Requested size: 118.80246pt x 102.43098pt.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1635
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1635
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1635
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1635
+.
+
+[10]
+Overfull \hbox (0.71365pt too wide) in paragraph at lines 1672--1689
+\OT1/ptm/m/n/10 si-fi-ca-tion ([]Paulin et al.[], []2014[]) and for fea-ture le
+arn-ing ([]Doso-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<./Model-curve_1-crop.pdf, id=718, 432.61626pt x 330.23375pt>
+File: ./Model-curve_1-crop.pdf Graphic file (type pdf)
+
+<use ./Model-curve_1-crop.pdf>
+Package pdftex.def Info: ./Model-curve_1-crop.pdf used on input line 1726.
+(pdftex.def)             Requested size: 173.25467pt x 130.88684pt.
+
+<./Model-legend1_crop.pdf, id=719, 161.60374pt x 295.1025pt>
+File: ./Model-legend1_crop.pdf Graphic file (type pdf)
+
+<use ./Model-legend1_crop.pdf>
+Package pdftex.def Info: ./Model-legend1_crop.pdf used on input line 1727.
+(pdftex.def)             Requested size: 59.3979pt x 119.49783pt.
+
+<./Model-curve_2-crop.pdf, id=720, 432.61626pt x 330.23375pt>
+File: ./Model-curve_2-crop.pdf Graphic file (type pdf)
+
+<use ./Model-curve_2-crop.pdf>
+Package pdftex.def Info: ./Model-curve_2-crop.pdf used on input line 1728.
+(pdftex.def)             Requested size: 173.25467pt x 130.88684pt.
+
+<./Model-legend2_crop.pdf, id=721, 161.60374pt x 295.1025pt>
+File: ./Model-legend2_crop.pdf Graphic file (type pdf)
+
+<use ./Model-legend2_crop.pdf>
+Package pdftex.def Info: ./Model-legend2_crop.pdf used on input line 1729.
+(pdftex.def)             Requested size: 59.3979pt x 119.49783pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./T-curve_1-crop.pdf> <./r-curve_1-crop.pdf> <./n-curve_1-crop.pdf> <./m-
+curve_1-crop.pdf> <./T-curve_2-crop.pdf> <./r-curve_2-crop.pdf> <./n-curve_2-cr
+op.pdf> <./m-curve_2-crop.pdf>]
+<./self_stl10_knn-crop.pdf, id=789, 432.61626pt x 331.2375pt>
+File: ./self_stl10_knn-crop.pdf Graphic file (type pdf)
+
+<use ./self_stl10_knn-crop.pdf>
+Package pdftex.def Info: ./self_stl10_knn-crop.pdf used on input line 1805.
+(pdftex.def)             Requested size: 158.40201pt x 113.807pt.
+
+<./self_stl10_LR-crop.pdf, id=790, 432.61626pt x 331.2375pt>
+File: ./self_stl10_LR-crop.pdf Graphic file (type pdf)
+
+<use ./self_stl10_LR-crop.pdf>
+Package pdftex.def Info: ./self_stl10_LR-crop.pdf used on input line 1806.
+(pdftex.def)             Requested size: 158.40201pt x 113.807pt.
+
+<./self_stl10_SVM-crop.pdf, id=791, 432.61626pt x 331.2375pt>
+File: ./self_stl10_SVM-crop.pdf Graphic file (type pdf)
+
+<use ./self_stl10_SVM-crop.pdf>
+Package pdftex.def Info: ./self_stl10_SVM-crop.pdf used on input line 1807.
+(pdftex.def)             Requested size: 158.40201pt x 113.807pt.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1808
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1808
+.
+
+
+LaTeX Font Warning: Command \scriptsize invalid in math mode on input line 1808
+.
+
+
+Overfull \hbox (2.0631pt too wide) in paragraph at lines 1818--1844
+\OT1/ptm/m/n/10 Pro-jec-tion func-tions were learned from this un-la-beled data
+set
+ []
+
+
+Overfull \hbox (4.59378pt too wide) in paragraph at lines 1818--1844
+\OT1/ptm/m/n/10 and the per-for-mance was tested on the STL-10 dataset. Again,
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./Model-curve_1-crop.pdf> <./Model-legend1_crop.pdf> <./Model-curve_2-cro
+p.pdf> <./Model-legend2_crop.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13 <./self_stl10_knn-crop.pdf> <./self_stl10_LR-crop.pdf> <./self_stl10_SVM-c
+rop.pdf>]
+(./main.bbl
+Underfull \hbox (badness 1189) in paragraph at lines 37--39
+[]\OT1/ptm/m/n/10 Chapelle O, Sch[]olkopf B, Zien A (eds) (2006) Semi-
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 133--135
+\OT1/ptm/m/n/10 semi-supervised learn-ing for im-age clas-si-fi-ca-tion. In:
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \hbox (badness 1019) in paragraph at lines 287--289
+[]\OT1/ptm/m/n/10 Vedaldi A, Fulk-er-son B (2008) VLFeat: An open and
+ []
+
+
+Underfull \hbox (badness 1394) in paragraph at lines 295--296
+[]\OT1/ptm/m/n/10 Von Ahn L (2006) Games with a pur-pose. Com-puter
+ []
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¶ in font ptmr7t!
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15]
+Underfull \hbox (badness 4156) in paragraph at lines 335--336
+[]\OT1/ptm/m/n/10 Zhu X, Gold-berg AB (2009) In-tro-duc-tion to Semi-
+ []
+
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2149.
+ [16
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2149.
+ (./main.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2149.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2149.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 451090452CFEC14B9B5903F90BE6AA9C;279.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2149.
+ ) 
+Here is how much of TeX's memory you used:
+ 9911 strings out of 493485
+ 145121 string characters out of 3143526
+ 284374 words of memory out of 3000000
+ 12867 multiletter control sequences out of 15000+200000
+ 34620 words of font info for 83 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 41i,19n,35p,696b,605s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmbx7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/symbols/msbm10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/couri
+er/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (16 pages, 4433982 bytes).
+PDF statistics:
+ 995 PDF objects out of 1000 (max. 8388607)
+ 858 compressed objects within 9 object streams
+ 156 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
+

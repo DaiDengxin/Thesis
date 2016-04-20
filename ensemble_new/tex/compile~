@@ -1,0 +1,4 @@
+pdflatex EnsembleProjection_final
+bibtex EnsembleProjection_final
+pdflatex EnsembleProjection_final
+pdflatex EnsembleProjection_final

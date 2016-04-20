@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: ieee.bst
+Database file #1: egbib.bib
+Warning--empty journal in malisiewicz2007improving
+Warning--empty journal in yupiecewise
+You've used 28 entries,
+            2120 wiz_defined-function locations,
+            664 strings with 8384 characters,
+and the built_in function-call counts, 10901 in all, are:
+= -- 1113
+> -- 447
+< -- 16
++ -- 176
+- -- 146
+* -- 727
+:= -- 1686
+add.period$ -- 93
+call.type$ -- 28
+change.case$ -- 155
+chr.to.int$ -- 0
+cite$ -- 30
+duplicate$ -- 455
+empty$ -- 893
+format.name$ -- 146
+if$ -- 2386
+int.to.chr$ -- 0
+int.to.str$ -- 28
+missing$ -- 30
+newline$ -- 143
+num.names$ -- 56
+pop$ -- 189
+preamble$ -- 1
+purify$ -- 129
+quote$ -- 0
+skip$ -- 343
+stack$ -- 0
+substring$ -- 761
+swap$ -- 146
+text.length$ -- 16
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 108
+warning$ -- 2
+while$ -- 107
+width$ -- 30
+write$ -- 315
+(There were 2 warnings)

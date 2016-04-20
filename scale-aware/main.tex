@@ -1,0 +1,78 @@
+\documentclass[10pt,twocolumn,letterpaper]{article}
+\usepackage{tikz}  % For plots, must be the first include
+
+\usepackage{cvpr}
+\usepackage{times}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+% Include other packages here, before hyperref.
+\usepackage{pgfplots} % For plots
+\usepackage{pgfplotstable} % For plots
+\pgfplotsset{compat=newest} % For plots
+\usetikzlibrary{plotmarks} % For plots
+
+% If you comment hyperref and then uncomment it, you should delete
+% egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
+% run, let it finish, and you should be clear).
+\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+% \cvprfinalcopy % *** Uncomment this line for the final submission
+
+\def\cvprPaperID{752} % *** Enter the CVPR Paper ID here
+\def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
+
+\usepackage{algorithmic}	% Nice algorithm environment
+\usepackage{algorithm}
+\newcommand{\todo}[1]{\textbf{\textcolor{red}{[#1]}}}
+\newcommand{\dx}[1]{\textbf{\textcolor{green}{[Dengxin:#1]}}}
+\newcommand{\yh}[1]{\textbf{\textcolor{blue}{[Yuhua:#1]}}}
+\newcommand{\jd}[1]{\textbf{\textcolor{magenta}{[Jordi:#1]}}}
+% \newcommand{\etal}{\textit{et al.}}
+\usepackage{bbm}
+
+% Pages are numbered in submission mode, and unnumbered in camera-ready
+\ifcvprfinal\pagestyle{empty}\fi
+\begin{document}
+
+%%%%%%%%% TITLE
+\title{Scale-Aware Alignment of Hierarchical Image Segmentation}
+
+\author{First Author\\
+Institution1\\
+Institution1 address\\
+{\tt\small firstauthor@i1.org}
+% For a paper whose authors are all at the same institution,
+% omit the following lines up until the closing ``}''.
+% Additional authors and addresses can be added with ``\and'',
+% just like the second author.
+% To save space, use either the email address or home page, not both
+\and
+Second Author\\
+Institution2\\
+First line of institution2 address\\
+{\tt\small secondauthor@i2.org}
+}
+
+\maketitle
+%\thispagestyle{empty}
+
+%%%%%%%%% ABSTRACT
+\input{abstract.tex}
+
+%%%%%%%%% BODY TEXT
+\input{intro.tex}
+\input{related.tex}
+%\input{key_lv.tex}
+\input{flat_hier.tex}
+\input{result.tex}
+\input{conclusion.tex}
+
+{\small
+\bibliographystyle{ieee}
+\bibliography{egbib}
+}
+
+\end{document}

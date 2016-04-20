@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: final.aux
+The style file: ieee.bst
+Database file #1: egbib.bib
+Warning--I didn't find a database entry for "Klodt2013"
+Warning--empty journal in malisiewicz2007improving
+Warning--empty journal in yupiecewise
+You've used 34 entries,
+            2120 wiz_defined-function locations,
+            683 strings with 8422 characters,
+and the built_in function-call counts, 13314 in all, are:
+= -- 1338
+> -- 610
+< -- 17
++ -- 241
+- -- 204
+* -- 914
+:= -- 2098
+add.period$ -- 112
+call.type$ -- 34
+change.case$ -- 202
+chr.to.int$ -- 0
+cite$ -- 36
+duplicate$ -- 535
+empty$ -- 1050
+format.name$ -- 204
+if$ -- 2873
+int.to.chr$ -- 0
+int.to.str$ -- 34
+missing$ -- 36
+newline$ -- 173
+num.names$ -- 68
+pop$ -- 239
+preamble$ -- 1
+purify$ -- 170
+quote$ -- 0
+skip$ -- 397
+stack$ -- 0
+substring$ -- 874
+swap$ -- 162
+text.length$ -- 17
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 132
+warning$ -- 2
+while$ -- 126
+width$ -- 36
+write$ -- 379
+(There were 3 warnings)

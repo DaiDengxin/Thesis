@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: spbasic.bst
+Database file #1: egbib.bib
+I was expecting an "="---line 989 of file egbib.bib
+ : 
+ : author = {Anna Bosch and Andrew Zisserman and Xavier Muñoz},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--to sort, need author or key in Bosch:iccv07
+Warning--empty author in Bosch:iccv07
+Warning--empty year in Bosch:iccv07; set to ????
+Warning--empty title in Bosch:iccv07
+Warning--empty booktitle in Bosch:iccv07
+Warning--missing publisher in eccv10:ssl
+Warning--missing publisher in ecml14:ssl
+Warning--missing publisher in augmented_attribute:eccv12
+Warning--missing publisher in building-25
+Warning--missing publisher in Zhu:ISL:2009
+You've used 76 entries,
+            3270 wiz_defined-function locations,
+            1005 strings with 15356 characters,
+and the built_in function-call counts, 75175 in all, are:
+= -- 7101
+> -- 2316
+< -- 27
++ -- 900
+- -- 723
+* -- 5831
+:= -- 9767
+add.period$ -- 74
+call.type$ -- 76
+change.case$ -- 730
+chr.to.int$ -- 76
+cite$ -- 88
+duplicate$ -- 7080
+empty$ -- 6366
+format.name$ -- 978
+if$ -- 15594
+int.to.chr$ -- 1
+int.to.str$ -- 1
+missing$ -- 726
+newline$ -- 238
+num.names$ -- 301
+pop$ -- 2444
+preamble$ -- 1
+purify$ -- 545
+quote$ -- 0
+skip$ -- 2291
+stack$ -- 0
+substring$ -- 6178
+swap$ -- 2717
+text.length$ -- 4
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 678
+warning$ -- 10
+while$ -- 530
+width$ -- 0
+write$ -- 783
+(There was 1 error message)

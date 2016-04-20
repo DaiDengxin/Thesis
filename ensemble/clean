@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo $?
+rm *.aux
+echo $?
+rm *.aux
+echo $?
+rm *.bbl
+echo $?
+rm *.blg
+echo $?
+rm *.log
+echo $?

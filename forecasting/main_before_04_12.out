@@ -1,0 +1,12 @@
+\BOOKMARK [1][-]{section.1}{. Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{. Related work}{}% 2
+\BOOKMARK [1][-]{section.3}{. Data collection}{}% 3
+\BOOKMARK [1][-]{section.4}{. Learning image synthesizability}{}% 4
+\BOOKMARK [2][-]{subsection.4.1}{. General features}{section.4}% 5
+\BOOKMARK [2][-]{subsection.4.2}{. Designed features}{section.4}% 6
+\BOOKMARK [2][-]{subsection.4.3}{. Learning methods}{section.4}% 7
+\BOOKMARK [1][-]{section.5}{. Experiments}{}% 8
+\BOOKMARK [2][-]{subsection.5.1}{. Learning synthesizability}{section.5}% 9
+\BOOKMARK [2][-]{subsection.5.2}{. Trimming texture examples}{section.5}% 10
+\BOOKMARK [2][-]{subsection.5.3}{. Texture recognition}{section.5}% 11
+\BOOKMARK [1][-]{section.6}{. Conclusions}{}% 12

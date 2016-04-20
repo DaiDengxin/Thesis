@@ -1,0 +1,1163 @@
+\begin{thebibliography}{188}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{{\tt #1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+
+\bibitem[{sph({\natexlab{a}})}]{sphinx}
+ (????{\natexlab{a}}).
+\newblock Cmu sphinx.
+\newblock \url{http://cmusphinx.sourceforge.net/}.
+
+\bibitem[{sph({\natexlab{b}})}]{sphinx:webtrain}
+ (????{\natexlab{b}}).
+\newblock Cmu sphinx.
+\newblock \url{http://www.speech.cs.cmu.edu/tools/lmtool-new.html}.
+
+\bibitem[{smi(2015)}]{smile}
+ (2015).
+\newblock Smile - smart photo annotation.
+\newblock
+  \url{https://play.google.com/store/apps/details?id=com.neuromorphic.retinet.smile}.
+
+\bibitem[{Agrawal et~al.(2015)Agrawal, Carreira, \& Malik}]{learning:by:moving}
+Agrawal, P., Carreira, J., \& Malik, J. (2015).
+\newblock Learning to see by moving.
+\newblock In {\em International Conference on Computer Vision\/}, (pp. 37--45).
+
+\bibitem[{Aodha et~al.(2013)Aodha, Humayun, Pollefeys, \&
+  Brostow}]{flow:confidence}
+Aodha, O.~M., Humayun, A., Pollefeys, M., \& Brostow, G.~J. (2013).
+\newblock Learning a confidence measure for optical flow.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine
+  Intelligence\/}, {\em 35\/}(5), 1107--1120.
+
+\bibitem[{Arbelaez et~al.(2014)Arbelaez, Pont-Tuset, Barron, Marques, \&
+  Malik}]{MCG}
+Arbelaez, P., Pont-Tuset, J., Barron, J., Marques, F., \& Malik, J. (2014).
+\newblock Multiscale combinatorial grouping.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Baker et~al.(2011)Baker, Scharstein, Lewis, Roth, Black, \&
+  Szeliski}]{flow:dataset}
+Baker, S., Scharstein, D., Lewis, J., Roth, S., Black, M., \& Szeliski, R.
+  (2011).
+\newblock A database and evaluation methodology for optical flow.
+\newblock {\em IJCV\/}, {\em 92\/}(1), 1--31.
+
+\bibitem[{Bearman et~al.(2015)Bearman, Russakovsky, Ferrari, \&
+  Fei-Fei}]{whatpoint}
+Bearman, A., Russakovsky, O., Ferrari, V., \& Fei-Fei, L. (2015).
+\newblock {What's the point: Semantic segmentation with point supervision}.
+\newblock {\em arXiv:1506.02106\/}.
+
+\bibitem[{Belkin et~al.(2006)Belkin, Niyogi, \&
+  Sindhwani}]{Belkin:semiframe:2006}
+Belkin, M., Niyogi, P., \& Sindhwani, V. (2006).
+\newblock Manifold regularization: A geometric framework for learning from
+  labeled and unlabeled examples.
+\newblock {\em JMLR\/}, {\em 7\/}(36), 2399--2434.
+
+\bibitem[{Bell et~al.(2013)Bell, Upchurch, Snavely, \& Bala}]{open:surface}
+Bell, S., Upchurch, P., Snavely, N., \& Bala, K. (2013).
+\newblock Opensurfaces: A richly annotated catalog of surface appearance.
+\newblock In {\em SIGGRAPH\/}.
+
+\bibitem[{Bennett \& Demiriz(1998)}]{SemiSVM}
+Bennett, K.~P., \& Demiriz, A. (1998).
+\newblock Semi-supervised support vector machines.
+\newblock In {\em Advances in Neural Information Processing Systems\/}, (pp.
+  368--374).
+
+\bibitem[{Berg et~al.(2004)Berg, Berg, Edwards, Maire, White, Teh,
+  Learned-Miller, \& Forsyth}]{name:face:news}
+Berg, T.~L., Berg, A.~C., Edwards, J., Maire, M., White, R., Teh, Y.-W.,
+  Learned-Miller, E., \& Forsyth, D.~A. (2004).
+\newblock Names and faces in the news.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Bilen \& Vedaldi(2016)}]{weak:deep:detection}
+Bilen, H., \& Vedaldi, A. (2016).
+\newblock Weakly supervised deep detection networks.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Blum \& Mitchell(1998)}]{co-training:98}
+Blum, A., \& Mitchell, T. (1998).
+\newblock Combining labeled and unlabeled data with co-training.
+\newblock In {\em Proceedings of the Eleventh Annual Conference on
+  Computational Learning Theory\/}, COLT' 98, (pp. 92--100).
+
+\bibitem[{Boiman et~al.(2008)Boiman, Shechtman, \& Irani}]{Boiman_CVPR_2008}
+Boiman, O., Shechtman, E., \& Irani, M. (2008).
+\newblock In defense of nearest-neighbor based image classification.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Bosch et~al.(2007)Bosch, Zisserman, \& MuÃ±oz}]{Bosch:iccv07}
+Bosch, A., Zisserman, A., \& MuÃ±oz, X. (2007).
+\newblock Image classification using random forests and ferns.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Branson et~al.(2010)Branson, Wah, Schroff, Babenko, Welinder, Perona,
+  \& Belongie}]{visual:human:loop}
+Branson, S., Wah, C., Schroff, F., Babenko, B., Welinder, P., Perona, P., \&
+  Belongie, S. (2010).
+\newblock Visual recognition with humans in the loop.
+\newblock In {\em ECCV\/}, (pp. 438--451).
+
+\bibitem[{Brostow et~al.(2009)Brostow, Fauqueur, \& Cipolla}]{camvid:data}
+Brostow, G.~J., Fauqueur, J., \& Cipolla, R. (2009).
+\newblock Semantic object classes in video: A high-definition ground truth
+  database.
+\newblock {\em Pattern Recognition Letters\/}, {\em 30\/}(2), 88--97.
+
+\bibitem[{Bucilua et~al.(2006)Bucilua, Caruana, \&
+  Niculescu-Mizil}]{model:compression}
+Bucilua, C., Caruana, R., \& Niculescu-Mizil, A. (2006).
+\newblock Model compression.
+\newblock In {\em Proceedings of the 12th ACM SIGKDD international conference
+  on Knowledge discovery and data mining\/}, (pp. 535--541). ACM.
+
+\bibitem[{Chang \& Lin(2011)}]{libsvm}
+Chang, C.-C., \& Lin, C.-J. (2011).
+\newblock {LIBSVM}: A library for support vector machines.
+\newblock {\em ACM Transactions on Intelligent Systems and Technology\/}, {\em
+  2\/}, 1--27.
+
+\bibitem[{Chapelle et~al.(2006)Chapelle, Sch{\"o}lkopf, \& Zien}]{book06:ssl}
+Chapelle, O., Sch{\"o}lkopf, B., \& Zien, A. (Eds.)  (2006).
+\newblock {\em Semi-Supervised Learning\/}.
+\newblock Cambridge, MA: MIT Press.
+
+\bibitem[{Chatfield et~al.(2014)Chatfield, Simonyan, Vedaldi, \&
+  Zisserman}]{deep:bmvc14}
+Chatfield, K., Simonyan, K., Vedaldi, A., \& Zisserman, A. (2014).
+\newblock Return of the devil in the details: Delving deep into convolutional
+  nets.
+\newblock In {\em BMVC\/}.
+
+\bibitem[{Chen et~al.(2015)Chen, Papandreou, Kokkinos, Murphy, \&
+  Yuille}]{rcnn_crf}
+Chen, L.-C., Papandreou, G., Kokkinos, I., Murphy, K., \& Yuille, A.~L. (2015).
+\newblock Semantic image segmentation with deep convolutional nets and fully
+  connected crfs.
+
+\bibitem[{Chen et~al.(2011)Chen, Song, Bai, Lin, \& Chang}]{parallel:sc}
+Chen, W.-Y., Song, Y., Bai, H., Lin, C.-J., \& Chang, E. (2011).
+\newblock Parallel spectral clustering in distributed systems.
+\newblock {\em Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on\/}, {\em 33\/}(3), 568--586.
+
+\bibitem[{Chen \& Gupta(2015{\natexlab{a}})}]{web:cnn}
+Chen, X., \& Gupta, A. (2015{\natexlab{a}}).
+\newblock Webly supervised learning of convolutional networks.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Chen \& Gupta(2015{\natexlab{b}})}]{webly:cnn}
+Chen, X., \& Gupta, A. (2015{\natexlab{b}}).
+\newblock Webly supervised learning of convolutional networks.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Chen et~al.(2013)Chen, Shrivastava, \& Gupta}]{neil}
+Chen, X., Shrivastava, A., \& Gupta, A. (2013).
+\newblock Neil: Extracting visual knowledge from web data.
+\newblock In {\em IEEE International Conference on Computer Vision\/}, (pp.
+  1409--1416).
+
+\bibitem[{Chen et~al.(2016)Chen, Dai, Pont-Tuset, \& {Van Gool}}]{Chen2016}
+Chen, Y., Dai, D., Pont-Tuset, J., \& {Van Gool}, L. (2016).
+\newblock Scale-aware alignment of hierarchical image segmentation.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR)\/}.
+
+\bibitem[{Cheng et~al.(2014)Cheng, Zheng, Lin, Vineet, Sturgess, Crook, Mitra,
+  \& Torr}]{image:spirit}
+Cheng, M.-M., Zheng, S., Lin, W.-Y., Vineet, V., Sturgess, P., Crook, N.,
+  Mitra, N.~J., \& Torr, P. (2014).
+\newblock Imagespirit: Verbal guided image parsing.
+\newblock {\em ACM Trans. Graph.\/}, {\em 34\/}(1), 3:1--3:11.
+
+\bibitem[{Coates et~al.(2011)Coates, Ng, \& Lee}]{stl-10}
+Coates, A., Ng, A.~Y., \& Lee, H. (2011).
+\newblock An analysis of single-layer networks in unsupervised feature
+  learning.
+\newblock In {\em International Conference on Artificial Intelligence and
+  Statistics\/}, (pp. 215--223).
+
+\bibitem[{Collins et~al.(2008)Collins, Deng, Li, \& Fei-Fei}]{ALdataset}
+Collins, B., Deng, J., Li, K., \& Fei-Fei, L. (2008).
+\newblock Towards scalable dataset construction: An active learning approach.
+\newblock In {\em ECCV\/}.
+
+\bibitem[{Cordts et~al.(2016)Cordts, Omra, Ramos, Rehfeld, Enzweiler, Benenson,
+  Franke, Roth, \& Schiele}]{cityscapes}
+Cordts, M., Omra, M., Ramos, S., Rehfeld, T., Enzweiler, M., Benenson, R.,
+  Franke, U., Roth, S., \& Schiele, B. (2016).
+\newblock Cityscapes dataset for semantic urban scene understanding.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Dai et~al.(2016{\natexlab{a}})Dai, Kroeger, Li, \& {Van
+  Gool}}]{draw:tell}
+Dai, D., Kroeger, T., Li, W., \& {Van Gool}, L. (2016{\natexlab{a}}).
+\newblock Draw\&tell: Efficient annotation for semantic image segmentation by
+  drawing and speaking.
+\newblock In {\em in submission to ECCV\/}.
+
+\bibitem[{Dai et~al.(2015{\natexlab{a}})Dai, Kroeger, Timofte, \& {Van
+  Gool}}]{metric:imitation}
+Dai, D., Kroeger, T., Timofte, R., \& {Van Gool}, L. (2015{\natexlab{a}}).
+\newblock Metric imitation by manifold transfer for efficient vision
+  applications.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}, (pp. 3527--3536).
+
+\bibitem[{Dai et~al.(2012{\natexlab{a}})Dai, Prasad, Leistner, \&
+  Gool}]{dai:eccv12}
+Dai, D., Prasad, M., Leistner, C., \& Gool, L.~V. (2012{\natexlab{a}}).
+\newblock Ensemble partitioning for unsupervised image categorization.
+\newblock In {\em ECCV\/}.
+
+\bibitem[{Dai et~al.(2012{\natexlab{b}})Dai, Prasad, Leistner, \& {Van
+  Gool}}]{dai:eccv12b}
+Dai, D., Prasad, M., Leistner, C., \& {Van Gool}, L. (2012{\natexlab{b}}).
+\newblock Ensemble partitioning for unsupervised image categorization.
+\newblock In {\em European Conference on Computer Vision\/}, (pp. 483--496).
+
+\bibitem[{Dai et~al.(2014)Dai, Riemenschneider, \& {Van
+  Gool}}]{dai:synthesizability}
+Dai, D., Riemenschneider, H., \& {Van Gool}, L. (2014).
+\newblock The synthesizability of texture examples.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Dai \& {Van Gool}(2013)}]{dai:iccv13b}
+Dai, D., \& {Van Gool}, L. (2013).
+\newblock Ensemble projection for semi-supervised image classification.
+\newblock In {\em International Conference on Computer Vision\/}, (pp.
+  2072--2079).
+
+\bibitem[{Dai et~al.(2016{\natexlab{b}})Dai, Wang, Chen, \& {Van
+  Gool}}]{SR4VTs:wacv16}
+Dai, D., Wang, Y., Chen, Y., \& {Van Gool}, L. (2016{\natexlab{b}}).
+\newblock Is image super-resolution helpful for other vision tasks?
+\newblock In {\em WACV\/}.
+
+\bibitem[{Dai et~al.(2010)Dai, Wu, \& Zhu}]{dai}
+Dai, D., Wu, T., \& Zhu, S.~C. (2010).
+\newblock Discovering scene categories by information projection and cluster
+  sampling.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}, (pp. 483--496).
+
+\bibitem[{Dai et~al.(2015{\natexlab{b}})Dai, He, \& Sun}]{BoxSup}
+Dai, J., He, K., \& Sun, J. (2015{\natexlab{b}}).
+\newblock Boxsup: Exploiting bounding boxes to supervise convolutional networks
+  for semantic segmentation.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Deng et~al.(2009)Deng, Dong, Socher, Li, Li, \& Fei-Fei}]{imagenet}
+Deng, J., Dong, W., Socher, R., Li, L.-J., Li, K., \& Fei-Fei, L. (2009).
+\newblock Imagenet: A large-scale hierarchical image database.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Deng et~al.(2014)Deng, Russakovsky, Krause, Bernstein, Berg, \&
+  Fei-Fei}]{scalable:annotation}
+Deng, J., Russakovsky, O., Krause, J., Bernstein, M.~S., Berg, A., \& Fei-Fei,
+  L. (2014).
+\newblock Scalable multi-label annotation.
+
+\bibitem[{Divvala et~al.(2014)Divvala, Farhadi, \&
+  Guestrin}]{everything:anything}
+Divvala, S., Farhadi, A., \& Guestrin, C. (2014).
+\newblock Learning everything about anything: Webly-supervised visual concept
+  learning.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Doersch et~al.(2015)Doersch, Gupta, \& Efros}]{feature:context}
+Doersch, C., Gupta, A., \& Efros, A.~A. (2015).
+\newblock Unsupervised visual representation learning by context prediction.
+\newblock In {\em International Conference on Computer Vision\/}, (pp.
+  1422--1430).
+
+\bibitem[{Doll{\'a}r \& Zitnick(2013)}]{edge:srf}
+Doll{\'a}r, P., \& Zitnick, C.~L. (2013).
+\newblock Structured forests for fast edge detection.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Donahue et~al.(2014{\natexlab{a}})Donahue, Jia, Vinyals, Hoffman,
+  Zhang, Tzeng, \& Darrell}]{Decaf:icml2014}
+Donahue, J., Jia, Y., Vinyals, O., Hoffman, J., Zhang, N., Tzeng, E., \&
+  Darrell, T. (2014{\natexlab{a}}).
+\newblock Decaf: A deep convolutional activation feature for generic visual
+  recognition.
+\newblock In {\em ICML\/}.
+
+\bibitem[{Donahue et~al.(2014{\natexlab{b}})Donahue, Jia, Vinyals, Hoffman,
+  Zhang, Tzeng, \& Darrell}]{caffe14}
+Donahue, J., Jia, Y., Vinyals, O., Hoffman, J., Zhang, N., Tzeng, E., \&
+  Darrell, T. (2014{\natexlab{b}}).
+\newblock Decaf: A deep convolutional activation feature for generic visual
+  recognition.
+\newblock In {\em International Conference on Machine Learning\/}.
+
+\bibitem[{Dosovitskiy et~al.(2014)Dosovitskiy, {T. Springenberg}, Riedmiller,
+  \& Brox}]{cnnfet14}
+Dosovitskiy, A., {T. Springenberg}, J., Riedmiller, M., \& Brox, T. (2014).
+\newblock Discriminative unsupervised feature learning with convolutional
+  neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems\/}, (pp.
+  766--774).
+
+\bibitem[{Dueck \& Frey(2007)}]{Frey_AffinityPropagation}
+Dueck, D., \& Frey, B.~J. (2007).
+\newblock Non-metric affinity propagation for unsupervised image
+  categorization.
+
+\bibitem[{Dutt~Jain \& Grauman(2013)}]{annotation:strength}
+Dutt~Jain, S., \& Grauman, K. (2013).
+\newblock Predicting sufficient annotation strength for interactive foreground
+  segmentation.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Ebert et~al.(2012)Ebert, Fritz, \& Schiele}]{Ebert2013}
+Ebert, S., Fritz, M., \& Schiele, B. (2012).
+\newblock Semi-supervised learning on a budget: Scaling up to large datasets.
+\newblock In {\em ACCV\/}.
+
+\bibitem[{Ebert et~al.(2010)Ebert, Larlus, \& Schiele}]{eccv10:ssl}
+Ebert, S., Larlus, D., \& Schiele, B. (2010).
+\newblock Extracting structures in image collections for object recognition.
+\newblock In {\em European Conference on Computer Vision\/}, (pp. 720--733).
+
+\bibitem[{Everingham et~al.(2010)Everingham, Van~Gool, Williams, Winn, \&
+  Zisserman}]{pascal:2011}
+Everingham, M., Van~Gool, L., Williams, C., Winn, J., \& Zisserman, A. (2010).
+\newblock The pascal visual object classes (voc) challenge.
+\newblock {\em IJCV\/}, {\em 88\/}(2), 303--338.
+
+\bibitem[{Faktor \& Irani(2012)}]{fakton:eccv12}
+Faktor, A., \& Irani, M. (2012).
+\newblock "clustering by composition" - unsupervised discovery of image
+  categories.
+\newblock In {\em ECCV\/}.
+
+\bibitem[{Fan et~al.(2008)Fan, Chang, Hsieh, Wang, \& Lin}]{liblinear}
+Fan, R.-E., Chang, K.~W., Hsieh, C.~J., Wang, X.~R., \& Lin, C.~J. (2008).
+\newblock Liblinear: A library for large linear classification.
+\newblock {\em JMLR\/}, {\em 9\/}(6/1/2008), 1871--1874.
+\newline\urlprefix\url{http://portal.acm.org/citation.cfm?id=1442794}
+
+\bibitem[{Farhadi et~al.(2009)Farhadi, Endres, Hoiem, \&
+  Forsyth}]{ObjectAttribute:cvpr09}
+Farhadi, A., Endres, I., Hoiem, D., \& Forsyth, D. (2009).
+\newblock Describing objects by their attributes.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}.
+
+\bibitem[{Fei-Fei et~al.(2004)Fei-Fei, Fergus, \& Perona}]{FeiFei2004}
+Fei-Fei, L., Fergus, R., \& Perona, P. (2004).
+\newblock Learning generative visual models from few training examples: an
+  incremental {B}ayesian approach tested on 101 object categories.
+\newblock In {\em Workshop on Generative-Model Based Vision\/}.
+
+\bibitem[{Felzenszwalb et~al.(2010)Felzenszwalb, Girshick, \&
+  McAllester}]{felzenszwalb2010cascade}
+Felzenszwalb, P.~F., Girshick, R.~B., \& McAllester, D. (2010).
+\newblock Cascade object detection with deformable part models.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Fergus et~al.(2003)Fergus, Perona, \& Zisserman}]{Fergus03}
+Fergus, R., Perona, P., \& Zisserman, A. (2003).
+\newblock Object class recognition by unsupervised scale-invariant learning.
+\newblock vol.~2, (pp. 264--271).
+
+\bibitem[{Fergus et~al.(2009)Fergus, Weiss, \& Torralba}]{Fergus09}
+Fergus, R., Weiss, Y., \& Torralba, A. (2009).
+\newblock Semi-supervised learning in gigantic image collections.
+\newblock In {\em NIPS\/}.
+
+\bibitem[{Fernando et~al.(2013)Fernando, Habrard, Sebban, \&
+  Tuytelaars}]{DASA:iccv13}
+Fernando, B., Habrard, A., Sebban, M., \& Tuytelaars, T. (2013).
+\newblock Unsupervised visual domain adaptation using subspace alignment.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Frey \& Dueck(2007)}]{Frey_Dueck_2007}
+Frey, B.~J., \& Dueck, D. (2007).
+\newblock Clustering by passing messages between data points.
+\newblock {\em Science\/}, {\em 315\/}(5814), 972--976.
+\newline\urlprefix\url{http://www.ncbi.nlm.nih.gov/pubmed/17218491}
+
+\bibitem[{Freytag et~al.(2014)Freytag, Rodner, \& Denzler}]{SIEAL}
+Freytag, A., Rodner, E., \& Denzler, J. (2014).
+\newblock Selecting influential examples: Active learning with expected model
+  output changes.
+\newblock In {\em ECCV\/}.
+
+\bibitem[{Geiger et~al.(2013)Geiger, Lenz, Stiller, \& Urtasun}]{kitti}
+Geiger, A., Lenz, P., Stiller, C., \& Urtasun, R. (2013).
+\newblock Vision meets robotics: The kitti dataset.
+\newblock {\em The International Journal of Robotics Research\/}.
+
+\bibitem[{Girshick et~al.(2014{\natexlab{a}})Girshick, Donahue, Darrell, \&
+  Malik}]{rcnn}
+Girshick, R., Donahue, J., Darrell, T., \& Malik, J. (2014{\natexlab{a}}).
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Girshick et~al.(2014{\natexlab{b}})Girshick, Donahue, Darrell, \&
+  Malik}]{rich:feature:cvpr14}
+Girshick, R., Donahue, J., Darrell, T., \& Malik, J. (2014{\natexlab{b}}).
+\newblock Rich feature hierarchies for accurate object detection and semantic
+  segmentation.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}.
+
+\bibitem[{Gong et~al.(2013)Gong, Kumar, Rowley, \& Lazebnik}]{Gong_2013_CVPR}
+Gong, Y., Kumar, S., Rowley, H.~A., \& Lazebnik, S. (2013).
+\newblock Learning binary codes for high-dimensional data using bilinear
+  projections.
+\newblock In {\em The IEEE Conference on Computer Vision and Pattern
+  Recognition (CVPR)\/}.
+
+\bibitem[{Gopalan et~al.(2011)Gopalan, Li, \& Chellappa}]{DA:iccv11}
+Gopalan, R., Li, R., \& Chellappa, R. (2011).
+\newblock Domain adaptation for object recognition: An unsupervised approach.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Grauman \& Darrell(2006)}]{Grauman06}
+Grauman, K., \& Darrell, T. (2006).
+\newblock Unsupervised learning of categories from sets of partially matching
+  image features.
+
+\bibitem[{Graves \& Jaitly(2014)}]{end-to-end:speech}
+Graves, A., \& Jaitly, N. (2014).
+\newblock Towards end-to-end speech recognition with recurrent neural networks.
+\newblock In {\em ICML\/}.
+
+\bibitem[{Gregor et~al.(2015)Gregor, Danihelka, Graves, \&
+  Wierstra}]{draw:2015}
+Gregor, K., Danihelka, I., Graves, A., \& Wierstra, D. (2015).
+\newblock Draw: A recurrent neural network for image generation.
+\newblock In {\em ICML\/}.
+
+\bibitem[{Guadarrama et~al.(2013)Guadarrama, Krishnamoorthy, Malkarnenkar,
+  Venugopalan, Mooney, Darrell, \& Saenko}]{youtube2text}
+Guadarrama, S., Krishnamoorthy, N., Malkarnenkar, G., Venugopalan, S., Mooney,
+  R., Darrell, T., \& Saenko, K. (2013).
+\newblock Youtube2text: Recognizing and describing arbitrary activities using
+  semantic hierarchies and zero-shot recognition.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Guillaumin et~al.(2010)Guillaumin, Verbeek, \&
+  Schmid}]{Guillaumin:cvpr:10}
+Guillaumin, M., Verbeek, J.~J., \& Schmid, C. (2010).
+\newblock Multimodal semi-supervised learning for image classification.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}, (pp. 902--909).
+
+\bibitem[{Gulshan et~al.(2010)Gulshan, Rother, Criminisi, Blake, \&
+  Zisserman}]{geodesic:star}
+Gulshan, V., Rother, C., Criminisi, A., Blake, A., \& Zisserman, A. (2010).
+\newblock Geodesic star convexity for interactive image segmentation.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Gupta \& Davis(2008)}]{gupta2008beyond}
+Gupta, A., \& Davis, L.~S. (2008).
+\newblock Beyond nouns: Exploiting prepositions and comparative adjectives for
+  learning visual classifiers.
+\newblock In {\em ECCV\/}, (pp. 16--29). Springer.
+
+\bibitem[{Gupta et~al.(2015)Gupta, Hoffman, \& Malik}]{SuTransfer}
+Gupta, S., Hoffman, J., \& Malik, J. (2015).
+\newblock Cross modal distillation for supervision transfer.
+\newblock {\em arXiv:1507.00448\/}.
+
+\bibitem[{H.~Zhang \& Malik(2006)}]{SVM-KNN}
+H.~Zhang, M.~M., A.~Berg, \& Malik, J. (2006).
+\newblock Svm-knn: Discriminative nearest neighbor classification for visual
+  category recognition.
+
+\bibitem[{Hariharan et~al.(2011)Hariharan, Arbel{\'a}ez, Bourdev, Maji, \&
+  Malik}]{semantic:contour}
+Hariharan, B., Arbel{\'a}ez, P., Bourdev, L., Maji, S., \& Malik, J. (2011).
+\newblock Semantic contours from inverse detectors.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Hartmann et~al.(2014)Hartmann, Havlena, \& Schindler}]{matchability}
+Hartmann, W., Havlena, M., \& Schindler, K. (2014).
+\newblock Predicting matchability.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition\/}, (pp. 9--16).
+
+\bibitem[{Hazen et~al.(2007)Hazen, Sherry, \& Adler}]{speech:retri:img}
+Hazen, T.~J., Sherry, B., \& Adler, M. (2007).
+\newblock Speech-based annotation and retrieval of digital photographs.
+\newblock In {\em INTERSPEECH\/}.
+
+\bibitem[{He et~al.(2015)He, Zhang, Ren, \& Sun}]{ResNet}
+He, K., Zhang, X., Ren, S., \& Sun, J. (2015).
+\newblock Deep residual learning for image recognition.
+\newblock {\em arXiv preprint arXiv:1512.03385\/}.
+
+\bibitem[{Hinton et~al.(2014)Hinton, Vinyals, \& Dean}]{DistillingCNN}
+Hinton, G., Vinyals, O., \& Dean, J. (2014).
+\newblock Distilling the knowledge in a neural network.
+\newblock In {\em Deep Learning and Representation Learning Workshop, NIPS\/}.
+
+\bibitem[{Hoffman et~al.(2014)Hoffman, Guadarrama, Tzeng, Hu, Donahue,
+  Girshick, Darrell, \& Saenko}]{lsda}
+Hoffman, J., Guadarrama, S., Tzeng, E., Hu, R., Donahue, J., Girshick, R.,
+  Darrell, T., \& Saenko, K. (2014).
+\newblock {LSDA}: Large scale detection through adaptation.
+\newblock In {\em NIPS\/}.
+
+\bibitem[{Hoiem et~al.(2008)Hoiem, Efros, \& Hebert}]{hoiem2008putting}
+Hoiem, D., Efros, A.~A., \& Hebert, M. (2008).
+\newblock Putting objects in perspective.
+\newblock {\em International Journal of Computer Vision\/}, {\em 80\/}(1),
+  3--15.
+
+\bibitem[{Hoogs et~al.(2003)Hoogs, Rittscher, Stein, \&
+  Schmiederer}]{video:anno:knowledgebase}
+Hoogs, A., Rittscher, J., Stein, G., \& Schmiederer, J. (2003).
+\newblock Video content annotation using visual analysis and a large semantic
+  knowledgebase.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Jain et~al.(2015)Jain, van Gemert, \& Snoek}]{15000object}
+Jain, M., van Gemert, J.~C., \& Snoek, C.~G. (2015).
+\newblock What do 15,000 object categories tell us about classifying and
+  localizing actions?
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR)\/}, (pp.
+  46--55).
+
+\bibitem[{Jain \& Kapoor(2009)}]{JainK:cvpr09}
+Jain, P., \& Kapoor, A. (2009).
+\newblock Active learning for large multi-class problems.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}, (pp. 762--769).
+
+\bibitem[{Jia et~al.(2014)Jia, Shelhamer, Donahue, Karayev, Long, Girshick,
+  Guadarrama, \& Darrell}]{Caffe}
+Jia, Y., Shelhamer, E., Donahue, J., Karayev, S., Long, J., Girshick, R.,
+  Guadarrama, S., \& Darrell, T. (2014).
+\newblock Caffe: Convolutional architecture for fast feature embedding.
+\newblock In {\em ACM International Conference on Multimedia\/}.
+
+\bibitem[{Joachims(1999)}]{Joachims:1999}
+Joachims, T. (1999).
+\newblock Transductive inference for text classification using support vector
+  machines.
+\newblock In {\em International Conference on Machine Learning\/}, (pp.
+  200--209).
+
+\bibitem[{Joshi et~al.(2009{\natexlab{a}})Joshi, Porikli, \&
+  Papanikolopoulos}]{joshi2009multi}
+Joshi, A.~J., Porikli, F., \& Papanikolopoulos, N. (2009{\natexlab{a}}).
+\newblock Multi-class active learning for image classification.
+\newblock In {\em Computer Vision and Pattern Recognition, 2009. CVPR 2009.
+  IEEE Conference on\/}, (pp. 2372--2379). IEEE.
+
+\bibitem[{Joshi et~al.(2009{\natexlab{b}})Joshi, Porikli, \&
+  Papanikolopoulos}]{cvpr09:multi:al}
+Joshi, A.~J., Porikli, F., \& Papanikolopoulos, N. (2009{\natexlab{b}}).
+\newblock Multi-class active learning for image classification.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}, (pp. 2372--2379).
+
+\bibitem[{Kalashnikov et~al.(2011)Kalashnikov, Mehrotra, Xu, \&
+  Venkatasubramanian}]{speech:anno:img}
+Kalashnikov, D., Mehrotra, S., Xu, J., \& Venkatasubramanian, N. (2011).
+\newblock A semantics-based approach for speech annotation of images.
+\newblock {\em IEEE Trans. Knowl. Data Eng.\/}, {\em 23\/}(9), 1373--1387.
+
+\bibitem[{Karpathy \& Fei-Fei(2015)}]{deep:alignment:vl}
+Karpathy, A., \& Fei-Fei, L. (2015).
+\newblock Deep visual-semantic alignments for generating image descriptions.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Karpathy et~al.(2014)Karpathy, Toderici, Shetty, Leung, Sukthankar,
+  \& Fei-Fei}]{large:video:cnn}
+Karpathy, A., Toderici, G., Shetty, S., Leung, T., Sukthankar, R., \& Fei-Fei,
+  L. (2014).
+\newblock Large-scale video classification with convolutional neural networks.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Kendall et~al.(2015)Kendall, Badrinarayanan, \&
+  Cipolla}]{kendall2015bayesian}
+Kendall, A., Badrinarayanan, V., \& Cipolla, R. (2015).
+\newblock Bayesian segnet: Model uncertainty in deep convolutional
+  encoder-decoder architectures for scene understanding.
+\newblock {\em arXiv preprint arXiv:1511.02680\/}.
+
+\bibitem[{Khoreva et~al.(2016)Khoreva, Benenson, Omran, Hein, \&
+  Schiele}]{khoreva16cvpr}
+Khoreva, A., Benenson, R., Omran, M., Hein, M., \& Schiele, B. (2016).
+\newblock Weakly supervised object boundaries.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition (CVPR)\/}.
+
+\bibitem[{Kingma et~al.(2014)Kingma, Mohamed, Rezende, \& Welling}]{nips14:ssl}
+Kingma, D.~P., Mohamed, S., Rezende, D.~J., \& Welling, M. (2014).
+\newblock Semi-supervised learning with deep generative models.
+\newblock In {\em Advances in Neural Information Processing Systems\/}, (pp.
+  3581--3589).
+
+\bibitem[{Kondermann et~al.(2008)Kondermann, Mester, \&
+  Garbe}]{confidence:of:08}
+Kondermann, C., Mester, R., \& Garbe, C. (2008).
+\newblock A statistical confidence measure for optical flows.
+\newblock In {\em ECCV\/}.
+
+\bibitem[{Kopf et~al.(2012)Kopf, Kienzle, Drucker, \&
+  Kang}]{completion:quality}
+Kopf, J., Kienzle, W., Drucker, S., \& Kang, S.~B. (2012).
+\newblock Quality prediction for image completion.
+\newblock {\em ACM Trans. Graph.\/}, {\em 31\/}(6).
+
+\bibitem[{Kozakaya et~al.(2011)Kozakaya, Ito, \& Kubota}]{ensemble:iccv11}
+Kozakaya, T., Ito, S., \& Kubota, S. (2011).
+\newblock Random ensemble metrics for object recognition.
+\newblock In {\em International Conference on Computer Vision\/}, (pp.
+  1959--1966).
+
+\bibitem[{Kr\"{a}henb\"{u}hl \& Koltun(2011)}]{fully-crf}
+Kr\"{a}henb\"{u}hl, P., \& Koltun, V. (2011).
+\newblock Efficient inference in fully connected crfs with gaussian edge
+  potentials.
+\newblock In {\em NIPS\/}.
+
+\bibitem[{Krizhevsky et~al.(2012{\natexlab{a}})Krizhevsky, Sutskever, \&
+  Hinton}]{nips12:cnn}
+Krizhevsky, A., Sutskever, I., \& Hinton, G.~E. (2012{\natexlab{a}}).
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems\/}, (pp.
+  1097--1105).
+
+\bibitem[{Krizhevsky et~al.(2012{\natexlab{b}})Krizhevsky, Sutskever, \&
+  Hinton}]{deepnet:nips12}
+Krizhevsky, A., Sutskever, I., \& Hinton, G.~E. (2012{\natexlab{b}}).
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em NIPS\/}.
+
+\bibitem[{Kulis et~al.(2011)Kulis, Saenko, \& Darrell}]{tl:kernel:11}
+Kulis, B., Saenko, K., \& Darrell, T. (2011).
+\newblock What you saw is not what you get: Domain adaptation using asymmetric
+  kernel transforms.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Kulkarni et~al.(2013)Kulkarni, Premraj, Ordonez, Dhar, Li, Choi,
+  Berg, \& Berg}]{babytalk}
+Kulkarni, G., Premraj, V., Ordonez, V., Dhar, S., Li, S., Choi, Y., Berg,
+  A.~C., \& Berg, T.~L. (2013).
+\newblock Babytalk: Understanding and generating simple image descriptions.
+\newblock {\em PAMI\/}, {\em 35\/}(12), 2891--2903.
+
+\bibitem[{Kumar~Mallapragada et~al.(2009)Kumar~Mallapragada, Jin, Jain, \&
+  Liu}]{SemiBoost}
+Kumar~Mallapragada, P., Jin, R., Jain, A., \& Liu, Y. (2009).
+\newblock Semiboost: Boosting for semi-supervised learning.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine
+  Intelligence\/}, {\em 31\/}(11), 2000--2014.
+
+\bibitem[{Lampert et~al.(2009)Lampert, Nickisch, \&
+  Harmeling}]{tl:attribute:09}
+Lampert, C., Nickisch, H., \& Harmeling, S. (2009).
+\newblock Learning to detect unseen object classes by between-class attribute
+  transfer.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Laput et~al.(2013)Laput, Dontcheva, Wilensky, Chang, Agarwala,
+  Linder, \& Adar}]{pixel:tone}
+Laput, G.~P., Dontcheva, M., Wilensky, G., Chang, W., Agarwala, A., Linder, J.,
+  \& Adar, E. (2013).
+\newblock Pixeltone: a multimodal interface for image editing.
+\newblock In {\em CHI\/}.
+
+\bibitem[{Lazebnik et~al.(2005)Lazebnik, Schmid, \& Ponce}]{UIUC:Texture}
+Lazebnik, S., Schmid, C., \& Ponce, J. (2005).
+\newblock A sparse texture representation using local affine regions.
+\newblock {\em PAMI\/}, {\em 27\/}(8), 1265--1278.
+
+\bibitem[{Lazebnik et~al.(2006)Lazebnik, Schmid, \& Ponce}]{lazebnik:cvpr06}
+Lazebnik, S., Schmid, C., \& Ponce, J. (2006).
+\newblock Beyond bags of features: Spatial pyramid matching for recognizing
+  natural scene categories.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Leistner et~al.(2009)Leistner, Saffari, Santner, \&
+  Bischof}]{SemiForest}
+Leistner, C., Saffari, A., Santner, J., \& Bischof, H. (2009).
+\newblock Semi-supervised random forests.
+\newblock In {\em International Conference on Computer Vision\/}, (pp.
+  506--513).
+
+\bibitem[{Li \& Fei-Fei(2007)}]{event-8}
+Li, L.-J., \& Fei-Fei, L. (2007).
+\newblock What, where and who? classifying event by scene and object
+  recognition.
+\newblock In {\em International Conference on Computer Vision\/}, (pp. 1--8).
+
+\bibitem[{Li et~al.(2010)Li, Su, Xing, \& Li}]{li:objectbank}
+Li, L.-J., Su, H., Xing, E.~P., \& Li, F.-F. (2010).
+\newblock Object bank: A high-level image representation for scene
+  classification \& semantic feature sparsification.
+\newblock In {\em Advances in Neural Information Processing Systems\/}, (pp.
+  1378--1386).
+
+\bibitem[{Li et~al.(2016)Li, Dai, Tan, Xu, \& {Van Gool}}]{fastsvm+2016}
+Li, W., Dai, D., Tan, M., Xu, D., \& {Van Gool}, L. (2016).
+\newblock Fast algorithms for linear and kernel svm+.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR)\/}.
+
+\bibitem[{Li \& Zhou(2011)}]{neverhurt:icml11}
+Li, Y.-F., \& Zhou, Z.-H. (2011).
+\newblock Towards making unlabeled data never hurt.
+\newblock In {\em International Conference on Machine Learning\/}, (pp.
+  175--188).
+
+\bibitem[{Lin et~al.(2014)Lin, Maire, Belongie, Hays, Perona, Ramanan, Dollár,
+  \& Zitnick}]{coco:eccv}
+Lin, T.-Y., Maire, M., Belongie, S., Hays, J., Perona, P., Ramanan, D.,
+  Dollár, P., \& Zitnick, C. (2014).
+\newblock Microsoft coco: Common objects in context.
+\newblock In {\em ECCV\/}.
+
+\bibitem[{Liu \& He(2015)}]{liu2015multiclass}
+Liu, B., \& He, X. (2015).
+\newblock Multiclass semantic video segmentation with object-level active
+  inference.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition\/}, (pp. 4286--4294).
+
+\bibitem[{Liu et~al.(2010)Liu, He, \& Chang}]{icml10:large:graph:ssl}
+Liu, W., He, J., \& Chang, S.-F. (2010).
+\newblock Large graph construction for scalable semi-supervised learning.
+\newblock In {\em Proceedings of the 27th International Conference on Machine
+  Learning (ICML-10)\/}, (pp. 679--686).
+
+\bibitem[{Long et~al.(2015)Long, Shelhamer, \& Darrell}]{Long_2015_CVPR}
+Long, J., Shelhamer, E., \& Darrell, T. (2015).
+\newblock Fully convolutional networks for semantic segmentation.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Maas et~al.(2015)Maas, Xie, Jurafsky, \& Ng}]{lexfree2015}
+Maas, A.~L., Xie, Z., Jurafsky, D., \& Ng, A.~Y. (2015).
+\newblock Lexicon-free conversational speech recognition with neural networks.
+\newblock In {\em Proceedings the North American Chapter of the Association for
+  Computational Linguistics (NAACL)\/}.
+
+\bibitem[{Martinovic et~al.(2015)Martinovic, Knopp, Riemenschneider, \&
+  Van~Gool}]{martinovic20153d}
+Martinovic, A., Knopp, J., Riemenschneider, H., \& Van~Gool, L. (2015).
+\newblock 3d all the way: Semantic segmentation of urban scenes from start to
+  end in 3d.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition\/}, (pp. 4456--4465).
+
+\bibitem[{Mottaghi et~al.(2014)Mottaghi, Chen, Liu, Cho, Lee, Fidler, Urtasun,
+  \& Yuille}]{pascal:context}
+Mottaghi, R., Chen, X., Liu, X., Cho, N.-G., Lee, S.-W., Fidler, S., Urtasun,
+  R., \& Yuille, A. (2014).
+\newblock The role of context for object detection and semantic segmentation in
+  the wild.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Ojala et~al.(2002)Ojala, Pietik\"{a}inen, \&
+  M\"{a}enp\"{a}\"{a}}]{Ojala02}
+Ojala, T., Pietik\"{a}inen, M., \& M\"{a}enp\"{a}\"{a}, T. (2002).
+\newblock Multiresolution gray-scale and rotation invariant texture
+  classification with local binary patterns.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine
+  Intelligence\/}, {\em 24\/}(7), 971--987.
+
+\bibitem[{Oliva \& Torralba(2001)}]{gist}
+Oliva, A., \& Torralba, A. (2001).
+\newblock Modeling the shape of the scene: A holistic representation of the
+  spatial envelope.
+\newblock {\em IJCV\/}, {\em 42\/}(3), 145--175.
+
+\bibitem[{Pan \& Yang(2010)}]{tl:survey}
+Pan, S.~J., \& Yang, Q. (2010).
+\newblock A survey on transfer learning.
+\newblock {\em IEEE Trans. on Knowl. and Data Eng.\/}, {\em 22\/}(10),
+  1345--1359.
+
+\bibitem[{Papadopoulos et~al.(2014)Papadopoulos, Clarke, Keller, \&
+  Ferrari}]{detect:eyetr}
+Papadopoulos, D., Clarke, A., Keller, F., \& Ferrari, V. (2014).
+\newblock Training object class detectors from eye tracking data.
+\newblock In {\em ECCV\/}.
+
+\bibitem[{Papadopoulos et~al.(2016)Papadopoulos, Uijlings, Keller, \&
+  Ferrari}]{donot:bbox}
+Papadopoulos, D.~P., Uijlings, J. R.~R., Keller, F., \& Ferrari, V. (2016).
+\newblock We don't need no bounding-boxes: Training object class detectors
+  using only human verification.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Papandreou et~al.(2015)Papandreou, Chen, Murphy, \& Yuille}]{cnn:em}
+Papandreou, G., Chen, L.-C., Murphy, K., \& Yuille, A.~L. (2015).
+\newblock Weakly- and semi-supervised learning of a deep convolutional network
+  for semantic image segmentation.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Park \& Yoon(2015)}]{stereo:confidence}
+Park, M.-G., \& Yoon, K.-J. (2015).
+\newblock Leveraging stereo matching with learning-based confidence measures.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2015 IEEE
+  Conference on\/}, (pp. 101--109).
+
+\bibitem[{Pathak et~al.(2015{\natexlab{a}})Pathak, Kr\"{a}henb\"{u}hl, \&
+  Darrell}]{ConsCNN}
+Pathak, D., Kr\"{a}henb\"{u}hl, P., \& Darrell, T. (2015{\natexlab{a}}).
+\newblock Constrained convolutional neural networks for weakly supervised
+  segmentation.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Pathak et~al.(2015{\natexlab{b}})Pathak, Shelhamer, Long, \&
+  Darrell}]{cnn:mil}
+Pathak, D., Shelhamer, E., Long, J., \& Darrell, T. (2015{\natexlab{b}}).
+\newblock Fully convolutional multi-class multiple instance learning.
+\newblock In {\em ICLR\/}.
+
+\bibitem[{Paulin et~al.(2014)Paulin, Revaud, Harchaoui, Perronnin, \&
+  Schmid}]{transformation:cvpr14}
+Paulin, M., Revaud, J., Harchaoui, Z., Perronnin, F., \& Schmid, C. (2014).
+\newblock Transformation pursuit for image classification.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}, (pp. 3646--3653).
+
+\bibitem[{Pinheiro \& Collobert(2015)}]{img:pix:cnn}
+Pinheiro, P. H.~O., \& Collobert, R. (2015).
+\newblock From image-level to pixel-level labeling with convolutional networks.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Pitelis et~al.(2014)Pitelis, Russell, \& Agapito}]{ecml14:ssl}
+Pitelis, N., Russell, C., \& Agapito, L. (2014).
+\newblock Semi-supervised learning using an unsupervised atlas.
+\newblock In {\em Machine Learning and Knowledge Discovery in Databases\/},
+  vol. 8725, (pp. 565--580).
+
+\bibitem[{Prest et~al.(2012)Prest, Leistner, Civera, Schmid, \&
+  Ferrari}]{cvpr12:weak:video}
+Prest, A., Leistner, C., Civera, J., Schmid, C., \& Ferrari, V. (2012).
+\newblock Learning object class detectors from weakly annotated video.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}, (pp. 3282--3289).
+
+\bibitem[{Quattoni et~al.(2008)Quattoni, Collins, \&
+  Darrell}]{Transfer:CVPR:08}
+Quattoni, A., Collins, M., \& Darrell, T. (2008).
+\newblock Transfer learning for image classification with sparse prototype
+  representations.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}.
+
+\bibitem[{Quattoni \& Torralba(2009)}]{Indoor}
+Quattoni, A., \& Torralba, A. (2009).
+\newblock Recognizing indoor scenes.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Raina et~al.(2007)Raina, Battle, Lee, Packer, \&
+  Ng}]{self-taught:icml07}
+Raina, R., Battle, A., Lee, H., Packer, B., \& Ng, A.~Y. (2007).
+\newblock Self-taught learning: transfer learning from unlabeled data.
+\newblock In {\em International Conference on Machine Learning\/}, (pp.
+  759--766).
+
+\bibitem[{Rokach(2010)}]{EnClasReview}
+Rokach, L. (2010).
+\newblock Ensemble-based classifiers.
+\newblock {\em Artificial Intelligence Review\/}, {\em 33\/}(1-2), 1--39.
+
+\bibitem[{Romero et~al.(2014)Romero, Ballas, Kahou, Chassang, Gatta, \&
+  Bengio}]{romero2014fitnets}
+Romero, A., Ballas, N., Kahou, S.~E., Chassang, A., Gatta, C., \& Bengio, Y.
+  (2014).
+\newblock Fitnets: Hints for thin deep nets.
+\newblock {\em arXiv preprint arXiv:1412.6550\/}.
+
+\bibitem[{Rosch(1978)}]{Rosch:1978}
+Rosch, E. (1978).
+\newblock Principles of categorization.
+\newblock {\em Cognition and Categorization\/}, (pp. 27--48).
+
+\bibitem[{Russakovsky et~al.(2015{\natexlab{a}})Russakovsky, Deng, Su, Krause,
+  Satheesh, Ma, Huang, Karpathy, Khosla, Bernstein, Berg, \&
+  Fei-Fei}]{imageNet:challenge}
+Russakovsky, O., Deng, J., Su, H., Krause, J., Satheesh, S., Ma, S., Huang, Z.,
+  Karpathy, A., Khosla, A., Bernstein, M., Berg, A., \& Fei-Fei, L.
+  (2015{\natexlab{a}}).
+\newblock Imagenet large scale visual recognition challenge.
+\newblock {\em IJCV\/}, (pp. 1--42).
+
+\bibitem[{Russakovsky et~al.(2015{\natexlab{b}})Russakovsky, Li, \&
+  Fei-Fei}]{best:two:world}
+Russakovsky, O., Li, L.-J., \& Fei-Fei, L. (2015{\natexlab{b}}).
+\newblock Best of both worlds: human-machine collaboration for object
+  annotation.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Russell et~al.(2008{\natexlab{a}})Russell, Torralba, Murphy, \&
+  Freeman}]{label:me}
+Russell, B.~C., Torralba, A., Murphy, K.~P., \& Freeman, W.~T.
+  (2008{\natexlab{a}}).
+\newblock Labelme: A database and web-based tool for image annotation.
+\newblock {\em IJCV\/}, {\em 77\/}(1-3), 157--173.
+
+\bibitem[{Russell et~al.(2008{\natexlab{b}})Russell, Torralba, Murphy, \&
+  Freeman}]{labelme}
+Russell, B.~C., Torralba, A., Murphy, K.~P., \& Freeman, W.~T.
+  (2008{\natexlab{b}}).
+\newblock Labelme: a database and web-based tool for image annotation.
+\newblock {\em International Journal of Computer Vision\/}, {\em 77\/}(1-3),
+  157--173.
+
+\bibitem[{Rusu et~al.(2016)Rusu, Colmenarejo, Gulcehre, Desjardins,
+  Kirkpatrick, Pascanu, Mnih, Kavukcuoglu, \& Hadsell}]{policy:distilling}
+Rusu, A.~A., Colmenarejo, S.~G., Gulcehre, C., Desjardins, G., Kirkpatrick, J.,
+  Pascanu, R., Mnih, V., Kavukcuoglu, K., \& Hadsell, R. (2016).
+\newblock Policy distillation.
+\newblock In {\em ICLR\/}.
+
+\bibitem[{Saini \& Kaur(2013)}]{SR:review}
+Saini, P., \& Kaur, P. (2013).
+\newblock Automatic speech recognition: A review.
+\newblock {\em IJETT\/}.
+
+\bibitem[{Sharmanska et~al.(2012)Sharmanska, Quadrianto, \&
+  Lampert}]{augmented_attribute:eccv12}
+Sharmanska, V., Quadrianto, N., \& Lampert, C. (2012).
+\newblock Augmented attribute representations.
+\newblock In {\em European Conference on Computer Vision\/}, (pp. 242--255).
+
+\bibitem[{Shotton et~al.(2009)Shotton, Winn, Rother, \&
+  Criminisi}]{texton:boost}
+Shotton, J., Winn, J., Rother, C., \& Criminisi, A. (2009).
+\newblock Textonboost for image understanding: Multi-class object recognition
+  and segmentation by jointly modeling texture, layout, and context.
+\newblock {\em IJCV\/}.
+
+\bibitem[{Shrivastava et~al.(2012)Shrivastava, Singh, \& Gupta}]{Semi:eccv12}
+Shrivastava, A., Singh, S., \& Gupta, A. (2012).
+\newblock Constrained semi-supervised learning using attributes and comparative
+  attributes.
+\newblock In {\em European Conference on Computer Vision\/}, (pp. 369--383).
+
+\bibitem[{Silberman et~al.(2012)Silberman, Hoiem, Kohli, \& Fergus}]{NYU}
+Silberman, N., Hoiem, D., Kohli, P., \& Fergus, R. (2012).
+\newblock Indoor segmentation and support inference from rgbd images.
+\newblock In {\em ECCV\/}.
+
+\bibitem[{Simonyan \& Zisserman(2015)}]{vgg16}
+Simonyan, K., \& Zisserman, A. (2015).
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock In {\em ICLR\/}.
+
+\bibitem[{Singh et~al.(2012)Singh, Gupta, \& Efros}]{mid-level:patches}
+Singh, S., Gupta, A., \& Efros, A.~A. (2012).
+\newblock Unsupervised discovery of mid-level discriminative patches.
+\newblock In {\em European Conference on Computer Vision\/}, (pp. 73--86).
+
+\bibitem[{Sivic et~al.(2005)Sivic, Russell, Efros, Zisserman, \&
+  Freeman}]{Sivic05b}
+Sivic, J., Russell, B.~C., Efros, A.~A., Zisserman, A., \& Freeman, W.~T.
+  (2005).
+\newblock Discovering objects and their location in images.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Sivic et~al.(2008)Sivic, Russell, Zisserman, Freeman, \&
+  Efros}]{Sivic08}
+Sivic, J., Russell, B.~C., Zisserman, A., Freeman, W.~T., \& Efros, A.~A.
+  (2008).
+\newblock Unsupervised discovery of visual object class hierarchies.
+
+\bibitem[{Srihari \& Zhang(2000)}]{show:tell}
+Srihari, R., \& Zhang, Z. (2000).
+\newblock Show\&tell: a semi-automated image annotation system.
+\newblock {\em MultiMedia, IEEE\/}, {\em 7\/}(3), 61--71.
+
+\bibitem[{Tang et~al.(2013)Tang, Tzu-Wei, \& Chen}]{random:hashing}
+Tang, T.-Y., Tzu-Wei, H., \& Chen, H.-T. (2013).
+\newblock Random exemplar hashing.
+\newblock In {\em DDS\/}.
+
+\bibitem[{Thomason et~al.(2015)Thomason, Venugopalan, Guadarrama, Saenko, \&
+  Mooney}]{fgm:coling14}
+Thomason, J., Venugopalan, S., Guadarrama, S., Saenko, K., \& Mooney, R.
+  (2015).
+\newblock Integrating language and vision to generate natural language
+  descriptions of videos in the wild.
+\newblock In {\em COLING\/}.
+
+\bibitem[{Torresani et~al.(2010)Torresani, Szummer, \&
+  Fitzgibbon}]{eccv10:classemes}
+Torresani, L., Szummer, M., \& Fitzgibbon, A. (2010).
+\newblock Efficient object category recognition using classemes.
+\newblock In {\em European Conference on Computer Vision\/}, (pp. 776--789).
+
+\bibitem[{Tuytelaars et~al.(2010)Tuytelaars, Lampert, Blaschko, \&
+  Buntine}]{Tuytelaars_UnsupervisedSurvey}
+Tuytelaars, T., Lampert, C.~H., Blaschko, M.~B., \& Buntine, W. (2010).
+\newblock Unsupervised object discovery: A comparison.
+\newblock {\em International Journal of Computer Vision\/}, {\em 88\/}(2),
+  284--302.
+
+\bibitem[{Vedaldi \& Fulkerson(2008)}]{vlfeat}
+Vedaldi, A., \& Fulkerson, B. (2008).
+\newblock {VLFeat}: An open and portable library of computer vision algorithms.
+\newblock \url{http://www.vlfeat.org/}.
+
+\bibitem[{Vedaldi \& Lenc(2014)}]{MatConvNet}
+Vedaldi, A., \& Lenc, K. (2014).
+\newblock Matconvnet -- convolutional neural networks for matlab.
+\newblock {\em CoRR\/}, {\em abs/1412.4564\/}.
+
+\bibitem[{Verbeek \& Triggs(2007)}]{markov:topic}
+Verbeek, J., \& Triggs, B. (2007).
+\newblock Region classification with markov field aspect models.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Vezhnevets et~al.(2012)Vezhnevets, Buhmann, \&
+  Ferrari}]{expected:loss}
+Vezhnevets, A., Buhmann, J., \& Ferrari, V. (2012).
+\newblock Active learning for semantic segmentation with expected change.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Vijayanarasimhan \& Grauman(2012)}]{AFrameSel}
+Vijayanarasimhan, S., \& Grauman, K. (2012).
+\newblock Active frame selection for label propagation in videos.
+\newblock In {\em ECCV\/}.
+
+\bibitem[{Vinyals et~al.(2015)Vinyals, Toshev, Bengio, \&
+  Erhan}]{show:tell:caption}
+Vinyals, O., Toshev, A., Bengio, S., \& Erhan, D. (2015).
+\newblock Show and tell: A neural image caption generator.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Viola \& Jones(2001)}]{cascaded:01}
+Viola, P., \& Jones, M. (2001).
+\newblock Rapid object detection using a boosted cascade of simple features.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Von~Ahn(2006)}]{game:purpose}
+Von~Ahn, L. (2006).
+\newblock Games with a purpose.
+\newblock {\em Computer\/}, {\em 39\/}(6), 92--94.
+
+\bibitem[{Wang et~al.(2010)Wang, Yang, Yu, Lv, Huang, \& Gong}]{siftllc:cvpr10}
+Wang, J., Yang, J., Yu, K., Lv, F., Huang, T., \& Gong, Y. (2010).
+\newblock Locality-constrained linear coding for image classification.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Wang \& Gupta(2015)}]{feature:video}
+Wang, X., \& Gupta, A. (2015).
+\newblock Unsupervised learning of visual representations using videos.
+\newblock In {\em International Conference on Computer Vision\/}, (pp.
+  2794--2802).
+
+\bibitem[{Weston et~al.(2012)Weston, Ratle, Mobahi, \& Collobert}]{deep:ssl}
+Weston, J., Ratle, F., Mobahi, H., \& Collobert, R. (2012).
+\newblock Deep learning via semi-supervised embedding.
+\newblock In {\em Neural Networks: Tricks of the Trade\/}, (pp. 639--655).
+  Springer.
+
+\bibitem[{Xiao et~al.(2010)Xiao, Hays, Ehinger, Oliva, \& Torralba}]{Sun_2010}
+Xiao, J., Hays, J., Ehinger, K.~A., Oliva, A., \& Torralba, A. (2010).
+\newblock Sun database: Large-scale scene recognition from abbey to zoo.
+
+\bibitem[{Xu et~al.(2015{\natexlab{a}})Xu, Schwing, \& Urtasun}]{weak:seg:xu}
+Xu, J., Schwing, A.~G., \& Urtasun, R. (2015{\natexlab{a}}).
+\newblock Learning to segment under various forms of weak supervision.
+\newblock In {\em CVPR\/}.
+
+\bibitem[{Xu et~al.(2015{\natexlab{b}})Xu, Ren, Yan, Liao, \&
+  Jia}]{deepfilters}
+Xu, L., Ren, J., Yan, Q., Liao, R., \& Jia, J. (2015{\natexlab{b}}).
+\newblock Deep edge-aware filters.
+\newblock In {\em ICML\/}.
+
+\bibitem[{Xu et~al.(2014)Xu, Tao, Zhang, Wu, \& Tsoi}]{building-25}
+Xu, Z., Tao, D., Zhang, Y., Wu, J., \& Tsoi, A. (2014).
+\newblock Architectural style classification using multinomial latent logistic
+  regression.
+\newblock In {\em European Conference on Computer Vision\/}, (pp. 600--615).
+
+\bibitem[{Yang et~al.(2014)Yang, Dai, Shen, \& {Van Gool}}]{Yang_2014_CVPR}
+Yang, M., Dai, D., Shen, L., \& {Van Gool}, L. (2014).
+\newblock Latent dictionary learning for sparse representation based
+  classification.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}, (pp. 4138--4145).
+
+\bibitem[{Yang \& Newsam(2010)}]{landuse21}
+Yang, Y., \& Newsam, S. (2010).
+\newblock Bag-of-visual-words and spatial extensions for land-use
+  classification.
+\newblock In {\em International Conference on Advances in Geographic
+  Information Systems\/}, (pp. 270--279). ACM.
+
+\bibitem[{Yao et~al.(2011)Yao, Gall, Fanelli, \& Gool}]{eth_biwi_00883}
+Yao, A., Gall, J., Fanelli, G., \& Gool, L.~V. (2011).
+\newblock Does human action recognition benefit from pose estimation?
+\newblock In {\em British Machine Vision Conference (BMVC)\/}.
+
+\bibitem[{Yao et~al.(2012)Yao, Gall, Leistner, \& {Van
+  Gool}}]{yao2012interactive}
+Yao, A., Gall, J., Leistner, C., \& {Van Gool}, L. (2012).
+\newblock Interactive object detection.
+\newblock In {\em Computer Vision and Pattern Recognition (CVPR), 2012 IEEE
+  Conference on\/}, (pp. 3242--3249). IEEE.
+
+\bibitem[{Yu et~al.(2013)Yu, Cao, Feris, Smith, \&
+  Chang}]{design_attribute:cvpr13}
+Yu, F.~X., Cao, L., Feris, R.~S., Smith, J.~R., \& Chang, S.-F. (2013).
+\newblock Designing category-level attributes for discriminative visual
+  recognition.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern
+  Recognition\/}, (pp. 771--778).
+
+\bibitem[{Zelnik-Manor \& Perona(2004)}]{selftuning:04}
+Zelnik-Manor, L., \& Perona, P. (2004).
+\newblock Self-tuning spectral clustering.
+\newblock In {\em Advances in Neural Information Processing Systems\/}, (pp.
+  1601--1608).
+
+\bibitem[{Zhang et~al.(2014)Zhang, Wang, Farhadi, Hebert, \&
+  Parikh}]{zhang2014predicting}
+Zhang, P., Wang, J., Farhadi, A., Hebert, M., \& Parikh, D. (2014).
+\newblock Predicting failures of vision systems.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition\/}, (pp. 3566--3573).
+
+\bibitem[{Zheng et~al.(2015)Zheng, Jayasumana, Romera-Paredes, Vineet, Su, Du,
+  Huang, \& Torr}]{crfasrnn}
+Zheng, S., Jayasumana, S., Romera-Paredes, B., Vineet, V., Su, Z., Du, D.,
+  Huang, C., \& Torr, P. (2015).
+\newblock Conditional random fields as recurrent neural networks.
+\newblock In {\em ICCV\/}.
+
+\bibitem[{Zhou et~al.(2004)Zhou, Bousquet, Lal, Weston, \&
+  Schölkopf}]{Zhou:nips:04}
+Zhou, D., Bousquet, O., Lal, T.~N., Weston, J., \& Schölkopf, B. (2004).
+\newblock Learning with local and global consistency.
+\newblock In {\em Advances in Neural Information Processing Systems\/}, (pp.
+  321--328).
+
+\bibitem[{Zhu et~al.(2003)Zhu, Ghahramani, \& Lafferty}]{Zhu:Harmonic:03}
+Zhu, X., Ghahramani, Z., \& Lafferty, J. (2003).
+\newblock Semi-supervised learning using gaussian fields and harmonic
+  functions.
+\newblock In {\em International Conference on Machine Learning\/}, (pp.
+  912--919).
+
+\bibitem[{Zhu \& Goldberg(2009)}]{Zhu:ISL:2009}
+Zhu, X., \& Goldberg, A.~B. (2009).
+\newblock {\em Introduction to Semi-Supervised Learning\/}.
+
+\bibitem[{Zitnick \& Doll(2014)}]{edge:box}
+Zitnick, C.~L., \& Doll, P. (2014).
+\newblock {Edge Boxes : Locating Object Proposals from Edges}.
+\newblock In {\em ECCV\/}.
+
+\end{thebibliography}

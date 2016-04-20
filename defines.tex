@@ -1,0 +1,69 @@
+
+% italics
+\newcommand{\etal}[0]{~\emph{et al.}~}
+\newcommand{\ie}[0]{~\emph{i.e.}~}
+\newcommand{\eg}[0]{~\emph{e.g.}~}
+\newcommand{\cf}[0]{~\emph{c.f.}~}
+
+% citations
+\newcommand{\etalcite}[1]{\emph{et al.}~\shortcite{#1}}
+\newcommand{\twocite}[1]{\shortcite{#1}}
+\newcommand{\onecite}[1]{\shortcite{#1}}
+
+% sizes
+\def\figwidth{\textwidth}
+\def\figwidthSmaller{0.90\textwidth}
+\def\figwidthsingle{0.7\textwidth}
+\def\figwidthdouble{0.47\textwidth}
+\def\figwidthtripple{0.30\textwidth}
+\def\figwidthquad{0.22\textwidth}
+
+
+% maths
+\newcommand{\argmax}{\operatornamewithlimits{argmax}} 
+\newcommand{\argmin}{\operatornamewithlimits{argmin}} 
+
+% Mukta's Defines
+\definecolor{muktamxsizecolor}{RGB}{150,150,255}
+\newcommand{\matx}[1]{{\tt #1}}
+\newcommand{\inv}[1]{#1^{-1}}
+\newcommand{\vect}[1]{{\mathbf #1}}
+\newcommand{\mati}[1]{{\tt #1}^{-1}}
+\newcommand{\braces}[1]{\left\{ #1 \right\}}
+\newcommand{\paren}[1]{\left( #1 \right)}
+\newcommand{\bracket}[1]{\left[ #1 \right]}
+\newcommand{\muktamatrixsize}[3]{\ensuremath \underset{\textcolor{muktamxsizecolor}{#2 \times #3}}{#1} }
+\newcommand{\muktasmallmatrixsize}[3]{\ensuremath \underset{\textcolor{muktamxsizecolor}{{\tiny #2 \times #3}}}{#1} }
+\newcommand{\muktamatrix}[1]{\ensuremath \begin{matrix} #1 \end{matrix}}
+\newcommand{\muktabmatrix}[1]{\ensuremath \begin{bmatrix} #1 \end{bmatrix}}
+\newcommand{\muktaBmatrix}[1]{\ensuremath \begin{Bmatrix} #1 \end{Bmatrix}}
+\newcommand{\muktavmatrix}[1]{\ensuremath \begin{vmatrix} #1 \end{vmatrix}}
+\newcommand{\muktaVmatrix}[1]{\ensuremath \begin{Vmatrix} #1 \end{Vmatrix}}
+\newcommand{\muktapmatrix}[1]{\ensuremath \begin{pmatrix} #1 \end{pmatrix}}
+\newcommand{\muktasmallmatrix}[1]{\ensuremath \begin{smallmatrix} #1 \end{smallmatrix}}
+
+% comments
+\newcommand{\mycomment}[1]{{\textcolor{blue}{#1}}}
+
+
+\newcommand{\syn}[1]{$#1^\prime$}
+\newcommand{\synmn}[3]{$#1^\prime_{#2^\prime, #3^\prime}$}
+
+
+\def\d{\mathcal{D}}
+\def\dtrain{\mathcal{D}^\text{train}}
+\def\ntrain{{N}^\text{train}}
+\def\ntest{{N}^\text{test}}
+\def\dtest{\mathcal{D}^\text{test}}
+\def\feat{\vect{f}}
+\def\simi{\text{sim}}
+\def\numsamples{\inf}
+%\newcommand{\argmax}{\operatornamewithlimits{argmax}} 
+%\newcommand{\argmin}{\operatornamewithlimits{argmin}} 
+\def\enprox{{EnProx}\xspace}
+\def\wt{{\sc WT}\xspace}
+
+
+\newcommand{\efet}[1]{{\vect{#1}}}
+\newcommand{\cfet}[1]{{\vect{#1}}}
+\newcommand{\ctfet}[1]{\bar{\vect{#1}}}

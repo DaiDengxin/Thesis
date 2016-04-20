@@ -1,0 +1,289 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{pairwise:metric:IJCAI09}
+M.~S. Baghshah and S.~B. Shouraki.
+\newblock Semi-supervised metric learning using pairwise constraints.
+\newblock In {\em IJCAI}, 2009.
+
+\bibitem{eigenface:pami97}
+P.~N. Belhumeur, J.~a.~P. Hespanha, and D.~J. Kriegman.
+\newblock Eigenfaces vs. fisherfaces: Recognition using class specific linear
+  projection.
+\newblock {\em TPAMI}, 19(7):711--720, 1997.
+
+\bibitem{eigenmaps:nips01}
+M.~Belkin and P.~Niyogi.
+\newblock Laplacian eigenmaps and spectral techniques for embedding and
+  clustering.
+\newblock In {\em NIPS}, 2001.
+
+\bibitem{phog}
+A.~Bosch, A.~Zisserman, and X.~MuÃ±oz.
+\newblock Image classification using random forests and ferns.
+\newblock In {\em ICCV}, 2007.
+
+\bibitem{Chang-CVPR-2004}
+H.~Chang, D.-Y. Yeung, and Y.~Xiong.
+\newblock Super-resolution through neighbor embedding.
+\newblock {\em CVPR}, 01:275--282, 2004.
+
+\bibitem{deep:bmvc14}
+K.~Chatfield, K.~Simonyan, A.~Vedaldi, and A.~Zisserman.
+\newblock Return of the devil in the details: Delving deep into convolutional
+  nets.
+\newblock In {\em BMVC}, 2014.
+
+\bibitem{MDScaling:08}
+M.~A.~A. Cox and T.~F. Cox.
+\newblock Multidimensional scaling.
+\newblock In {\em Handbook of Data Visualization}, pages 315--347. 2008.
+
+\bibitem{dai:ensemble:eccv12}
+D.~Dai, M.~Prasad, C.~Leistner, and L.~V. Gool.
+\newblock Ensemble partitioning for unsupervised image categorization.
+\newblock In {\em ECCV}, 2012.
+
+\bibitem{JOR:EG15}
+D.~Dai, R.~Timofte, and L.~{Van Gool}.
+\newblock Jointly optimized regressors for image super-resolution.
+\newblock In {\em Eurographics}, 2015.
+
+\bibitem{dai:cvpr10}
+D.~Dai, T.~Wu, and S.~C. Zhu.
+\newblock Discovering scene categories by information projection and cluster
+  sampling.
+\newblock In {\em CVPR}, 2010.
+
+\bibitem{CUReT-61}
+K.~J. Dana, B.~van Ginneken, S.~K. Nayar, and J.~J. Koenderink.
+\newblock Reflectance and texture of real-world surfaces.
+\newblock {\em ACM Trans. Graph.}, 18(1):1--34, 1999.
+
+\bibitem{ml:information:07}
+J.~V. Davis, B.~Kulis, P.~Jain, S.~Sra, and I.~S. Dhillon.
+\newblock Information-theoretic metric learning.
+\newblock In {\em ICML}, 2007.
+
+\bibitem{Dong-ECCV-2014}
+C.~Dong, C.~C. Loy, K.~He, and X.~Tang.
+\newblock Learning a deep convolutional network for image super-resolution.
+\newblock In {\em ECCV}, 2014.
+
+\bibitem{hlle}
+D.~L. Donoho and C.~Grimes.
+\newblock Hessian eigenmaps: Locally linear embedding techniques for
+  high-dimensional data.
+\newblock {\em Proc Nat Acad Sci USA}, 100(10):5591--5596, 2003.
+
+\bibitem{FeiFei2004}
+L.~Fei-Fei, R.~Fergus, and P.~Perona.
+\newblock Learning generative visual models from few training examples: an
+  incremental {B}ayesian approach tested on 101 object categories.
+\newblock In {\em Workshop on Generative-Model Based Vision}, 2004.
+
+\bibitem{Fergus09}
+R.~Fergus, Y.~Weiss, and A.~Torralba.
+\newblock Semi-supervised learning in gigantic image collections.
+\newblock In {\em NIPS}, 2009.
+
+\bibitem{DASA:iccv13}
+B.~Fernando, A.~Habrard, M.~Sebban, and T.~Tuytelaars.
+\newblock Unsupervised visual domain adaptation using subspace alignment.
+\newblock In {\em ICCV}, 2013.
+
+\bibitem{Freeman-CGA-2002}
+W.~T. Freeman, T.~R. Jones, and E.~C. Pasztor.
+\newblock Example-based super-resolution.
+\newblock {\em IEEE Computer Graphics and Applications}, 22(2):56--65, 2002.
+
+\bibitem{local_distance:iccv:07}
+A.~Frome, Y.~Singer, F.~Sha, and J.~Malik.
+\newblock Learning globally-consistent local distance functions for shape-based
+  image retrieval and classification.
+\newblock In {\em ICCV}, 2007.
+
+\bibitem{class:clapse:nips05}
+A.~Globerson and S.~T. Roweis.
+\newblock Metric learning by collapsing classes.
+\newblock In {\em NIPS}, 2005.
+
+\bibitem{NCA:2004}
+J.~Goldberger, S.~Roweis, G.~Hinton, and R.~Salakhutdinov.
+\newblock Neighbourhood components analysis.
+\newblock In {\em NIPS}, 2004.
+
+\bibitem{IQ:cvpr11}
+Y.~Gong and S.~Lazebnik.
+\newblock Iterative quantization: A procrustean approach to learning binary
+  codes.
+\newblock In {\em CVPR}, 2011.
+
+\bibitem{DA:iccv11}
+R.~Gopalan, R.~Li, and R.~Chellappa.
+\newblock Domain adaptation for object recognition: An unsupervised approach.
+\newblock In {\em ICCV}, 2011.
+
+\bibitem{tagprop:iccv09}
+M.~Guillaumin, T.~Mensink, J.~Verbeek, and C.~Schmid.
+\newblock Tagprop: Discriminative metric learning in nearest neighbor models
+  for image auto-annotation.
+\newblock In {\em ICCV}, 2009.
+
+\bibitem{ml:face:09}
+M.~Guillaumin, J.~Verbeek, and C.~Schmid.
+\newblock Is that you? metric learning approaches for face identification.
+\newblock In {\em ICCV}, 2009.
+
+\bibitem{NPEmbedding:iccv05}
+X.~He, D.~Cai, S.~Yan, and H.-J. Zhang.
+\newblock Neighborhood preserving embedding.
+\newblock In {\em ICCV}, 2005.
+
+\bibitem{hamming:embedding:08}
+H.~Jegou, M.~Douze, and C.~Schmid.
+\newblock Hamming embedding and weak geometric consistency for large scale
+  image search.
+\newblock In {\em ECCV}, 2008.
+
+\bibitem{large:scale:metric:cvpr12}
+M.~Kostinger, M.~Hirzer, P.~Wohlhart, P.~Roth, and H.~Bischof.
+\newblock Large scale metric learning from equivalence constraints.
+\newblock In {\em CVPR}, 2012.
+
+\bibitem{deepnet:nips12}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton.
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em NIPS}. 2012.
+
+\bibitem{metric:survey:12}
+B.~Kulis.
+\newblock Metric learning: A survey.
+\newblock {\em Foundations \& Trends in Machine Learning}, 5(4):287--364, 2012.
+
+\bibitem{ml:fast:search:09}
+B.~Kulis, P.~Jain, and K.~Grauman.
+\newblock Fast similarity search for learned metrics.
+\newblock {\em PAMI}, 31(12):2143--2157, 2009.
+
+\bibitem{tl:kernel:11}
+B.~Kulis, K.~Saenko, and T.~Darrell.
+\newblock What you saw is not what you get: Domain adaptation using asymmetric
+  kernel transforms.
+\newblock In {\em CVPR}, 2011.
+
+\bibitem{tl:attribute:09}
+C.~Lampert, H.~Nickisch, and S.~Harmeling.
+\newblock Learning to detect unseen object classes by between-class attribute
+  transfer.
+\newblock In {\em CVPR}, 2009.
+
+\bibitem{lazebnik:cvpr06}
+S.~Lazebnik, C.~Schmid, and J.~Ponce.
+\newblock Beyond bags of features: Spatial pyramid matching for recognizing
+  natural scene categories.
+\newblock In {\em CVPR}, 2006.
+
+\bibitem{event8}
+L.-J. Li and L.~Fei-Fei.
+\newblock What, where and who? classifying event by scene and object
+  recognition.
+\newblock 2007.
+
+\bibitem{objectbank:nips10}
+L.-J. Li, H.~Su, E.~P. Xing, and F.-F. Li.
+\newblock Object bank: A high-level image representation for scene
+  classification \& semantic feature sparsification.
+\newblock In {\em NIPS}, 2010.
+
+\bibitem{mlrank:10}
+B.~McFee and G.~R. Lanckriet.
+\newblock Metric learning to rank.
+\newblock In {\em ICML}, 2010.
+
+\bibitem{ukbench:cvpr06}
+D.~Nist\'er and H.~Stew\'enius.
+\newblock Scalable recognition with a vocabulary tree.
+\newblock In {\em CVPR}, 2006.
+
+\bibitem{lbp}
+T.~Ojala, M.~Pietikainen, and T.~Maenpaa.
+\newblock Multiresolution gray-scale and rotation invariant texture
+  classification with local binary patterns.
+\newblock {\em TPAMI}, 24(7):971--987, 2002.
+
+\bibitem{gist}
+A.~Oliva and A.~Torralba.
+\newblock Modeling the shape of the scene: A holistic representation of the
+  spatial envelope.
+\newblock {\em IJCV}, 42(3):145--175, 2001.
+
+\bibitem{tl:survey}
+S.~J. Pan and Q.~Yang.
+\newblock A survey on transfer learning.
+\newblock {\em IEEE Trans. on Knowl. and Data Eng.}, 22(10):1345--1359, 2010.
+
+\bibitem{qin:bmvc14}
+D.~Qin, Y.~Chen, M.~Guillaumin, and L.~Van~Gool.
+\newblock Learning to rank bag-of-word histograms for large-scale object
+  retrieval.
+\newblock In {\em BMVC}, 2014.
+
+\bibitem{lle:science00}
+S.~T. Roweis and L.~K. Saul.
+\newblock Nonlinear dimensionality reduction by locally linear embedding.
+\newblock {\em Science}, 290(5500):2323--2326, 2000.
+
+\bibitem{fetlearn:convex:pami14}
+K.~Simonyan, A.~Vedaldi, and A.~Zisserman.
+\newblock Learning local feature descriptors using convex optimisation.
+\newblock {\em TPAMI}, 36(8):1573--1585, 2014.
+
+\bibitem{isomap:00}
+J.~B. Tenenbaum, V.~de~Silva, and J.~C. Langford.
+\newblock A global geometric framework for nonlinear dimensionality reduction.
+\newblock {\em Science}, 290(5500):2319--2323, 2000.
+
+\bibitem{Timofte-ICCV-2013}
+R.~Timofte, V.~{De Smet}, and L.~{Van Gool}.
+\newblock Anchored neighborhood regression for fast example-based super
+  resolution.
+\newblock In {\em ICCV}, 2013.
+
+\bibitem{comp:ijcv09}
+T.~Tuytelaars, C.~H. Lampert, M.~B. Blaschko, and W.~Buntine.
+\newblock Unsupervised object discovery: A comparison.
+\newblock {\em IJCV}, 2009.
+
+\bibitem{embedding:overview:09}
+L.~J. van~der Maaten, E.~O. Postma, and H.~J. van~den Herik.
+\newblock Dimensionality reduction: A comparative review.
+\newblock {\em Tech. Rep., Tilburg Uni.}, 2009.
+
+\bibitem{MatConvNet}
+A.~Vedaldi and K.~Lenc.
+\newblock Matconvnet -- convolutional neural networks for matlab.
+\newblock {\em CoRR}, abs/1412.4564, 2014.
+
+\bibitem{siftllc:cvpr10}
+J.~Wang, J.~Yang, K.~Yu, F.~Lv, T.~Huang, and Y.~Gong.
+\newblock Locality-constrained linear coding for image classification.
+\newblock In {\em CVPR}, 2010.
+
+\bibitem{max:margin:knn}
+K.~Q. Weinberger and L.~K. Saul.
+\newblock Distance metric learning for large margin nearest neighbor
+  classification.
+\newblock {\em J. Mach. Learn. Res.}, 10:207--244, 2009.
+
+\bibitem{metric:clustering:12}
+L.~Wu, S.~Hoi, R.~Jin, J.~Zhu, and N.~Yu.
+\newblock Learning bregman distance functions for semi-supervised clustering.
+\newblock {\em IEEE Trans. Knowl. Data Eng.}, 24(3):478--491, 2012.
+
+\bibitem{metric:nips03}
+E.~P. Xing, A.~Y. Ng, M.~I. Jordan, and S.~Russell.
+\newblock Distance metric learning, with application to clustering with
+  side-information.
+\newblock In {\em NIPS}, 2003.
+
+\end{thebibliography}

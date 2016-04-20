@@ -1,0 +1,108 @@
+\chapter{Introduction}
+
+A picture is worth a thousand of words, and often comes with a story
+that the photographer wanted to deliver. We probably still remember
+the moments when our grandparents were telling the stories behind the
+old pictures at our home, be it about birthday parties, be it about
+holidays. The purpose of taking pictures has been extended
+dramatically in the last decades, especially since the invention of
+digital cameras and the Internet.  The inventions make it effortless ever to take pictures, store them, and share them with friends and
+families.  While still used to
+remember such special moments of our daily life,  most images and videos are taken now to support many other
+practical applications --- cameras have been widely used for public security, for product control in factories, for
+product description in E-commerce, for real-world object reconstruction, for robot control, to name a few. 
+%This leads to an outright explosion in the number of images and videos taken, which we will not ever have enough time and effort to read through.
+
+\section{Motivation}
+%Taken YouTube as an example, it has 100 hours of videos (100 million frames) updated every minute. 
+While the quantity and the quality of images taken everyday are
+steadily increasing, it is hard to take its full advantage if the data is unorganized. In computer vision,
+algorithms are developed to tackle the fundamental
+problems of processing and understanding the visual data, in order to  better suits the application context. The most extensively researched problems include image classification, object detection, action recognition, human pose estimation, object tracking in videos, 3D object reconstruction. With algorithms from these sub-fields, images and videos can then be
+converted into semantic information so that the data can be used to
+its full potential.
+
+%A plethora of methods have been developed to tackle each of the vision tasks, and great advances have been made in the past years. To the time being, computer vision can already recognize objects of thousands of categories, detecting objects in images in real time, and can already reconstruct 3D models at city- or world-scale.  Despite the great achievement,  the field still has to find means to keep up with the exploration of the massive amounts of data being captured on a daily basis. We believe this is mainly due to the lack of sufficient training annotations and the lack of computational resources. The thesis is dedicated to mitigate the problem.
+
+The last decade has witnessed a great progress in computer vision, which comes as an outcome of three factors: 1) introduction of large-scale human annotations, such as ImageNet~\citep{imagenet} for image classification, PASCAL VOC~\citep{pascal:2011} and MSCOCO~\citep{coco:eccv} for object detection, KITTI~\citep{kitti} for road scene understanding; 2) development of sophisticated, statistical learning approaches including Support Vector Machines, Adaboost, Random Forests, and Deep Neural Networks; and 3) accessibility to powerful computing infrastructures such as the GPUs and many software frameworks, such as CuNN, Caffe, Torch, and Theano. These advantages have made the field achieved multiple milestones: computer vision is able to recognize objects of thousands of categories in high accuracy~\citep{nips12:cnn, vgg16}, transcribe images/videos directly into natural languages~\citep{show:tell:caption}, and generate realistic images~\citep{draw:2015}. 
+
+Despite the great achievement, the field is still left behind by the exploration of visual data.  Visual content is exploding -- millions of videos are generated and consumed every second, from the footage of surveillance cameras to the over two billion images and videos uploaded daily to social platforms. However, intelligent and insightful understanding of these data is still far from being reached. 
+We believe there are at least three reasons behind this: 1) visual annotation is expensive to obtain; 2)  algorithms in computer vision are often computationally heavy; and 3) developed methods often are not performance-aware.   
+
+
+The first reason is evidenced by the fact that most of the benchmarks still only cover a small portion of the visual data that is available in the wild, and are collected under quite controlled scenarios. The speed of visual annotation cannot match that of visual data acquisition --- taking pictures, storing and sharing them are effortless nowadays, while annotating visual data in the form that machine can learn on is tedious and very time-intensive. 
+For example, 
+%On one hand, an explosive amount of visual data is captured everyday and needs to be analyzed. 
+%be it from surveillance cameras for security reasons, be it from industrial or mobile robot for controlling processes, be it the internet images uploaded by casual users due to social activities. 
+YouTube has 100 hours of videos (100 million frames) updated every minute, while it required 19 man-years to label 1.2 million internet images~\citep{imagenet}. The annotations are done in the form of bounding boxes, rather than in more dedicated forms such as full segmentation masks. 
+
+The second reason follows the fact that visual data is very high-dimensional,  rendering the algorithms computationally heavy in both training and testing. For instance, training a state-of-the-art image classifier~\citep{vgg16, ResNet} can take days or weeks even with modern GPUs,  computing the optical flow of a standard video dataset~\citep{large:video:cnn} can simply take several days,  and computing the similarity among images of a large dataset can be very expensive as well~\citep{Gong_2013_CVPR}. This heavy computation hinders the community from quickly exploring new models,  easily deploying the trained models to power-limited devices, and readily scaling the developed models. 
+
+The last one is due to the trend that the community is mostly focused on developing the next best method for task X, and rarely on improving the self-awareness of the methods, be it  a measure of model uncertainty~\citep{kendall2015bayesian, confidence:of:08},  be it the usefulness to down-streamed vision tasks~\citep{eth_biwi_00883, 15000object}. This performance blindness leads to ineffective solutions in many situations, such as the same amount of resource is allocated to every image regardless of its complexity (difficulty), and the advance made in all the sub-fields cannot be synergized effectively.
+
+\section{Contributions}
+The aforementioned problems deliver a strong need to reduce the annotation cost and computational cost of current computer vision methods, and to learn to predict their performance.  This thesis is dedicated to provide a collection of methods to attack these problems from multiple perspectives.  
+
+First, we elaborate two strategies to reduce the annotation cost: 
+\begin{itemize}
+\item  Developing efficient visual annotation approaches.  A natural and efficient annotation method is developed for object recognition by letting annotators speak.  Since drawing scribbles and speaking are very natural to human,  our method unleashes the expressive ability of annotators and solves the \emph{what} and \emph{where} problems of object annotation both at the same time, leading to an approach which draws a good trade-off between recognition accuracy and annotation cost. 
+
+\item  Learning  feature representation with unlabeled data.  A new method is developed to learn a new feature representation on top of standard feature representations.  The leaning takes advantage of discriminative learning and ensemble learning, and is able to generate new features specifically tailored to the data at hand.  
+\end{itemize}
+
+Secondly, we examine how to reduce the computational cost associated with the training and testing of vision algorithms:  
+\begin{itemize}
+\item Developing efficient training algorithms to the standard approach SVM+.   SVM+ has shown excellent performance in visual recognition tasks for exploiting privileged information in the
+  training data.   We propose two efficient algorithms
+  for solving the linear and kernel SVM+. 
+    Experiments show that our proposed algorithms achieve significant
+  speed-ups to  the state-of-the-art solvers for  SVM+.
+  
+\item Proposing Metric Imitation (MI), a method to allow computationally cheap features to imitate alternative features which perform better but are computationally more expensive.   The leaned transformation significantly boost the performance of cheap features while retaining their efficiency.  
+\end{itemize}
+
+Lastly, we investigate performance-aware vision algorithms by making the following contributions:  
+\begin{itemize}
+\item  Predicting how likely vision algorithms succeed on particular samples.  It is true for every vision task that not all images are equally difficulty. We examine how to learn this on the task of example-based texture synthesis~(ETS). ETS has been widely used to
+  generate high quality textures of desired sizes from a small
+  example. However, not all textures are equally well reproducible
+  that way. We predict how synthesizable a particular texture
+  is by ETS and find that texture synthesizability can be learned and predicted efficiently. 
+
+\item  Learning scale-aware image segmentation.
+Hierarchical image segmentation provides segmentation at different scales in a single tree-like structure.
+However, they are not aware of the scale information of the regions in them.
+As such, one might need to work on many different levels of the hierarchy to find the objects in the scene.
+This work predicts the scales of the regions to modify their depth in the tree to better couple tree depth and region scale.
+The output of our method is an improved hierarchy, which improves the quality of the hierarchical segmentation representations.
+
+\item  Evaluating the usefulness of image super-resolution methods to other computer vision tasks. Although it might be believed that image super-resolution is helpful for other vision tasks, this work has formalized the conception and conducted quantitative evaluation.
+The work can serve as an inspiration for the community  to evaluate image super-resolution with respect to the helpfulness to other vision tasks, and to apply it as a pre-processing component if the input images are of low-resolution. 
+\end{itemize}
+
+
+\section{Organization} 
+Since extensive research has been done in similar spirit,  the thesis begins with Chapter~\ref{ch:relatedwork} examining related work in a broad context.   Our developed approaches are presented in Chapters \ref{ch:draw-and-tell} -- \ref{ch:SR4VT}. They are written to be generally self-contained and can be read independently. Finally,  Chapter~\ref{ch:conclusion} concludes this thesis. A detailed overview of the remaining chapters follows:
+
+In Chapter~\ref{ch:relatedwork}, \emph{Related Work}, we provide a short literature overview of previous art in the direction of  reducing the annotation cost and computational cost of vision algorithms and towards self-aware  algorithms. 
+
+In Chapter~\ref{ch:draw-and-tell}, \emph{Efficient Visual Annotation by Speech Recognition}, we present our efficient visual annotation approach Draw\&Tell and show its efficiency in the context of semantic image segmentation. In order to solve the \emph{what} and \emph{where} problems in visual annotation both at the same time, we let annotators speak the name of the object  while they draw strokes on it.  The speech is recognized by a speech recognition engine specifically trained for the purpose, and an extension to the fully convolutional neural network is made to learn from the stroke-based `coarse' annotation.  The approach draws a good trade-off between recognition accuracy and annotation cost. The work in this chapter was originally presented in~\citep{draw:tell}. 
+
+In Chapter~\ref{ch:ensemble}, \emph{Representation Learning with Unlabeled Data}, we present our motivation and method of learning a new feature representation with unlabeled data.  We then evaluate the method in the context of semi-supervised image classification and image clustering.   This work was originally presented in~\citep{dai:eccv12} and in~\citep{dai:iccv13b}. 
+
+In Chapter~\ref{ch:svmplus}, \emph{Fast Training Algorithms for SVM+}, we present two efficient algorithms
+  for training the linear and kernel SVM+.  New problems with fewer constraints are formulated in the dual domain, making the problem solvable  efficiently by the SMO algorithm of one-class SVM.  Experiments show that our proposed algorithms are significantly faster than the  the state-of-the-art solvers for SVM+. This work was originally presented in~\citep{fastsvm+2016}. 
+ 
+In Chapter~\ref{ch:mi}, \emph{Metric Imitation for Efficient Distance Computation}, we present a method called Metric Imitation (MI) to efficiently compute the distance among images.  MI learns a transformation to cheap features so that the L2 distance of the transformed features can approximate L2 distance of  better-performing features which are more computationally expensive to compute.  The method is evaluated on multiple vision tasks. The method was originally presented in~\citep{metric:imitation}. 
+
+In Chapter~\ref{ch:forecasting}, \emph{Performance Prediction: Succeed or Fail?}, we present our approach of predicting the success of example-based texture synthesis.  To this aim, we collected a dataset with  $21,302$ annotated textures and annotated them  according to the synthesizability --- the quality of synthesized results by texture synthesis methods. A set of relevant features are then defined to regress the value of synthesizability. Extensive experiments show that texture synthesizability is learnable. This work was originally presented in~\citep{dai:synthesizability}. 
+
+In Chapter~\ref{ch:scale-aware}, \emph{Performance Prediction: Under-, Properly-, or Over-Processed?}, 
+we present a method to predict the  scale of image segments relative to the corresponding objects, and to then apply the prediction to re-align the results from general hierarchical image segmentation so that the depth in the tree structure and the scale of the regions is better coupled. The output of our method is an improved hierarchy, which improves the quality of the hierarchical segmentation representations. The work was originally presented in~\citep{Chen2016}. 
+  
+
+In Chapter~\ref{ch:SR4VT}, \emph{Performance Evaluation: Helpful for Other Tasks?}, we evaluate the usefulness of image super-resolution methods to other computer vision tasks. Sixes state-of-the-art computer vision algorithms are evaluated on four popular computer vision tasks: boundary detection, semantic image segmentation, digit recognition, and scene recognition.  The work confirms that image super-resolution is helpful for other vision tasks when the state-of-the-art approaches are used. 
+The work was originally presented in~\citep{SR4VTs:wacv16}. 
+
+
+ 
