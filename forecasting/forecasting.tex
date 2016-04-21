@@ -1,47 +1,42 @@
 \chapter{Performance Prediction:  Succeed or Fail?}
 \label{ch:forecasting}
 
+As stated in the introduction, success-aware (failure-aware) vision algorithms is of para\-mount importance in real applications, as the asset avoids disastrous consequences due to silent system failures.  It is also useful in view of efficient algorithms, because it enables dynamic resource allocation based on the complexity of different visual samples.   
+In this chapter, we present a method to predict the performance of texture synthesis methods for given texture examples.  
+
+\section{Introduction}
+
 \begin{figure} 
   \centering
   \scalebox{0.93}{
    $ \begin{array}{cccc}
-\hspace{-1.5mm}
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/google_concrete_441.jpg} & 
-\hspace{-3mm}
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/google_concrete_476.jpg}&
-\hspace{-3mm}
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/bing2_food_19.jpg} \\
-\scriptsize{\text{(a) \textcolor{red}{0.84}}} & \scriptsize{\text{(b) \textcolor{red}{0.80}}} & \scriptsize{\text{(c) \textcolor{red}{0.72}}} \\
+\text{(a) \textcolor{red}{0.84}} & \text{(b) \textcolor{red}{0.80}} & \text{(c) \textcolor{red}{0.72}} \\
 % \hspace{-3mm}
 % 455 0.56 feature.jpg 0.66   512 0.41   96 0.44 cliff3.jpg 0.40 
-\hspace{-1.5mm}
+
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/google_grass_566.jpg} & 
-\hspace{-3mm}
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/google_brick_190.jpg}&
-\hspace{-3mm}
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/google_water_703.jpg} \\
-\scriptsize{\text{(d) \textcolor{red}{0.57}}} & \scriptsize{\text{(e) \textcolor{red}{0.54}}} & \scriptsize{\text{(f) \textcolor{red}{0.51}}} \\
-\hspace{-1.5mm}
+\text{(d) \textcolor{red}{0.57}} & \text{(e) \textcolor{red}{0.54}} & \text{(f) \textcolor{red}{0.51}} \\
+
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/flickr_biscuit_194.jpg} & 
-\hspace{-3mm}
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/flickr_brick_233.jpg}&
-\hspace{-3mm}
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/flickr_chips_144.jpg} \\
-\scriptsize{\text{(g) \textcolor{blue}{0.41}}} & \scriptsize{\text{(h) \textcolor{blue}{0.35}}} & \scriptsize{\text{(i) \textcolor{blue}{0.32}}} \\
-\hspace{-1.5mm}
+\text{(g) \textcolor{blue}{0.41}} & \text{(h) \textcolor{blue}{0.35}} & \text{(i) \textcolor{blue}{0.32}} \\
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/flickr_Fabric_471.jpg} & 
-\hspace{-3mm}
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/flickr_brick_215.jpg}&
-\hspace{-3mm}
 \includegraphics[width=0.3\linewidth]{./forecasting/figs/fig1/bing2_food_75.jpg} \\
-\scriptsize{\text{(j) \textcolor{blue}{0.28}}} & \scriptsize{\text{(k) \textcolor{blue}{0.18}}} & \scriptsize{\text{(l) \textcolor{blue}{0.14}}} \\
+\text{(j) \textcolor{blue}{0.28}} & \text{(k) \textcolor{blue}{0.18}} & \text{(l) \textcolor{blue}{0.14}} \\
 % \hspace{-3mm}
 % \includegraphics[width=0.25\linewidth]{./figs/fig1/wall.jpg} \\
 \end{array}$}
 \caption{Synthesizability of texture examples detected by
   our system. The values are in $[0, 1]$ and a higher value means the example is easier
  to synthesize. All images are of $300\times 300$ pixels.}
-  \label{fig:synlity}
+  \label{te:fig:synlity}
 \end{figure}
 
 
@@ -50,7 +45,7 @@ A substantial amount of work has been devoted to synthesising textures
 from examples~\citep{Heeger:95,
   Portilla:2000:IJCV,Efros:sig2001,Kwatra:2003, Lefebvre:2005:sig,
   Ma:2011,dai:facade:iccv13}. We will refer to such example-based
-texture synthesis as `ETS' in the remainder of this paper. Even if the
+texture synthesis as `ETS' in the remainder of this work. Even if the
 set of textures that can be successfully synthesised that way has
 steadily been growing, it is often not clear beforehand whether ETS
 would be successful for a specific texture sample. It would be
@@ -86,15 +81,15 @@ does not produce such issues. Last but not least, studying
 synthesizability as a general image property is interesting {\em per
   se}.
 
-Fig.~\ref{fig:synlity} shows the synthesizability scores assigned to some texture samples 
-by our system. Fig.~\ref{fig:roi} illustrates the trimming of an image to its most
+Figure~\ref{te:fig:synlity} shows the synthesizability scores assigned to some texture samples 
+by our system. Figure~\ref{te:fig:roi} illustrates the trimming of an image to its most
 synthesizable, rectangular regions (the red cut-outs).
 
 In order to learn image synthesizability and evaluate its performance, we have collected
 a fairly large texture dataset of $21,302$ texture images. This dataset has been manually annotated 
 in terms of the synthesizability of each image. The synthesizability is characterised as the 
 `goodness' of the `best' synthesis result as obtained by a set of ETS methods. The `goodness' is quantified 
-as one of three levels: good, acceptable, and bad. See Fig.~\ref{fig:dataset} for examples. 
+as one of three levels: good, acceptable, and bad. See Figure~\ref{te:fig:dataset} for examples. 
 
 % {\bf IT IS NOT CLEAR WHAT KIND OF ANNOTATIONS
 % THESE ARE: MANUALLY DONE… OR THE SCORES AUTOMATICALLY GIVEN BY OUR METHOD? IF MANUALLY
@@ -115,14 +110,14 @@ homogeneity, repetitiveness, and irregularity); and (3) to offer a fairly
 large texture dataset together with synthesizability annotations;
 
 
-The remainder of the paper is organized as follows.
-Sec.~\ref{sec:related} reports related work.
-Sec.~\ref{sec:data} is devoted to our dataset, followed by our features and learning method in Sec.~\ref{sec:feature}.
-Sec.~\ref{sec:experiment} presents our experiments and Sec.~\ref{sec:conclusion} concludes. 
+The remainder of the work is organized as follows.
+Section~~\ref{te:sec:related} reports related work.
+Section~~\ref{te:sec:data} is devoted to our dataset, followed by our features and learning method in Section~~\ref{te:sec:feature}.
+Section~~\ref{te:sec:experiment} presents our experiments and Section~~\ref{te:sec:conclusion} concludes. 
 
 
 \section{Related work}
-\label{sec:related}
+\label{te:sec:related}
 
 \textbf{Example-based texture synthesis.}  Techniques of example-based
 texture synthesis can be broadly categorized into four categories:
@@ -170,7 +165,7 @@ to design appropriate features for this new task.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Data collection}
-\label{sec:data}
+\label{te:sec:data}
 Although it stands to reason that some textures are easier to
 synthesise than others, quantifying this expectation has not been
 addressed. In order to learn to predict synthesizability, we collected
@@ -210,7 +205,7 @@ acceptable, and bad, assigned synthesizability scores of $1$, $0.5$
 and $0$, resp. The `best' method of each texture example was also
 recorded to learn which method is the best to synthesize a given
 texture example. This was only performed for `good' and `acceptable'
-images; `bad' ones were assigned to `NULL'.  Fig.~\ref{fig:dataset}
+images; `bad' ones were assigned to `NULL'.  Figure~\ref{te:fig:dataset}
 shows examples of such annotation. In total, $25.5\%$ samples were
 labeled bad, $39.7\%$ acceptable and $34.8\%$ good.
 
@@ -247,24 +242,24 @@ labeled bad, $39.7\%$ acceptable and $34.8\%$ good.
 % \includegraphics[width=0.33\linewidth]{./figs/dataset/bing2_floor_41_q.jpg} \\ 
 
 \hspace{-1.5mm}
-\scriptsize{\text{(a) good, Quilting}} & 
+\text{(a) good, Quilting} & 
 \hspace{-3mm}
-\scriptsize{\text{(b) acceptable, MMRF}} & 
+\text{(b) acceptable, MMRF} & 
 \hspace{-3mm}
-\scriptsize{\text{(c) bad, NULL}}  \\
+\text{(c) bad, NULL}  \\
 
 \end{array}$
 \caption{Three texture examples from our dataset with their
   annotations of synthesizability. Top: texture exemplars;
   bottom: synthesized textures. }
-  \label{fig:dataset}
+  \label{te:fig:dataset}
 \end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Learning image synthesizability} 
-\label{sec:feature}
+\label{te:sec:feature}
 In this section, we investigate the visual features relevant to 
 image synthesizability. We start from general image features, to move
 on to our designed texture features, and to the learning method.
@@ -377,29 +372,29 @@ considers one grid, and produces a feature vector of dimension $20$.
 
 \begin{figure} [!t]
   \centering
-\scalebox{0.94}{
+\scalebox{0.9}{
    $ \begin{array}{cccc}
 \hspace{-1.5mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repet/1.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repet/forest.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repet/273.jpg} \\ 
-\scriptsize{\text{(a) 8.82}} & \scriptsize{\text{(b) 3.84}} & \scriptsize{\text{(c) 3.73}}  \\
+\text{(a) 8.82} & \text{(b) 3.84} & \text{(c) 3.73} \\
 \hspace{-1.5mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repet/439.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repet/flower2.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repet/832.jpg} \\ 
-\scriptsize{\text{(d) 3.12}} & 
-\scriptsize{\text{(e) 1.80}} & 
-\scriptsize{\text{(f) 1.63}}  \\
+\text{(d) 3.12} & 
+\text{(e) 1.80} & 
+\text{(f) 1.63}  \\
 
 \end{array}$}
 \caption{The homogeneity of texture examples detected by our
   method. Images are all of $300 \times 300$ pixels.}
-  \label{fig:homo}
+  \label{te:fig:homo}
 \end{figure}
 
 % \textbf{Edge coverage}.  
@@ -442,7 +437,7 @@ random from $\{(i,j): i\in\{1, ..., \lfloor 2H/3 \rfloor \}, j\in \{1,
 ..., \lfloor 2W/3 \rfloor \} \}$.  The regions are represented with
 bag-of-words. The dictionary is learned from $X$ by k-means with $30$
 `word' centres and with $10\times 10$ patches around every pixel (RGB
-values are used). See Fig.~\ref{fig:homo} for the homogeneity of six
+values are used). See Figure~\ref{te:fig:homo} for the homogeneity of six
 texture examples detected by the method.  Our homogeneity is more
 effective than the co-occurrence one ~\citep{texture:analysis} because
 it uses regions rather than single pixels. It is also more robust
@@ -454,26 +449,26 @@ because the word histograms yield some spatial invariance.
 % ~\citep{low:rank:texture:ijcv12}. 
 
 \begin{figure} [!t]
-  \centering \scalebox{0.94}{
+  \centering \scalebox{0.9}{
    $ \begin{array}{cccc}
 \hspace{-1.5mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repetitiveness/60.jpg} & 
-\hspace{-3mm} 
+\hspace{-2mm} 
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repetitiveness/bing2_floor_201.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repetitiveness/bing2_animal_19.jpg} \\ 
-\scriptsize{\text{(a) 76.4}} &
- \scriptsize{\text{(b) 70.5}} & 
-\scriptsize{\text{(c) 66.5}}  \\
+\text{(a) 76.4} &
+ \text{(b) 70.5} & 
+\text{(c) 66.5}  \\
 \hspace{-1.5mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repetitiveness/bing2_floor_78.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repetitiveness/10rep.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/repetitiveness/bing2_floor_24.jpg} \\ 
-\scriptsize{\text{(d) 49.7}} & 
-\scriptsize{\text{(e) 39.4}} & 
-\scriptsize{\text{(f) 32.4}}  \\
+\text{(d) 49.7} & 
+\text{(e) 39.4} & 
+\text{(f) 32.4}  \\
 % \hspace{-1.5mm}
 % \includegraphics[width=0.33\linewidth]{./figs/repetitiveness/cv/cv_60.jpg} & 
 % \hspace{-3mm}
@@ -490,7 +485,7 @@ because the word histograms yield some spatial invariance.
 % (g), (h), and (i) show the NCC results of (a), (d),
 %   and (f) resp., where the red rectangles indicate region $R$'s.
 }
-  \label{fig:repet}
+  \label{te:fig:repet}
 \end{figure}
 
 % Repetitiveness
@@ -501,7 +496,7 @@ directly related to auto-correlation, have been used very early
 on~\citep{vangool83, texture:analysis, liu:texture:96}. For periodic patterns, the
 auto-correlation function is strongly peaked. Here we propose a
 related measure, also aimed at capturing imperfect repetitions 
-(Fig.\ref{fig:repet}), that is defined in the spatial domain.
+(Figure~\ref{te:fig:repet}), that is defined in the spatial domain.
 
 The method draws on normalized cross correlation (NCC): an image $X
 \in \mathbb{R}^{H\times W}$ is cross-correlated with itself,
@@ -530,7 +525,7 @@ sampled $R$'s in $D$, and $\sigma(z)$ is the standard deviation of
 $z$. The size of $R$ is set to $\lfloor H/5 \rfloor \times \lfloor W/5
 \rfloor$. Too small a size cannot capture large-scale repetition, and
 too large a size looses discrimination power.  See
-Fig.~\ref{fig:repet} for examples of detected
+Figure~\ref{te:fig:repet} for examples of detected
 repetitiveness. Repetitiveness is akin to the Harmonicity feature
 of~\citep{liu:texture:96}, but repetitiveness is more robust due to its
 pooling over local regions.
@@ -543,7 +538,7 @@ suggested before, we still lack a method to measure it
 computationally. We propose Ensemble Composition (EC) for such
 quantification. The idea is that if a texture is regular, composing
 any of its regions using image chunks from outside will be
-\emph{cheap} (See images in Fig.~\ref{fig:irreg} to get the idea).  We
+\emph{cheap} (See images in Figure~\ref{te:fig:irreg} to get the idea).  We
 again do this over an ensemble -- over $T$ trials ($80$ in the
 implementation), we use the average composition energy to indicate
 texture irregularity. In the $t$-th trial, given an image $X$, we
@@ -592,34 +587,34 @@ dataset. Also, we provide an irregularity score for a given image by a
 new ensemble method.
 
 \begin{figure} 
-  \centering \scalebox{0.94}{
+  \centering \scalebox{0.9}{
    $ \begin{array}{cccc}
 \hspace{-1.5mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/regularity/403.jpg} & 
-\hspace{-3mm} 
+\hspace{-2mm} 
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/regularity/13.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/regularity/90.jpg} \\ 
-\scriptsize{\text{(a) 0.22}} & \scriptsize{\text{(b) 0.14}} & \scriptsize{\text{(c) 0.12}}  \\
+\text{(a) 0.22} & \text{(b) 0.14} & \text{(c) 0.12}  \\
 \hspace{-1.5mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/regularity/57.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/regularity/28.jpg} & 
-\hspace{-3mm}
+\hspace{-2mm}
 \includegraphics[width=0.33\linewidth]{./forecasting/figs/regularity/google_Paper_100.jpg} \\ 
-\scriptsize{\text{(d) 0.10}} & 
-\scriptsize{\text{(e) 0.08}} & 
-\scriptsize{\text{(f) 0.05}}  \\
+\text{(d) 0.10} & 
+\text{(e) 0.08} & 
+\text{(f) 0.05}  \\
 \end{array}$}
 \caption{The irregularity of texture examples captured by Ensemble
   Composition. Images are all of $300 \times 300$ pixels.}
-  \label{fig:irreg}
+  \label{te:fig:irreg}
 \end{figure}
 
 It is noteworthy that homogeneity, repetitiveness, and regularity
 capture different properties. For instance, the texture in
-Fig.~\ref{fig:homo}(b) is homogeneous, but not repetitive and not
-regular. The texture in Fig.~\ref{fig:irreg}(f) is homogeneous and
+Figure~\ref{te:fig:homo}(b) is homogeneous, but not repetitive and not
+regular. The texture in Figure~\ref{te:fig:irreg}(f) is homogeneous and
 regular, but not repetitive.  In a nutshell, the 4 designed features
 are not orthogonal (\eg repetitive textures are normally regular as
 well), but are complementary nonetheless. Moreover, we do not claim
@@ -639,7 +634,7 @@ fast speed. $30$ trees were used for the forest.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experiments}
-\label{sec:experiment}
+\label{te:sec:experiment}
 % In this section, we evaluate the task of learning synthesizability,
 % and its usefulness for trimming texture examples and recognizing
 % texture classes.
@@ -662,7 +657,7 @@ different levels of recall: (1) retrieve images with `good' scores
 
 \textbf{Quantitative evaluation}. Table~\ref{table:contribution} shows
 the results for different, single as well as combined features when 
-recall is set to $1$, and Fig.~\ref{fig:curve} shows the results for 
+recall is set to $1$, and Figure~\ref{te:fig:curve} shows the results for 
 different levels of recall when all features are used. The table shows 
 that every single feature is helpful. Homogeneity performs the best. 
 It is also interesting that the combination of the 4 designed features 
@@ -674,7 +669,7 @@ features yields the best performance. Also, from the highest precision
 scores ($94.5\%$ for $>=$acceptable, and $75.5\%$ for $>=$good) we can 
 conclude that image synthesizability is learnable and predictable. If 
 only a fraction of well-synthesizable textures need to be retrieved, 
-a very high precision can be expected (See Fig.~\ref{fig:curve}). This 
+a very high precision can be expected (See Figure~\ref{te:fig:curve}). This 
 is very useful for choosing synthesizable textures from internet images. 
 
 
@@ -863,7 +858,7 @@ $>=$Good \\ \hline
 \caption{Synthesizability scores of texture examples and the `best'
   synthesized textures by ETS methods. Top: exemplar; bottom:
   synthesized. }
-  \label{fig:scoring1}
+  \label{te:fig:scoring1}
 \end{figure*}
 
 
@@ -897,13 +892,13 @@ $>=$Good \\ \hline
 {\text{(f) random (Quilting)}}  \\
 \end{array}$ }
 \caption{The synthesized results of two texture examples by our suggested method and a randomly chosen method.}
-  \label{fig:best}
+  \label{te:fig:best}
 \end{figure}
 
 
 \textbf{Qualitative evaluation}. 
-Fig.~\ref{fig:synlity} and
-Fig.~\ref{fig:scoring1} show examples together with their predicted
+Figure~\ref{te:fig:synlity} and
+Figure~\ref{te:fig:scoring1} show examples together with their predicted
 synthesizability. The synthesizability predictor here was trained
 with all annotated images except for the image itself given for prediction.
 % , as 
@@ -911,13 +906,13 @@ with all annotated images except for the image itself given for prediction.
 As can be seen, homogeneous, repetitive, and regular texture examples
 obtain higher scores. The low scores are caused by many factors, such
 as outliers, surface distortions, and complex structures. In
-Fig.~\ref{fig:scoring1}, the `best' synthesised images by the ETS
+Figure~\ref{te:fig:scoring1}, the `best' synthesised images by the ETS
 methods are also shown.  The quality of the synthesized images is
 largely consistent with the predicted synthesizability score. This is
 crucial because it allows us to detect textures -- also as image
 parts, see shortly -- that can be synthesized well.  As already
 claimed, the system can also suggest the `best' synthesis method for a
-given texture example. Fig.~\ref{fig:best} shows two such examples,
+given texture example. Figure~\ref{te:fig:best} shows two such examples,
 where results of the suggested method and results of a randomly chosen
 method are compared.  It can be seen that our `adaptive selection' is
 superior to random guessing. This is due to the fact the ETS methods
@@ -939,12 +934,12 @@ negatives (low score for synthesizable images) are heterogeneous
 textures such as some rust and cloud examples.  This is probably
 because the space of valid textures for those is very large so that
 synthesized textures more easily fall inside the space. See
-Fig.~\ref{fig:failure} for such examples.
+Figure~\ref{te:fig:failure} for such examples.
 
 \textbf{Synthesizability with scales} Textures in an image can be
 perceived and may differ at different scales. Thus, it is interesting
 to see how scales of textures affects their
-synthesizability. Fig.~\ref{fig:scale} shows an example, where three
+synthesizability. Figure~\ref{te:fig:scale} shows an example, where three
 scales of the same texture are used as the examples for
 synthesizability prediction. Zooming in, the synthesizability score
 drops -- as long as the same `textons' matter -- as those textons 
@@ -957,7 +952,7 @@ human intuition.
  \centering
 \includegraphics[width=0.7\linewidth]{./forecasting/figs/AP_curve_all.pdf} \\ 
 \caption{The average precision of synthesizability prediction for different levels of recall, when all features are used. }
-  \label{fig:curve}
+  \label{te:fig:curve}
 \end{figure}
 
 
@@ -1006,7 +1001,7 @@ human intuition.
 \end{array}$
 \caption{Failure cases: the top shows false positives and the bottom
   false negatives. Exemplars are of $300 \times 300$ pixels.}
-  \label{fig:failure}
+  \label{te:fig:failure}
 \end{figure}
 
 
@@ -1027,14 +1022,14 @@ human intuition.
 {\text{ (c) 0.43}} \\ 
 \end{array}$
 \caption{Synthesizability for different scales of the same texture. }
-  \label{fig:scale}
+  \label{te:fig:scale}
 \end{figure}
 
 
 % We also show and compare the synthesizability of different texture
 % categories (the average synthesizability of all images of the
 % category).  The UIUC texture dataset~\citep{UIUC:Texture}, which
-% contains $25$ texture categories, each with $40$ images. Fig.~\ref{}
+% contains $25$ texture categories, each with $40$ images. Figure~\ref{}
 % shows the synthesizability of all categories (average of
 % synthesizability of all texture examples in each category). From the
 % figure, we find that ...
@@ -1055,12 +1050,12 @@ human intuition.
 In this section, image synthesizability is used for trimming images to
 more synthesizable parts. Given an image, the synthesizability of
 subimages is computed and compared. The most synthesizable subimage is
-then suggested. See Fig.~\ref{fig:roi} for examples. $500$ sub-windows
+then suggested. See Figure~\ref{te:fig:roi} for examples. $500$ sub-windows
 were randomly sampled, with a minimum size of $100 \times 100$ pixels
 and maximum size that of the entire image.  The figure suggests that
 our method performs well for this task. It is thus possible to pick
 synthesizable texture examples from unconstrained images.
-Fig.\ref{fig:roisyn} illustrates that synthesis is superior for the
+Figure~\ref{te:fig:roisyn} illustrates that synthesis is superior for the
 selected windows compared to using the entire image.  Note that if two
 windows receive the same/close synthesizability score, we prefer the
 larger window.
@@ -1143,7 +1138,7 @@ larger window.
 \end{array}$
 \caption{The most synthesizable region as detected. The synthesizability
   of the whole images (IS) vs. the selected region (RS) are given.}
-  \label{fig:roi}
+  \label{te:fig:roi}
 \end{figure*}
 
 
@@ -1181,7 +1176,7 @@ larger window.
 \caption{Synthesis results for the images on the left, starting from 
   the entire image (IS; mid column) vs. from the selected region (RS;
   right column).}
-  \label{fig:roisyn}
+  \label{te:fig:roisyn}
 \end{figure}
 
 % \begin{table}[tb] \footnotesize 
@@ -1249,8 +1244,8 @@ larger window.
 
 
 \section{Conclusions}
-\label{sec:conclusion}
-The paper proposed synthesizability as a novel texture property and
+\label{te:sec:conclusion}
+This chapter proposed synthesizability as a novel texture property and
 developed a computational predictor for it. We constructed a fairly
 large texture dataset and calibrated it according to
 synthesizability. A set of texture features have been proposed and, in

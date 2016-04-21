@@ -1,11 +1,14 @@
-\chapter{Metric Imitation for Efficient Distance Computation}
+\chapter{Efficient Metric Computation via Imitation}
 \label{ch:mi}
 %%%%%%%%% TITL
 %%%%%%%%% BODY TEXT
+Computers may be fast, but they are not infinitely fast. And memory may be inexpensive, but it is not free. 
+Thus, it is always a merit to have algorithms which run fast and consumes less memory. In this chapter, we investigate the problem of
+boosting  cheap (computationally and in terms of memory consumption) methods by imitating the desirable behaviors of better-performing but expensive (also computationally and in terms of memory consumption) alternatives.  
+We restrict ourselves  to the task of metric computation, as it is ubiquitous in vision applications, as many as classification, retrieval, clustering, and segmentation.    
 
-% {\bf Luc The paper only consists of text so far. A sketch of the 
-% strategy early on may be helpful to explain the idea, but also to
-% make it look less boring.}
+\section{Introduction}
+
 The problem of computing good metrics is of great theoretical and
 practical interest in information processing. Applications include
 clustering~\citep{metric:nips03, metric:clustering:12}, image
@@ -22,7 +25,7 @@ labels~\citep{eigenface:pami97, local_distance:iccv:07, max:margin:knn,
   ml:fast:search:09, large:scale:metric:cvpr12,
   fetlearn:convex:pami14}), which is expensive to acquire.
 
-To address this problem, this paper aims to learn good metrics for cheap features without
+To address this problem, this work aims to learn good metrics for cheap features without
 using human annotation. We draw inspiration from transfer learning and
 propose a novel approach, coined Metric Imitation (MI). 
 MI takes state-of-the-art, off-the-shelf features as source features (SFs) and cheap features 
@@ -58,7 +61,7 @@ contain privileged information but are not available at testing time.
 %   large:scale:metric:cvpr12, fetlearn:convex:pami14}), which is
 % expensive to acquire, and jeopardizes the scalability of the system.
 
-% To address these problems, this paper aims to learn good metrics over
+% To address these problems, this work aims to learn good metrics over
 % CFs without using human annotation. To achieve this goal, we propose a
 % novel route to ML. The philosophy is to let the common metrics (\eg
 % L2) computed over SFs, which are often able to yield satisfactory
@@ -92,7 +95,7 @@ necessary. Observing both developments then begs the question whether
 metrics can be computed over one feature (\ie SFs) to then be
 transferred to the domain of another feature (\ie TFs) and
 automatically supervise the metric learning process there. 
-In this paper, we demonstrate this for several vision tasks. The main
+In this work, we demonstrate this for several vision tasks. The main
 advantages of the method are: 1) it performs in an unsupervised
 manner, i.e. without human annotation; 2) it can be efficient as only
 TFs are needed during test time; 3) it can inject domain knowledge
@@ -134,7 +137,7 @@ such as clustering, retrieval, and classification.
 % low-dimensional features.
 
 
-%The whole pipeline of MI is shown in Fig.~\ref{fig:MI}.
+%The whole pipeline of MI is shown in Figure~\ref{mi:fig:MI}.
 
 % The goal of MI is different from ML, not ... , but to obtain a better
 % metric for cheap, low-dimensional features without using human
@@ -171,15 +174,15 @@ for image super-resolution.
 % we apply the method to multiple vision tasks. The code of our method
 % will be made publicly available upon the acceptance of the paper.
 
-% The paper is structured as follows. Sec.\ref{sec:rel} discusses
-% related work. Sec.\ref{sec:app} describes the approach, which is
-% validated by experiments in Sec.\ref{sec:exp}. Finally,
-% Sec.\ref{sec:con} concludes the paper. 
+% The paper is structured as follows. Section~\ref{mi:sec:rel} discusses
+% related work. Section~\ref{mi:sec:app} describes the approach, which is
+% validated by experiments in Section~\ref{mi:sec:exp}. Finally,
+% Section~\ref{mi:sec:con} concludes the paper. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Related Work}
-\label{sec:rel}
+\label{mi:sec:rel}
 
 Our method is generally relevant to Metric Learning, Feature
 Embedding, and Transfer Learning.
@@ -206,7 +209,7 @@ dissimilar objects.
 % The methods mainly differ in the manner how similar points are defined
 % (annotated), and the objective functions defined (often
 % task-specific). 
-Since a comprehensive overview is beyond the scope of this paper, we
+Since a comprehensive overview is beyond the scope of this work, we
 summarize the most relevant ones according to the types of annotation
 used. Readers are referred to~\citep{metric:survey:12}
 for a survey.
@@ -361,7 +364,7 @@ different algorithms and applications.
 
 
 \section{Metric Imitation}
-\label{sec:app}
+\label{mi:sec:app}
 In this section, we will introduce Metric Imitation (MI) in detail. 
 Like most metric learning or embedding methods, MI operates in
 two modes: training and mapping. Training learns
@@ -501,7 +504,7 @@ of $\ctfet{y}$'s.
          \underset{\ctfet{y}} {\text {minimize }}  \sum_{i=1}^n  \| \ctfet{y}_i - \sum_{j=1}^n W_{ij} \ctfet{y}_j \|^2. \\
          \end{aligned}
    \end{equation}
-   The cost function is very similar to that in Eq.\ref{eq:lle:error},
+   The cost function is very similar to that in Equation~\ref{eq:lle:error},
    but here the weight matrix $W$ is fixed and the optimization is
    performed over the $\ctfet{y}$. For the sake of efficiency,
    $\ctfet{y}$ is constrained to be a transformed version of
@@ -512,7 +515,7 @@ of $\ctfet{y}$'s.
    % feature $\cfet{y}$ is learned to best approximate the
    % manifold geometry $W$ injected from another feature
    % $\efet{x}$.  
-According to the induction of~\citep{NPEmbedding:iccv05}, solving Eq.\ref{eq:mapping:cost} can be reduced to solving
+According to the induction of~\citep{NPEmbedding:iccv05}, solving Equation~\ref{eq:mapping:cost} can be reduced to solving
    the following generalized eigenvector problem:
    \begin{equation}
      \label{eq:mapping:cost2}
@@ -526,7 +529,7 @@ According to the induction of~\citep{NPEmbedding:iccv05}, solving Eq.\ref{eq:map
      M &= (I-W)^T (I-W),   \\
      &I = diag(1, ..., 1).  
 \end{align*}
-Solving Eq.\ref{eq:mapping:cost2} leads to $q$ eigenvectors
+Solving Equation~\ref{eq:mapping:cost2} leads to $q$ eigenvectors
 $\vect{a}_1, ..., \vect{a}_q$, with eigenvalues ordered from the
 smallest to the largest.  Thus, the embedding is performed as:
 
@@ -558,8 +561,8 @@ Mahalanobis distance function in the original feature space:
                            = & (\cfet{y}_i - \cfet{y}_j )^T A^TA (\cfet{y}_i - \cfet{y}_j).  
  \end{align}
 %
- The form of Eq.\ref{eq:tdis} is preferred to that of
- Eq.\ref{eq:mdis}, because many approximate, fast nearest neighbor
+ The form of Equation~\ref{eq:tdis} is preferred to that of
+ Equation~\ref{eq:mdis}, because many approximate, fast nearest neighbor
  techniques have been developed for the euclidean metric. Since the
  space is learned to preserve the neighborhood properties of the
  `intrinsic' manifold, superior performance over common metrics on
@@ -583,7 +586,7 @@ Mahalanobis distance function in the original feature space:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experiments} 
-\label{sec:exp}
+\label{mi:sec:exp}
 
 We evaluated Metric Imitation (MI) in the two aforementioned
 scenarios: 1) learning of good metrics when the source
@@ -594,7 +597,7 @@ was evaluated on image clustering, category-based image retrieval, and
 instance-based object retrieval. For the second, MI is evaluated on
 example-based super-resolution. For all experiments of these four
 tasks, MI uses identical parameter settings: the size of the
-neighborhood $K$ was set to $40$ and $\sigma$ in Eq.\ref{eq:lap:wt}
+neighborhood $K$ was set to $40$ and $\sigma$ in Equation~\ref{eq:lap:wt}
 was set to the mean of the $L_2$ distance between all feature vectors $\|
 \vect{x}_i - \vect{x}_j \|^2, $ where $i, j \in \{1, ..., n \}$. These
 values have been set empirically, but our experiments show that MI is
@@ -605,7 +608,7 @@ hold-out sets can be considered.
 %=================================================================
 
 \subsection{Image Clustering}
-\label{sec:img:clustering}
+\label{mi:sec:img:clustering}
 As the amount of image data is on a rampant increase, unsupervised 
 methods to group objects into semantically relevant clusters are in 
 great demand. Such clustering is one of the core problems in modern
@@ -893,7 +896,7 @@ memory budget.
 % computed similarity. Again, $50$ images 
 
 % \textbf{Datasets and Features}: the same as used for image clustering
-% in Sec.\ref{sec:img:clustering}.
+% in Section~\ref{mi:sec:img:clustering}.
 
 % \textbf{Results}
 
@@ -922,7 +925,7 @@ Another typical test-bed for metric learning is retrieval. In this
 section, we apply MI to the task of category-based image retrieval,
 where the goal is to retrieve images of the same category as that 
 of the query image. The same datasets and features are used as for
-image clustering in Sec.\ref{sec:img:clustering}.
+image clustering in Section~\ref{mi:sec:img:clustering}.
 
 \textbf{Evaluation}: Again, $50\%$ of images were used for training
 (without using labels) and another $50\%$ for testing. The labels of
@@ -996,7 +999,7 @@ $\begin{tabular}{cccc}
 %}
 \caption{Examples with an upscaling factor $\times4$. Best seen on the
   screen. Images are obtained from the Internet.}
-\label{fig:sr}
+\label{mi:fig:sr}
 %\vspace{-0.5cm}
 \end{figure*}
 
@@ -1007,7 +1010,7 @@ MI was also tested for instance-based object retrieval, where the goal
 is, given an object instance, to retrieve all instances of the same 
 object class. The latter can be captured from different views, from different
 distances, etc. We used the same features as for image clustering in 
-Sec.\ref{sec:img:clustering}.
+Section~\ref{mi:sec:img:clustering}.
 
 \textbf{Datasets}: Two of the most popular datasets for this task were
 used: the INRIA Holidays dataset~\citep{hamming:embedding:08} and the
@@ -1078,7 +1081,7 @@ example-based image super-resolution.
 
 Since the number of training samples for image super-resolution is
 much larger (often millions) than that for other vision tasks considered 
-in this paper, solving the eigenvector problem of MI directly is 
+in this work, solving the eigenvector problem of MI directly is 
 intractable. We employed the eigenfunction technique~\citep{Fergus09} 
 for an approximate solution.  We
 tested MI with $0.5$ million training patches.  The method was
@@ -1104,14 +1107,14 @@ performance.
 % from $28.65$ to $29.07$ on Set14 for a super-resolution scaling factor
 % of $\times 3$, and from $29.69$ to $30.10$ on Set5 and from $26.85$ to
 % $27.26$ on Set14 for a super-resolution scaling factor of $\times 4$.
-Two image examples are shown in Fig.~\ref{fig:sr}. The examples and
+Two image examples are shown in Figure~\ref{mi:fig:sr}. The examples and
 the numbers show that MI improves the results of JOR by
 transferring domain knowledge from the space of HR patches into that
 of LR patches. 
 
 \section{Conclusion}
-\label{sec:con}
-The paper proposed the novel Metric Imitation method to
+\label{mi:sec:con}
+The work proposed the novel Metric Imitation method to
 learn good metrics for features in one domain (target
 features, TFs) by imitating the metrics computed over features of
 another domain (source features, SFs), and this even without supervision. 
@@ -1126,5 +1129,5 @@ tasks. Extensive experiments have shown that MI is able to learn
 significantly better metrics over cheap TFs, while only slightly
 increasing the time complexity during testing. We hope the idea of metric
 imitation and manifold transfer will also prove useful for metric
-learning and transfer learning. The code is available at
+learning and transfer learning. The code of this work is available at
   \url{www.vision.ee.ethz.ch/~daid/MetricImitation}.

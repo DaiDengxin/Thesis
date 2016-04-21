@@ -47,20 +47,23 @@
 %\authorrunning{Short form of author list} % if too long for running head
 % \PACS{PACS code1 \and PACS code2 \and more}
 % \subclass{MSC code1 \and MSC code2 \and more}
+\section{Introduction}
+\label{en:sec:intro}
 Providing efficient solutions to image classification has always been a
 major focus in computer vision. Recent years have witnessed
 considerable progress in image classification. However, most popular
-systems \citep{lazebnik:cvpr06, SVM-KNN, Bosch:iccv07, Boiman_CVPR_2008, Indoor, siftllc:cvpr10, 
-Sun_2010, Yang_2014_CVPR} heavily rely
+systems \citep{lazebnik:cvpr06, Indoor, siftllc:cvpr10, 
+Sun_2010, dai:TSC:11, Yang_2014_CVPR, nips12:cnn} heavily rely
 on manually labeled training data, which is expensive and sometimes
-impossible to acquire. Despite substantial efforts towards
-`pleasant' annotation by developing online games \citep{game:purpose}
+impractical to acquire. Despite substantial efforts towards
+efficient annotation by developing online games \citep{game:purpose}
 or appealing software tools \citep{labelme}, collecting training data
-for recognition is still very time-consuming and tedious. The scarcity
+for classification is still very time-consuming and tedious. The scarcity
 of annotations, combined with the explosion of image data, starts
 shifting focus towards learning with less supervision. As a result,
 numerous techniques have been developed to learn classification models
-with cheaper annotations. The most notable ones include
+with cheaper annotations. The most notable ones include unsupervised feature 
+learning~\citep{stl-10, cnnfet14, feature:context, feature:LSTM},  
 semi-supervised learning \citep{Fergus09, Guillaumin:cvpr:10, dai:iccv13b}, 
 active learning \citep{JainK:cvpr09, cvpr09:multi:al},
 transfer learning \citep{Transfer:CVPR:08, tl:survey},
@@ -68,80 +71,87 @@ weakly-supervised learning \citep{cvpr12:weak:video, metric:imitation}, self-tau
 \citep{self-taught:icml07}, and image clustering
 \citep{Sivic05b, dai}.
 
-In this paper, we are interested in the problem of semi-supervised
-learning (SSL) for image classification, but our solution can be
-applied seamlessly to image clustering, as shown in Section
-\ref{sec:experiments}. Given a small set of labeled data along with a
-large set of unlabeled data, SSL aims to learn a more accurate
-recognition system than that based on the labeled data set alone.  
+
+In this work, we are interested in the problem of  image classification 
+with limited or no annotation. Instead of regularizing the
+classifiers like most of the previous methods \citep{SemiSVM, Joachims:1999,
+  SemiBoost, SemiForest}, we learn a new feature representation 
+using the all available data (labeled + unlabeled). 
+Specifically, we aim to learn a new feature representation by exploiting 
+the distribution patterns of the data to be handled. The setting assumes the availability of 
+unlabeled data in the same or a similar distribution as the test data. 
+This form of weak supervision is naturally available in applications such as
+semi-supervised  image classification and image clustering, where data in the same or a similar 
+distribution as the test data is available. The learned feature is specifically tuned for the data distribution of interest 
+and performs better for the data than the standard features the method started with.  
+The features to start with for our method can be hand-crafted features~\citep{gist, Ojala02,Bosch:iccv07,siftllc:cvpr10},  
+learned features in a supervised manner~\citep{caffe14, rich:feature:cvpr14, deep:bmvc14} or 
+learned features in an unsupervised way~\citep{stl-10, cnnfet14, feature:context, feature:LSTM, feature:video}.  
+
+%classification system than that based on the labeled data set alone.  
 % The main distinction between SSL methods lies in the way they exploit the
 % unlabeled data. 
-Recent research in SSL has been quite successful
-\citep{Fergus09, SemiForest, SemiBoost, Zhu:ISL:2009, book06:ssl,
-  eccv10:ssl, ecml14:ssl, nips14:ssl}, typically building upon the
+Learning with unlabeled data has been quite successful in many fields, for instance in semi-supervised learning 
+(SSL)~\citep{Zhou:nips:04, deep:semi:embedding, Fergus09, SemiForest, Zhu:ISL:2009, 
+nips14:ssl}, in image clustering~\citep{Grauman06, Frey_AffinityPropagation, dai}, and in 
+unsupervised feature representation learning~\citep{stl-10, cnnfet14, feature:LSTM, feature:video}. 
+Typically these methods build upon the
 \emph{local-consistency} assumption that data samples with high
 similarity should share the same label. This is also called
-\emph{smoothness of manifold}, and it is often used to regularize the
-classifying functions learned from labeled samples or to propagate
-labels of labeled samples to unlabeled ones over a graph reflecting
-the manifold structure. Yet, these methods have their drawbacks:
-regular\-ization-based methods \citep{Joachims:1999, neverhurt:icml11}
-are difficult to apply to large-scale problems; graph-based methods
-\citep{Zhu:Harmonic:03, Zhou:nips:04, Fergus09,icml10:large:graph:ssl}
-are difficult to be given out-of-sample extensions and lack ability
-for discriminative learning.
-
+\emph{smoothness of manifold}, and it is often used to regularize the training process for the classifiers or feature
+ representations.  
+% Yet, these methods have their drawbacks. For instance, for SSL, the
+% regular\-ization-based methods \citep{Joachims:1999, neverhurt:icml11}
+% are heavy to train; the graph-based methods
+% \citep{Zhu:Harmonic:03, Zhou:nips:04, Fergus09,icml10:large:graph:ssl}
+% are difficult to be given out-of-sample extensions and lack ability
+% for discriminative learning.
 %  While a wide range of methods have been developed to
-% exploit this assumption~\cite{Joachims:1999, Zhou:nips:04,
+% exploit this assumption~\citep{Joachims:1999, Zhou:nips:04,
 %   Zhu:Harmonic:03}, they share three common drawbacks.
-
-% Transductive SVMs (TSVM)~\cite{Joachims:1999} (also its
-% extentions \cite{neverhurt:icml11}) are among the most popular SSL
-% methods, which use unlabeled data to encourage classifying boundaries
-% to pass through regions where scarce samples are nearby. While the
-% efficacy of the methods has been shown in many applications, they are
-% suffering from lack of an efficient optimization method, which makes
-% it problematic to apply them to large-scale datasets. Graph-based
-% methods \cite{Zhu:Harmonic:03, Zhou:nips:04,
-%   Fergus09,icml10:large:graph:ssl} work by propagating labels over a
-% graph reflecting similarity among data samples, and efficient
-% algorithms \cite{Fergus09,icml10:large:graph:ssl} have been developed
-% for large-scale applications. One problem for these methods is that
-% the power of discriminative learning is not leveraged, which degrades
-% the performance especially for vision classification where very
-% high-dimensional features are involved and classifying function is
-% highly non-linear.
-
-%  Another problem is that these methods are quite
-% sensitive to the labeled `seeds' and the graph structures.
-% First of all, these methods only exploit the \emph{local-consistency}
-% assumption in image feature space, and ignore other prior information.
-% Another reasonable assumption - borne out by our results - is that
-% samples with very low similarity are in high probability come from
-% different classes. We call this the \emph{exotic-inconsistency}
-% assumption, and design a method to exploit it also for
-% SSL. 
-
-In this paper, we depart from the traditional paradigm and propose
-another route to SSL. Instead of regularizing the
-classifiers like most of the SSL methods \citep{SemiSVM, Joachims:1999,
-  SemiBoost, SemiForest}, we learn a new feature representation 
-using the labeled and unlabeled data. The new feature
+In this work, we propose another way to exploit the \emph{local-consistency} assumption to 
+learn a new feature representation. 
+The new feature
 representation is learned in a discriminative way to capture not only
 the information of individual images, but also the relationships among
 images. The learning is conceptually straightforward and
 computationally simple. The learned features can be fed into any
 classifiers for the final classification of the unlabeled samples.
-Thus, the method is agnostic to the classifiers. This facilitates the
+Thus, the method is agnostic to the classifier choice. This facilitates the
 deployment of SSL methods, as users often have their favorite
 classifiers and are reluctant to drop them. For image clustering, we
 apply the same feature learning methods to all provided images, and
 then feed the learned features to standard clustering methods such as
 $k$-means and Spectral Clustering.  Below, we present our motivations
 and outline the method.
+%  Another problem is that these methods are quite
+% sensitive to the labeled `seeds' and the graph structures.
+% First of all, these methods only exploit the \emph{local-consistency}
+% assumption in image feature space, and ignore other prior information.
+% Another reasonable assumption - borne out by our results - is that
+% samples with very low similarity are in high probability come from
+% different classes. We call this the \emph{exotic-consistency}
+% assumption, and design a method to exploit it also for
+% SSL. 
+
+% To overcome these limitations, we depart from the traditional paradigm
+% and propose another route to SSL in this paper. Instead of
+% regularizing the classifiers like most of the SSL
+% methods~\citep{SemiSVM, Joachims:1999, SemiBoost, SemiForest} have
+% done, we learn a new feature representation by using the labeled data
+% and unlabeled data. The new feature representation is learned in a
+% discriminative way to capture not only the information of the
+% individual image, but also the relationship among
+% images. The learning is conceptually straightforward and
+% computationally simple. The learned features can be fed into any
+% classifiers for the final classification of the unlabeled samples. One
+% side benefit is that the method is agnostic to the
+% classifiers. This facilitates the deployment of SSL methods, as users
+% often have their own favorate classifiers, and are reluctant to
+% drop. Below, we present our motivations and outline the method.
 
 % Furthermore, most previous methods design specialized learning
-% algorithms to leverage the structure of unlabeled data~\cite{SemiSVM,
+% algorithms to leverage the structure of unlabeled data~\citep{SemiSVM,
 %   SemiBoost, SemiForest}, so users often need to change their learning
 % methods in order to utilize the cheap unlabeled data. This limits
 % the applicability of SSL, as users usually are reluctant to give up
@@ -151,7 +161,7 @@ and outline the method.
 % as many applications have no prior access to the data to be
 % classified.  
 
-\begin{figure}[t]
+\begin{figure*}[t]
   \centering
   \includegraphics[width=0.98\textwidth]{./ensemble/pipeline.jpg}
   \caption{The pipeline of Ensemble Projection (EP). EP consists of
@@ -163,14 +173,15 @@ and outline the method.
     functions to obtain their new representation. These features are
     fed into standard classifiers and clustering methods for image
     classification and clustering respectively.}
-\label{fig:pipeline}
-\end{figure}
+\label{en:fig:pipeline}
+\end{figure*}
+
 
 \subsection{Motivations}
 People learn and abstract the concepts of object classes well from
 their intrinsic characteristics, such as colors, textures, and
 shapes. For instance, \emph{sky} is blue, and a \emph{football} is
-spherical. We also do so by comparing new object classes to those that
+spherical. We also do so by comparing new object classes to those classes that
 have already been learned. For example, a \emph{leopard} is similar in
 appearance to a \emph{jaguar}, but is smaller. This paradigm of
 learning-by-comparison or characterization-by-comparison is part of
@@ -179,12 +190,13 @@ an object's class is determined by its \emph{similarity} to prototypes
 which represent object classes. The theory has been used successfully
 in transfer learning \citep{Transfer:CVPR:08}, when labeled data of
 different classes are available. An important question is whether the
-theory can also be used for SSL and image clustering when a large
-amount of unlabeled data is available. This paper investigates this
+theory can also be used for feature representation learning when a large
+amount of unlabeled data is available. This work investigates this
 problem.
 
+
 To use this paradigm, we first need to create the prototypes
-automatically from the available data, both labeled and unlabeled. In
+automatically from the available data. In
 keeping with Eleanor Rosch's prototype theory \citep{Rosch:1978}, ideal
 prototypes should have two properties: 1) images in the same prototype
 are to be from the same class; and 2) images of different
@@ -193,10 +205,10 @@ guarantee meaningful comparisons and reduce ambiguity.  Without
 access to labels of data samples, the prototypes have to be created in
 an unsupervised way, based on some assumptions. In addition to the
 widely-used \emph{local-consistency}, we propose another one called
-\emph{exotic-inconsistency}, which states that samples that are far
+\emph{exotic-consistency}, which states that samples that are far
 apart in the feature space are very likely to come from
 different classes. The assumptions have been verified
-experimentally, and will be presented in Sec. \ref{sec:mov1}.  Based
+experimentally, and will be presented in Section~\ref{en:sec:mov1}.  Based
 on these two assumptions, it stands to reason that samples along with
 their closest neighbors can be ``good'' prototypes, and  such
 prototypes that are far apart can play the role of different classes.  According to
@@ -216,83 +228,44 @@ of each training set. The idea is that if the deficiency modes of the
 individual training sets are different or `orthogonal', ensemble
 learning is able to cancel out or at least mitigate their effect. This
 conjecture is verified with a simulated experiment in
-Sec. \ref{sec:mov2}, and is also supported by the superior performance
+Section~\ref{en:sec:mov2}, and is also supported by the superior performance
 of our method in real applications. With the ensemble of classifiers,
 images are then represented by the concatenation of their
 classification scores -- similarities to all the sampled image
 prototypes -- for the final classification, which is in keeping with
 prototype theory \citep{Rosch:1978}. We call the method Ensemble
 Projection (EP). Its schematic diagram is sketched in
-Fig. \ref{fig:pipeline}.
+Figure \ref{en:fig:pipeline}.
 
-%  Solving SSL problems this way, EP addresses all the three
-% aforementioned issues: (1) in addition to \emph{local-consistency}
-% property, it also exploits \emph{exotic-inconsistency} property; (2)
-% the learned new feature can be fed into any classifiers; and (3) it
-% performs well for self-taught image classification, supported by
-% experiments.
-% We evaluate our method on 4 standard datasets:
-% Scene-$15$~\cite{lazebnik:cvpr06}, LandUse-$21$~\cite{landuse21}
-% Texture-$25$~\cite{UIUC:Texture}, and
-% Caltech-$101$~\cite{FeiFei2004}. Experimental results show that our
-% method outperforms competing methods for semi-supervised image
-% classification, where the unlabeled images are from the same
-% classes as the labeled ones.  The experiments also show that the
-% method combines well with the previous SSL methods. Finally, we also
-% test the method for self-taught image classification, where the unlabeled
-% data is a random collection of images, and show that the learned image
-% representation is superior to normal image features.
 \subsection{Contributions}
 EP was evaluated on eight image classification datasets, ranging from
 texture classification, over object classification and scene
 classification, to style classification. For SSL, EP is compared
-to three baselines and three other methods. For image clustering, it is
-compared to the Convolutional Neural Network (CNN) feature of
-\citep{deep:bmvc14} with two standard clustering methods: $k$-means and
+to three baselines and three other methods. For image clustering, EP is
+compared to the original features it started with. Two standard clustering methods are used: $k$-means and
 Spectral Clustering.  The experiments show that: (1) EP improves over
-the original features by learning with unlabeled data when standard
-classifiers are used, and outperforms competing SSL methods; (2) EP
+the original features by exploiting the data distribution of interest, 
+and outperforms competing SSL methods; (2) EP
 produces promising results for self-taught image classification where
 the unlabeled data does not follow the same distribution as the
-labeled ones, but rather from a random collection of images; (3) EP
-improves over the original features for image clustering.
+labeled ones; (3) EP improves over the original features for image clustering.
 
-This paper is an extension of our ICCV paper \citep{dai:iccv13b} and
-our ECCV paper \citep{dai:eccv12b}. In addition to putting the two
-papers into the same framework, this paper has two new
-contributions. First of all, in the conference papers, the idea of EP
-was validated only with very general and `cheap' features, such as LBP
-\citep{Ojala02}, GIST \citep{gist}, and PHOG
-\citep{Bosch:iccv07}. These features, however, are obsolete and do
-not always yield satisfactory results on classification
-datasets. Recently, features learned by CNN has resulted in
-state-of-the-art performance in various recognition tasks
-\citep{nips12:cnn, caffe14, rich:feature:cvpr14, deep:bmvc14}. In this
-paper, we validate the efficacy of EP with CNN features rather than
-the simple features used in our earlier work. The second difference is that in this
-paper experiments are conducted on eight standard classification
-datasets, instead of only four in \citep{dai:iccv13b} and three in
-\citep{dai:eccv12b}.  While we focus on image classification and
-clustering, our framework of feature learning from unlabeled data can
-be used for other tasks as well. For instance, 
-\citet{random:hashing} extended the idea to generate hashing functions
-for efficient image retrieval.
 
 % \subsection{Notation and Overview}
-% \label{sec:notation}
+% \label{en:sec:notation}
 % 
 % In this section, we first give the definition of the weak training set
 % and then give an overview of our method.
 % \begin{definition} Given a categorization task $\mathbb{E}$, a weak training
 %   set is a labeled dataset $\mathcal{B}$ which has severe deficiencies to be 
-%   a good training set, e.g. some classes may
+%   a good training set, e.g. some categories may
 %   be absent, some may be impure, and/or some may be with bias,
 %   but training on it can lead to a weak classifier $\phi(.)$ which performs better than 
 %   random guessing for the task $\mathbb{E}$.  
 % \end{definition}
 % 
 % Our dataset $\d$ consists of $N$ images, each belonging to one of $C$
-% classes.  The task is to discover these classes. Each image is
+% categories.  The task is to discover these categories. Each image is
 % represented by a $d$-dimensional feature vector ${f}_n, n \in
 % \braces{1 \ldots N}$.  Assume that the ensemble partitioning learns
 % knowledge from $T$ \wt sets in total.  For the $t^{th}$ trial, the \wt
@@ -310,65 +283,94 @@ for efficient image retrieval.
 % % This is used to relate the partitions of each trial in a canonical representation.
 % The final proximity matrix $\matx{A}$, is averaged over all the $T$ binary matrices: 
 % $\matx{A} = \frac{1}{T} \sum_t \matx{A}^t$. 
-% The final categorization results are obtained by feeding $\matx{A}$ to a Spectral Clustering algorithm. 
+% The final categorization results are obtained by feeding $\matx{A}$ to a spectral clustering algorithm. 
 % % We design this way of combination just because the ordering of
-% % class labels given by all the base classifiers can be arbitrary,
+% % category labels given by all the base classifiers can be arbitrary,
 % % which comes from the label inconsistency among all \wt sets.
 % The whole pipeline of our method is sketched in
-% Fig.~\ref{fig_pipeline}.  Though simple, our method outperforms
+% Figure~\ref{fig_pipeline}.  Though simple, our method outperforms
 % competing methods by a considerable margin on various challenging
 % datasets.
-   
-The rest of this paper is organized as follows. Section
-\ref{sec:related} reports on related work. Section
-\ref{sec:observations} is devoted to two motivating observations. 
-Section \ref{sec:approach} describes our method, followed by experiments
-in Sec.\ref{sec:experiments}. Sec.\ref{sec:conclusion} concludes the
+
+The rest of this chapter is organized as follows. Section~\ref{en:sec:related}
+reports on related work. Section~\ref{en:sec:observations} describes the
+observations that motivate the method. Section~\ref{en:sec:approach} is devoted to the approach, followed by experiments in
+Section~\ref{en:sec:experiments}. Section~\ref{en:sec:conclusion} concludes the
 paper.
 
 
 \section{Related Work}
-\label{sec:related}
-Our method is generally relevant to semi-supervised
-learning, ensemble learning,  image feature learning, and image clustering.
+\label{en:sec:related}
+Our method is generally relevant to image feature learning, semi-supervised
+learning, ensemble learning, and image clustering.
+
+
+\textbf{Supervised Feature Learning}: Over the past years, a wide spectrum of
+features, from pixel-level to semantic-level, have been designed and
+used for different vision tasks. Due to the semantic gap, recent work
+extract high-level features, which go beyond single images and are
+probably impregnated with semantic information. Notable examples are
+Image Attributes~\citep{ObjectAttribute:cvpr09},
+Classemes~\citep{eccv10:classemes}, and Object
+Bank~\citep{li:objectbank}. While getting pleasing results, these
+methods all require additional labeled training data, which is exactly
+what we want to avoid.  There have been
+attempts, \eg~\citep{augmented_attribute:eccv12, design_attribute:cvpr13}, to
+avoid the extra attribute-level supervision, but they still require
+canonical class-level supervision. Our representation learning
+however, is fully unsupervised.  
+The pre-trained CNN features~\citep{nips12:cnn, caffe14, rich:feature:cvpr14, deep:bmvc14}
+have shown state-of-the-art performance on various classification tasks. Our feature 
+learning is complementary to their methods. As shown in the experiment, our method can improve on top of 
+the CNN features by exploiting the distribution patterns of the data to be classified.  
+Although the technique of fine-tuning can 
+boost the performance of CNN features for 
+the specific tasks at hand~\citep{midlevel:transfer, cnn:transferable}, it needs labeled data of a moderate size, 
+which is not always available in our setting.
+Our method can be understood as unsupervised feature enhancing or fine-tuning.
+
+
+\textbf{Unsupervised Feature Learning}: Our method is akin to methods which learn middle- or high-level image
+representation in an unsupervised manner. \citep{stl-10} employs
+$k$-means mining filters of image patches and then applys the filters
+for feature computation. \citep{cnnfet14} generates surrogate classes
+by augmenting each patch with its transformed versions under a set of
+transformations such as translation, scaling, and rotation, and trains
+a CNN on top of these surrogate classes to generate features. The idea
+is very similar to ours, but our surrogate classes are generated by
+augmenting seed images with their close neighbors. The learning
+methods are also different. \citep{mid-level:patches} discovers a set
+of representative patches by training discriminative classifiers with
+small, compact patch clusters from one dataset, and testing them on
+another dataset to find similar patches. The found patches are then
+used to train new classifiers, which are applied back to the first
+dataset. The process iterates and terminates after rounds, resulting
+in a set of representative patches and their corresponding
+`filters'. The idea of learning `filters' from compact clusters shares
+similarities with what we do, but our clusters are images rather than
+patches. Other forms of weak supervision have also been exploited to learn good 
+feature representation without human labeled data, and they all obtain very promising results. 
+For instance, \citep{feature:context} uses the spatial relationships of 
+image windows in an image as the supervision to train a neural network; \citep{feature:video} exploits 
+the tracking results of objects in videos to guide the training of a neural network to learn 
+feature representations; and \citep{learning:by:moving} exploits the ego-motion of cameras for the training.
+These methods aim for general feature representation. Our method, however, is designed to 
+`tune' or enhance vision features specifically for the datasets on which the vision tasks are performed.  
 
 \textbf{Semi-supervised Learning}: SSL aims at enhancing the
-performance of recognition systems by exploiting an additional set of
+performance of classification systems by exploiting an additional set of
 unlabeled data. Due to its great practical value, SSL has a rich
 literature~\citep{book06:ssl, Zhu:ISL:2009}. Amongst existing methods,
 the simplest methodology for SSL is based on the self-training scheme
 \citep{co-training:98} where the system iterates between training
-recognition models with current `labeled' training data and augmenting
+classification models with current `labeled' training data and augmenting
 the training set by adding its highly confident predictions in the set
 of unlabeled data; the process starts from human labeled data and
 stops until some termination condition is reached, \eg the maximum
-number of iterations.  \citet{Guillaumin:cvpr:10} and \citet{Semi:eccv12} presented two methods in this stream for image classification. While
+number of iterations.  \citep{Guillaumin:cvpr:10} and \citep{Semi:eccv12} presented two methods in this stream for image classification. While
 obtaining promising results, they both require additional supervision:
-\citet{Guillaumin:cvpr:10} need image tags and \citet{Semi:eccv12}
+\citep{Guillaumin:cvpr:10} need image tags and \citep{Semi:eccv12}
 image attributes.
-
-% Neural network-based approaches combine unsupervised and supervised
-% learning by training feed-forward classifiers with an additional
-% penalty from an auto-encoder or other unsu- pervised embedding of the
-% data (Ranzato and Szummer, 2008; Weston et al., 2012). The Manifold
-% Tangent Classifier (MTC) (Rifai et al., 2011) trains contrastive
-% auto-encoders (CAEs) to learn the manifold on which the data lies,
-% followed by an instance of TangentProp to train a classifier that is
-% approximately invariant to local perturbations along the manifold. The
-% idea of manifold learning using graph-based methods has most recently
-% been combined with kernel (SVM) methods in the At- las RBF model
-% (Pitelis et al., 2014) and provides amongst most competitive
-% performance currently available.
-
-% Semi-supervised learning (SSL) methods are designed to handle this
-% spectrum of label information [26, 28]. They rely on the density
-% structure of the data itself to propagate known labels to areas
-% lacking annotations, and provide a natural way to incorporate labeling
-% uncertainty. However, these methods require the explicit manipulation
-% of an n × n Laplacian matrix (n being the number of data points), for
-% example [2] notes: “our algorithms compute the inverse of a dense Gram
-% matrix which leads to O(n3 ) complexity. This may be impractical for
-% large datasets.”
 
 The second group of SSL methods is based on label propagation over a
 graph, where nodes represent data examples and edges reflect their
@@ -394,24 +396,24 @@ to \citep{Zhu:ISL:2009} for a thorough overview of SSL.
 
 
 % The method closest to ours is that of Gomes
-% \etal \cite{Pietro_2010}. They also propose a framework for learning
+% \etal \citep{Pietro_2010}. They also propose a framework for learning
 % discriminative classifiers while clustering the data, called
 % regularized information maximization.  Yet, the method still
-% significantly differs from ours.  In particular, \cite{Pietro_2010}
+% significantly differs from ours.  In particular, \citep{Pietro_2010}
 % finds a partitioning of images that results in a `good' discriminative
 % classifier, which is evaluated by three criteria: class separation,
 % class balance and classifier complexity.  Our method however, more
 % closely follows the training-test paradigm; that is, sample a series
 % of weak training sets, learn knowledge from these sets and classify
 % the whole dataset with this learned knowledge. Our method also shares
-% similarities with the method of Lee and Grauman \cite{Lee11cvpr}. They
+% similarities with the method of Lee and Grauman \citep{Lee11cvpr}. They
 % proposed to use \emph{curriculum learning}
-% (CL)~\cite{Curriculum_learning} for unsupervised object discovery.  CL
+% (CL)~\citep{Curriculum_learning} for unsupervised object discovery.  CL
 % imitates the learning process of people; that is, using a pre-defined
 % learning schedule, it starts from learning the easiest concepts first
 % and graduately increases the complexity of concepts
-% \cite{Curriculum_learning}. Besides technical differences, the main
-% benefit of our work compared to \cite{Curriculum_learning} is that we
+% \citep{Curriculum_learning}. Besides technical differences, the main
+% benefit of our work compared to \citep{Curriculum_learning} is that we
 % do not rely on pre-selected learning schedules.
 
 
@@ -429,7 +431,7 @@ independent of the classification method. The reason we use EL is to
 capture rich visual attributes from a series of prototype sets, and to
 mitigate the deficiency of the sampled prototype sets. Other work
 close to ours is 
-% Dai \etal~\cite{dai:eccv12b}.  They presented
+% Dai \etal~\citep{dai:eccv12b}.  They presented
 % an ensemble partitioning framework for unsupervised image
 % categorization, where weak training sets are sampled to train base
 % learners. The whole dataset is classified by all the base learners in
@@ -438,50 +440,15 @@ Random Ensemble Metrics~\citep{ensemble:iccv11}, where images are
 projected to randomly subsampled training classes for supervised
 distance learning.
 
-\textbf{Supervised Feature Learning}: Over the past years, a wide spectrum of
-features, from pixel-level to semantic-level, have been designed and
-used for different vision tasks. Due to the semantic gap, recent work
-extract high-level features, which go beyond single images and are
-probably impregnated with semantic information. Notable examples are
-Image Attributes~\citep{ObjectAttribute:cvpr09},
-Classemes~\citep{eccv10:classemes}, and Object
-Bank~\citep{li:objectbank}. While getting pleasing results, these
-methods all require additional labeled training data, which is exactly
-what we want to avoid.  There have been
-attempts, \eg~\citep{augmented_attribute:eccv12, design_attribute:cvpr13}, to
-avoid the extra attribute-level supervision, but they still require
-canonical class-level supervision. Our representation learning
-however, is fully unsupervised.  
-
-\textbf{Unsupervised Feature Learning}: Our method is akin to methods which learn middle- or high-level image
-representation in an unsupervised manner. \citep{stl-10} employs
-$k$-means mining filters of image patches and then applys the filters
-for feature computation. \citep{cnnfet14} generates surrogate classes
-by augmenting each patch with its transformed versions under a set of
-transformations such as translation, scaling, and rotation, and trains
-a CNN on top of these surrogate classes to generate features. The idea
-is very similar to ours, but our surrogate classes are generated by
-augmenting seed images with their close neighbors. The learning
-methods are also different. \citep{mid-level:patches} discovers a set
-of representative patches by training discriminative classifiers with
-small, compact patch clusters from one dataset, and testing them on
-another dataset to find similar patches. The found patches are then
-used to train new classifiers, which are applied back to the first
-dataset. The process iterates and terminates after rounds, resulting
-in a set of representative patches and their corresponding
-`filters'. The idea of learning `filters' from compact clusters shares
-similarities with what we do, but our clusters are images rather than
-patches.
-    
 \textbf{Image Clustering}: A plethora of methods have been developed for image clustering.  
-\citet{Fergus03} modeled
+\citep{Fergus03} modeled
 objects as constellations of visual parts and estimated parameters
 using the expectation-maximization algorithm for unsupervised
-recognition. \citet{Sivic05b} proposed using aspect models
+classification. \citep{Sivic05b} proposed using aspect models
 to discover object classes from an unordered image
-collection. Later on, \citet{Sivic08} used Hierarchical Latent
+collection. Later on, \citep{Sivic08} used Hierarchical Latent
 Dirichlet Allocation to automatically discover object class
-hierarchies. For scene class discovery, \citet{dai}
+hierarchies. For scene class discovery, \citep{dai}
 proposed to combine information projection and clustering
 sampling. These methods assume explicit distributions for the samples.
 Image classes, nevertheless, are arranged in complex
@@ -489,18 +456,27 @@ and widely diverging shapes, making the design of explicit models
 difficult. % as a kind of art.
 An alternative strand, which is more versatile in handling structured
 data, builds on similarity-based methods. 
-\citet{Frey_AffinityPropagation} applied the affinity propagation
+\citep{Frey_AffinityPropagation} applied the affinity propagation
 algorithm of \citep{Frey_Dueck_2007} for unsupervised image
-categorization.  \citet{Grauman06} developed
+categorization.  \citep{Grauman06} developed
 partially matching image features to compute image similarity and used
 spectral methods for image clustering.
-% \cite{Todorovic_Ahuja_2008}
+% \citep{Todorovic_Ahuja_2008}
 The main difficulty of this strand is how to measure image similarity
 as the semantic level goes up.  
 Readers are referred to \citep{Tuytelaars_UnsupervisedSurvey} for a survey.
 
 % The method also shares similarity with
-% Self-taught learning~\cite{self-taught:icml07}, where sparse coding is
+% Self-taught learning~\citep{self-taught:icml07}, where sparse coding is
+% employed to construct higher-level features using unlabeled data. Both
+% work attempt to leverage the regularities of general visual data to
+% improve image representation.
+
+% \textbf{Unsupervised Feature Learning}
+% unsupervised feature via k-means and single-layer networks
+
+% The method also shares similarity with
+% Self-taught learning~\citep{self-taught:icml07}, where sparse coding is
 % employed to construct higher-level features using unlabeled data. Both
 % work attempt to leverage the regularities of general visual data to
 % improve image representation.
@@ -510,9 +486,9 @@ Readers are referred to \citep{Tuytelaars_UnsupervisedSurvey} for a survey.
 
 
 \section{Observations}
-\label{sec:observations}
+\label{en:sec:observations}
 
-\label{sec:observation} In this section, we motivate our approach and explain why it is
+\label{en:sec:observation} In this section, we motivate our approach and explain why it is
 working. We experimentally verify our assumptions: First, given a
 standard distance metric over images, do the assumptions
 \emph{local-con\-sist\-ency} and \emph{exotic-incon\-sistency}
@@ -522,15 +498,15 @@ number of such training sets are sufficiently large and the deficiency
 modes of them are different or `orthogonal'?
 
 \subsection{Observation 1}
-\label{sec:mov1}
+\label{en:sec:mov1}
 The assumptions of \emph{local-consistency} and
-\emph{exotic-inconsist\-ency} do hold for real image datasets.  An
+\emph{exotic-consist\-ency} do hold for real image datasets.  An
 ideal image representation along with a distance metric should ensure
 that all images of the same class are more similar to each other
 than to those of other classes. However, this does not strictly hold for
 most of vision systems in reality. In this section, we want to verify
 whether the relaxed assumptions 
-\emph{local-consistency} and the \emph{exotic-inconsistency} hold. 
+\emph{local-consistency} and the \emph{exotic-consistency} hold. 
 These state images are very likely from the same class as their close
 neighbors, and very likely from different classes than those far from them. 
 In order to examine the assumptions, we tabulate how often an
@@ -557,12 +533,12 @@ $ \begin{array}{cccc} \hspace{-2mm}
   images having the same label with their $k_{th}$ neighbors.  Results
   on six datasets are shown. The number of classes and the number
   of images of the datasets are shown as well. }
-\label{fig:mov1}
+\label{en:fig:mov1}
 \end{figure*}
 
 
-Fig.~\ref{fig:mov1} shows the results on six datasets (Datasets and
-features will be introduced in Sec.\ref{sec:experiments}). The results
+Figure~\ref{en:fig:mov1} shows the results on six datasets (Datasets and
+features will be introduced in Section~\ref{en:sec:experiments}). The results
 reveal that using the distance metric in conventional ways (\eg
 clustering by $k$-means and spectral methods) will result in very noisy
 training sets, because the label co-occurrence probability $p(k)$
@@ -580,7 +556,7 @@ Also, from this figure, it is evident that the CNN feature performs
 significantly better than the rest, which suggests
 that using the CNN feature in our system is recommendable.
 % This will be further examined in
-% \S~\ref{sec:sampling.}
+% \S~\ref{en:sec:sampling.}
 
 \begin{figure*}[tb]
   \centering
@@ -598,7 +574,7 @@ $  \begin{array}{cccc}
     severe (e.g. $R=80\%$), given that the deficiency modes are
     different or `orthogonal' and the number of training sets are
     sufficiently large. The figure is best viewed in color.}
-\label{fig:mov2}
+\label{en:fig:mov2}
 \end{figure*}
 
 
@@ -606,7 +582,7 @@ $  \begin{array}{cccc}
 % \centering
 %  \includegraphics[width=0.6\textwidth]{./ensemble_noise_fig_15-crop.pdf} 
 %  \caption{\small{Classification accuracies of ensemble learning on the
-%      the Scene-15 dataset~\cite{lazebnik:cvpr06}, for varying training
+%      the Scene-15 dataset~\citep{lazebnik:cvpr06}, for varying training
 %      label noise $R$ and varying number of training trials
 %      $T$. Experiments on other datasets obtain the same
 %      trend. Ensemble learning is able to cancell out the deficiency of
@@ -614,11 +590,11 @@ $  \begin{array}{cccc}
 %      that the deficiency modes are different or `orthogonal' and the
 %      number of training sets are sufficiently large. The figure is
 %      best viewed in color. }}
-% \label{fig:mov2} 
+% \label{en:fig:mov2} 
 % \end{SCfigure}
 
 \subsection{Observation 2}
-\label{sec:mov2}
+\label{en:sec:mov2}
 Ensemble learning is able to cancel out or  substantially mitigate the
 deficiency of individual training sets, given that the number of such
 training sets is sufficiently large and the modes of the deficiency
@@ -643,7 +619,7 @@ every sample is assigned its true label.  A classifier is trained for
 each of these weak training sets.  At test time, each of these
 classifiers returns the class label of each image in
 $\mathcal{D}^\text{test}$. The winning label is the mode of the
-results returned by all the classifiers.  Fig.~\ref{fig:mov2}
+results returned by all the classifiers.  Figure~\ref{en:fig:mov2}
 evaluates this for the Scene-15
 dataset~\citep{lazebnik:cvpr06}. Logistic Regression is used as the
 classifiers with the CNN feature~\citep{deep:bmvc14} as
@@ -659,7 +635,7 @@ training sets, and given a sufficiently large number of such training sets.
 
 We were inspired by the two observations, and would like to
 investigate whether the assumptions of \emph{local-consis\-tency} and
-\emph{exotic-inconsistency} are enough to generate a set of such weak
+\emph{exotic-consistency} are enough to generate a set of such weak
 training sets in an unsupervised manner, with which ensemble learning
 is able to learn useful visual attributes for semi-supervised
 image classification and image clustering.
@@ -668,11 +644,11 @@ image classification and image clustering.
 
 
 \section{Our Approach}
-\label{sec:approach}
+\label{en:sec:approach}
 
 % We start by introducing semi-supervised learning in a graph setting
 % and then describe an approxi- mation that reduces the learning time
-% from polynomial to linear in the number of images. Fig. 1 illustrates
+% from polynomial to linear in the number of images. Figure~ 1 illustrates
 % the semi supervised learning problem. Following the notations of Zhu
 % et al. [28], we are given a labeled dataset of input-output pairs (Xl
 % , Yl ) = {(x1 , y1 ), ..., (xl , yl )} and an unlabeled dataset Xu =
@@ -692,14 +668,14 @@ $\bold{f}$ from all known data $\mathcal{D} = \mathcal{D}_l \cup
 $\bold{f}$.  $\bold{f}_i$ is a vector of similarities of image $i$ to
 a series of sampled image prototypes.
 
-Assume that Ensemble Projection (EP) learns knowledge from $T$
-prototype sets $\mathcal{P}^{t, t\in \{1, ..., T \}}= \{(s_i^t,
+Assume that Ensemble Projection learns knowledge from $T$
+prototype sets $\mathcal{P}^{t, t\in \{1, ..., T \}}=\{(s_i^t,
 c_i^t)\}_{i=1}^{rn}$, where $s_i^t \in \{1, ..., l+u \}$ is the index
 of the $i^{th}$ chosen image, $c_i^t \in \{1, ..., r\}$ is the
 pseudo-label indicating which prototype $s_i^t$ belongs to.  $r$ is the
 number of prototypes (surrogate classes) in
 $\mathcal{P}^t$, and $n$ the number of images sampled for each
-prototype (class) (\eg $r=3$ and $n=3$ in Fig.~\ref{fig:pipeline}).
+prototype (class) (\eg $r=3$ and $n=3$ in Figure~\ref{en:fig:pipeline}).
 %  In order to guarantee the diversity
 % (crucial in ensemble learning), $T$ different features $\bold{x}^t$,
 % $t\in\{1, ..., T\}$ are derived from $\bold{x}$, each used to create
@@ -712,12 +688,12 @@ prototype set $\mathcal{P}^t$ in the $t$th trial, followed by EP.
 
 
 \subsection{Max-Min Sampling} 
-\label{sec:max-min}
+\label{en:sec:max-min}
 As stated, we want the prototypes to be inter-distinct and
 intra-compact, so that each one represents a different visual
 concept. To this end, we design a 2-step sampling method, termed
 Max-Min Sampling. The Max step is based on the
-\emph{exotic-inconsistency} and caters for the inter-distinct
+\emph{exotic-consistency} and caters for the inter-distinct
 property; the Min-step is based on the \emph{local-consistency}
 assumption and caters for the intra-compact requirement. In particular, we first
 sample a skeleton of the prototype set, by looking for image
@@ -726,7 +702,7 @@ each other. We then enrich the skeleton to a prototype set by
 including the closest neighbors of the skeleton images.
 %The distance is defined using normal image features and a distance metric.
 The algorithm for creating $\mathcal{P}^t$ is given in
-Algo.\ref{alg:max-min}. For the skeleton, we sampled $m$
+Algorithm~\ref{en:alg:max-min}. For the skeleton, we sampled $m$
 hypotheses -- each one consists of $r$ randomly sampled images. 
 For each hypothesis, the average pairwise distance between the $r$ images is then computed. 
 Finally, we take the hypothesis yielding the largest average mutual distance as the skeleton. 
@@ -742,7 +718,7 @@ the optimal skeleton. However, it serves its purpose well. For one
 thing, we do not need the optimal one -- we only need the prototypes
 to be \emph{far apart}, not \emph{farthest apart}.  Moreover, randomization allows diverse visual
 concepts to be captured in different $\mathcal{P}^t$'s. 
-The influence of the optimality of each single skeleton is tested in Sec.~\ref{sec:parameters}.
+The influence of the optimality of each single skeleton is tested in Section~~\ref{en:sec:parameters}.
 The Euclidean distance is also used here. 
 
 % The dis$(.,.)$ in line $5$ represents the distance between two visual
@@ -751,7 +727,7 @@ The Euclidean distance is also used here.
 %==================================================================
 \subsection{Ensemble Projection}
 We now explore the use of the image prototype sets created in
-Section~\ref{sec:max-min} for a new image representation.  Because the
+Section~\ref{en:sec:max-min} for a new image representation.  Because the
 prototypes are compact in feature space, each of them implicitly
 defines a visual concept (image attribute). This is especially true
 when the dataset $\mathcal{D}$ is sufficiently large, which is to be
@@ -760,7 +736,7 @@ available.  Since the information carried by a single prototype set
 $\mathcal{P}^t$ is quite limited and noisy, we borrow an idea from
 ensemble learning (EL), namely to create an ensemble of $T$ such sets to
 accumulate wisdom from a brood set of training images. A sanity check of this was
-already presented for a simulated situation in Sec.\ref{sec:mov2}.
+already presented for a simulated situation in Section~\ref{en:sec:mov2}.
 
 As is well-known, EL benefits from the precision of its base learners
 and their diversity.  
@@ -769,7 +745,7 @@ and their diversity.
 %   T\}}$ out of the original one $\bold{x}$. RP projects high
 % dimensional data onto random subspaces, and eases the process of
 % finding ``interesting'' data structures.  The promise of combining RP
-% and EL has already been shown in the field~\cite{Fern03RP}. A random
+% and EL has already been shown in the field~\citep{Fern03RP}. A random
 % projection is simply a linear transformation: $\bold{x}^t =
 % \bold{R}\bold{x}$, where $\bold{R}$ is a matrix generated by first assigning each
 % entry to a value drawn from an i.i.d $N(0, 1)$ distribution.
@@ -794,10 +770,11 @@ semi-supervised classification, as unlabeled data has already been
 explored when obtaining $\vect{f}$. Likely, image clustering is
 performed by injecting the learned feature to a standard clustering
 method.  The whole procedure of EP is presented in
-Algo.\ref{alg:ensemble:projection}.  By now, the whole pipeline in
-Fig.\ref{fig:pipeline} has been explained.
+Algorithm~\ref{en:alg:ensemble:projection}.  By now, the whole pipeline in
+Figure~\ref{en:fig:pipeline} has been explained.
 
-\begin{algorithm}[!t]\small
+\begin{algorithm}[!t]
+\small
 \KwData{$ \text{Dataset } \mathcal{D}$}
 \KwResult{$ \text{Prototype set } \mathcal{P}^t$}
 \Begin{ $ \hat{e} = 0$ \tcc*[r]{Max-step} \While{$\text{iterations}
@@ -816,7 +793,7 @@ $\vect{s}^t = (\vect{s}_1^t, ..., \vect{s}_r^t) \in \mathbb{R}^{rn}$  %\tcc*[r]{
  $\mathcal{P}^t = \{(s_i^t, c_i^t)\}_{i=1}^{rn}$  \;
 }
 \caption{Max-Min Sampling in $t^{th}$ trial}
-\label{alg:max-min}
+\label{en:alg:max-min}
 \end{algorithm}
 
 
@@ -839,7 +816,7 @@ $\vect{s}^t = (\vect{s}_1^t, ..., \vect{s}_r^t) \in \mathbb{R}^{rn}$  %\tcc*[r]{
  \For{$t \gets 1$ \KwTo $T$}{
 % $\text{Generate a RP matrix } \bold{R}^t$ \; 
 % $\text{Obtain } \mathcal{D}^t \text{ by RP: } \bold{x}^t = \bold{R}^t\bold{x}$ \;  
-$\text{Sample } \mathcal{P}^t = \{(s_i^t, c_i^t)\}_{i=1}^{rn} \text{using Algo.~\ref{alg:max-min}}$ \;
+$\text{Sample } \mathcal{P}^t = \{(s_i^t, c_i^t)\}_{i=1}^{rn} \text{using Algorithm~~\ref{en:alg:max-min}}$ \;
 $\text{Train classifiers }\phi^t(.) \in \{1, ..., r\} \text{ on } \mathcal{P}^t$ \; 
  }
 
@@ -851,12 +828,12 @@ $\vect{f}_i = ((\vect{f}_i^1)^\top, ..., (\vect{f}_i^T)^\top)^\top $ \;
 }
 }
 \caption{Ensemble Projection } 
-\label{alg:ensemble:projection}
+\label{en:alg:ensemble:projection}
 \end{algorithm}
 
 
 \section{Experiments}
-\label{sec:experiments}
+\label{en:sec:experiments}
 
 The effectiveness of the approach is evaluated in the situations of:
 (1) semi-supervised image classification, where the amount of labeled
@@ -913,7 +890,7 @@ texture classes, with $40$ samples per class.
 
 % Scene-$15$ dataset  Texture-$25$ dataset  Caltech-101  Furthermore, we collected a random image collection by
 % sampling $20,000$ images randomly from ImageNet
-% dataset~\cite{imagenet:cvpr09} to evaluate our method on the task of
+% dataset~\citep{imagenet:cvpr09} to evaluate our method on the task of
 % self-taught image classification. Since the current version of
 % ImageNet has already had $21841$ synsets (classes) and more than
 % $14$ millions of images in total, the chance is vanishingly small that
@@ -945,7 +922,7 @@ earlier papers~\citep{dai:eccv12b, dai:iccv13b} due to their simplicity and low 
 \citep{Ojala02}. However, these features are obsolete and yield
  results inferior than alternative features recently developed  for image
 classification. 
-In this paper, we replaced them with the CNN features \citep{caffe14, deep:bmvc14}. 
+In this work, we replaced them with the CNN features \citep{caffe14, deep:bmvc14}. 
 These were obtained from an off-the-shelf CNN pre-trained on the ImageNet data. 
 They were chosen as CNN features
 have achieved state-of-the-art performance for image classification
@@ -965,10 +942,10 @@ it is not on par with the CNN features.
 
 % For SIFT, K-means
 % clustering with $1024$ centres and Locality-Constrained Linear
-% Coding~\cite{LLC:cvpr10} with default parameter settings were employed
+% Coding~\citep{LLC:cvpr10} with default parameter settings were employed
 % to obtain the representation with dimensions of $21504$. This
 % combination has been shown one of the state-of-the-arts for feature
-% coding and pooling~\cite{devil:bmvc11}.
+% coding and pooling~\citep{devil:bmvc11}.
 
 \textbf{Competing methods:} For semi-supervised classification, six
 classifiers were adopted to evaluate the method, with three baselines:
@@ -1007,7 +984,7 @@ used for all the classifiers. We used $k=1$ for the $k$-NN classifier,
 L2-regularized LR of LIBLINEAR~\citep{liblinear} with $C=15$, and the
 SVMs with RBF kernel of LIBSVM~\citep{libsvm} with $C=15$ and the
 default $g$, \ie $g=1/4096$. For LapSVM, we used the scheme suggested
-by~\citet{Belkin:semiframe:2006}: $\gamma_A$ was set as the inductive
+by~\citep{Belkin:semiframe:2006}: $\gamma_A$ was set as the inductive
 model, and $\gamma_I$ was set as $\frac{\gamma_Il}{(l+u)^2} =
 100\gamma_Al$. For HF, the weight matrix was computed with the
 Gaussian function $e^{-|| \vect{x}_i - \vect{x}_j ||^2 / 2 \sigma^2}$,
@@ -1018,16 +995,16 @@ for both our learned feature and the original CNN feature: $1000$
 anchors and features reduced to $500$ dimensions via PCA.
 
 
-% As to features, while Algo.~\ref{alg:max-min} and
-% Algo.~\ref{alg:ensemble:projection} use the same notation $\vect{x}$,
-% we used GIST for Algo.~\ref{alg:max-min} and the concatenation of all
-% the three features for Algo.~\ref{alg:ensemble:projection}. This is
-% because Algo.~\ref{alg:max-min} needs a low dimensional feature to
-% define neighborhoods, while Algo.~\ref{alg:ensemble:projection} needs
+% As to features, while Algorithm~~\ref{en:alg:max-min} and
+% Algorithm~~\ref{en:alg:ensemble:projection} use the same notation $\vect{x}$,
+% we used GIST for Algorithm~~\ref{en:alg:max-min} and the concatenation of all
+% the three features for Algorithm~~\ref{en:alg:ensemble:projection}. This is
+% because Algorithm~~\ref{en:alg:max-min} needs a low dimensional feature to
+% define neighborhoods, while Algorithm~~\ref{en:alg:ensemble:projection} needs
 % a discriminative feature to learn precise projection functions.
 % Experimental set (3) was conducted by providing the same single
-% feature to Algo.~\ref{alg:max-min} and
-% Algo.~\ref{alg:ensemble:projection}.
+% feature to Algorithm~~\ref{en:alg:max-min} and
+% Algorithm~~\ref{en:alg:ensemble:projection}.
 As to the parameters of our method, a wide variety of values for them
 were tested in experimental setup (2). In experimental setups (1), (3) and
 (4), we fixed them to the following values: $T=100$, $r=30$, $n=6$,
@@ -1070,7 +1047,7 @@ task of selecting useful features to the discriminative classifiers.
   eight datasets, where three classifiers are used: $k$-NN, Logistic
   Regression, and SVMs with RBF kernels. All methods were tested
   with two feature inputs: the original deep feature and the learned feature by EP on top of it (indicated by ``+ EP"). }
-  \label{fig:results:baseline}
+  \label{en:fig:results:baseline}
 \end{figure*}
 
 
@@ -1097,7 +1074,7 @@ task of selecting useful features to the discriminative classifiers.
   eight datasets, where three classifiers are used: $k$-NN, Logistic
   Regression, and SVMs with RBF kernels. All methods were tested
   with two feature inputs: the original deep feature and the learned feature by EP on top of it (indicated by ``+ EP"). }
-  \label{fig:results:ssl}
+  \label{en:fig:results:ssl}
 \end{figure*}
 
 
@@ -1118,7 +1095,7 @@ task of selecting useful features to the discriminative classifiers.
 %   the corresponding original features GIST, PHOG,  and LBP . LR
 %   was used as the classifier with $5$ labeled training images per
 %   class.}
-%   \label{fig:feature}
+%   \label{en:fig:feature}
 % \end{figure*}
 
 
@@ -1286,7 +1263,7 @@ $\begin{array}{ccccccccccccc}
 
 
 \subsection{Semi-supervised Image Classification}
-\label{sec:sic}
+\label{en:sec:sic}
 In this section, we evaluate all methods across all datasets for
 semi-supervised image classification. Different numbers of training
 images per class were tested: Scene-15 and Indoor-67 with \{1, 2,
@@ -1306,7 +1283,7 @@ samples whose labels are held back as the unlabeled samples.  The
 reported results are the average performance over $5$ runs with random
 labeled-unlabeled splits.
 
-\textbf{Comparison to baselines}: Fig.~\ref{fig:results:baseline}
+\textbf{Comparison to baselines}: Figure~\ref{en:fig:results:baseline}
 shows the results of the three baseline classifiers with our learned
 feature and the original CNN feature as input, and
 Table~\ref{table:precision} lists the results of all methods when $5$
@@ -1338,7 +1315,7 @@ performs binary classification \citep{Belkin:semiframe:2006}. Because LapSVM is 
 expensive, we only compare our method to it for the scenario where $5$
 labeled training samples per class are used.
 
-Fig.~\ref{fig:results:ssl} shows the results of our method (LR + EP)
+Figure~\ref{en:fig:results:ssl} shows the results of our method (LR + EP)
 and that of HF and AG, and Table~\ref{table:precision} lists the
 precision of the methods when $5$ labeled training examples per class
 are used. Table~\ref{table:map} lists the mAP of our method, HF and
@@ -1358,7 +1335,7 @@ observed in \citep{nips14:ssl} as well.
 
 The superior performance of our method can be ascribed to two factors: (1) in addition to the
 \emph{local-consistency} assumption, our method also exploits the
-\emph{exotic-inconsistency} assumption; (2) the discriminative
+\emph{exotic-consistency} assumption; (2) the discriminative
 projections abstract high-level attributes from the sampled
 prototypes, \eg being more ``yellow-smooth'' than
 ``dark-structured''.  As already proven in fully supervised
@@ -1500,12 +1477,12 @@ The other two classifiers use the original CNN feature as input. The best number
 \end{array}$
 \caption{Performance of EP as a function its parameters $T$,  $r$, $n$,
   and $m$, where LR is employed with $5$ labeled training images per class.}
-  \label{fig:mrnt}
+  \label{en:fig:mrnt}
 \end{figure*}
 
 
 \subsubsection{Robustness to Parameters}
-\label{sec:parameters}
+\label{en:sec:parameters}
 In this section, we examine the influence of the parameters of our
 method on its classification performance.  They are the total number of
 prototype sets $T$, the number of prototypes in each set $r$, the
@@ -1515,7 +1492,7 @@ classifier here. The parameters were evaluated as follows.
 Each time the value of one changes while the other ones being kept fixed to the
 values described in the experimental settings.
 
-Fig.~\ref{fig:mrnt} shows the results over a range of their
+Figure~\ref{en:fig:mrnt} shows the results over a range of their
 values. The figure shows that the performance of our method increases
 pretty fast with $T$, but then stabilizes quickly. It implies that the
 method benefits from exploiting more ``novel'' visual attributes
@@ -1542,10 +1519,10 @@ prototype is to perform image transformations such as
 \emph{translation}, \emph{rotation}, and \emph{scaling} to the seed
 images, and to add the transformed images into the prototype. This
 technique of enriching training data has been successfully used
-recently for image classification~\citep{transformation:cvpr14} and for feature learning~\citep{cnnfet14}.  For $m$, Fig.~\ref{fig:mrnt} shows
+recently for image classification~\citep{transformation:cvpr14} and for feature learning~\citep{cnnfet14}.  For $m$, Figure~\ref{en:fig:mrnt} shows
 that it does not affect the performance as much as the three parameters
 analyzed so far. This does not mean that there is no need to use the
-\emph{exotic-inconsistency} assumption. Instead, it suggests that a
+\emph{exotic-consistency} assumption. Instead, it suggests that a
 random selection of $r$ images from a dataset of $l+u$ images already
 fulfills the requirement of the assumption: images should be apart
 from each other.  This is generally true because $r << l+u$ holds for
@@ -1558,14 +1535,14 @@ the datasets considered.
 % brings all prototype skeletons close the the optimal one, thus
 % decreasing the diversity of sampled prototype sets.
 % The reason that a small $m$ show good performance is  
-% \emph{exotic-inconsistency} assumption, thus degrading the quality of
+% \emph{exotic-consistency} assumption, thus degrading the quality of
 % the learned projection functions.
 
 Although the performance of EP will be affected by the choice of its
-parameters, we can see from Fig.~\ref{fig:mrnt} that each of the
+parameters, we can see from Figure~\ref{en:fig:mrnt} that each of the
 parameters has a wide range of reasonable values to choose from. It is
 not difficult to choose a set of parameter values that produces better
-results than competing methods (\cf Fig.~\ref{fig:mrnt} and
+results than competing methods (\cf Figure~\ref{en:fig:mrnt} and
 Table~\ref{table:precision}).  Also, the parameters are quite
 intuitive and their roles are similar to the parameters of some
 other methods: analogues of $m$, $n$ and $T$ can be found in
@@ -1579,7 +1556,7 @@ RANSAC, $k$-NN, and Bagging, for instance.
 % \end{array}$
 % \caption{Comparison of our learned features with the normal image
 %   features against different LR models.}
-%   \label{fig:classifiers}
+%   \label{en:fig:classifiers}
 % \end{figure}
 
 
@@ -1592,8 +1569,8 @@ RANSAC, $k$-NN, and Bagging, for instance.
 \includegraphics[width=0.35\linewidth, height=46mm]{./ensemble/Model-curve_2-crop.pdf} &  \hspace{-4mm}
 \includegraphics[width=0.12\linewidth, height=42mm]{./ensemble/Model-legend2_crop.pdf} \\
 \end{array}$
-\caption{Comparison of our learned feature to the CNN feature~\cite{deep:bmvc14}, with different LR models.}
-  \label{fig:classifiers}
+\caption{Comparison of our learned feature to the CNN feature~\citep{deep:bmvc14}, with different LR models.}
+  \label{en:fig:classifiers}
 \end{figure*}
 
 
@@ -1603,7 +1580,7 @@ RANSAC, $k$-NN, and Bagging, for instance.
 % against different feature choices. The LR was again used as the
 % classifier and we compared our learned feature with the corresponding
 % original ones, namely the GIST, the PHOG, and the LBP. The results in
-% Fig.~\ref{fig:feature} show that all the learned features perform
+% Figure~\ref{en:fig:feature} show that all the learned features perform
 % consistently  better than the original ones, suggesting EP is
 % robust against the choices of image features. 
 % Its robustness against
@@ -1629,7 +1606,7 @@ against classifier models. Different values of the balancing parameter
 $C$ between model accuracy and model complexity were tested for the LR
 classifier across the eight datasets.  $5$ labeled training examples
 per class were used.  A set of values $\{0.01, 0.1, 1, 5, 15, 50,
-100\}$ were tested for the parameter $C$ of LR. Fig.~\ref{fig:classifiers}
+100\}$ were tested for the parameter $C$ of LR. Figure~\ref{en:fig:classifiers}
 shows the results. It is evident from the figure that our learned
 feature consistently outperforms the original CNN feature over a large
 range of parameter values for the classifier models. This property is
@@ -1642,7 +1619,7 @@ techniques such as Cross-Validation.
  Although additional time is needed for feature learning (the direct use of
  the original feature needs no training at this stage), our method is efficient. The efficiency is due to two reasons: 1) Training
  logistic regression is very efficient; and 2) the performance of our
- method stabilizes quickly with respect to $T$ as Fig.\ref{fig:mrnt}
+ method stabilizes quickly with respect to $T$ as Figure~\ref{en:fig:mrnt}
  shows. The training on the datasets takes $2-6$ minutes on a Core i5
  2.80 GHz desktop PC. Furthermore, our method is inherently
  parallelizable and can take advantage of multi-core processors. It is
@@ -1676,12 +1653,12 @@ techniques such as Cross-Validation.
 \end{array}$
 \caption{Self-taught classification results on dataset STL-10, where EP is learned from the unlabeled images. The
   classifiers were tested with deep features, and our learned feature from it (indicated by ``+ EP").}
-  \label{fig:stl}
+  \label{en:fig:stl}
 \end{figure*}
 
 
 \subsection{Self-taught Image Classification}
-\label{sec:self}
+\label{en:sec:self}
 In order to evaluate the generality of our method, we tested it in a
 more general scenario, where the unlabeled data is the set of
 $100,000$ unlabeled images from the STL-10 dataset. Projection
@@ -1690,7 +1667,7 @@ was tested on the STL-10 dataset. Again, we held the training image
 and test images as a whole, and chose only a small fraction as
 training images (for the classifiers) with others as test images for
 evaluation.  The average accuracy of $5$ runs with random
-training-test splits was reported.  Fig.~\ref{fig:stl} shows the
+training-test splits was reported.  Figure~\ref{en:fig:stl} shows the
 classification performance with different numbers of labeled training
 images per class.  From the figure and table, it can be observed that our
 learned feature from the random image collection still outperforms the
@@ -1931,8 +1908,8 @@ able to boost the performance of the original feature for image
 clustering, we chose two standard clustering algorithms -- Spectral
 Clustering and $k$-means -- to compare the two features.  As to the
 implementation, we use the parallel implementation of
-\citet{parallel:sc} for Spectral Clustering and the vl-feat library of
-\citet{vlfeat} for $k$-means algorithm.  Since Spectral
+\citep{parallel:sc} for Spectral Clustering and the vl-feat library of
+\citep{vlfeat} for $k$-means algorithm.  Since Spectral
 Clustering and $k$-means both require the number of clusters
 as a parameter, we set it to the number of semantic classes of the datasets, leading to
 weakly-supervised image clustering. 
@@ -1960,10 +1937,10 @@ hope that this work will stimulate more efforts in this direction.
 
 
 \section{Conclusion} 
-\label{sec:conclusion}
-This paper has tackled the problem of feature learning for the task of
+\label{en:sec:conclusion}
+This chapter has tackled the problem of feature learning for the task of
 semi-supervised image classification and image clustering.  We
-proposed as novel concept the \emph{exotic-inconsi\-stency} assumption
+proposed as novel concept the \emph{exotic-consi\-stency} assumption
 and designed a simple, yet effective feature learning method to use it
 along with \emph{local-consistency} to exploit the available,
 unlabeled data. By using the assumptions, we generate a diverse set of
@@ -1976,7 +1953,7 @@ performance of the learned feature for both semi-supervised image
 classification and image clustering. In addition, the method is
 conceptually simple, computationally efficient, and flexible to use.
 The future work is to extend the method to image segmentation and
-image semantic labeling.
+image semantic segmentation.
 
 % Also, the learned feature by EP can be used
 % for image clustering and image retrieval. This is planned for future
@@ -1985,11 +1962,11 @@ image semantic labeling.
 % The work opens multiple avenues for possible future work. One could be
 % to use the learned feature for image clustering and image retrieval
 % tasks. Similar work has already been developed in the two
-% fields~\cite{dai:eccv12b,cvpr13:graph_location} recently, and we are
+% fields~\citep{dai:eccv12b,cvpr13:graph_location} recently, and we are
 % integrating them into the framework of ensemble projection. 
 % Another
 % intersting direction could be dimensionality reduction by ensemble
-% projection, as we have already seen in Sec.~\ref{sec:self} that the
+% projection, as we have already seen in Section~~\ref{en:sec:self} that the
 % learned feature with reduced dimensions does not loose much
 % information for recognition.
 

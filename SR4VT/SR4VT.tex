@@ -1,10 +1,15 @@
 \chapter{Performance Evaluation: Helpful for Other Tasks?}
 \label{ch:SR4VT}
+
+As stated in the introduction, verifying whether the solution to one vision task is good enough to be generally useful for other vision tasks allows for better synergy to solve the problem of computer vision.   In this chapter, we evaluate the usefulness of image super-resolution for other vision tasks, when the state-of-the-art super-resolution methods are used. 
+
+\section{Introduction}
+
 Image super-resolution (ISR) aims to sharpen smooth rough edges and
 enrich missing textures in images that have been enlarged using a
 general up-scaling process (such as a bilinear or bicubic process),
 thereby delivering an image with high-quality
-resolution~\cite{Freeman-CGA-2002, Yang-TIP-2010, Zeyde-CS-2012,
+resolution~\citep{Freeman-CGA-2002, Yang-TIP-2010, Zeyde-CS-2012,
   Timofte-ICCV-2013, Dong-ECCV-2014, JOR:EG15}. ISR systems can be
 used to adapt images to displaying devices of different dimensions, to
 map image textures to 2D/3D shapes, and to deliver pleasing
@@ -15,7 +20,7 @@ perceptually and/or by evaluation criteria reflecting perceptual
 quality such as PSNR and SSIM. Therefore, it is still unclear whether
 ISR is helpful in general to other vision tasks and whether the
 perceptual criteria are able to reflect the usefulness. 
-This paper answers the questions.
+This work answers the questions.
 
 % Although ISR has been raising more attention, its potential usefulness
 % for other popular vision tasks is largely ignored, so does the
@@ -38,7 +43,7 @@ features) for images of the most `popular' resolution at the time. ISR
 is useful to super-resolve images which are of lower-resolution than
 the images for which the features and models are designed and
 learned. One example is object recognition with surveillance cameras:
-popular features~\cite{Lowe_SIFT, Dalal_HoG, cnnfeatureoffshelf} for object recognition are designed for normal images
+popular features~\citep{Lowe_SIFT, Dalal_HoG, cnnfeatureoffshelf} for object recognition are designed for normal images
 which are of higher-resolution than surveillance scenes in
 general. For this case, even the training data and testing data
 are of the same resolution, ISR is still helpful by
@@ -52,9 +57,9 @@ enabling feature extraction at an appropriate resolution.
 In order to sufficiently sample the space of ISR methods and potential
 vision tasks, six ISR methods are chosen and evaluated on four popular
 vision applications. The ISR methods are Zeyde
-\etal~\cite{Zeyde-CS-2012}, ANR~\cite{Timofte-ICCV-2013},
-A+~\cite{Timofte-ACCV-2014}, SRCNN~\cite{Dong-ECCV-2014}, 
-JOR~\cite{JOR:EG15}, and SRF~\cite{SR_forest}.
+\etal~\citep{Zeyde-CS-2012}, ANR~\citep{Timofte-ICCV-2013},
+A+~\citep{Timofte-ACCV-2014}, SRCNN~\citep{Dong-ECCV-2014}, 
+JOR~\citep{JOR:EG15}, and SRF~\citep{SR_forest}.
 They are chosen because 1) they are popular and representative; 
 2) they have code available; and 3) they are computationally efficient.  
 The four vision applications include image boundary detection, semantic image segmentation, 
@@ -70,31 +75,31 @@ standard evaluation criteria, including PSNR, SSIM, IFC, and NQM, correlate gene
 the usefulness of ISR methods, but should not be used as the full proxies of the usefulness 
 if high precision is required.
 
-The paper is organized as follows. Section~\ref{sec:relatedwork}
+The work  is organized as follows. Section~\ref{sr:sec:relatedwork}
 reports related work. Evaluation on the four vision tasks are
-conducted in Section~\ref{sec:ed} to Section~\ref{sec:scene}. Finally,
-the paper concludes in Section~\ref{sec:conclusion}.
+conducted in Section~\ref{sr:sec:ed} to Section~\ref{sr:sec:scene}. Finally,
+the paper concludes in Section~\ref{sr:sec:conclusion}.
 
 \section{Related Work}
-\label{sec:relatedwork}
+\label{sr:sec:relatedwork}
 There is a large body of work addressing image super-resolution
 task. We breifly summarize them. % They can be roughly classified into two groups: single image
 % super-resolution (SISR) and multiple image ISR (MISR). As the names
 % suggest, SISR works with a single low-resolution (LR) image as input,
 % while MISR works with multiple LR images (\eg from different views) as
-% inputs. Since MISR are more restricted, this paper focuses on SISR.
+% inputs. Since MISR are more restricted, this work focuses on SISR.
 % We will briefly overview some of the main research directions of SISR.
 The oldest direction is represented by variants of interpolation, such
 as Bilinear and
-Bicubic~\cite{Duchon-JAM-1979,Thevenaz-BOOK-2000}. They represent the
+Bicubic~\citep{Duchon-JAM-1979,Thevenaz-BOOK-2000}. They represent the
 simplest and the most popular methods. However, they often produce
 visual artifacts such as blurring, ringing, and blocking, which
 follows the fact that their assumptions of smoothness and band-limited
 image data hardly hold in real cases. Due to these reasons, more
 realistic priors and regularization have been developed, such as the
-sparse derivative priors in~\cite{Tappen-WSCTV-2003}, the PDE-based
-regularization in~\cite{Tschumperle-PAMI-2005}, the edge
-smoothness prior in~\cite{Dai-CVPR-2007}, and gradient profile~\cite{Sun-CVPR-2008}. Despite the improvement by
+sparse derivative priors in~\citep{Tappen-WSCTV-2003}, the PDE-based
+regularization in~\citep{Tschumperle-PAMI-2005}, the edge
+smoothness prior in~\citep{Dai-CVPR-2007}, and gradient profile~\citep{Sun-CVPR-2008}. Despite the improvement by
 these methods, the explicit forms of prior are still insufficient to
 express the richness of real-world image data.
 
@@ -103,52 +108,52 @@ most attention due to its good performance and simplicity. In this
 stream, the task is to learn a mapping function from a collection of
 LR images and their corresponding high-resolution (HR) ones. The LR and HR data can be
 collected from the test image itself or from an external dataset.
-Methods~\cite{Freedman-TOG-2011, Glasner-ICCV-2009, selfsimaccv, Huang_2015_CVPR}
+Methods~\citep{Freedman-TOG-2011, Glasner-ICCV-2009, selfsimaccv, Huang_2015_CVPR}
 in the former stream draw on the `self-similarity' of images across scales,
 and have obtained great success. However, they are normally relatively slow because on-line learning is needed for the dictionary. 
 Methods in the latter group rely on extra training data, unleashing the learning capacity
-of many learning methods. The KNN method~\cite{Freeman-CGA-2002}
-and its variants~\cite{Chang-CVPR-2004, Yang-ICCV-2013, JOR:EG15, dai:MI}
-have gained great attention. More sophisticated learning methods such as Sparse Coding~\cite{Yang-TIP-2010,  Kim-PAMI-2010, Timofte-ICCV-2013, Timofte-ACCV-2014,  deeply:improved},
-SVM~\cite{ISR:SVM}, Random Forests~\cite{SR_forest, NBSRF, cSRF}, and Deep Neural Network~\cite{Dong-ECCV-2014, deep:cascade, deeply:improved} have been applied widely to the task as well.
-One exceptional work is ~\cite{ISR:internet}, using scene matching with internet images for image super-resolution.
+of many learning methods. The KNN method~\citep{Freeman-CGA-2002}
+and its variants~\citep{Chang-CVPR-2004, Yang-ICCV-2013, JOR:EG15, dai:MI}
+have gained great attention. More sophisticated learning methods such as Sparse Coding~\citep{Yang-TIP-2010,  Kim-PAMI-2010, Timofte-ICCV-2013, Timofte-ACCV-2014,  deeply:improved},
+SVM~\citep{ISR:SVM}, Random Forests~\citep{SR_forest, NBSRF, cSRF}, and Deep Neural Network~\citep{Dong-ECCV-2014, deep:cascade, deeply:improved} have been applied widely to the task as well.
+One exceptional work is ~\citep{ISR:internet}, using scene matching with internet images for image super-resolution.
 Since example-based methods with extra training data obtain state-of-the-art performance for ISR, our 
 evaluation is focused mostly on this stream.
 
 % work transfers the HR patches of the most
 % similar LR patches directly and regularizes the solution by MRF. The
 % idea has been extended in a variety of ways:
-% employs Embedding technique for the regularization; \cite{JOR:EG15}
+% employs Embedding technique for the regularization; \citep{JOR:EG15}
 % jointly learns a collection of local regression functions and
 % adaptively selects the most suitable ones for test patches, which is
-% speeded up later by \cite{}; \cite{} learns coupled
+% speeded up later by \citep{}; \citep{} learns coupled
 % dictionaries for LR and HR patches via forcing shared encoding;
-% \cite{, Timofte-ACCV-2014} combine the two ideas for
+% \citep{, Timofte-ACCV-2014} combine the two ideas for
 % efficient systems by learning local regression functions for the atoms
-% of the dictionary. \cite{} exploits the efficiency of random
+% of the dictionary. \citep{} exploits the efficiency of random
 % forest for the task by defining a novel information gain computed with
 % both LR and HR patches. The exception is the work
-% SRCNN~\cite{} which learns the transformation from LR
+% SRCNN~\citep{} which learns the transformation from LR
 % images to their HR version via convolutional neural network.
 
-There is also a survey paper on ISR~\cite{ISR:survey}, providing an excellent summary of  
-the theory and applications of ISR. \cite{seven:way} exploits 
+There is also a survey paper on ISR~\citep{ISR:survey}, providing an excellent summary of  
+the theory and applications of ISR. \citep{seven:way} exploits 
 seven ways to improve the performance of general example-based ISR methods.  
-The work most relevant to ours is~\cite{SR:benchmark}, where different
+The work most relevant to ours is~\citep{SR:benchmark}, where different
 ISR methods are evaluated. While sharing similarities, the two methods
-still differ significantly. \cite{SR:benchmark} conducted user
+still differ significantly. \citep{SR:benchmark} conducted user
 studies for perceptual evaluation, solely with visual comparison and
 under evaluation criteria such as PSNR and SSIM. Our work, however, integrates
 ISR methods into systems of other vision applications and
 evaluates the usefulness of ISR to these vision tasks. 
 There are also works employing ISR to improve the quality (resolution) of the input images of other vision algorithms,
-such as \cite{face:SR08} for face recognition and \cite{Jing_2015_CVPR}
+such as \citep{face:SR08} for face recognition and \citep{Jing_2015_CVPR}
 for pedestrian identification.
 However, these tasks are specific and the ISR methods used are highly specialized. Our work, however,
 evaluates general ISR methods with a variety of popular vision tasks.
 
 \section{Evaluation}
-\label{se:evalucation}
+\label{sr:se:evalucation}
 
 \begin{table*} [tb]{
 \centering
@@ -176,10 +181,10 @@ evaluates general ISR methods with a variety of popular vision tasks.
 \end{tabular}
 }
 \caption{Average PSNR, SSIM, IFC, NQM values of ISR methods on BSDS300 and average 
-AUC values of boundary detection via CBD~\cite{isola2014crisp} on the super-resolved images by 
+AUC values of boundary detection via CBD~\citep{isola2014crisp} on the super-resolved images by 
 the ISR methods and the original images. The best one is shown in \textbf{bold} and the second 
 best \underline{underlined}.}
-\label{tab:ed}}
+\label{sr:tab:ed}}
 \end{table*}
 
 
@@ -196,29 +201,29 @@ best \underline{underlined}.}
 % \end{tabular}
 \begin{tabular}{cc}
   \includegraphics[trim=15 15 15 15, clip, width=0.5\textwidth]{./SR4VT/fig/pr_all_crisp_x4_zeydeanr.eps} &
-  \hspace{-4mm}
+  \hspace{-6mm}
 \includegraphics[trim=15 15 15 15, clip, width = 0.5\textwidth]{./SR4VT/fig/pr_jor_crisp_x3x4.eps} \\
   \footnotesize{\text{(a) PR curves with scaling factor x4}} &
   \footnotesize{\text{(b) PR curves with scaling factor x3 and x4}}
 \end{tabular}
 \caption{Average PR curves of boundary detection via
-  CBD~\cite{isola2014crisp} on the super-resolved images by some of
+  CBD~\citep{isola2014crisp} on the super-resolved images by some of
   the five ISR methods and on the original images of BSDS300.  (a)
   curves for scaling factor x4, where SRCNN and A+ are not shown for
   visual clarity as they are very similar to JOR. (b) a comparison of
   scaling factor x3 and x4, where only Bicubic Interpolation and JOR
   are shown for visual clarity.}
- \label{fig:ed_method}
+ \label{sr:fig:ed_method}
 \end{figure*}
 
 In this section, we briefly describe the six ISR methods: Zeyde
-\etal~\cite{Zeyde-CS-2012}, ANR~\cite{Timofte-ICCV-2013},
-A+~\cite{Timofte-ACCV-2014}, SRCNN~\cite{Dong-ECCV-2014}, 
-JOR~\cite{JOR:EG15}, and SRF~\cite{SR_forest}, followed by the evaluation on the four vision
+\etal~\citep{Zeyde-CS-2012}, ANR~\citep{Timofte-ICCV-2013},
+A+~\citep{Timofte-ACCV-2014}, SRCNN~\citep{Dong-ECCV-2014}, 
+JOR~\citep{JOR:EG15}, and SRF~\citep{SR_forest}, followed by the evaluation on the four vision
 tasks.  The six methods, starting out with the results of Bicubic
 interpolation, learn from examples to recover the missing
 high-frequency parts. As to the examples, the six methods are all
-trained with the same training dataset from~\cite{Yang-TIP-2010},
+trained with the same training dataset from~\citep{Yang-TIP-2010},
 which consists of $91$ images of flowers, faces, \etal. For implementation, we use the codes
 provided by the authors. Readers are referred to their papers for
 details. As to scaling factors, we evaluate with
@@ -235,7 +240,7 @@ images. The corresponding performances are
 recorded to evaluate the usefulness of the ISR methods for the vision
 tasks, with a comparison to  Bicubic Interpolation, and the
 original images. We also evaluate the ISR methods on these datasets
-with four standard perceptual criteria~\cite{SR:benchmark}, namely
+with four standard perceptual criteria~\citep{SR:benchmark}, namely
 PSNR, SSIM, IFC, and NQM, in order to see their correlation to the
 usefulness of ISR to these vision tasks.
 
@@ -260,22 +265,22 @@ usefulness of ISR to these vision tasks.
 
 
 \subsection{Boundary Detection}
-\label{sec:ed}
+\label{sr:sec:ed}
 
 Boundary Detection (BD) is a very popular low-level vision task and
 serves as a crucial component for many high-level vision
-systems~\cite{Martin-ICCV-2001, isola2014crisp}. This section
+systems~\citep{Martin-ICCV-2001, isola2014crisp}. This section
 evaluates the usefulness of ISR methods for BD.  We use Crisp Boundary
-Detection~\cite{isola2014crisp} (CBD), which is an unsupervised
+Detection~\citep{isola2014crisp} (CBD), which is an unsupervised
 algorithm, deriving an affinity measure with point-wise mutual
 information between pixels and utilizing this affinity with spectral
 clustering method to detect boundaries. It produces pixel-level
 boundaries and achieves state-of-art results.  The performances are
-evaluated on the BSDS300 dataset~\cite{Martin-ICCV-2001}. The whole
+evaluated on the BSDS300 dataset~\citep{Martin-ICCV-2001}. The whole
 dataset consists of 300 images (200 for training and 100 for testing)
 along with human annotations.  The quality of detected boundaries is
 evaluated by precision-recall (PR) curves, following Berkeley
-Benchmark~\cite{Martin-ICCV-2001}.
+Benchmark~\citep{Martin-ICCV-2001}.
 
 
 
@@ -321,24 +326,24 @@ Benchmark~\cite{Martin-ICCV-2001}.
     AUC & 0.861 & 0.872 & 0.870 & 0.913 & 0.900 & 0.885 & 0.891 \\
 \end{tabular*}
    \caption{Super-resolved examples with their PSNR values and corresponding 
-detected boundary maps by CBD~\cite{isola2014crisp} with their AUC values. 
+detected boundary maps by CBD~\citep{isola2014crisp} with their AUC values. 
 Better seen on the screen. }
-\label{fig:ed_cbd}
+\label{sr:fig:ed_cbd}
 \end{figure*}
 
 
 % Each image comes
 % with at least one human-labeled boundary map and has a size of either
 % 321$\times$481 or 481$\times$321 pixels.
-Table~\ref{tab:ed} lists the AUC values of BD on the eight sets of
+Table~\ref{sr:tab:ed} lists the AUC values of BD on the eight sets of
 images, along with the values of PSNR, SSIM, IFC, and NQM of
-corresponding ISR methods. Fig.~\ref{fig:ed_method} shows the average
+corresponding ISR methods. Fig.~\ref{sr:fig:ed_method} shows the average
 PR curves. From the table and the figure, it can be observed that ISR
 methods do improve, over simple interpolation, the performance of BD
 when input images are of low-resolution. For instance, JOR improves
 the AUC by 0.06 when factor x4 is considered. This is because ISR
 methods perform better in increasing the resolution of the LR images
-to the resolution for which the BD method (CBD~\cite{isola2014crisp}
+to the resolution for which the BD method (CBD~\citep{isola2014crisp}
 in this case) was designed. CBD uses highly localized features to
 predict pixel-level boundaries, whose accuracy is affected largely by
 the recovered details locally. As a result, the six learning-based
@@ -368,7 +373,7 @@ and figure is that ISR methods are more useful when the scaling factor
 is larger, which means they are more needed when the input images
 are of very low-resolution.
 
-In Fig.~\ref{fig:ed_cbd}, we show visual examples, with the
+In Fig.~\ref{sr:fig:ed_cbd}, we show visual examples, with the
 super-resolution results and their corresponding BD results. From the
 figure, it is evident that example-based ISR methods improve the
 quality of BD results with sharper true boundaries and fewer spurious
@@ -376,19 +381,19 @@ ones. However, there is still a large room for improvement as the OB
 results on the super-resolved images by the ISR methods are still
 substantially worse than the result on the original (`HR') image.
 
-% Fig.~\ref{fig:ed_method} illustrates the PR curves
+% Fig.~\ref{sr:fig:ed_method} illustrates the PR curves
 % obtained by the CBD approach. Results of A+ and SRCNN are not
 % drawn since they both have similar curves with the JOR method. As for
 % the precision-recall curves, a curve that is farther away from the
 % origin would be preferred as it indicates a higher recall or precision
-% when the other value is fixed. As Figure~\ref{fig:ed_method}
+% when the other value is fixed. As Figure~\ref{sr:fig:ed_method}
 % illustrates, a well designed ISR algorithm like Zeyde \etal, ANR and
 % JOR could help improve the accuracy of Crisp Boundary Detection.
 
 % It is also noticed that ISR methods above make different improvement
 % in boundary detection due to different PSNR value. Here we use the area
 % under precision-recall curve (AUC) as criteria to evaluate the
-% accuracy of detected boundaries. As Table~\ref{tab:ed} demonstrates,
+% accuracy of detected boundaries. As Table~\ref{sr:tab:ed} demonstrates,
 % the PSNR value correlates well with the accuracy of boundaries
 % detected by CBD approach. In particular, the larger PSNR value an ISR
 % method gets, the more accurate boundaries we detect in corresponding
@@ -419,7 +424,7 @@ substantially worse than the result on the original (`HR') image.
 % scales, resulting in a lower edge-detection accuracy. We also notice
 % that a larger resizing scale tends to amplify the performance
 % difference between different ISR methods, as
-% Figure~\ref{fig:ed_factor} demonstrates.
+% Figure~\ref{sr:fig:ed_factor} demonstrates.
 
 
 
@@ -433,7 +438,7 @@ substantially worse than the result on the original (`HR') image.
 %     averaged over all images in corresponding datasets.}
 %   \includegraphics[width = 0.6\textwidth]%
 %     {./SR4VT/fig/pr_jor_crisp_x3x4.eps}% picture filename
-% \label{fig:ed_factor}
+% \label{sr:fig:ed_factor}
 % \end{SCfigure}
 
 % \begin{figure*} [tb]
@@ -463,16 +468,16 @@ substantially worse than the result on the original (`HR') image.
 
 % \end{tabular*}
 % \caption{Sampled super-resolved images with their PSNR values and
-%   corresponding detected boundary maps by CBD~\cite{isola2014crisp}
+%   corresponding detected boundary maps by CBD~\citep{isola2014crisp}
 %   with their AUC values. Zeyde et al. works similarly to ANR, and A+
 %   and SRCNN works similarly to JOR, so only ANR and JOR are shown. }
-% \label{fig:ed_cbd}
+% \label{sr:fig:ed_cbd}
 % \end{figure*}
 
 
 
 \subsection{Semantic Image Segmentation}
-\label{sec:il}
+\label{sr:sec:il}
 
 
 
@@ -551,7 +556,7 @@ substantially worse than the result on the original (`HR') image.
 \caption{Examples for semantic image segmentation: super-resolved images with their
   PSNR values and the corresponding labeling results
   with their average precision over pixels (APP) are shown. Better seen on the screen.}
-\label{fig:example:il}
+\label{sr:fig:example:il}
 \end{figure*}
 
 
@@ -566,10 +571,10 @@ The best performance is shown in \textbf{bold} and the second best is \underline
 {
 \begin{tabular}{|l|c|cccccc|c|c|c|}
 \hline
-%\multicolumn{2}{|c||}{Benchmark} &Bicubic&SF&Zeyde~\cite{Zeyde-CS-2012}&GR~\cite{Timofte-ICCV-2013}& ANR~\cite{Timofte-ICCV-2013}& NE+LS~\cite{Timofte-ICCV-2013}& NE+NNLS~\cite{Timofte-ICCV-2013}& NE+LLE~\cite{Timofte-ICCV-2013}& SRCNN~\cite{Dong-ECCV-2014}&\textbf{A+}~\cite{Timofte-ICCV-2013}\\
+%\multicolumn{2}{|c||}{Benchmark} &Bicubic&SF&Zeyde~\citep{Zeyde-CS-2012}&GR~\citep{Timofte-ICCV-2013}& ANR~\citep{Timofte-ICCV-2013}& NE+LS~\citep{Timofte-ICCV-2013}& NE+NNLS~\citep{Timofte-ICCV-2013}& NE+LLE~\citep{Timofte-ICCV-2013}& SRCNN~\citep{Dong-ECCV-2014}&\textbf{A+}~\citep{Timofte-ICCV-2013}\\
  \multicolumn{2}{|c|}{MSRC-21} & Bicubic & Zeyde~\etal & ANR& SRCNN & A+ & JOR & SRF & Original \\
 % \multicolumn{2}{|c|}{MSRC-21} & Bicubic&Zeyde~\etal& ANR& SRCNN & A+ &JOR  & Original \\
-% \multicolumn{2}{|c|}{ } & &\cite{Zeyde-CS-2012}& \cite{Timofte-ICCV-2013}& \cite{Dong-ECCV-2014} & \cite{Timofte-ACCV-2014} &\cite{JOR:EG15} & \\
+% \multicolumn{2}{|c|}{ } & &\citep{Zeyde-CS-2012}& \citep{Timofte-ICCV-2013}& \citep{Dong-ECCV-2014} & \citep{Timofte-ACCV-2014} &\citep{JOR:EG15} & \\
 \hline\hline
               %& x2 & 33.66 & 35.63 & 35.13 & 35.83 & 35.66 & 35.43 & 35.77 & \textbf{36.34} & 36.25\\
 \textbf{$\times$3} & PSNR & 25.29 & 26.02 & 26.00 & {26.21} & \underline{26.28} & \underline{26.28} & \textbf{26.35} & --- \\
@@ -591,24 +596,24 @@ The best performance is shown in \textbf{bold} and the second best is \underline
             & APC & 0.505 & 0.569 & 0.584 & {0.588} & \underline{0.591} & 0.586 & \textbf{0.605} & 0.743 \\
 \hline
 \end{tabular}
-\label{tab:il}}
+\label{sr:tab:il}}
 \end{table*}
 
 
 %In this section, we evaluate ISR methods on the task of semantic image segmentation.
-%Image labeling aims to assign a semantic label to each pixel of an image. There is a very rich literature addressing semantic image labeling. Reviewing all of them is out the scope of this paper. We follow the footsteps of most previous work on image labeling and choose the well-known dataset MSRC-21 for the evaluation. MSRC-21 consists of 591 images of 21 semantic categories, , such as \emph{tree}, \emph{road}, and \emph{car}. For the labeling method, we employ the very recent one~\cite{superpixel:eccv14}, which presents a fast nearest neighbor approach via building a graph over superpixels over annotated set of training images and test images with learned weights for the linking edges to transfer labels from training images to test image.  The method shows comparable reautls to the state-of-the-art. The model is trained with original training images. For the implementation, we use the authors' code directly with the default settings.
+%Image labeling aims to assign a semantic label to each pixel of an image. There is a very rich literature addressing semantic image labeling. Reviewing all of them is out the scope of this work. We follow the footsteps of most previous work on image labeling and choose the well-known dataset MSRC-21 for the evaluation. MSRC-21 consists of 591 images of 21 semantic categories, , such as \emph{tree}, \emph{road}, and \emph{car}. For the labeling method, we employ the very recent one~\citep{superpixel:eccv14}, which presents a fast nearest neighbor approach via building a graph over superpixels over annotated set of training images and test images with learned weights for the linking edges to transfer labels from training images to test image.  The method shows comparable reautls to the state-of-the-art. The model is trained with original training images. For the implementation, we use the authors' code directly with the default settings.
 
 In this section, we consider the task of semantic image segmentation, which aims to assign a semantic label to
 each pixel of the image, such as \emph{tree}, \emph{road}, and
 \emph{car}. It is a very popular high-level vision task with a large
-number of methods proposed~\cite{texton-forests, superpixel:eccv14, fully_cnn}.  We follow
+number of methods proposed~\citep{texton-forests, superpixel:eccv14, fully_cnn}.  We follow
 the footsteps of most previous works on semantic image segmentation and choose the
-standard MSRC-21~\cite{Shotton:2006:ECCV} dataset for the
+standard MSRC-21~\citep{Shotton:2006:ECCV} dataset for the
 evaluation. 
 MSRC-21 consists of 591 images of 21 semantic
 categories. For the segmentation method, we employ the recent
-approach~\cite{superpixel:eccv14} for its simplicity in order to better 
-show the influence of ISR. \cite{superpixel:eccv14}
+approach~\citep{superpixel:eccv14} for its simplicity in order to better 
+show the influence of ISR. \citep{superpixel:eccv14}
 presents a fast approximate nearest neighbor algorithm for image
 labeling. They build a super-pixel graph from annotated set of
 training images. At test time, they transfer labels from the training
@@ -658,16 +663,16 @@ authors' code with the default settings.
 The $k$-NN classifier is trained and applied on HOG features of each pair of super-resolved 
 training and test sets. Methods marked with [R] are retrained using the unused digits of 
 the SVHN dataset. The best performance is shown in \textbf{bold} and the second best is \underline{underlined}.}
-\label{tab:dr}
+\label{sr:tab:dr}
 \end{table*}
 
 In order to evaluate the ISR methods for semantic image segmentation, we train the
-method~\cite{superpixel:eccv14} with the original training images (\eg the HR images) and
+method~\citep{superpixel:eccv14} with the original training images (\eg the HR images) and
 test the trained model on eight versions of the testing images,
 created by down-sampling the original images and then up-solving them
 by the ISR methods to the resolution of the original images. Again,
 the performance is tested for scaling factor x3 and x4.
-Table~\ref{tab:il} lists the results of all ISR methods, where the
+Table~\ref{sr:tab:il} lists the results of all ISR methods, where the
 average precision over pixels (APP) and the average precision over
 classes (APC) are reported, along with the values of the four
 perceptual criteria. As we can see from the table, all the six ISR
@@ -692,11 +697,11 @@ task which is of course very relevant to the perceptual quality of
 images. Also, ISR methods are more useful when the scaling factor is
 larger, which means they are more needed when the input images are
 of very low-resolution.  The observation is consistent with the one we had for
-BD in Sec.~\ref{sec:ed}.
+BD in Sec.~\ref{sr:sec:ed}.
 
 
 
-In Fig.~\ref{fig:example:il}, we show three image examples, with the
+In Fig.~\ref{sr:fig:example:il}, we show three image examples, with the
 super-resolution results and their corresponding labeling
 results. From the figure, it is evident that ISR methods improve the
 quality of the labeling results. For instance, in the third example,
@@ -718,13 +723,13 @@ in order to be as robust as human vision.
 
 
 \subsection{Digit Recognition}
-\label{sec:dr}
+\label{sr:sec:dr}
 
 
 In this section, we test the usefulness of ISR methods for the task of
 digit recognition where the training images and the test image are
 both of low-resolution.  We use the Street View House Numbers
-(SVHN)~\cite{37648} dataset which contains more than 100,000 images of
+(SVHN)~\citep{37648} dataset which contains more than 100,000 images of
 house numbers obtained from Google Street View. Each image presents a
 single digit at its center and has the same size of 32$\times$32
 pixels.  We select 26,032 and 10,000 images from the dataset as our
@@ -733,13 +738,13 @@ methods for digit recognition, we here down-sample all the images by
 factor x3 and factor x4, and up-sample the down-sampled images to the
 resolution of the original images by the ISR methods.  As the SVHN
 dataset merely presents numbers from 0 to 9, it is highly specific and
-quite different from the training dataset from~\cite{Yang-TIP-2010}
+quite different from the training dataset from~\citep{Yang-TIP-2010}
 that is used to train the ISR methods. Therefore, we re-trained all ISR methods
 with the unused images from the SVHN dataset, to study the generality of ISR methods. After adding the
 re-trained methods, we now have twelve datasets of super-resolved
 results, one dataset from Bicubic Interpolation and one dataset of
 the original images. As to the classifier, we use the $k$-NN with $k=5$ for each of the eight
-image sets with HOG feature~\cite{Dalal_HoG} as input. Other values of $k$ yield a similar trend.
+image sets with HOG feature~\citep{Dalal_HoG} as input. Other values of $k$ yield a similar trend.
 
 
 \begin{figure*}
@@ -789,19 +794,19 @@ image sets with HOG feature~\cite{Dalal_HoG} as input. Other values of $k$ yield
 }
 \caption{Super-resolved results and corresponding PSNR values of two digits. 
 Methods marked with [R] are retrained using the unused digits of the SVHN dataset. Better seen on the screen.}
-\label{fig:dr}
+\label{sr:fig:dr}
 \end{figure*}
 
 
 % We then make an adjustment to the original datasets as we cut off a border of 4 pixels wide from all images. Such adjustment aims to get rid of meaningless backgrounds and emphasize the digits. After that, we downscale all cropped images by four and operate the upscaling with all six ISR methods to create six pairs of super-resolved training and test sets.
-The classification performance is listed in Table~\ref{tab:dr}. The table demonstrates that ISR methods do improve the
+The classification performance is listed in Table~\ref{sr:tab:dr}. The table demonstrates that ISR methods do improve the
 performance of digit recognition over simple interpolation, and that
 the four perceptual criteria correlate quite well with the usefulness
 of ISR methods for digit recognition. The reason of the improvement is
 that HOG feature was designed for images of normal resolution, so by
 applying ISR methods to the LR input images, HOG can be extracted from
 images of suitable resolution.  However, we find that with the
-standard, general training dataset~\cite{Yang-TIP-2010}, Zeyde et
+standard, general training dataset~\citep{Yang-TIP-2010}, Zeyde et
 al. and ANR perform better than SRCNN, A+ , JOR and SRF, which is different
 from the results of the previous two tasks with general images. This observation
 suggests that Zeyde et al. and ANR are more generally applied than the
@@ -811,9 +816,9 @@ The problem can be solved by
 re-training the model with data of similar distribution as the test data. We re-trained
 all the six method with unlabeled digits in SVHN, and as expected the
 performance is improved significantly, according to the four perceptual criteria or 
-recognition accuracy. See Table~\ref{tab:dr} for the improvement. After re-training, 
+recognition accuracy. See Table~\ref{sr:tab:dr} for the improvement. After re-training, 
 the four methods SRCNN, A+, JOR, and SRF yield the best results.  
- In Fig.~\ref{fig:dr}, we show
+ In Fig.~\ref{sr:fig:dr}, we show
 two digits, along with their super-resolved results by factor x3
 and the PSNR values. From the figure, it is clear to see the artifacts
 generated by the ISR methods trained with general training data. The
@@ -831,7 +836,7 @@ data.
 
 
 \subsection{Scene Recognition}
-\label{sec:scene}
+\label{sr:sec:scene}
 
 
 \begin{table*} [tb]
@@ -856,14 +861,14 @@ data.
 \end{tabular}
 }  
 \caption{Average PSNR, SSIM, IFC, NQM values and the accuracy of scene recognition on Scene-15 dataset. }
-\label{tab:scene}
+\label{sr:tab:scene}
 \vspace{-2mm}
 \end{table*}
 
 
 In this section, we evaluated six ISR methods on the task of scene recognition. 
-We tested the methods on the Scene-15 dataset~\cite{lazebnik:cvpr06}, which has been widely 
-used for image classification and clustering~\cite{lazebnik:cvpr06, dai:ensemble:eccv12, dai:EnPro:iccv13}. 
+We tested the methods on the Scene-15 dataset~\citep{lazebnik:cvpr06}, which has been widely 
+used for image classification and clustering~\citep{lazebnik:cvpr06, dai:ensemble:eccv12, dai:EnPro:iccv13}. 
 Scene-15 contains 15
 scene categories in both indoor and outdoor environments. Each category has 200
 to 400 images, and they are of size $300 \times 250$ pixels on average.
@@ -871,23 +876,23 @@ We use the same experimental designs as for the previous tasks:  down-sampling a
 factor x3 and factor x4, and up-sampling the down-sampled images to the
 resolution of the original images by the six ISR methods, thus resulting in six super-resolved datasets 
 for each scaling factor, one for bicubic interpolation, and one for the original (HR) images.  
-As to the features, we use the  Convolutional Neural Network (CNN) features~\cite{deep:bmvc14}, 
+As to the features, we use the  Convolutional Neural Network (CNN) features~\citep{deep:bmvc14}, 
 obtained from an off-the-shelf CNN model pretrained on the ImageNet. The feature is  chosen as CNN 
 feature has achieved state-of-the-art performance for image
-classification~\cite{deep:bmvc14}. It is worth noticing that the training and testing data are processed 
+classification~\citep{deep:bmvc14}. It is worth noticing that the training and testing data are processed 
 the same way, \ie down-sampled by bicubic interpolation and up-sampled by the same ISR method (one of the six).  
 The convolutional results at layer 16 were
 stacked as the CNN feature vector, with dimensionality of
 4096.  As to the classification, we use $15$ images per class as the training samples, and the rest left for testing. 
 
-The classification accuracies over 10 random training-testing splits are averaged and reported in Table~\ref{tab:scene}, along with the results according to the four perceptual criteria.  
+The classification accuracies over 10 random training-testing splits are averaged and reported in Table~\ref{sr:tab:scene}, along with the results according to the four perceptual criteria.  
 The table shows that learning-based ISR methods are helpful for scene 
 recognition with the deep neural network when the input images are of low-resolution. 
 The four perceptual criteria also correlate 
 generally well with usefulness of ISR methods for this task, 
 which is in line with the conclusions drawn for previous vision tasks.   
 Images at multiple scales have recently been employed for training deep 
-neural networks~\cite{cnn:multi-scale, fully_cnn},  and 
+neural networks~\citep{cnn:multi-scale, fully_cnn},  and 
 they show improvement over a single scale.  It is interesting to 
 see how ISR methods help to generate multiple scales of the input images to train 
 better neural networks. We leave this as our future work. 
@@ -895,16 +900,16 @@ better neural networks. We leave this as our future work.
 
 
 % \subsection{Face Detection}
-% \label{sec:fr}
+% \label{sr:sec:fr}
 
 % \begin{table*} [tb]
 % \small{  \centering
 % \resizebox{0.92\textwidth}{!}{
 % \begin{tabular}{|l|c|cccccc|c|c|c|}
 % \hline
-%  \multicolumn{2}{|c|}{BSDS300} & Bicubic & Zeyde~\etal\cite{Zeyde-CS-2012} & ANR\cite{Timofte-ICCV-2013} & SRCNN\cite{Dong-ECCV-2014} & A+\cite{Timofte-ACCV-2014} & JOR\cite{JOR:EG15} & Original \\
+%  \multicolumn{2}{|c|}{BSDS300} & Bicubic & Zeyde~\etal\citep{Zeyde-CS-2012} & ANR\citep{Timofte-ICCV-2013} & SRCNN\citep{Dong-ECCV-2014} & A+\citep{Timofte-ACCV-2014} & JOR\citep{JOR:EG15} & Original \\
 % % \multicolumn{2}{|c|}{FDDB} & Bicubic & Zeyde~\etal & ANR & SRCNN & A+ & JOR & Original \\
-% % \multicolumn{2}{|c|}{THR = 0.5} & &\cite{Zeyde-CS-2012}& \cite{Timofte-ICCV-2013}& \cite{Dong-ECCV-2014} & \cite{Timofte-ACCV-2014} &\cite{JOR:EG15} & \\
+% % \multicolumn{2}{|c|}{THR = 0.5} & &\citep{Zeyde-CS-2012}& \citep{Timofte-ICCV-2013}& \citep{Dong-ECCV-2014} & \citep{Timofte-ACCV-2014} &\citep{JOR:EG15} & \\
 % \hline\hline
 % \textbf{$\times$3} & PSNR & 29.77 & 31.38 & 31.35 & \underline{31.57} & 31.24 & \textbf{31.99} & --- \\
 %                    & SSIM & 0.883 & 0.906 & \underline{0.907} & 0.897 & 0.905 & \textbf{0.914} & --- \\
@@ -926,7 +931,7 @@ better neural networks. We leave this as our future work.
 % \end{tabular}
 % }
 % \caption{Face detection results on the FDDB dataset. The best performance is shown in \textbf{bold} and the second best is \underline{underlined}.}
-% \label{tab:fr} }
+% \label{sr:tab:fr} }
 % \end{table*}
 
 % \begin{figure}
@@ -934,7 +939,7 @@ better neural networks. We leave this as our future work.
 %   \includegraphics[width = 0.5\textwidth, height=60mm]%
 %     {./SR4VT/fig/fr_vj_cont_tp_thr.eps}% picture filename
 %   \caption{Continuous true positive percentage of face detection on all the super-resolved datasets and the original dataset with different matching thresholds for positives (\emph{THR}), intersection over union. All results are drawn relative to the results of Bicubic Interpolation for visual clarity.}
-% \label{fig:fr}
+% \label{sr:fig:fr}
 % \end{figure}
 
 
@@ -942,7 +947,7 @@ better neural networks. We leave this as our future work.
 % In this section, we investigate the usefulness of ISR methods for face
 % detection.  Face detection is widely used in security cameras and home
 % surveillance systems, which has to deal with low-resolution inputs
-% lots of time.  It has proven by many works~\cite{face:SRTIP,
+% lots of time.  It has proven by many works~\citep{face:SRTIP,
 %   face:SR08} that face super-resolution is helpful for the
 % recognition. We in this section evaluate the usefulness of general ISR
 % methods for face detection.
@@ -950,12 +955,12 @@ better neural networks. We leave this as our future work.
 % % Therefore, a well performed ISR method is heavily needed to improve the quality of upscaled images and consequently boost the accuracy of face recognition systems. Inspired by the conclusions of previous tasks, we hope to establish a link between PSNR value of super-resolved images and face recognition accuracies as well.
 
 
-% The Face Detection Data Set and Benchmark (FDDB)~\cite{fddbTech} is
+% The Face Detection Data Set and Benchmark (FDDB)~\citep{fddbTech} is
 % used, which contains 2845 facial images with 5171 human-annotated
 % faces. The super-resolved datasets are generated again by downsampling
 % the images by $\times$3 and $\times$4, and then upscaling them to the
 % resolution of the original images. We then apply the well-known
-% Viola-Jones algorithm~\cite{viola2001rapid} on each of the
+% Viola-Jones algorithm~\citep{viola2001rapid} on each of the
 % super-resolved datasets, the result of Bicubic Interpolation, and the
 % original dataset to obtain the bounding boxes of detected faces. For
 % implementation, the default Matlab implementation of Viola-Jones
@@ -963,7 +968,7 @@ better neural networks. We leave this as our future work.
 % is used to test its performance on the seven versions of the test
 % images.  To evaluate the accuracies of detected faces, we use both
 % continuous and discrete true positive percentages as described in
-% ~\cite{fddbTech}.
+% ~\citep{fddbTech}.
 
 % % Let $d_i$ and $a_i$ denote the $i^{th}$ detection and corresponding annotation. The score $y_i$ for this detection is defined as below:
 % % $$Discrete \ Score: y_i = \delta_{S(d_i,a_i)>THR}$$
@@ -971,7 +976,7 @@ better neural networks. We leave this as our future work.
 % % Function \emph{S} represents the degree of match and is employed as the ratio of intersected areas to joined areas while parameter THR sets a threshold on the matches.
 % % $$S(d_i,a_j)=\frac{area(d_i) \cap area(a_j)}{area(d_i) \cup area(a_j)}\qquad$$
 
-% Table~\ref{tab:fr} demonstrates continuous and discrete true positive
+% Table~\ref{sr:tab:fr} demonstrates continuous and discrete true positive
 % scores with parameter \emph{THR} (matching threshold for positives)
 % set to 0.5. As it turns out, ISR methods are also helpful for the task
 % of face detection, relative to Bicubic Interpolation. The relationship
@@ -982,14 +987,14 @@ better neural networks. We leave this as our future work.
 % prediction. For instance, Zeyde et al. and ANR have very similar PSNR
 % values while yielding quite different discrete TP values for face
 % detection.  We also show the performance of face detection with
-% different values of THR in Fig.~\ref{fig:fr}, from which it can be
+% different values of THR in Fig.~\ref{sr:fig:fr}, from which it can be
 % seen that the conclusion for THR=0.5 holds for other values of THR as
 % well.  In general, A+ and JOR achieve the best performance for face
 % detection on FDDB dataset with the Viola-Jones detector, but the
 % difference to other methods are marginal.
 
 \section{Discussion and Conclusion}
-\label{sec:conclusion}
+\label{sr:sec:conclusion}
 We have evaluated the usefulness of image super-resolution (ISR) for a
 variety of different vision tasks.  Six ISR methods have been
 employed and evaluated on four popular vision tasks. Three general
