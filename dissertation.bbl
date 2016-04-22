@@ -1,18 +1,8 @@
-\begin{thebibliography}{367}
+\begin{thebibliography}{365}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
 \expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
-
-\bibitem[{sph({\natexlab{a}})}]{sphinx}
- (????{\natexlab{a}}).
-\newblock Cmu sphinx.
-\newblock \url{http://cmusphinx.sourceforge.net/}.
-
-\bibitem[{sph({\natexlab{b}})}]{sphinx:webtrain}
- (????{\natexlab{b}}).
-\newblock Cmu sphinx.
-\newblock \url{http://www.speech.cs.cmu.edu/tools/lmtool-new.html}.
 
 \bibitem[{smi(2015)}]{smile}
  (2015).

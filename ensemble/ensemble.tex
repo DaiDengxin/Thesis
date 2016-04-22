@@ -1,52 +1,9 @@
 \chapter{Representation Learning with Unlabeled Data}
 \label{ch:ensemble}
-%%%%%%%%%%%%%%%%%%%%%%% file template.tex %%%%%%%%%%%%%%%%%%%%%%%%%
-%
-% This is a general template file for the LaTeX package SVJour3
-% for Springer journals.          Springer Heidelberg 2010/09/16
-%
-% Copy it to a new file with a new name and use it as the basis
-% for your article. Delete % signs as needed.
-%
-% This template includes a few options for different layouts and
-% content for various journals. Please consult a previous issue of
-% your journal as needed.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%   round  -  round parentheses are used (default)
-%%   square -  square brackets are used   [option]
-%%   curly  -  curly braces are used      {option}
-%%   angle  -  angle brackets are used    <option>
-%%   semicolon  -  multiple citations separated by semi-colon
-%%   colon  - same as semicolon, an earlier confusion
-%%   comma  -  separated by comma
-%%   numbers-  selects numerical citations
-%%   super  -  numerical citations as superscripts
-%%   sort   -  sorts multiple citations according to order in ref. list
-%%   sort&compress   -  like sort, but also compresses numerical citations
-%%   compress - compresses without sorting
-%%
-%% \biboptions{comma,round}
 
-% \biboptions{}
+One can always aim for more annotated data, but this can be expensive. While the techniques discussed in the introduction and in Chapter~\ref{ch:draw-and-tell} mitigate the problem somehow, it would be nicer to do it better.   
+The promise of unsupervised feature learning is that if an algorithm can learn from ``unlabeled" data, then the learning can easily be applied to massive amounts of data. The idea is also flexible, as the learned feature representation can be directly injected to any standard vision algorithms.  In this chapter, we develop a novel feature learning algorithm, and evaluate its efficacy on semi-supervised image classification and image clustering.  
 
-
-% \newtheorem{definition}{Definition}
-% \usepackage{mathptmx}      % use Times fonts if available on your TeX system
-%
-% insert here the call for the packages your document requires
-%\usepackage{latexsym}
-% etc.
-%
-% please place your own definitions here and don't use \def but
-% \newcommand{}{}
-%
-% Insert the name of "your journal" with
-%\journalname{}
-
-%\authorrunning{Short form of author list} % if too long for running head
-% \PACS{PACS code1 \and PACS code2 \and more}
-% \subclass{MSC code1 \and MSC code2 \and more}
 \section{Introduction}
 \label{en:sec:intro}
 Providing efficient solutions to image classification has always been a

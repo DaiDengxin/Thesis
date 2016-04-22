@@ -13,105 +13,105 @@
 \contentsline {section}{\numberline {2.3}Self-aware Vision Algorithms}{9}{section.2.3}
 \contentsline {chapter}{\numberline {3}Efficient Visual Annotation with Speech Recognition}{11}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{11}{section.3.1}
-\contentsline {section}{\numberline {3.2}Related Work}{13}{section.3.2}
+\contentsline {section}{\numberline {3.2}Related Work}{14}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Semantic Image Segmentation}{14}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Integration of Vision and Language (Speech)}{14}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Integration of Vision and Language (Speech)}{15}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Speech-based Annotation}{15}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}The Draw \& Tell Annotation Tool}{15}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Integration with Webly Supervised Object Recognition}{17}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Integration with Webly Supervised Object Recognition}{16}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Annotation Results}{18}{subsection.3.3.3}
-\contentsline {section}{\numberline {3.4}Semantic Image Segmentation}{20}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Scribbles to Heatmaps}{20}{subsection.3.4.1}
-\contentsline {subsubsection}{Scribble Augmentation}{21}{section*.5}
-\contentsline {subsection}{\numberline {3.4.2}Heatmap-based FCN}{22}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Experiments}{23}{section.3.5}
+\contentsline {section}{\numberline {3.4}Semantic Image Segmentation}{21}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Scribbles to Heatmaps}{21}{subsection.3.4.1}
+\contentsline {subsubsection}{Scribble Augmentation}{22}{section*.5}
+\contentsline {subsection}{\numberline {3.4.2}Heatmap-based FCN}{23}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Experiments}{24}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Experimental Settings}{24}{subsection.3.5.1}
 \contentsline {subsection}{\numberline {3.5.2}Results}{25}{subsection.3.5.2}
 \contentsline {section}{\numberline {3.6}Conclusion}{27}{section.3.6}
 \contentsline {chapter}{\numberline {4}Representation Learning with Unlabeled Data}{29}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{29}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Motivations}{30}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.1}Motivations}{31}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Contributions}{32}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Related Work}{32}{section.4.2}
+\contentsline {section}{\numberline {4.2}Related Work}{33}{section.4.2}
 \contentsline {section}{\numberline {4.3}Observations}{35}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Observation 1}{35}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Observation 2}{36}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Our Approach}{37}{section.4.4}
+\contentsline {subsection}{\numberline {4.3.2}Observation 2}{37}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Our Approach}{38}{section.4.4}
 \contentsline {subsection}{\numberline {4.4.1}Max-Min Sampling}{38}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Ensemble Projection}{38}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.2}Ensemble Projection}{39}{subsection.4.4.2}
 \contentsline {section}{\numberline {4.5}Experiments}{40}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Semi-supervised Image Classification}{45}{subsection.4.5.1}
-\contentsline {subsubsection}{Robustness to Parameters}{46}{section*.6}
-\contentsline {subsubsection}{Robustness to Classifier Models}{48}{section*.7}
-\contentsline {subsubsection}{Efficiency}{48}{section*.8}
+\contentsline {subsubsection}{Robustness to Parameters}{47}{section*.6}
+\contentsline {subsubsection}{Robustness to Classifier Models}{49}{section*.7}
+\contentsline {subsubsection}{Efficiency}{49}{section*.8}
 \contentsline {subsection}{\numberline {4.5.2}Self-taught Image Classification}{49}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Image Clustering}{50}{subsection.4.5.3}
-\contentsline {section}{\numberline {4.6}Conclusion}{51}{section.4.6}
-\contentsline {chapter}{\numberline {5}Fast Training Algorithms for SVM+}{52}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{52}{section.5.1}
-\contentsline {section}{\numberline {5.2}Related Work}{53}{section.5.2}
-\contentsline {section}{\numberline {5.3}Learning Using Privileged Information}{55}{section.5.3}
-\contentsline {section}{\numberline {5.4}Dual Coordinate Descent Algorithm for Solving Linear SVM+}{56}{section.5.4}
-\contentsline {section}{\numberline {5.5}SMO Algorithm for Solving Kernel SVM+}{59}{section.5.5}
-\contentsline {section}{\numberline {5.6}Experiments}{62}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Image Classification}{62}{subsection.5.6.1}
-\contentsline {subsubsection}{Experiments on Linear SVM+}{64}{section*.9}
-\contentsline {subsubsection}{Experiments on Kernel SVM+}{65}{section*.10}
-\contentsline {subsection}{\numberline {5.6.2}Web Image Retrieval}{66}{subsection.5.6.2}
-\contentsline {section}{\numberline {5.7}Conclusion}{68}{section.5.7}
-\contentsline {chapter}{\numberline {6}Efficient Metric Computation via Imitation}{69}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{69}{section.6.1}
-\contentsline {section}{\numberline {6.2}Related Work}{71}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Metric Learning}{71}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Embedding}{72}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Transfer Learning and Domain Adaptation}{72}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Metric Imitation}{73}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Training}{73}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Mapping}{75}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Experiments}{76}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Image Clustering}{76}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Category-based image retrieval}{80}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Instance-based Object Retrieval}{81}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Image Super-resolution}{82}{subsection.6.4.4}
-\contentsline {section}{\numberline {6.5}Conclusion}{83}{section.6.5}
-\contentsline {chapter}{\numberline {7}Performance Prediction: Succeed or Fail?}{84}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introduction}{84}{section.7.1}
-\contentsline {section}{\numberline {7.2}Related work}{86}{section.7.2}
-\contentsline {section}{\numberline {7.3}Data collection}{87}{section.7.3}
-\contentsline {section}{\numberline {7.4}Learning image synthesizability}{89}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}General features}{89}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Designed features}{89}{subsection.7.4.2}
-\contentsline {subsection}{\numberline {7.4.3}Learning method}{93}{subsection.7.4.3}
-\contentsline {section}{\numberline {7.5}Experiments}{94}{section.7.5}
-\contentsline {subsection}{\numberline {7.5.1}Learning synthesizability}{94}{subsection.7.5.1}
-\contentsline {subsection}{\numberline {7.5.2}Trimming texture examples}{96}{subsection.7.5.2}
-\contentsline {section}{\numberline {7.6}Conclusions}{98}{section.7.6}
-\contentsline {chapter}{\numberline {8}Performance Prediction: Under-, Properly-, or Over-Performed?}{100}{chapter.8}
-\contentsline {section}{\numberline {8.1}Introduction}{100}{section.8.1}
-\contentsline {section}{\numberline {8.2}Related Work}{103}{section.8.2}
-\contentsline {paragraph}{Hierarchical Segmentation}{103}{section*.11}
-\contentsline {paragraph}{Multiple Segmentations}{103}{section*.12}
-\contentsline {paragraph}{Predicting Segmentation Quality by Classification}{103}{section*.13}
-\contentsline {paragraph}{Scale-aware Vision Algorithms}{104}{section*.14}
-\contentsline {section}{\numberline {8.3}Flattening and Re-scaling Hierarchies}{104}{section.8.3}
-\contentsline {subsection}{\numberline {8.3.1}Flattening Hierarchies via Scale Labeling}{104}{subsection.8.3.1}
-\contentsline {subsubsection}{Inference by Dynamic Programming}{106}{section*.15}
-\contentsline {subsubsection}{Predicting the Scales of Segments}{106}{section*.16}
-\contentsline {subsection}{\numberline {8.3.2}Hierarchy Re-scaling with Labeled Scales}{107}{subsection.8.3.2}
-\contentsline {section}{\numberline {8.4}Experiments}{108}{section.8.4}
-\contentsline {subsection}{\numberline {8.4.1}Experiment Settings}{108}{subsection.8.4.1}
-\contentsline {subsection}{\numberline {8.4.2}Results}{110}{subsection.8.4.2}
-\contentsline {subsection}{\numberline {8.4.3}Comparison to Other Methods}{111}{subsection.8.4.3}
-\contentsline {subsection}{\numberline {8.4.4}Evaluation towards Object Segmentation}{111}{subsection.8.4.4}
-\contentsline {subsection}{\numberline {8.4.5}Running Time}{113}{subsection.8.4.5}
-\contentsline {section}{\numberline {8.5}Conclusion}{113}{section.8.5}
-\contentsline {chapter}{\numberline {9}Performance Evaluation: Helpful for Other Tasks?}{116}{chapter.9}
-\contentsline {section}{\numberline {9.1}Introduction}{116}{section.9.1}
-\contentsline {section}{\numberline {9.2}Related Work}{117}{section.9.2}
-\contentsline {section}{\numberline {9.3}Evaluation}{119}{section.9.3}
-\contentsline {subsection}{\numberline {9.3.1}Boundary Detection}{120}{subsection.9.3.1}
-\contentsline {subsection}{\numberline {9.3.2}Semantic Image Segmentation}{122}{subsection.9.3.2}
-\contentsline {subsection}{\numberline {9.3.3}Digit Recognition}{125}{subsection.9.3.3}
-\contentsline {subsection}{\numberline {9.3.4}Scene Recognition}{126}{subsection.9.3.4}
-\contentsline {section}{\numberline {9.4}Discussion and Conclusion}{127}{section.9.4}
-\contentsline {chapter}{\numberline {10}Conclusion}{129}{chapter.10}
+\contentsline {subsection}{\numberline {4.5.3}Image Clustering}{51}{subsection.4.5.3}
+\contentsline {section}{\numberline {4.6}Conclusion}{52}{section.4.6}
+\contentsline {chapter}{\numberline {5}Fast Training Algorithms for SVM+}{53}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{53}{section.5.1}
+\contentsline {section}{\numberline {5.2}Related Work}{54}{section.5.2}
+\contentsline {section}{\numberline {5.3}Learning Using Privileged Information}{56}{section.5.3}
+\contentsline {section}{\numberline {5.4}Dual Coordinate Descent Algorithm for Solving Linear SVM+}{57}{section.5.4}
+\contentsline {section}{\numberline {5.5}SMO Algorithm for Solving Kernel SVM+}{60}{section.5.5}
+\contentsline {section}{\numberline {5.6}Experiments}{63}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Image Classification}{64}{subsection.5.6.1}
+\contentsline {subsubsection}{Experiments on Linear SVM+}{65}{section*.9}
+\contentsline {subsubsection}{Experiments on Kernel SVM+}{67}{section*.10}
+\contentsline {subsection}{\numberline {5.6.2}Web Image Retrieval}{68}{subsection.5.6.2}
+\contentsline {section}{\numberline {5.7}Conclusion}{70}{section.5.7}
+\contentsline {chapter}{\numberline {6}Efficient Metric Computation via Imitation}{71}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{71}{section.6.1}
+\contentsline {section}{\numberline {6.2}Related Work}{73}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Metric Learning}{73}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Embedding}{74}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Transfer Learning and Domain Adaptation}{74}{subsection.6.2.3}
+\contentsline {section}{\numberline {6.3}Metric Imitation}{75}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Training}{75}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Mapping}{77}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Experiments}{78}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Image Clustering}{78}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Category-based image retrieval}{82}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Instance-based Object Retrieval}{83}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Image Super-resolution}{84}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.5}Conclusion}{85}{section.6.5}
+\contentsline {chapter}{\numberline {7}Performance Prediction: Succeed or Fail?}{86}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introduction}{86}{section.7.1}
+\contentsline {section}{\numberline {7.2}Related work}{88}{section.7.2}
+\contentsline {section}{\numberline {7.3}Data collection}{89}{section.7.3}
+\contentsline {section}{\numberline {7.4}Learning image synthesizability}{91}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}General features}{91}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Designed features}{91}{subsection.7.4.2}
+\contentsline {subsection}{\numberline {7.4.3}Learning method}{95}{subsection.7.4.3}
+\contentsline {section}{\numberline {7.5}Experiments}{96}{section.7.5}
+\contentsline {subsection}{\numberline {7.5.1}Learning synthesizability}{96}{subsection.7.5.1}
+\contentsline {subsection}{\numberline {7.5.2}Trimming texture examples}{98}{subsection.7.5.2}
+\contentsline {section}{\numberline {7.6}Conclusions}{100}{section.7.6}
+\contentsline {chapter}{\numberline {8}Performance Prediction: Under-, Properly-, or Over-Performed?}{102}{chapter.8}
+\contentsline {section}{\numberline {8.1}Introduction}{102}{section.8.1}
+\contentsline {section}{\numberline {8.2}Related Work}{105}{section.8.2}
+\contentsline {paragraph}{Hierarchical Segmentation}{105}{section*.11}
+\contentsline {paragraph}{Multiple Segmentations}{105}{section*.12}
+\contentsline {paragraph}{Predicting Segmentation Quality by Classification}{105}{section*.13}
+\contentsline {paragraph}{Scale-aware Vision Algorithms}{106}{section*.14}
+\contentsline {section}{\numberline {8.3}Flattening and Re-scaling Hierarchies}{106}{section.8.3}
+\contentsline {subsection}{\numberline {8.3.1}Flattening Hierarchies via Scale Labeling}{106}{subsection.8.3.1}
+\contentsline {subsubsection}{Inference by Dynamic Programming}{108}{section*.15}
+\contentsline {subsubsection}{Predicting the Scales of Segments}{108}{section*.16}
+\contentsline {subsection}{\numberline {8.3.2}Hierarchy Re-scaling with Labeled Scales}{109}{subsection.8.3.2}
+\contentsline {section}{\numberline {8.4}Experiments}{110}{section.8.4}
+\contentsline {subsection}{\numberline {8.4.1}Experiment Settings}{110}{subsection.8.4.1}
+\contentsline {subsection}{\numberline {8.4.2}Results}{112}{subsection.8.4.2}
+\contentsline {subsection}{\numberline {8.4.3}Comparison to Other Methods}{113}{subsection.8.4.3}
+\contentsline {subsection}{\numberline {8.4.4}Evaluation towards Object Segmentation}{113}{subsection.8.4.4}
+\contentsline {subsection}{\numberline {8.4.5}Running Time}{115}{subsection.8.4.5}
+\contentsline {section}{\numberline {8.5}Conclusion}{115}{section.8.5}
+\contentsline {chapter}{\numberline {9}Performance Evaluation: Helpful for Other Tasks?}{118}{chapter.9}
+\contentsline {section}{\numberline {9.1}Introduction}{118}{section.9.1}
+\contentsline {section}{\numberline {9.2}Related Work}{119}{section.9.2}
+\contentsline {section}{\numberline {9.3}Evaluation}{121}{section.9.3}
+\contentsline {subsection}{\numberline {9.3.1}Boundary Detection}{122}{subsection.9.3.1}
+\contentsline {subsection}{\numberline {9.3.2}Semantic Image Segmentation}{124}{subsection.9.3.2}
+\contentsline {subsection}{\numberline {9.3.3}Digit Recognition}{127}{subsection.9.3.3}
+\contentsline {subsection}{\numberline {9.3.4}Scene Recognition}{128}{subsection.9.3.4}
+\contentsline {section}{\numberline {9.4}Discussion and Conclusion}{129}{section.9.4}
+\contentsline {chapter}{\numberline {10}Conclusion}{131}{chapter.10}

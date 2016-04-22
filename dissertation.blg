@@ -5,14 +5,14 @@ A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: acknowledgements.aux
 Case mismatch error between cite keys caffe and Caffe
----line 537 of file dissertation.aux
+---line 541 of file dissertation.aux
  : \citation{caffe
  :                }
 I'm skipping whatever remains of this command
 The style file: apa-good.bst
 A level-1 auxiliary file: publications.aux
 A level-1 auxiliary file: cv.aux
-Reallocated field_info (elt_size=4) to 13832 items from 5000.
+Reallocated field_info (elt_size=4) to 13784 items from 5000.
 Database file #1: thesis.bib
 Warning--string name "cvpr" is undefined
 --line 1041 of file thesis.bib
@@ -779,14 +779,6 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 10163 of file thesis.bib
  : @inproceedings{edge:box
  :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10178 of file thesis.bib
- : @misc{sphinx
- :             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10183 of file thesis.bib
- : @misc{sphinx:webtrain
- :                      ,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 10297 of file thesis.bib
  : @inproceedings{Vicente:European 
@@ -1777,8 +1769,6 @@ Warning--I didn't find a database entry for "lbp:2002"
 Name 2 in "Dai, Jifeng and He, Kaiming, and Sun, Jian" has a comma at the end for entry BoxSup
 while executing---line 1415 of file apa-good.bst
 Warning--to sort, need author or key in smile
-Warning--to sort, need author or key in sphinx
-Warning--to sort, need author or key in sphinx:webtrain
 Name 2 in "Dengxin Dai and Radu Timofte, and Luc {Van Gool}" has a comma at the end for entry JOR:EG15
 while executing---line 1415 of file apa-good.bst
 Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
@@ -1793,8 +1783,6 @@ Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center
 while executing---line 1415 of file apa-good.bst
 Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
 while executing---line 1415 of file apa-good.bst
-Warning--empty year in sphinx; set to ????
-Warning--empty year in sphinx:webtrain; set to ????
 Warning--missing publisher in visual:human:loop
 Warning--empty journal in rcnn_crf
 Warning--missing publisher in ALdataset
@@ -1845,45 +1833,45 @@ Warning--missing publisher in selfsimaccv
 Warning--missing publisher in SR:benchmark
 Warning--empty journal in yupiecewise
 Warning--missing publisher in Zhu:ISL:2009
-You've used 367 entries,
+You've used 365 entries,
             2823 wiz_defined-function locations,
-            2170 strings with 56766 characters,
-and the built_in function-call counts, 231771 in all, are:
-= -- 18146
+            2165 strings with 56640 characters,
+and the built_in function-call counts, 231195 in all, are:
+= -- 18088
 > -- 10991
 < -- 195
-+ -- 4161
++ -- 4158
 - -- 3717
-* -- 17852
-:= -- 35863
-add.period$ -- 1106
-call.type$ -- 367
-change.case$ -- 3559
-chr.to.int$ -- 330
-cite$ -- 408
-duplicate$ -- 16841
-empty$ -- 17111
+* -- 17812
+:= -- 35785
+add.period$ -- 1100
+call.type$ -- 365
+change.case$ -- 3549
+chr.to.int$ -- 329
+cite$ -- 398
+duplicate$ -- 16797
+empty$ -- 17057
 format.name$ -- 4973
-if$ -- 45761
-int.to.chr$ -- 38
+if$ -- 45643
+int.to.chr$ -- 37
 int.to.str$ -- 1
-missing$ -- 3339
-newline$ -- 1834
+missing$ -- 3333
+newline$ -- 1824
 num.names$ -- 1457
-pop$ -- 7900
+pop$ -- 7874
 preamble$ -- 1
-purify$ -- 2707
+purify$ -- 2699
 quote$ -- 0
-skip$ -- 6605
+skip$ -- 6588
 stack$ -- 0
-substring$ -- 8371
-swap$ -- 8750
+substring$ -- 8345
+swap$ -- 8736
 text.length$ -- 85
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 3291
-warning$ -- 35
+type$ -- 3273
+warning$ -- 31
 while$ -- 1403
 width$ -- 0
-write$ -- 4573
-(There were 454 error messages)
+write$ -- 4551
+(There were 452 error messages)

@@ -1,6 +1,8 @@
 \chapter{Efficient Visual Annotation with Speech Recognition}
 \label{ch:draw-and-tell}
 
+As the proverb goes --- ``sometimes, it is not who has the best algorithm wins, but who has the most data.". The importance of annotated training data has been proven many times in the history of computer vision. Taken object recognition as an example, the performance of algorithms leaped every time a larger dataset was made available, from Caltech 101~\citep{FeiFei2004}, to Pascal VOC~\citep{pascal:2011}, to ImageNet~\citep{imagenet} and MSCOCO~\citep{coco:eccv}.  The tread may continue, but it is getting more difficulty as  annotations to an even larger scale is hardly affordable.  Developing efficient annotation approaches is one of the most effective solution to reduce the annotation cost.   In this chapter, we exploit the potential of speech recognition for visual object recognition, and propose a novel annotation approach which is 10x faster than standard ones for the task of semantic image segmentation. 
+
 \section{Introduction}
 Tremendous progress has been made during the last few years in 
 object detection and semantic image segmentation due to (1) the success of
@@ -384,11 +386,11 @@ Three results are reported: (i) recognition accuracy of object names,
 of our method.
 
 \textbf{Recognition accuracy for object names}: Our method is
-evaluated with a comparison to PocketSphinx~\citep{sphinx}, a standard
+evaluated with a comparison to PocketSphinx~\footnote{Sphinx: \url{http://cmusphinx.sourceforge.net/}}, a standard
 speech recognition engine. For fair comparison, we re-trained a new
 dictionary and language model~\footnote{They are trained by simply
   uploading the text corpus to CMUSphinx's web
-  service~\citep{sphinx:webtrain}.}  for PocketSphinx as well so that
+  service, available at url{http://www.speech.cs.cmu.edu/tools/lmtool-new.html}}.  for PocketSphinx as well so that
 it focuses on the object names of interest.  The evaluation is
 conducted on the box annotation of PASCAL VOC 2012~\citep{pascal:2011}
 and that of MSCOCO dataset~\citep{coco:eccv}.  An annotated object in
