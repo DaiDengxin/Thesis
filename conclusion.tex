@@ -1,4 +1,39 @@
 \chapter{Conclusion} 
 \label{ch:conclusion}
 
-wawawa 
+This thesis presented methods towards cost-effective and performance-aware vision algorithms.  The primary focus was on  effective algorithms in terms of annotation cost, for which we presented two different approaches, one for efficient visual annotation and one for learning with unlabeled data.  In addition, we examined how to reduce the computational cost associated with the training and testing of vision algorithms in the context of learning with privileged information and metric learning.   Finally, we investigated how  performance-ware algorithms can be learned, and then be used to facilitate down-streamed applications. A more detailed look at the specific contributions are summarized below. 
+
+\section{Contributions} 
+
+In Chapter~\ref{ch:draw-and-tell}, \emph{Efficient Visual Annotation with Speech Recognition}, we proposed an efficient annotation method for semantic image segmentation by leveraging the power of speech recognition. In this method, we allow annotations to speak  objects's names while they draw strokes on them.  Object names are recognized by a combination of speech recognition and webly-supervised object recognition.  The drawn strokes are then converted to semantic heatmaps for the corresponding classes by ensemble interactive segmentation. Finally, an extension to the standard fully convolutional networks~\citep{Long_2015_CVPR} is made to accommodate the `weak' annotation. The method yields comparable results to the same CNNs architecture trained with standard  annotations of full segmentation masks, while being 10x faster. 
+ 
+In Chapter~\ref{ch:ensemble}, \emph{Representation Learning with Unlabeled Data}, we developed a method to learn new feature representations by exploring the data distribution patterns of unlabeled data.  The leaning takes advantages of discriminative learning and ensemble learning to effectively exploit  manifold-smoothness assumption: surrogate classes are sampled from the manifold of data samples, on which discriminative learning is performed to extract the high-level knowledge; the noise of the sampled training training set is mitigated by ensemble learning. The learned discriminative classifiers are used to generate the new high-level feature representations. Experiments on eight datasets show that the learned representations are superior to the standard feature representations. 
+
+In Chapter~\ref{ch:svmplus}, \emph{Fast Training Algorithms for SVM+}, we developed  efficient training algorithms to the standard approach SVM+.  New fomulations with fewer constraints are formulated in the dual domain, making it solvable efficiently by the SMO algorithm of one-class SVM.  Experiments show that our proposed algorithms achieve significant speed-ups to  the state-of-the-art solvers for  SVM+.
+  
+In Chapter~\ref{ch:mi}, \emph{Efficient Metric Computation via Imitation}, we developed a method to allow computationally cheap features to imitate better-performing but computationally more expensive features. We treat the problem as a transfer learning, where the neighborhood property expensive features are quantified into manifold structures. The manifold structures are view-independent, and can then be transferred to the space of cheap features. Finally, a linear transformation of the cheap features is learned so that the manifold can be approximated as well as possible.  The leaned transformation significantly boosts the performance of cheap features while retaining their efficiency.  Experiments on multiple experiments validate the efficacy of the method. 
+  
+In Chapter~\ref{ch:forecasting}, \emph{Performance Prediction: Success or Fail?}, We predicted how likely texture synthesis succeed on particular texture samples. To the aim, we collected a dataset of $21, 302$ textures and performed $4$ standard synthesis methods on it. The synthesized results were annotated based on their visual quality in terms of three levels. A set of relevant features were defined in order to learn a regressor to predict the performance of the methods. Extensive experiments show that the performance of texture synthesis methods can be predicted accurately.  
+
+In Chapter~\ref{ch:scale-aware}, \emph{Performance Prediction: Under-, Properly-, or Over-Processed?}, we presented a method to predict whether a segment from image segmentation methods is under-segmented, properly-segmented, or over-segmented.  The prediction is then used to re-align the tree structure of hierarchical image segmentation, so that the depth of a regions is better coupled with its scale.  The improved hierarchy improves the quality of the hierarchical segmentation representations.
+
+
+In Chapter~\ref{ch:SR4VT}, \emph{Performance Evaluation: Useful for Other Vision Tasks?}, we extensively evaluated the usefulness of image super-resolution for four standard vision tasks. This work has formalized the conception that image super-resolution is helpful for other vision tasks when the input images are of low-resolution.  
+
+
+\section{Perspectives} 
+
+\textbf{Deeper integration of vision and speech}. In Chapter~\ref{ch:draw-and-tell}, vision and speech is integrated to recognize the name of the object. In this work, we only fuse the class probability from the speech recognition engine and the webly-supervised object recognizer. A deep integration of the two streams of information probably will help for better accuracy, especially given the great success of multi-stream convolutional neural networks in integrating different sources of information, such as RGB color and optical flow~\citep{two:stream:cnn}.  
+
+
+\textbf{Other forms of annotation for the place of objects}. The location of object is indicated by scribbles in Chapter~\ref{ch:draw-and-tell}. While scribbles are very natural to draw and  they are very suitable for stuff classes such as sky and road, other forms of annotation might be more informative for well-shaped objects such as cars and pedestrians. Examples of other annotation forms include coarse bounding boxes and ellipses. Investigating when to use what forms of the annotation is interesting, and a solution to it will boost the annotation efficiency even further.  
+
+
+\textbf{Combing with other cost-effective annotation methods}. As stated in Related Work~\ref{ch:related}, there exist many techniques for cost-effective annotations, most of which are perpendicular to our method, such as active learning, human-in-the-loop, crowd-sourcing, and gaming.  Also, our method is `naturally'  suitable for mobile devices, in which the microphone is already integrated and the hand-input devices are not as easily accessible as that for work stations. 
+ 
+
+\textbf{Neural Network Formulation}. The  representation learning in Chapter~\ref{ch:ensemble} is performed with an ensemble of training set with sampled surrogate class labels. This scenario shares great similarity with that of the feature learning work developed in~\citep{cnnfet14}. Inspired by this work, we see the possibility of formulating our feature learning  problem as an `unsupervised' neural network training problem as well. A straightforward solution worth checking out is adding the non-linearity transformation of our method to the top of the standard neural network~\citep{deep:bmvc14} and use classification loss to the surrogate classes to fine-tune the network. 
+
+\textbf{Self-training for Performance Prediction} 
+
+

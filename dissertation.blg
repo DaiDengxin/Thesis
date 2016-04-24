@@ -4,781 +4,45 @@ The top-level auxiliary file: dissertation.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: zusammenfassung.aux
 A level-1 auxiliary file: acknowledgements.aux
-Case mismatch error between cite keys caffe and Caffe
----line 541 of file dissertation.aux
- : \citation{caffe
- :                }
-I'm skipping whatever remains of this command
 The style file: apa-good.bst
 A level-1 auxiliary file: publications.aux
 A level-1 auxiliary file: cv.aux
-Reallocated field_info (elt_size=4) to 13784 items from 5000.
 Database file #1: thesis.bib
-Warning--string name "cvpr" is undefined
---line 1041 of file thesis.bib
-Warning--string name "iccv" is undefined
---line 1297 of file thesis.bib
-Warning--string name "cvpr" is undefined
---line 1559 of file thesis.bib
-Warning--string name "cvpr" is undefined
---line 1954 of file thesis.bib
-Warning--string name "iccv" is undefined
---line 2817 of file thesis.bib
-Warning--string name "cvpr" is undefined
---line 3976 of file thesis.bib
-Warning--string name "cvpr" is undefined
---line 4093 of file thesis.bib
-Warning--entry type for "Thevenaz-BOOK-2000" isn't style-file defined
---line 4261 of file thesis.bib
-Warning--string name "cvpr" is undefined
---line 4791 of file thesis.bib
-Repeated entry---line 5226 of file thesis.bib
- : @inproceedings{Sun-CVPR-2008
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5452 of file thesis.bib
- : @inproceedings{MCG
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5505 of file thesis.bib
- : @inproceedings{pairwise:metric:IJCAI09
- :                                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5512 of file thesis.bib
- : @article{flow:dataset
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5591 of file thesis.bib
- : @article{whatpoint
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5599 of file thesis.bib
- : @article{eigenface:pami97
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5611 of file thesis.bib
- : @inproceedings{eigenmaps:nips01
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5639 of file thesis.bib
- : @inproceedings{open:surface
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5722 of file thesis.bib
- : @article{Boiman:07
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5759 of file thesis.bib
- : @inproceedings{Bosch:iccv07
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5766 of file thesis.bib
- : @inproceedings{phog
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5788 of file thesis.bib
- : @article{graphcut
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5817 of file thesis.bib
- : @article{randomforest
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5855 of file thesis.bib
- : @article{camvid:data
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5938 of file thesis.bib
- : @article{Chang-CVPR-2004
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5948 of file thesis.bib
- : @article{Chang-CVPR-2004
- :                         ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 5965 of file thesis.bib
  : @inproceedings{deep:bmvc14
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 5980 of file thesis.bib
- : @inproceedings{rcnn_crf
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6012 of file thesis.bib
- : @article{image:spirit
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6058 of file thesis.bib
- : @inproceedings{Cohen:2003:wang
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6066 of file thesis.bib
- : @incollection{ALdataset
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6081 of file thesis.bib
- : @incollection{MDScaling:08
  :                           ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 6105 of file thesis.bib
  : @inproceedings{dai:eccv12
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6112 of file thesis.bib
- : @inproceedings{dai:ensemble:eccv12
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6133 of file thesis.bib
- : @inproceedings{JOR:EG15
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6140 of file thesis.bib
- : @inproceedings{dai:facade:iccv13
- :                                 ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 6147 of file thesis.bib
  : @inproceedings{dai:synthesizability
  :                                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6154 of file thesis.bib
- : @inproceedings{dai:cvpr10
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6169 of file thesis.bib
- : @inproceedings{BoxSup
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6177 of file thesis.bib
- : @inproceedings{Dai-CVPR-2007
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6197 of file thesis.bib
- : @inproceedings{Dai-CVPR-2007
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6224 of file thesis.bib
- : @article{Dalal_HoG
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6256 of file thesis.bib
- : @article{CUReT-61
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6275 of file thesis.bib
- : @inproceedings{ml:information:07
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6283 of file thesis.bib
- : @inproceedings{DeBonet:97
- :                          ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 6299 of file thesis.bib
  : @inproceedings{imagenet
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6307 of file thesis.bib
- : @inproceedings{scalable:annotation
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6377 of file thesis.bib
- : @inproceedings{edge:srf
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6384 of file thesis.bib
- : @inproceedings{Decaf:icml2014
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6417 of file thesis.bib
- : @article{hlle
- :              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6451 of file thesis.bib
- : @article{Duchon-JAM-1979
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6463 of file thesis.bib
- : @article{Duchon-JAM-1979
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6487 of file thesis.bib
- : @inproceedings{Frey_AffinityPropagation
- :                                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6494 of file thesis.bib
- : @inproceedings{annotation:strength
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6525 of file thesis.bib
- : @inproceedings{Efros:sig2001
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6532 of file thesis.bib
- : @inproceedings{Efros:1999
- :                          ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 6566 of file thesis.bib
  : @article{pascal:2011
  :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6577 of file thesis.bib
- : @inproceedings{fakton:eccv12
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6584 of file thesis.bib
- : @article{liblinear
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6683 of file thesis.bib
- : @inproceedings{FeiFei2004
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6740 of file thesis.bib
- : @inproceedings{Fergus03
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6758 of file thesis.bib
- : @inproceedings{Fergus09
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6765 of file thesis.bib
- : @inproceedings{DASA:iccv13
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6809 of file thesis.bib
- : @article{Freedman-TOG-2011
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6831 of file thesis.bib
- : @article{Freedman-TOG-2011
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6853 of file thesis.bib
- : @article{Freeman-CGA-2002
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6912 of file thesis.bib
- : @article{Frey_Dueck_2007
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6924 of file thesis.bib
- : @inproceedings{SIEAL
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6939 of file thesis.bib
- : @inproceedings{local_distance:iccv:07
- :                                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6947 of file thesis.bib
- : @article{random:phase
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6973 of file thesis.bib
- : @inproceedings{rcnn
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6981 of file thesis.bib
- : @inproceedings{Glasner-ICCV-2009
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6988 of file thesis.bib
- : @inproceedings{Glasner-ICCV-2009
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 6995 of file thesis.bib
- : @inproceedings{class:clapse:nips05
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7025 of file thesis.bib
- : @inproceedings{NCA:2004
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7050 of file thesis.bib
- : @inproceedings{IQ:cvpr11
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7058 of file thesis.bib
- : @article{vangool83
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7075 of file thesis.bib
- : @inproceedings{DA:iccv11
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7124 of file thesis.bib
- : @inproceedings{Grauman06
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7141 of file thesis.bib
- : @inproceedings{youtube2text
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7159 of file thesis.bib
- : @inproceedings{tagprop:iccv09
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7174 of file thesis.bib
- : @inproceedings{ml:face:09
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7181 of file thesis.bib
- : @inproceedings{geodesic:star
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7189 of file thesis.bib
- : @article{SuTransfer
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7196 of file thesis.bib
- : @article{image:interestingness
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7235 of file thesis.bib
- : @inproceedings{semantic:contour
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7285 of file thesis.bib
- : @inproceedings{speech:retri:img
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7299 of file thesis.bib
- : @inproceedings{He:completion:eccv12
- :                                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7306 of file thesis.bib
- : @inproceedings{NPEmbedding:iccv05
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7330 of file thesis.bib
- : @inproceedings{Heeger:95
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7337 of file thesis.bib
- : @inproceedings{DistillingCNN
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7344 of file thesis.bib
- : @inproceedings{lsda
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7366 of file thesis.bib
- : @inproceedings{video:anno:knowledgebase
- :                                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7374 of file thesis.bib
- : @inproceedings{image:memorability
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7452 of file thesis.bib
- : @inproceedings{hamming:embedding:08
- :                                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7468 of file thesis.bib
- : @inproceedings{caffe
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7512 of file thesis.bib
- : @article{speech:anno:img
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7530 of file thesis.bib
- : @inproceedings{deep:alignment:vl
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7574 of file thesis.bib
- : @article{Kim-PAMI-2010
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7684 of file thesis.bib
- : @inproceedings{large:scale:metric:cvpr12
- :                                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7692 of file thesis.bib
- : @incollection{fully-crf
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7699 of file thesis.bib
- : @incollection{deepnet:nips12
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7713 of file thesis.bib
- : @article{metric:survey:12
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7723 of file thesis.bib
- : @article{ml:fast:search:09
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7733 of file thesis.bib
- : @inproceedings{tl:kernel:11
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7741 of file thesis.bib
- : @article{babytalk
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7753 of file thesis.bib
- : @article{Kwatra:tog:2005
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7762 of file thesis.bib
- : @inproceedings{Kwatra:2003
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7792 of file thesis.bib
- : @inproceedings{tl:attribute:09
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7808 of file thesis.bib
- : @inproceedings{pixel:tone
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7826 of file thesis.bib
- : @inproceedings{lazebnik:cvpr06
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7834 of file thesis.bib
- : @article{UIUC:Texture
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7865 of file thesis.bib
- : @inproceedings{Lefebvre:2005:sig
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7893 of file thesis.bib
- : @article{texton:2001
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7949 of file thesis.bib
- : @inproceedings{event8
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 7964 of file thesis.bib
- : @inproceedings{objectbank:nips10
- :                                 ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 8041 of file thesis.bib
  : @inproceedings{coco:eccv
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8078 of file thesis.bib
- : @article{Liu:texture:96
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8089 of file thesis.bib
- : @inproceedings{sorted:texture
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8096 of file thesis.bib
- : @inproceedings{icml10:large:graph:ssl
- :                                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8113 of file thesis.bib
- : @inproceedings{Liu:2004:NTA
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8120 of file thesis.bib
- : @article{liu:ijcv:05
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8130 of file thesis.bib
- : @article{lockerman2013arxiv
- :                            ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 8139 of file thesis.bib
  : @inproceedings{Long_2015_CVPR
  :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8204 of file thesis.bib
- : @article{Lowe_SIFT
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8242 of file thesis.bib
- : @incollection{image:quality
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8272 of file thesis.bib
- : @inproceedings{Ma:2011
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8279 of file thesis.bib
- : @article{embedding:overview:09
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8302 of file thesis.bib
- : @article{Manjunath96
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8321 of file thesis.bib
- : @inproceedings{Martin-ICCV-2001
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8332 of file thesis.bib
- : @inproceedings{Martin2001
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8343 of file thesis.bib
- : @inproceedings{semantic:texture
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8350 of file thesis.bib
- : @inproceedings{mlrank:10
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8414 of file thesis.bib
- : @inproceedings{pascal:context
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8525 of file thesis.bib
- : @inproceedings{ukbench:cvpr06
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8539 of file thesis.bib
- : @article{lbp
- :             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8550 of file thesis.bib
- : @article{gist
- :              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8613 of file thesis.bib
- : @article{paget:tip98
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8624 of file thesis.bib
- : @article{tl:survey
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8634 of file thesis.bib
- : @inproceedings{detect:eyetr
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8642 of file thesis.bib
- : @inproceedings{cnn:em
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8669 of file thesis.bib
- : @inproceedings{ConsCNN
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8676 of file thesis.bib
- : @inproceedings{cnn:mil
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8713 of file thesis.bib
- : @inproceedings{img:pix:cnn
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8720 of file thesis.bib
- : @article{Portilla:2000:IJCV
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8741 of file thesis.bib
- : @inproceedings{qin:bmvc14
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8758 of file thesis.bib
- : @inproceedings{Indoor
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8853 of file thesis.bib
- : @article{LLE:science00
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8873 of file thesis.bib
- : @article{imageNet:challenge
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8884 of file thesis.bib
- : @inproceedings{best:two:world
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8900 of file thesis.bib
- : @article{label:me
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8918 of file thesis.bib
- : @article{SR:review
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 8955 of file thesis.bib
- : @inproceedings{Schmid01
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9068 of file thesis.bib
- : @article{texton:boost
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9076 of file thesis.bib
- : @inproceedings{Shotton:2006:ECCV
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9084 of file thesis.bib
- : @inproceedings{texton-forests
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9119 of file thesis.bib
- : @inproceedings{NYU
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9135 of file thesis.bib
- : @article{fetlearn:convex:pami14
- :                                ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 9152 of file thesis.bib
  : @inproceedings{vgg16
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9184 of file thesis.bib
- : @inproceedings{Sivic05b
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9200 of file thesis.bib
- : @inproceedings{Sivic08
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9217 of file thesis.bib
- : @article{show:tell
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9307 of file thesis.bib
- : @inproceedings{Tappen-WSCTV-2003
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9315 of file thesis.bib
- : @inproceedings{Tappen-WSCTV-2003
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9353 of file thesis.bib
- : @article{isomap:00
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9363 of file thesis.bib
- : @inproceedings{fgm:coling14
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9372 of file thesis.bib
- : @other{Thevenaz-BOOK-2000
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9382 of file thesis.bib
- : @other{Thevenaz-BOOK-2000
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9417 of file thesis.bib
- : @inproceedings{Timofte-ICCV-2013
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9424 of file thesis.bib
- : @inproceedings{Timofte-ICCV-2013
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9532 of file thesis.bib
- : @article{Tschumperle-PAMI-2005
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9546 of file thesis.bib
- : @article{Tschumperle-PAMI-2005
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9567 of file thesis.bib
- : @inproceedings{texture:analysis
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9582 of file thesis.bib
- : @article{comp:ijcv09
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9598 of file thesis.bib
- : @article{material:pami:09
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9609 of file thesis.bib
- : @article{MatConvNet
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9617 of file thesis.bib
- : @inproceedings{markov:topic
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9624 of file thesis.bib
- : @inproceedings{expected:loss
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9631 of file thesis.bib
- : @incollection{AFrameSel
- :                        ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 9638 of file thesis.bib
  : @inproceedings{show:tell:caption
  :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9671 of file thesis.bib
- : @inproceedings{siftllc:cvpr10
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9741 of file thesis.bib
- : @inproceedings{WLKT09
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9748 of file thesis.bib
- : @article{max:margin:knn
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9825 of file thesis.bib
- : @article{metric:clustering:12
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9854 of file thesis.bib
- : @article{xia:texture
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9888 of file thesis.bib
- : @inproceedings{Sun_2010
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9895 of file thesis.bib
- : @inproceedings{metric:nips03
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9902 of file thesis.bib
- : @inproceedings{weak:seg:xu
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9944 of file thesis.bib
- : @inproceedings{Yang-ICCV-2013
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9952 of file thesis.bib
- : @inproceedings{Yang-ICCV-2013
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 9960 of file thesis.bib
- : @article{Yang-TIP-2010
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10034 of file thesis.bib
- : @article{Zalesny05
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10062 of file thesis.bib
- : @inproceedings{Zeyde-CS-2012
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10070 of file thesis.bib
- : @inproceedings{Zeyde-CS-2012
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10126 of file thesis.bib
- : @inproceedings{crfasrnn
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10152 of file thesis.bib
- : @article{zhu:frame
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10163 of file thesis.bib
- : @inproceedings{edge:box
- :                        ,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 10297 of file thesis.bib
  : @inproceedings{Vicente:European 
@@ -796,10 +60,6 @@ I was expecting a `,' or a `}'---line 10460 of file thesis.bib
  :         booktitle = IEEE 
  :                          Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10467 of file thesis.bib
- : @inproceedings{Sivic05b
- :                        ,
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 10495 of file thesis.bib
  :   booktitle = International 
  :                             Conference on Computer Vision,
@@ -808,25 +68,13 @@ I was expecting a `,' or a `}'---line 10528 of file thesis.bib
  :   booktitle = International 
  :                             Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10533 of file thesis.bib
- : @inproceedings{Frey_AffinityPropagation
- :                                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10558 of file thesis.bib
- : @article{Lowe_SIFT
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10568 of file thesis.bib
- : @article{Dalal_HoG
- :                   ,
+I was expecting a `,' or a `}'---line 10571 of file thesis.bib
+ : journal = IEEE 
+ :                Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 10583 of file thesis.bib
  :   booktitle =  IEEE 
  :                     Conference on Computer Vision and Pattern Recognition,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10595 of file thesis.bib
- : @inproceedings{Grauman06
- :                         ,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 10651 of file thesis.bib
  :     booktitle =  IEEE 
@@ -843,14 +91,6 @@ I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 10717 of file thesis.bib
  :     booktitle = IEEE 
  :                      Conference on Computer Vision and Pattern Recognition,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10743 of file thesis.bib
- : @article{gist
- :              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 10753 of file thesis.bib
- : @inproceedings{lazebnik:CVPR06
- :                               ,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 10791 of file thesis.bib
  :         booktitle =  IEEE 
@@ -876,10 +116,6 @@ I was expecting a `,' or a `}'---line 10835 of file thesis.bib
  :   booktitle=  IEEE 
  :                    Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10859 of file thesis.bib
- : @inproceedings{Indoor
- :                      ,
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 10929 of file thesis.bib
  :  booktitle =  IEEE 
  :                    Conference on Computer Vision and Pattern Recognition,
@@ -888,9 +124,9 @@ I was expecting a `,' or a `}'---line 10935 of file thesis.bib
  :  booktitle =  IEEE 
  :                    Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-Repeated entry---line 10939 of file thesis.bib
- : @inproceedings{texton-forests
- :                              ,
+I was expecting a `,' or a `}'---line 10942 of file thesis.bib
+ :  booktitle =  IEEE 
+ :                    Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 10959 of file thesis.bib
  :  booktitle = International 
@@ -904,21 +140,9 @@ I was expecting a `,' or a `}'---line 10972 of file thesis.bib
  : @inproceedings{SClustering_limitation_Advances 
  :                                                in Neural Information Processing Systems07,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11008 of file thesis.bib
- : @inproceedings{ Sun_2010
- :                         ,
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11050 of file thesis.bib
  : @inproceedings{Gomes:Advances 
  :                               in Neural Information Processing Systems10,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11061 of file thesis.bib
- : @article{randomforest
- :                      , title={Random forest}, volume={45},
-I'm skipping whatever remains of this entry
-Repeated entry---line 11099 of file thesis.bib
- : @article{liblinear
- :                   ,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11121 of file thesis.bib
  : booktitle = IEEE 
@@ -932,25 +156,9 @@ I was expecting a `,' or a `}'---line 11144 of file thesis.bib
  :    booktitle = IEEE 
  :                     Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11148 of file thesis.bib
- : @article{Frey_Dueck_2007
- :                         , title={Clustering by passing messages between data points.},
-I'm skipping whatever remains of this entry
-Repeated entry---line 11161 of file thesis.bib
- : @inproceedings{FeiFei2004
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11212 of file thesis.bib
- : @inproceedings{Bosch:iccv07
- :                            ,
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11247 of file thesis.bib
  :  booktitle=International 
  :                          Conference on Machine Learning,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11252 of file thesis.bib
- : @inproceedings{Sivic08
- :                       ,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11266 of file thesis.bib
  :   booktitle = International 
@@ -963,10 +171,6 @@ I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11286 of file thesis.bib
  :   booktitle = European 
  :                        Conference on Computer Vision,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11292 of file thesis.bib
- : @inproceedings{Fergus03
- :                        ,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11302 of file thesis.bib
  :   journal = International 
@@ -996,10 +200,6 @@ Repeated entry---line 11413 of file thesis.bib
  : @inproceedings{fastsvm+2016
  :                            ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11420 of file thesis.bib
- : @inproceedings{fakton:eccv12
- :                             ,
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11429 of file thesis.bib
  : @inproceedings{xu:Advances 
  :                            in Neural Information Processing Systems05,
@@ -1008,22 +208,6 @@ I was expecting a `,' or a `}'---line 11436 of file thesis.bib
  : @incollection{Gomes:Advances 
  :                              in Neural Information Processing Systems11,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11590 of file thesis.bib
- : @inproceedings{Lefebvre:2005:sig
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11598 of file thesis.bib
- : @inproceedings{WLKT09
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11605 of file thesis.bib
- : @inproceedings{Efros:1999
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11613 of file thesis.bib
- : @inproceedings{Kwatra:2003
- :                           ,
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11645 of file thesis.bib
  : @inproceedings{dai:ensemble:European 
  :                                      Conference on Computer Vision12b,
@@ -1031,10 +215,6 @@ I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11653 of file thesis.bib
  : @inproceedings{Singh:European 
  :                               Conference on Computer Vision12,
-I'm skipping whatever remains of this entry
-Repeated entry---line 11663 of file thesis.bib
- : @inproceedings{Efros:sig2001
- :                             ,
 I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 11670 of file thesis.bib
  : @article{Portilla:2000:International 
@@ -1088,273 +268,21 @@ I was expecting a `,' or a `}'---line 12141 of file thesis.bib
  : @inproceedings{Gould:decomposing:International 
  :                                                Conference on Computer Vision09,
 I'm skipping whatever remains of this entry
-Repeated entry---line 12148 of file thesis.bib
- : @article{Kwatra:tog:2005
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 12175 of file thesis.bib
- : @inproceedings{Heeger:95
- :                         ,
-I'm skipping whatever remains of this entry
 I was expecting a `,' or a `}'---line 12302 of file thesis.bib
  : @inproceedings{CHO_IEEE 
  :                         Conference on Computer Vision and Pattern Recognition2008,
-I'm skipping whatever remains of this entry
-Repeated entry---line 12358 of file thesis.bib
- : @inproceedings{Fergus09
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 12613 of file thesis.bib
- : @article{UIUC:Texture
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 12762 of file thesis.bib
- : @article{tl:survey
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 12772 of file thesis.bib
- : @inproceedings{siftllc:CVPR10
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 12869 of file thesis.bib
- : @inproceedings{icml10:large:graph:ssl
- :                                      ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 12975 of file thesis.bib
  : @inproceedings{deep:bmvc14
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13040 of file thesis.bib
- : @inproceedings{MatConvNet
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13298 of file thesis.bib
- : @inproceedings{Martin2001
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13513 of file thesis.bib
- :   @article{dai:TSC:11
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13652 of file thesis.bib
- : @inproceedings{lsda
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13661 of file thesis.bib
- : @article{SuTransfer
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13668 of file thesis.bib
- : @inproceedings{DistillingCNN
- :                             ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 13684 of file thesis.bib
  : @inproceedings{SR4VTs:wacv16
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13692 of file thesis.bib
- : @inproceedings{deepnet:nips12
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13699 of file thesis.bib
- : @inproceedings{caffe
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13823 of file thesis.bib
- : @article{liblinear
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13832 of file thesis.bib
- : @article{libsvm
- :                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13865 of file thesis.bib
- : @inproceedings{NUSWIDE
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 13940 of file thesis.bib
- : @inproceedings{WLKT09
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14001 of file thesis.bib
- : @inproceedings{dai:ensemble:eccv12
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14018 of file thesis.bib
- : @inproceedings{Efros:sig2001
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14344 of file thesis.bib
- : @inproceedings{Frey_AffinityPropagation
- :                                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14358 of file thesis.bib
- : @article{comp:ijcv09
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14366 of file thesis.bib
- : @article{Lowe_SIFT
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14376 of file thesis.bib
- : @article{Dalal_HoG
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14450 of file thesis.bib
- : @inproceedings{lazebnik:cvpr06
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14551 of file thesis.bib
- : @article{gist
- :              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14638 of file thesis.bib
- : @inproceedings{Indoor
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14717 of file thesis.bib
- : @inproceedings{texton-forests
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14758 of file thesis.bib
- : @inproceedings{ dai:cvpr10
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14786 of file thesis.bib
- : @inproceedings{ Sun_2010
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14792 of file thesis.bib
- : @inproceedings{Grauman06
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14840 of file thesis.bib
- : @article{randomforest
- :                      , title={Random forest}, volume={45},
-I'm skipping whatever remains of this entry
-Repeated entry---line 14878 of file thesis.bib
- : @article{liblinear
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14914 of file thesis.bib
- : @article{Frey_Dueck_2007
- :                         , title={Clustering by passing messages between data points.},
-I'm skipping whatever remains of this entry
-Repeated entry---line 14927 of file thesis.bib
- : @inproceedings{FeiFei2004
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14934 of file thesis.bib
- : @inproceedings{event8
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 14995 of file thesis.bib
- : @inproceedings{Bosch:iccv07
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15009 of file thesis.bib
- : @article{lbp
- :             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15034 of file thesis.bib
- : @inproceedings{Sivic08
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15041 of file thesis.bib
- : @inproceedings{Sivic05b
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15079 of file thesis.bib
- : @inproceedings{Fergus03
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15120 of file thesis.bib
- : @inproceedings{Fergus09
- :                        ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 15187 of file thesis.bib
  : @inproceedings{dai:eccv12
  :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15195 of file thesis.bib
- : @inproceedings{fakton:eccv12
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15358 of file thesis.bib
- : @inproceedings{Lefebvre:2005:sig
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15366 of file thesis.bib
- : @inproceedings{WLKT09
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15373 of file thesis.bib
- : @inproceedings{Efros:1999
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15381 of file thesis.bib
- : @inproceedings{Kwatra:2003
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15450 of file thesis.bib
- : @inproceedings{Efros:sig2001
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15457 of file thesis.bib
- : @article{Portilla:2000:IJCV
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15484 of file thesis.bib
- : @inproceedings{Ma:2011
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15491 of file thesis.bib
- : @inproceedings{dai:facade:iccv13
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15511 of file thesis.bib
- : @incollection{image:quality
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15519 of file thesis.bib
- : @inproceedings{image:memorability
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15526 of file thesis.bib
- : @article{image:interestingness
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15564 of file thesis.bib
- : @inproceedings{semantic:texture
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15590 of file thesis.bib
- : @inproceedings{He:completion:eccv12
- :                                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15612 of file thesis.bib
- : @article{material:pami:09
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15622 of file thesis.bib
- : @inproceedings{sorted:texture
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15641 of file thesis.bib
- : @article{UIUC:Texture
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15661 of file thesis.bib
- : @inproceedings{open:surface
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 15941 of file thesis.bib
- : @inproceedings{Shotton:2006:ECCV
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16039 of file thesis.bib
- : @inproceedings{phog
- :                    ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 16067 of file thesis.bib
  : @inproceedings{dai:synthesizability
@@ -1364,514 +292,55 @@ Repeated entry---line 16074 of file thesis.bib
  : @inproceedings{Chen2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 16121 of file thesis.bib
- : @article{texton:2001
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16139 of file thesis.bib
- : @article{Kwatra:tog:2005
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16166 of file thesis.bib
- : @inproceedings{Heeger:95
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16304 of file thesis.bib
- : @article {lockerman2013arxiv
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16313 of file thesis.bib
- : @article{paget:tip98
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16323 of file thesis.bib
- : @article{xia:texture
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16341 of file thesis.bib
- : @article{zhu:frame
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16351 of file thesis.bib
- : @article{Manjunath96
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16361 of file thesis.bib
- : @inproceedings{Schmid01
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16368 of file thesis.bib
- : @inproceedings{DeBonet:97
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16390 of file thesis.bib
- : @article{liu:ijcv:05
- :                     ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16434 of file thesis.bib
- : @article{Zalesny05
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16444 of file thesis.bib
- : @article{random:phase
- :                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16455 of file thesis.bib
- : @article{graphcut
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16521 of file thesis.bib
- : @inproceedings{Liu:2004:NTA
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16537 of file thesis.bib
- : @inproceedings{Cohen:2003:wang
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16544 of file thesis.bib
- : @article{Boiman:07
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16561 of file thesis.bib
- : @article{Liu:texture:96
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16571 of file thesis.bib
- : @inproceedings{texture:analysis
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16579 of file thesis.bib
- : @article{vangool83
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16601 of file thesis.bib
- : @inproceedings{NPEmbedding:iccv05
- :                                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16608 of file thesis.bib
- : @article{eigenface:pami97
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16618 of file thesis.bib
- : @inproceedings{Decaf:icml2014
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16625 of file thesis.bib
- : @inproceedings{objectbank:nips10
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16633 of file thesis.bib
- : @inproceedings{siftllc:cvpr10
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16649 of file thesis.bib
- : @inproceedings{metric:nips03
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16657 of file thesis.bib
- : @inproceedings{local_distance:iccv:07
- :                                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16676 of file thesis.bib
- : @article{max:margin:knn
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16685 of file thesis.bib
- : @inproceedings{large:scale:metric:cvpr12
- :                                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16692 of file thesis.bib
- : @inproceedings{pairwise:metric:IJCAI09
- :                                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16699 of file thesis.bib
- : @inproceedings{tagprop:iccv09
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16713 of file thesis.bib
- : @article{metric:clustering:12
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16745 of file thesis.bib
- : @article{metric:survey:12
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16766 of file thesis.bib
- : @article{fetlearn:convex:pami14
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16776 of file thesis.bib
- : @inproceedings{qin:bmvc14
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16783 of file thesis.bib
- : @inproceedings{hamming:embedding:08
- :                                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16790 of file thesis.bib
- : @inproceedings{ukbench:cvpr06
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16797 of file thesis.bib
- : @article{CUReT-61
- :                  ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16825 of file thesis.bib
- : @article{isomap:00
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16835 of file thesis.bib
- : @article{LLE:science00
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16846 of file thesis.bib
- : @incollection{MDScaling:08
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16854 of file thesis.bib
- : @inproceedings{eigenmaps:nips01
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16861 of file thesis.bib
- : @article{hlle
- :              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16882 of file thesis.bib
- : @inproceedings{NCA:2004
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16911 of file thesis.bib
- : @inproceedings{ml:face:09
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16918 of file thesis.bib
- : @article{ml:fast:search:09
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16927 of file thesis.bib
- : @inproceedings{ml:information:07
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16938 of file thesis.bib
- : @article{embedding:overview:09
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16952 of file thesis.bib
- : @inproceedings{tl:kernel:11
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16959 of file thesis.bib
- : @inproceedings{tl:attribute:09
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16967 of file thesis.bib
- : @article{Chang-CVPR-2004
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16974 of file thesis.bib
- : @inproceedings{Dong-ECCV-2014
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16980 of file thesis.bib
- : @inproceedings{Yang-ICCV-2013
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 16986 of file thesis.bib
- : @inproceedings{Timofte-ICCV-2013
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17013 of file thesis.bib
- : @article{Freeman-CGA-2002
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17034 of file thesis.bib
- : @article{Yang-TIP-2010
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17043 of file thesis.bib
- : @inproceedings{Glasner-ICCV-2009
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17086 of file thesis.bib
- : @article{Duchon-JAM-1979
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17121 of file thesis.bib
- : @inproceedings{Sun-CVPR-2008
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17130 of file thesis.bib
- : @inproceedings{Zeyde-CS-2012
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17140 of file thesis.bib
- : @article{Chang-CVPR-2004
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17167 of file thesis.bib
- : @article{Duchon-JAM-1979
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17177 of file thesis.bib
- : @book{Thevenaz-BOOK-2000
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17195 of file thesis.bib
- : @inproceedings{Sun-CVPR-2008
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17244 of file thesis.bib
- : @inproceedings{Martin-ICCV-2001
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17259 of file thesis.bib
- : @inproceedings{Tappen-WSCTV-2003
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17265 of file thesis.bib
- : @article{Tschumperle-PAMI-2005
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17284 of file thesis.bib
- : @inproceedings{Dai-CVPR-2007
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17377 of file thesis.bib
- : @article{Kim-PAMI-2010
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17386 of file thesis.bib
- : @article{Freedman-TOG-2011
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17513 of file thesis.bib
- : @incollection{deepnet:nips12
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17521 of file thesis.bib
- : @inproceedings{class:clapse:nips05
- :                                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17531 of file thesis.bib
- : @inproceedings{Dong-ECCV-2014
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17537 of file thesis.bib
- : @inproceedings{Yang-ICCV-2013
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17544 of file thesis.bib
- : @inproceedings{Timofte-ICCV-2013
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17573 of file thesis.bib
- : @article{Yang-TIP-2010
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17582 of file thesis.bib
- : @inproceedings{Glasner-ICCV-2009
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17588 of file thesis.bib
- : @article{Duchon-JAM-1979
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17623 of file thesis.bib
- : @inproceedings{Sun-CVPR-2008
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17632 of file thesis.bib
- : @inproceedings{Zeyde-CS-2012
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17660 of file thesis.bib
- : @inproceedings{Sun-CVPR-2008
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17709 of file thesis.bib
- : @inproceedings{Martin-ICCV-2001
- :                                ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17724 of file thesis.bib
- : @collection{Thevenaz-BOOK-2000
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17734 of file thesis.bib
- : @inproceedings{Tappen-WSCTV-2003
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17740 of file thesis.bib
- : @article{Tschumperle-PAMI-2005
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17753 of file thesis.bib
- : @inproceedings{Dai-CVPR-2007
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17860 of file thesis.bib
- : @article{Kim-PAMI-2010
- :                       ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17873 of file thesis.bib
- : @article{Freedman-TOG-2011
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17984 of file thesis.bib
- : @article{tl:survey
- :                   ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 17994 of file thesis.bib
- : @inproceedings{icml10:large:graph:ssl
- :                                      ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 18035 of file thesis.bib
  : @inproceedings{deep:bmvc14
  :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18043 of file thesis.bib
- : @article{MatConvNet
- :                    ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18051 of file thesis.bib
- : @inproceedings{JOR:EG15
- :                        ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18060 of file thesis.bib
- : @article{Freeman-CGA-2002
- :                          ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18073 of file thesis.bib
- : @inproceedings{DASA:iccv13
- :                           ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18080 of file thesis.bib
- : @inproceedings{DA:iccv11
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18088 of file thesis.bib
- : @inproceedings{mlrank:10
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18095 of file thesis.bib
- : @inproceedings{IQ:cvpr11
- :                         ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 18120 of file thesis.bib
- : @incollection{isola2014crisp
- :                             ,
 I'm skipping whatever remains of this entry
 I was expecting an "="---line 18168 of file thesis.bib
  : 
  : @inproceedings{viola2001rapid,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "lbp:2002"
-Name 2 in "Dai, Jifeng and He, Kaiming, and Sun, Jian" has a comma at the end for entry BoxSup
-while executing---line 1415 of file apa-good.bst
-Warning--to sort, need author or key in smile
-Name 2 in "Dengxin Dai and Radu Timofte, and Luc {Van Gool}" has a comma at the end for entry JOR:EG15
-while executing---line 1415 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1415 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1415 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1415 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1415 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1415 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1415 of file apa-good.bst
-Warning--missing publisher in visual:human:loop
-Warning--empty journal in rcnn_crf
-Warning--missing publisher in ALdataset
-Warning--missing publisher in MDScaling:08
-Warning--missing publisher in deep:cascade
-Name 2 in "Dengxin Dai and Radu Timofte, and Luc {Van Gool}" has a comma at the end for entry JOR:EG15
-while executing---line 1488 of file apa-good.bst
-Name 2 in "Dengxin Dai and Radu Timofte, and Luc {Van Gool}" has a comma at the end for entry JOR:EG15
-while executing---line 1488 of file apa-good.bst
-Name 2 in "Dai, Jifeng and He, Kaiming, and Sun, Jian" has a comma at the end for entry BoxSup
-while executing---line 1488 of file apa-good.bst
-Name 2 in "Dai, Jifeng and He, Kaiming, and Sun, Jian" has a comma at the end for entry BoxSup
-while executing---line 1488 of file apa-good.bst
-Warning--empty journal in Dalal_HoG
-Warning--empty booktitle in scalable:annotation
-Warning--empty booktitle in Frey_AffinityPropagation
-Warning--missing publisher in eccv10:ssl
-Warning--empty booktitle in Fergus03
-Warning--missing publisher in superpixel:eccv14
-Warning--empty booktitle in Grauman06
 Warning--missing publisher in confidence:of:08
-Warning--missing publisher in fully-crf
-Warning--missing publisher in deepnet:nips12
-Warning--empty booktitle in event8
-Warning--there's a number but no volume in lockerman2013arxiv
-Warning--missing publisher in image:quality
-Warning--empty journal in malisiewicz2007improving
-Warning--missing publisher in ecml14:ssl
-Warning--missing publisher in augmented_attribute:eccv12
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1488 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1488 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1488 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1488 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1488 of file apa-good.bst
-Too many commas in name 1 of "Shotton, J.; Johnson, M.; Cipolla, R.; R\&D Center, Toshiba Corp., Kawasaki" for entry texton-forests
-while executing---line 1488 of file apa-good.bst
-Warning--empty booktitle in texton-forests
-Warning--empty booktitle in Sivic08
-Warning--missing publisher in AFrameSel
-Warning--empty booktitle in Sun_2010
-Warning--missing publisher in building-25
-Warning--missing publisher in selfsimaccv
-Warning--missing publisher in SR:benchmark
-Warning--empty journal in yupiecewise
-Warning--missing publisher in Zhu:ISL:2009
-You've used 365 entries,
+You've used 27 entries,
             2823 wiz_defined-function locations,
-            2165 strings with 56640 characters,
-and the built_in function-call counts, 231195 in all, are:
-= -- 18088
-> -- 10991
-< -- 195
-+ -- 4158
-- -- 3717
-* -- 17812
-:= -- 35785
-add.period$ -- 1100
-call.type$ -- 365
-change.case$ -- 3549
-chr.to.int$ -- 329
-cite$ -- 398
-duplicate$ -- 16797
-empty$ -- 17057
-format.name$ -- 4973
-if$ -- 45643
-int.to.chr$ -- 37
+            710 strings with 9049 characters,
+and the built_in function-call counts, 17346 in all, are:
+= -- 1306
+> -- 929
+< -- 8
++ -- 352
+- -- 318
+* -- 1335
+:= -- 2742
+add.period$ -- 81
+call.type$ -- 27
+change.case$ -- 287
+chr.to.int$ -- 26
+cite$ -- 28
+duplicate$ -- 1245
+empty$ -- 1242
+format.name$ -- 405
+if$ -- 3396
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 3333
-newline$ -- 1824
-num.names$ -- 1457
-pop$ -- 7874
+missing$ -- 248
+newline$ -- 142
+num.names$ -- 108
+pop$ -- 633
 preamble$ -- 1
-purify$ -- 2699
+purify$ -- 214
 quote$ -- 0
-skip$ -- 6588
+skip$ -- 492
 stack$ -- 0
-substring$ -- 8345
-swap$ -- 8736
-text.length$ -- 85
+substring$ -- 484
+swap$ -- 616
+text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 3273
-warning$ -- 31
-while$ -- 1403
+type$ -- 243
+warning$ -- 1
+while$ -- 93
 width$ -- 0
-write$ -- 4551
-(There were 452 error messages)
+write$ -- 336
+(There were 73 error messages)
