@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 APR 2016 01:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  25 APR 2016 02:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1336,25 +1336,33 @@ LaTeX Warning: Reference `ch:draw-and-tell' on page 7 undefined on input line 2
 
 [7]
 
-LaTeX Warning: Reference `ch:draw-and-tell' on page 8 undefined on input line 2
-9.
+LaTeX Warning: Reference `ch:draw-and-tell' on page 8 undefined on input line 3
+2.
 
 
-LaTeX Warning: Reference `ch:ensemble' on page 8 undefined on input line 31.
+LaTeX Warning: Reference `ch:related' on page 8 undefined on input line 35.
+
+
+LaTeX Warning: Reference `ch:ensemble' on page 8 undefined on input line 38.
+
+[8]
+
+LaTeX Warning: Reference `ch:mi' on page 9 undefined on input line 41.
 
 ) (./dissertation.bbl (./dissertation.brf)
 \tf@brf=\write7
 \openout7 = `dissertation.brf'.
 
- [8] [9
+ [9] [10
 
 ]
 Missing character: There is no Ã in font ptmr7t!
 Missing character: There is no ¡ in font ptmr7t!
-) [10]
+ [11]) [12]
 \openout2 = `publications.aux'.
 
- (./publications.tex
+
+(./publications.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
 
@@ -1377,7 +1385,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--56
 
  []
 
-[11
+[13
 
 
 ]
@@ -1385,10 +1393,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--61
 
  []
 
-) [12]
+) [14]
 \openout2 = `cv.aux'.
 
- (./cv.tex) [13
+ (./cv.tex) [15
 
 
 
@@ -1409,17 +1417,17 @@ Package rerunfilecheck Warning: File `dissertation.brf' has changed.
 
 Package rerunfilecheck Info: Checksums for `dissertation.brf':
 (rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  10EB0D95336F12583092C0EB52113329;1372.
+(rerunfilecheck)             After:  C1403DC6071D7938E6E736C666C91E5A;1643.
 
 LaTeX Warning: There were undefined references.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 30569 strings out of 493089
- 686167 string characters out of 6134842
- 888828 words of memory out of 5000000
- 33307 multiletter control sequences out of 15000+600000
+ 30593 strings out of 493089
+ 686568 string characters out of 6134842
+ 889828 words of memory out of 5000000
+ 33326 multiletter control sequences out of 15000+600000
  35606 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,12n,84p,1022b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1434,10 +1442,10 @@ xmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dis
 t/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on dissertation.pdf (19 pages, 221456 bytes).
+Output written on dissertation.pdf (21 pages, 234243 bytes).
 PDF statistics:
- 298 PDF objects out of 1000 (max. 8388607)
- 264 compressed objects within 3 object streams
- 75 named destinations out of 1000 (max. 500000)
+ 325 PDF objects out of 1000 (max. 8388607)
+ 289 compressed objects within 3 object streams
+ 80 named destinations out of 1000 (max. 500000)
  69 words of extra memory for PDF output out of 10000 (max. 10000000)
 

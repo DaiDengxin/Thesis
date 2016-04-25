@@ -8,339 +8,360 @@ The style file: apa-good.bst
 A level-1 auxiliary file: publications.aux
 A level-1 auxiliary file: cv.aux
 Database file #1: thesis.bib
-Repeated entry---line 5965 of file thesis.bib
+Repeated entry---line 5975 of file thesis.bib
  : @inproceedings{deep:bmvc14
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6105 of file thesis.bib
+Repeated entry---line 6115 of file thesis.bib
  : @inproceedings{dai:eccv12
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6147 of file thesis.bib
+Repeated entry---line 6157 of file thesis.bib
  : @inproceedings{dai:synthesizability
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6299 of file thesis.bib
+Repeated entry---line 6309 of file thesis.bib
  : @inproceedings{imagenet
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 6566 of file thesis.bib
+Repeated entry---line 6576 of file thesis.bib
  : @article{pascal:2011
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8041 of file thesis.bib
+Repeated entry---line 7347 of file thesis.bib
+ : @inproceedings{DistillingCNN
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 7709 of file thesis.bib
+ : @incollection{deepnet:nips12
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 8051 of file thesis.bib
  : @inproceedings{coco:eccv
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 8139 of file thesis.bib
+Repeated entry---line 8149 of file thesis.bib
  : @inproceedings{Long_2015_CVPR
  :                              ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9152 of file thesis.bib
+Repeated entry---line 9162 of file thesis.bib
  : @inproceedings{vgg16
  :                     ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 9638 of file thesis.bib
+Repeated entry---line 9648 of file thesis.bib
  : @inproceedings{show:tell:caption
  :                                 ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10297 of file thesis.bib
+I was expecting a `,' or a `}'---line 10307 of file thesis.bib
  : @inproceedings{Vicente:European 
  :                                 Conference on Computer Vision10,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10364 of file thesis.bib
+I was expecting a `,' or a `}'---line 10374 of file thesis.bib
  : @inproceedings{shotton:European 
  :                                 Conference on Computer Vision06,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10394 of file thesis.bib
+I was expecting a `,' or a `}'---line 10404 of file thesis.bib
  : @article{gould:International 
  :                              Journal of Computer Vision10,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10460 of file thesis.bib
+I was expecting a `,' or a `}'---line 10470 of file thesis.bib
  :         booktitle = IEEE 
  :                          Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10495 of file thesis.bib
+I was expecting a `,' or a `}'---line 10505 of file thesis.bib
  :   booktitle = International 
  :                             Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10528 of file thesis.bib
+I was expecting a `,' or a `}'---line 10538 of file thesis.bib
  :   booktitle = International 
  :                             Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10571 of file thesis.bib
+I was expecting a `,' or a `}'---line 10581 of file thesis.bib
  : journal = IEEE 
  :                Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10583 of file thesis.bib
+I was expecting a `,' or a `}'---line 10593 of file thesis.bib
  :   booktitle =  IEEE 
  :                     Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10651 of file thesis.bib
+I was expecting a `,' or a `}'---line 10661 of file thesis.bib
  :     booktitle =  IEEE 
  :                       Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10702 of file thesis.bib
+I was expecting a `,' or a `}'---line 10712 of file thesis.bib
  :     booktitle = International 
  :                               Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10710 of file thesis.bib
+I was expecting a `,' or a `}'---line 10720 of file thesis.bib
  :     booktitle = IEEE 
  :                      Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10717 of file thesis.bib
+I was expecting a `,' or a `}'---line 10727 of file thesis.bib
  :     booktitle = IEEE 
  :                      Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10791 of file thesis.bib
+I was expecting a `,' or a `}'---line 10801 of file thesis.bib
  :         booktitle =  IEEE 
  :                           Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10808 of file thesis.bib
+I was expecting a `,' or a `}'---line 10818 of file thesis.bib
  :   booktitle=  IEEE 
  :                    Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10812 of file thesis.bib
+I was expecting a `,' or a `}'---line 10822 of file thesis.bib
  : @inproceedings{feifei-IEEE 
  :                            Conference on Computer Vision and Pattern Recognition05,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10822 of file thesis.bib
+I was expecting a `,' or a `}'---line 10832 of file thesis.bib
  :   booktitle= International 
  :                            Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10829 of file thesis.bib
+I was expecting a `,' or a `}'---line 10839 of file thesis.bib
  :   booktitle=  IEEE 
  :                    Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10835 of file thesis.bib
+I was expecting a `,' or a `}'---line 10845 of file thesis.bib
  :   booktitle=  IEEE 
  :                    Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10929 of file thesis.bib
+I was expecting a `,' or a `}'---line 10939 of file thesis.bib
  :  booktitle =  IEEE 
  :                    Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10935 of file thesis.bib
+I was expecting a `,' or a `}'---line 10945 of file thesis.bib
  :  booktitle =  IEEE 
  :                    Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10942 of file thesis.bib
+I was expecting a `,' or a `}'---line 10952 of file thesis.bib
  :  booktitle =  IEEE 
  :                    Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10959 of file thesis.bib
+I was expecting a `,' or a `}'---line 10969 of file thesis.bib
  :  booktitle = International 
  :                            Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10967 of file thesis.bib
+I was expecting a `,' or a `}'---line 10977 of file thesis.bib
  :     booktitle = International 
  :                               Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 10972 of file thesis.bib
+I was expecting a `,' or a `}'---line 10982 of file thesis.bib
  : @inproceedings{SClustering_limitation_Advances 
  :                                                in Neural Information Processing Systems07,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11050 of file thesis.bib
+I was expecting a `,' or a `}'---line 11060 of file thesis.bib
  : @inproceedings{Gomes:Advances 
  :                               in Neural Information Processing Systems10,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11121 of file thesis.bib
+I was expecting a `,' or a `}'---line 11131 of file thesis.bib
  : booktitle = IEEE 
  :                  Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11129 of file thesis.bib
+I was expecting a `,' or a `}'---line 11139 of file thesis.bib
  :   booktitle    = IEEE 
  :                       Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11144 of file thesis.bib
+I was expecting a `,' or a `}'---line 11154 of file thesis.bib
  :    booktitle = IEEE 
  :                     Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11247 of file thesis.bib
+I was expecting a `,' or a `}'---line 11257 of file thesis.bib
  :  booktitle=International 
  :                          Conference on Machine Learning,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11266 of file thesis.bib
+I was expecting a `,' or a `}'---line 11276 of file thesis.bib
  :   booktitle = International 
  :                             Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11273 of file thesis.bib
+I was expecting a `,' or a `}'---line 11283 of file thesis.bib
  :   journal = IEEE 
  :                  Transactions on Pattern Analysis and Machine Intelligence,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11286 of file thesis.bib
+I was expecting a `,' or a `}'---line 11296 of file thesis.bib
  :   booktitle = European 
  :                        Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11302 of file thesis.bib
+I was expecting a `,' or a `}'---line 11312 of file thesis.bib
  :   journal = International 
  :                           Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11331 of file thesis.bib
+I was expecting a `,' or a `}'---line 11341 of file thesis.bib
  : @inproceedings{deselaers10European 
  :                                    Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11338 of file thesis.bib
+I was expecting a `,' or a `}'---line 11348 of file thesis.bib
  : @inproceedings{blaschko10Advances 
  :                                   in Neural Information Processing Systems,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11347 of file thesis.bib
+I was expecting a `,' or a `}'---line 11357 of file thesis.bib
  : @inproceedings{Lee11IEEE 
  :                          Conference on Computer Vision and Pattern Recognition,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11378 of file thesis.bib
+I was expecting a `,' or a `}'---line 11388 of file thesis.bib
  : @inproceedings{objectbank:European 
  :                                    Conference on Computer Vision10,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11387 of file thesis.bib
+I was expecting a `,' or a `}'---line 11397 of file thesis.bib
  : @inproceedings{Singh:European 
  :                               Conference on Computer Vision12,
 I'm skipping whatever remains of this entry
-Repeated entry---line 11413 of file thesis.bib
+Repeated entry---line 11423 of file thesis.bib
  : @inproceedings{fastsvm+2016
  :                            ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11429 of file thesis.bib
+I was expecting a `,' or a `}'---line 11439 of file thesis.bib
  : @inproceedings{xu:Advances 
  :                            in Neural Information Processing Systems05,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11436 of file thesis.bib
+I was expecting a `,' or a `}'---line 11446 of file thesis.bib
  : @incollection{Gomes:Advances 
  :                              in Neural Information Processing Systems11,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11645 of file thesis.bib
+I was expecting a `,' or a `}'---line 11655 of file thesis.bib
  : @inproceedings{dai:ensemble:European 
  :                                      Conference on Computer Vision12b,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11653 of file thesis.bib
+I was expecting a `,' or a `}'---line 11663 of file thesis.bib
  : @inproceedings{Singh:European 
  :                               Conference on Computer Vision12,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11670 of file thesis.bib
+I was expecting a `,' or a `}'---line 11680 of file thesis.bib
  : @article{Portilla:2000:International 
  :                                      Journal of Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11690 of file thesis.bib
+I was expecting a `,' or a `}'---line 11700 of file thesis.bib
  : @inproceedings{dai:European 
  :                             Conference on Computer Vision12a,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11774 of file thesis.bib
+I was expecting a `,' or a `}'---line 11784 of file thesis.bib
  : @inproceedings{Berg:parsing:International 
  :                                           Conference on Computer Vision07,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11809 of file thesis.bib
+I was expecting a `,' or a `}'---line 11819 of file thesis.bib
  : @article{Coughlan:Advances 
  :                            in Neural Information Processing Systems:2001,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11832 of file thesis.bib
+I was expecting a `,' or a `}'---line 11842 of file thesis.bib
  : @article{Gould:2008:International 
  :                                   Journal of Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11883 of file thesis.bib
+I was expecting a `,' or a `}'---line 11893 of file thesis.bib
  : @inproceedings{Li:International 
  :                                 Conference on Computer Vision:2011,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11953 of file thesis.bib
+I was expecting a `,' or a `}'---line 11963 of file thesis.bib
  : @article{Shi:IEEE 
  :                   Transactions on Pattern Analysis and Machine Intelligence:2000,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 11969 of file thesis.bib
+I was expecting a `,' or a `}'---line 11979 of file thesis.bib
  : @inproceedings{Shotton:2006:European 
  :                                      Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 12007 of file thesis.bib
+I was expecting a `,' or a `}'---line 12017 of file thesis.bib
  : @inproceedings{Lazebnik:2010:European 
  :                                       Conference on Computer Vision,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 12082 of file thesis.bib
+I was expecting a `,' or a `}'---line 12092 of file thesis.bib
  : @article{Dick:Modeling:International 
  :                                      Journal of Computer Vision04,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 12093 of file thesis.bib
+I was expecting a `,' or a `}'---line 12103 of file thesis.bib
  : @article{Felzenszwalb:Segmentation:International 
  :                                                  Journal of Computer Vision04,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 12124 of file thesis.bib
+I was expecting a `,' or a `}'---line 12134 of file thesis.bib
  : @article{Toyoda:Random:IEEE 
  :                             Transactions on Pattern Analysis and Machine Intelligence08,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 12141 of file thesis.bib
+I was expecting a `,' or a `}'---line 12151 of file thesis.bib
  : @inproceedings{Gould:decomposing:International 
  :                                                Conference on Computer Vision09,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 12302 of file thesis.bib
+I was expecting a `,' or a `}'---line 12312 of file thesis.bib
  : @inproceedings{CHO_IEEE 
  :                         Conference on Computer Vision and Pattern Recognition2008,
 I'm skipping whatever remains of this entry
-Repeated entry---line 12975 of file thesis.bib
+Repeated entry---line 12985 of file thesis.bib
  : @inproceedings{deep:bmvc14
  :                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 13684 of file thesis.bib
+Repeated entry---line 13678 of file thesis.bib
+ : @inproceedings{DistillingCNN
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 13694 of file thesis.bib
  : @inproceedings{SR4VTs:wacv16
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 15187 of file thesis.bib
+Repeated entry---line 13702 of file thesis.bib
+ : @inproceedings{deepnet:nips12
+ :                              ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 15197 of file thesis.bib
  : @inproceedings{dai:eccv12
  :                          ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 16067 of file thesis.bib
+Repeated entry---line 16077 of file thesis.bib
  : @inproceedings{dai:synthesizability
  :                                    ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 16074 of file thesis.bib
+Repeated entry---line 16084 of file thesis.bib
  : @inproceedings{Chen2016
  :                        ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 18035 of file thesis.bib
+Repeated entry---line 17523 of file thesis.bib
+ : @incollection{deepnet:nips12
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 18045 of file thesis.bib
  : @inproceedings{deep:bmvc14
  :                           ,
 I'm skipping whatever remains of this entry
-I was expecting an "="---line 18168 of file thesis.bib
+I was expecting an "="---line 18178 of file thesis.bib
  : 
  : @inproceedings{viola2001rapid,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--missing publisher in confidence:of:08
-You've used 27 entries,
+Warning--missing publisher in deepnet:nips12
+You've used 30 entries,
             2823 wiz_defined-function locations,
-            710 strings with 9049 characters,
-and the built_in function-call counts, 17346 in all, are:
-= -- 1306
-> -- 929
-< -- 8
-+ -- 352
-- -- 318
-* -- 1335
-:= -- 2742
-add.period$ -- 81
-call.type$ -- 27
-change.case$ -- 287
-chr.to.int$ -- 26
-cite$ -- 28
-duplicate$ -- 1245
-empty$ -- 1242
-format.name$ -- 405
-if$ -- 3396
-int.to.chr$ -- 2
+            721 strings with 9533 characters,
+and the built_in function-call counts, 19463 in all, are:
+= -- 1458
+> -- 1058
+< -- 9
++ -- 401
+- -- 363
+* -- 1510
+:= -- 3076
+add.period$ -- 90
+call.type$ -- 30
+change.case$ -- 323
+chr.to.int$ -- 28
+cite$ -- 32
+duplicate$ -- 1393
+empty$ -- 1387
+format.name$ -- 459
+if$ -- 3805
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 248
-newline$ -- 142
-num.names$ -- 108
-pop$ -- 633
+missing$ -- 279
+newline$ -- 157
+num.names$ -- 120
+pop$ -- 711
 preamble$ -- 1
-purify$ -- 214
+purify$ -- 241
 quote$ -- 0
-skip$ -- 492
+skip$ -- 544
 stack$ -- 0
-substring$ -- 484
-swap$ -- 616
-text.length$ -- 5
+substring$ -- 533
+swap$ -- 695
+text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 243
-warning$ -- 1
-while$ -- 93
+type$ -- 270
+warning$ -- 2
+while$ -- 105
 width$ -- 0
-write$ -- 336
-(There were 73 error messages)
+write$ -- 373
+(There were 78 error messages)

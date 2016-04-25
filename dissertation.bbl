@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{30}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname url\endcsname\relax
   \def\url#1{{\tt #1}}\fi
@@ -96,6 +96,11 @@ He, K., Zhang, X., Ren, S., \& Sun, J. (2015).
 \newblock Deep residual learning for image recognition.
 \newblock {\em arXiv preprint arXiv:1512.03385\/}.
 
+\bibitem[{Hinton et~al.(2014)Hinton, Vinyals, \& Dean}]{DistillingCNN}
+Hinton, G., Vinyals, O., \& Dean, J. (2014).
+\newblock Distilling the knowledge in a neural network.
+\newblock In {\em Deep Learning and Representation Learning Workshop, NIPS\/}.
+
 \bibitem[{Jain et~al.(2015)Jain, van Gemert, \& Snoek}]{15000object}
 Jain, M., van Gemert, J.~C., \& Snoek, C.~G. (2015).
 \newblock What do 15,000 object categories tell us about classifying and
@@ -123,11 +128,18 @@ Kondermann, C., Mester, R., \& Garbe, C. (2008).
 \newblock A statistical confidence measure for optical flows.
 \newblock In {\em ECCV\/}.
 
-\bibitem[{Krizhevsky et~al.(2012)Krizhevsky, Sutskever, \& Hinton}]{nips12:cnn}
-Krizhevsky, A., Sutskever, I., \& Hinton, G.~E. (2012).
+\bibitem[{Krizhevsky et~al.(2012{\natexlab{a}})Krizhevsky, Sutskever, \&
+  Hinton}]{nips12:cnn}
+Krizhevsky, A., Sutskever, I., \& Hinton, G.~E. (2012{\natexlab{a}}).
 \newblock Imagenet classification with deep convolutional neural networks.
 \newblock In {\em Advances in Neural Information Processing Systems\/}, (pp.
   1097--1105).
+
+\bibitem[{Krizhevsky et~al.(2012{\natexlab{b}})Krizhevsky, Sutskever, \&
+  Hinton}]{deepnet:nips12}
+Krizhevsky, A., Sutskever, I., \& Hinton, G.~E. (2012{\natexlab{b}}).
+\newblock Imagenet classification with deep convolutional neural networks.
+\newblock In {\em NIPS\/}.
 
 \bibitem[{Li et~al.(2016)Li, Dai, Tan, Xu, \& {Van Gool}}]{fastsvm+2016}
 Li, W., Dai, D., Tan, M., Xu, D., \& {Van Gool}, L. (2016).
@@ -155,6 +167,14 @@ Simonyan, K., \& Zisserman, A. (2014).
 Simonyan, K., \& Zisserman, A. (2015).
 \newblock Very deep convolutional networks for large-scale image recognition.
 \newblock In {\em ICLR\/}.
+
+\bibitem[{Szegedy et~al.(2015)Szegedy, Liu, Jia, Sermanet, Reed, Anguelov,
+  Erhan, Vanhoucke, \& Rabinovich}]{googlenet}
+Szegedy, C., Liu, W., Jia, Y., Sermanet, P., Reed, S., Anguelov, D., Erhan, D.,
+  Vanhoucke, V., \& Rabinovich, A. (2015).
+\newblock Going deeper with convolutions.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition\/}, (pp. 1--9).
 
 \bibitem[{Vinyals et~al.(2015)Vinyals, Toshev, Bengio, \&
   Erhan}]{show:tell:caption}

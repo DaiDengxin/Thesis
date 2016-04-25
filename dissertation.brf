@@ -26,4 +26,10 @@
 \backcite {Long_2015_CVPR}{{6}{2.1}{section.2.1}}
 \backcite {two:stream:cnn}{{8}{2.2}{section.2.2}}
 \backcite {cnnfet14}{{8}{2.2}{section.2.2}}
-\backcite {deep:bmvc14}{{8}{2.2}{section.2.2}}
+\backcite {cnnfet14}{{8}{2.2}{section.2.2}}
+\backcite {deep:bmvc14}{{9}{2.2}{section.2.2}}
+\backcite {deepnet:nips12}{{9}{2.2}{section.2.2}}
+\backcite {vgg16}{{9}{2.2}{section.2.2}}
+\backcite {googlenet}{{9}{2.2}{section.2.2}}
+\backcite {ResNet}{{9}{2.2}{section.2.2}}
+\backcite {DistillingCNN}{{9}{2.2}{section.2.2}}
