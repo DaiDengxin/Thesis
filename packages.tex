@@ -102,6 +102,17 @@
 %%\usepackage{accents}                                  %% in the basic Diss directory
 \usepackage{sidecap}   %% figure captions flanking the image
 
+
+
+ \usepackage[pagebackref, colorlinks]{hyperref}
+  \hypersetup{
+    urlcolor = blue,
+    linkcolor = blue,
+    citecolor = blue,
+    pdfborder ={0 0 0}  }
+
+\renewcommand{\backrefxxx}[3]{(page \hyperlink{page.#1}{#1})}
+   
 %% --------------------------------------------------------------------
 %% Font encoding
 %% --------------------------------------------------------------------
@@ -139,18 +150,7 @@
 % \usepackage[pdftex,screen,sidebar]{pdfscreen}   %% for screen display
   \DeclareGraphicsExtensions{.pdf, .png}
 
-%% hyperref should appear as last package
- \usepackage[pdftex,colorlinks,hyperindex,backref]{hyperref}
-%% define the setup
-  \hypersetup{
-    urlcolor = blue,
-    linkcolor = blue,
-    citecolor = blue,
-    % urlcolor = black,
-    % linkcolor = black,
-    % citecolor = black,
-    pdfborder ={0 0 0}
-  }
+
 % \else
 %   \usepackage[dvips]{graphicx}
 %   \DeclareGraphicsExtensions{.eps}
@@ -197,6 +197,14 @@
 \usepackage{etoolbox}
 \usepackage{bm}
 
+%\usepackage{cite}
+%\usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+
+%% hyperref should appear as last package
+%\usepackage[backref=true]{biblatex}
+
+  
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
 \renewcommand{\algorithmicensure}{\textbf{Output:}}
 

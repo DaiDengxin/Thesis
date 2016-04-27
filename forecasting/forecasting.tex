@@ -404,7 +404,7 @@ considers one grid, and produces a feature vector of dimension $20$.
 synthesize than actual textures. We train a classifier to distinguish
 textures from objects and scenes. The UIUC texture
 dataset~\citep{UIUC:Texture} delivered the positive samples (textures),
-and the 15-Scene dataset~\citep{lazebnik:cvpr06} the negative ones
+and the 15-Scene dataset~\citep{scene-15} the negative ones
 (objects/scenes). Linear SVMs were used as the classifier with
 GIST~\citep{gist} as the feature. The classification score is taken as
 `textureness'.
@@ -628,7 +628,7 @@ use this to aid synthesis. To those ends, we train (1) a regression
 model on the synthesizability scores ($1$, $0.5$ and $0$) to predict
 the synthesizability of a given image, and (2) an additional
 classifier to suggest the `best' ETS method to synthesize it.  Random
-Forest~\citep{randomforest} was used for both training tasks due to its
+Forest~\citep{Breiman:RF:2001} was used for both training tasks due to its
 fast speed. $30$ trees were used for the forest.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

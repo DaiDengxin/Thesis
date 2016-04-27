@@ -1,12 +1,12 @@
 \chapter{Efficient Visual Annotation with Speech Recognition}
 \label{ch:draw-and-tell}
 
-As the proverb goes --- ``sometimes, it is not who has the best algorithm wins, but who has the most data.". The importance of annotated training data has been proven many times in the history of computer vision. Taken object recognition as an example, the performance of algorithms leaped every time a larger dataset was made available, from Caltech 101~\citep{FeiFei2004}, to Pascal VOC~\citep{pascal:2011}, to ImageNet~\citep{imagenet} and MSCOCO~\citep{coco:eccv}.  The tread may continue, but it is getting more difficulty as  annotations to an even larger scale is hardly affordable.  Developing efficient annotation approaches is one of the most effective solution to reduce the annotation cost.   In this chapter, we exploit the potential of speech recognition for visual object recognition, and propose a novel annotation approach which is 10x faster than standard ones for the task of semantic image segmentation. 
+``Sometimes, it is not who has the best algorithm wins, but who has the most data.". The importance of annotated training data has been proven many times in the history of computer vision. Taken object recognition as an example, the performance of algorithms leaped every time when a larger dataset was made available, from Caltech 101~\citep{FeiFei2004}, to Pascal VOC~\citep{pascal:2011}, to ImageNet~\citep{imagenet} and MSCOCO~\citep{coco:eccv}.  The tread may continue, but it is getting more difficulty as  annotations to an even larger scale are hardly affordable.  Developing efficient annotation approaches is one of the most effective solution to reduce the annotation cost.   In this chapter, we exploit the potential of speech recognition for visual object recognition, and propose a novel annotation approach which is 10x faster than standard ones for the task of semantic image segmentation. 
 
 \section{Introduction}
 Tremendous progress has been made during the last few years in 
 object detection and semantic image segmentation due to (1) the success of
-training deep convolutional neural networks (CNNs)~\citep{deepnet:nips12, Decaf:icml2014, vgg16} on large classification datasets and (2) the
+training deep convolutional neural networks (CNNs)~\citep{deepnet:nips12, decaf, vgg16} on large classification datasets and (2) the
 flexibility of transferring CNN models pre-trained for image classification to the
 task of object detection and semantic segmentation where not as much training data is
 available~\citep{rcnn, Long_2015_CVPR, rcnn_crf}. Model transfer,
@@ -770,13 +770,13 @@ scribbles. We leave this as future work.
 %\vspace{-15mm}
 $\begin{tabular}{cccccc}
 \hspace{-1mm}
-\includegraphics[width=0.36\linewidth]{./draw_and_tell/fig3/006488-scribbles1.jpg} &
+\includegraphics[width=0.3\linewidth]{./draw_and_tell/fig3/006488-scribbles1.jpg} &
 \hspace{-2mm} 
-\includegraphics[width=0.36\linewidth]{./draw_and_tell/fig3/006488-geodesic.jpg} \\
+\includegraphics[width=0.3\linewidth]{./draw_and_tell/fig3/006488-geodesic.jpg} \\
 \hspace{-1mm}
-\footnotesize{\text{(a) existing scribbles}} & 
+{\text{(a) existing scribbles}} & 
 \hspace{-2mm} 
-\footnotesize{\text{(b) probability map}} \\ 
+{\text{(b) probability map}} \\ 
 \end{tabular}$  %\vspace{-2mm}
 \caption{
 Probability map for sampling the next new scribble
@@ -934,7 +934,7 @@ different rounds are different due to the randomness in the
 sampling. This property has been widely explored in the filed of
 ensemble learning. We use $T=10$ for all the following experiments.
 
-\begin{wrapfigure}{r}{0.5\textwidth}  
+\begin{wrapfigure}{r}{0.45\textwidth}  
 \vspace{-4mm}
 \includegraphics[width=0.95\linewidth,
 height=0.65\linewidth]{./draw_and_tell/fig7/scribble_aug_curve.pdf}

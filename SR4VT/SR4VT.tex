@@ -1,7 +1,7 @@
 \chapter{Performance Evaluation: Helpful for Other Tasks?}
 \label{ch:SR4VT}
 
-As stated in the introduction, verifying whether the solution to one vision task is good enough to be generally useful for other vision tasks allows for better synergy to solve the problem of computer vision.   In this chapter, we evaluate the usefulness of image super-resolution for other vision tasks, when the state-of-the-art super-resolution methods are used. 
+As stated in the introduction, verifying whether the solution to one vision task is good enough to be generally useful for other vision tasks allows for better synergy of all sub-fields.   In this chapter, we evaluate the usefulness of image super-resolution for other vision tasks, when the state-of-the-art super-resolution methods are used. 
 
 \section{Introduction}
 
@@ -113,7 +113,7 @@ in the former stream draw on the `self-similarity' of images across scales,
 and have obtained great success. However, they are normally relatively slow because on-line learning is needed for the dictionary. 
 Methods in the latter group rely on extra training data, unleashing the learning capacity
 of many learning methods. The KNN method~\citep{Freeman-CGA-2002}
-and its variants~\citep{Chang-CVPR-2004, Yang-ICCV-2013, JOR:EG15, dai:MI}
+and its variants~\citep{Chang-CVPR-2004, Yang-ICCV-2013, JOR:EG15, metric:imitation}
 have gained great attention. More sophisticated learning methods such as Sparse Coding~\citep{Yang-TIP-2010,  Kim-PAMI-2010, Timofte-ICCV-2013, Timofte-ACCV-2014,  deeply:improved},
 SVM~\citep{ISR:SVM}, Random Forests~\citep{SR_forest, NBSRF, cSRF}, and Deep Neural Network~\citep{Dong-ECCV-2014, deep:cascade, deeply:improved} have been applied widely to the task as well.
 One exceptional work is ~\citep{ISR:internet}, using scene matching with internet images for image super-resolution.
@@ -606,7 +606,7 @@ The best performance is shown in \textbf{bold} and the second best is \underline
 In this section, we consider the task of semantic image segmentation, which aims to assign a semantic label to
 each pixel of the image, such as \emph{tree}, \emph{road}, and
 \emph{car}. It is a very popular high-level vision task with a large
-number of methods proposed~\citep{texton-forests, superpixel:eccv14, fully_cnn}.  We follow
+number of methods proposed~\citep{texton-forests, superpixel:eccv14, Long_2015_CVPR}.  We follow
 the footsteps of most previous works on semantic image segmentation and choose the
 standard MSRC-21~\citep{Shotton:2006:ECCV} dataset for the
 evaluation. 
@@ -867,8 +867,8 @@ data.
 
 
 In this section, we evaluated six ISR methods on the task of scene recognition. 
-We tested the methods on the Scene-15 dataset~\citep{lazebnik:cvpr06}, which has been widely 
-used for image classification and clustering~\citep{lazebnik:cvpr06, dai:ensemble:eccv12, dai:EnPro:iccv13}. 
+We tested the methods on the Scene-15 dataset~\citep{scene-15}, which has been widely 
+used for image classification and clustering~\citep{scene-15, dai:eccv12b, dai:iccv13b}. 
 Scene-15 contains 15
 scene categories in both indoor and outdoor environments. Each category has 200
 to 400 images, and they are of size $300 \times 250$ pixels on average.
@@ -892,7 +892,7 @@ The four perceptual criteria also correlate
 generally well with usefulness of ISR methods for this task, 
 which is in line with the conclusions drawn for previous vision tasks.   
 Images at multiple scales have recently been employed for training deep 
-neural networks~\citep{cnn:multi-scale, fully_cnn},  and 
+neural networks~\citep{cnn:multi-scale, Long_2015_CVPR},  and 
 they show improvement over a single scale.  It is interesting to 
 see how ISR methods help to generate multiple scales of the input images to train 
 better neural networks. We leave this as our future work. 

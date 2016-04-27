@@ -150,9 +150,9 @@ MI was tested on instance-based object retrieval using the INRIA
 Holiday dataset~\citep{hamming:embedding:08} and the UKbench
 dataset~\citep{ukbench:cvpr06}, and on category-based image retrieval
 and image clustering using four other datasets:
-Scene-15~\citep{lazebnik:cvpr06}, CUReT-61~\citep{CUReT-61},
+Scene-15~\citep{scene-15}, CUReT-61~\citep{CUReT-61},
 Caltech-101~\citep{FeiFei2004}, and
-Event-8~\citep{event8}. % These 4 datasets are popular for testing the
+Event-8~\citep{event-8}. % These 4 datasets are popular for testing the
 % recognition of scenes, textures, objects, and events, resp.
 Three sophisticated, high-dimensional features were used as the SFs:
 object-bank~\citep{objectbank:nips10}, SIFT-llc~\citep{siftllc:cvpr10},
@@ -615,8 +615,8 @@ great demand. Such clustering is one of the core problems in modern
 computer vision. In this section, we apply MI to image clustering.
 
 \textbf{Datasets}: The following four popular datasets are used:
-Scene-15~\citep{lazebnik:cvpr06}, CUReT-61~\citep{CUReT-61},
-Caltech-101~\citep{FeiFei2004}, and Event-8~\citep{event8}. They contain
+Scene-15~\citep{scene-15}, CUReT-61~\citep{CUReT-61},
+Caltech-101~\citep{FeiFei2004}, and Event-8~\citep{event-8}. They contain
 $4585$ images of $15$ classes of general scenes, $5612$ images of $61$
 texture classes, $8677$ images of $101$ object classes, and $1574$
 images of $8$ classes of sports events, respectively.
@@ -655,14 +655,14 @@ dimensionalities of the six features are listed in Table~\ref{table:dim},
 from which it is evident that the TFs are much lighter and efficient
 to compute and handle, in line with the aims of MI.
 
-\textbf{Evaluation}: We follow~\citep{comp:ijcv09, dai:cvpr10, dai:ensemble:eccv12}
+\textbf{Evaluation}: We follow~\citep{dai:cvpr10, dai:eccv12b}
 and used Purity (bigger=better) for evaluation.  It measures how pure
 the discovered clusters are according to the ground truth class
 labels. Spectral Clustering was used on top of MI for the
 clustering. We compared to Spectral Clustering with the SFs and TFs as
 inputs. The K-means algorithm was also tried, but it generally
 produces similar or poorer results than Spectral Clustering.  As
-suggested in~\citep{dai:ensemble:eccv12}, we use the $\chi^2$ distance
+suggested in~\citep{dai:eccv12b}, we use the $\chi^2$ distance
 for LBP and PHOG, and the Euclidean distance for GIST. Euclidean
 distance is used for all the SFs.
 
@@ -779,7 +779,7 @@ for online applications where test data is not available beforehand.
      Scene-15    & 0.63  & 0.67  & 0.70  & 0.85  & 0.65  & 0.66  & 0.90    & 0.61  & 0.59  & 0.74 \\ 
     CUReT-61 & 0.62  & 0.62  & 0.64  & 0.65   & 0.66  & 0.69  & 0.77   & 0.51  & 0.58  & 0.68 \\ 
     Caltech-101 & 0.57  & 0.62  & 0.60  & 0.73  & 0.59  & 0.57  & 0.77     & 0.64  &0.63 &  0.70   \\ 
-    Event8 & 0.70  & 0.72  & 0.74  & 0.80   & 0.70  & 0.72  & 0.89    & 0.75  & 0.73  & 0.80\\    \end{tabular}
+    event-8& 0.70  & 0.72  & 0.74  & 0.80   & 0.70  & 0.72  & 0.89    & 0.75  & 0.73  & 0.80\\    \end{tabular}
   \label{tab:clustering:across}
 \end{table*}
 

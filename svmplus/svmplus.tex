@@ -3,7 +3,7 @@
 %\documentclass[10pt,twocolumn,letterpaper]{article}
 
 
-The advance speed of a field such as computer vision is partly determined by how fast researchers can evaluate new ideas on new tasks and new data. One of the main obstacles on the way is the time-consuming training process, especially given the fact that a large portion of vision problems are highly complex.  Thus, fast training algorithms for standard vision approaches are of a strong need.  In this chapter, we examine this problem for Learning with Privileged Information~\citep{SVMplus_vapnik}, and propose fast training algorithms for the standard algorithm SVM+~\citep{SVMplus_vapnik}, making its training more affordable.  
+The advance speed of a field such as computer vision is partly determined by how fast researchers can evaluate new ideas on new tasks and new data. One of the main obstacles on the way is the time-consuming training process, especially given the fact that a large portion of vision problems are highly complex.  Thus, fast training algorithms for standard vision approaches are of a strong need.  In this chapter, we examine this problem for Learning Using Privileged Information~\citep{SVMplus_vapnik}, and propose fast training algorithms for the standard algorithm SVM+~\citep{SVMplus_vapnik}, making its training more affordable.  
 
 \section{Introduction}  
 Many computer vision tasks contain privileged information that only
@@ -140,7 +140,7 @@ algorithms are more efficient than the SMO-style algorithm in
 In a more broader context, there are  works proposed for solving
 tasks in which training and test data use asymmetric information source,
 which are less related to
-SVM+~\citep{Chen2013,ChenLin2014CVPR,DaiCVPR2015,Ding2014,SuTransfer,DistillingCNN,lsda,Lampert2013,Srivastava2012,HuaGang2014}.
+SVM+~\citep{Chen2013,ChenLin2014CVPR, metric:imitation,Ding2014,SuTransfer,DistillingCNN,lsda,Lampert2013,Srivastava2012,HuaGang2014}.
 
 
 \section{Learning Using Privileged Information}
@@ -367,7 +367,7 @@ in SVM+.
 % The $\ell_1$ normalization is applied on both features as suggested in~\citep{liblinear}.
 
 For the scene recognition task, we employ the Scene-15
-dataset\citep{scene-15}, which contains $4,485$ images of $15$
+dataset \citep{scene-15}, which contains $4,485$ images of $15$
 different scenes.  We split the data into three sets: $300$ images as
 the training set, 40\% images as the test set, and the rest as the
 validation set.  We downsample all the images by factor $3$ ($1/3$
